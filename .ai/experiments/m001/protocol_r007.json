@@ -1,0 +1,116 @@
+{
+  "experiment_id": "R-007",
+  "protocol_version": 2,
+  "status": "frozen preregistration v2 before opening reserved scenes; v1 superseded after blocked review",
+  "scope": "SIMULATED reserved holdout validation; not physical or deployment validation",
+  "purpose": "Evaluate the immutable D004 five-view candidate with the frozen D003 estimator on exactly 12 newly generated, previously unscored simulator scenes.",
+  "stop_boundary": "No capture, reconstruction, truth evaluation, score, result, or scene removal before independent pre-open release.",
+  "candidate": {
+    "id": "d004_inset_diagonals_plus_center",
+    "development_source": ".ai/experiments/m001/protocol_d004.json",
+    "estimator_id": "d003-pooled-xyz-delaunay-v1",
+    "estimator_module": ".ai/experiments/m001/d003_estimator.py",
+    "range_m": 4.0,
+    "captures": [
+      {"view_id": "inset_northwest", "sequence": 701, "origin": [0.1225, 0.1225, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0, "roll_deg": 0.0},
+      {"view_id": "inset_northeast", "sequence": 702, "origin": [0.1775, 0.1225, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0, "roll_deg": 0.0},
+      {"view_id": "inset_southwest", "sequence": 703, "origin": [0.1225, 0.1775, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0, "roll_deg": 0.0},
+      {"view_id": "inset_southeast", "sequence": 704, "origin": [0.1775, 0.1775, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0, "roll_deg": 0.0},
+      {"view_id": "center", "sequence": 705, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0, "roll_deg": 0.0}
+    ],
+    "immutability": "Exactly the D004 candidate coordinates and zero orientation, with only fresh R007 sequence numbers; no pose, estimator, threshold, scene, or gate changes after opening."
+  },
+  "scenes": [
+    {"id": "r007_pyramid_low_left", "fill": 25, "shape": 0, "cx": 0.11, "obstacle": 0, "dropout": 0, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_pyramid_high_right", "fill": 95, "shape": 0, "cx": 0.19, "obstacle": 0, "dropout": 0, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_pyramid_mid_right_beam", "fill": 55, "shape": 0, "cx": 0.17, "obstacle": 1, "dropout": 0, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_pyramid_high_left_dropout35", "fill": 85, "shape": 0, "cx": 0.12, "obstacle": 0, "dropout": 35, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_two_stacks_low", "fill": 30, "shape": 1, "cx": 0.14, "obstacle": 0, "dropout": 0, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_two_stacks_high_beam", "fill": 90, "shape": 1, "cx": 0.16, "obstacle": 1, "dropout": 0, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_prism_low_left", "fill": 35, "shape": 2, "cx": 0.12, "obstacle": 0, "dropout": 0, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_prism_high_right_beam_dropout10", "fill": 90, "shape": 2, "cx": 0.18, "obstacle": 1, "dropout": 10, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_ramp_low_left_beam", "fill": 25, "shape": 3, "cx": 0.11, "obstacle": 1, "dropout": 0, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_ramp_high_right_dropout25", "fill": 95, "shape": 3, "cx": 0.19, "obstacle": 0, "dropout": 25, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_layer_low_dropout10", "fill": 20, "shape": 4, "cx": 0.14, "obstacle": 0, "dropout": 10, "range_m": 4.0, "sensor_z": 0.4},
+    {"id": "r007_layer_high_beam_dropout30", "fill": 90, "shape": 4, "cx": 0.16, "obstacle": 1, "dropout": 30, "range_m": 4.0, "sensor_z": 0.4}
+  ],
+  "scene_matrix_contract": {
+    "scene_count": 12,
+    "all_nonempty": true,
+    "shape_ids_required": [0, 1, 2, 3, 4],
+    "fill_range_percent": [20, 95],
+    "shifted_pyramids_required": true,
+    "obstacle_stress_required": true,
+    "dropout_stress_required": true,
+    "identical_to_any_d003_or_d004_scene": false,
+    "selection_or_removal_after_opening_allowed": false
+  },
+  "acquisition": {
+    "new_frames_only": true,
+    "views_per_scene": 5,
+    "expected_new_frame_count": 60,
+    "sequences": [701, 702, 703, 704, 705],
+    "development_frame_reuse_allowed": false,
+    "frame_format": "704-byte BFLD v2.1, 8x8, geometry version 3, 4 m range, valid CRC",
+    "simulator": ".ai/runs/m001-implementation/bin/scene_dump_m001.exe",
+    "simulator_source": ".ai/experiments/m001/scene_dump_m001.c",
+    "canonical_capture_plan": ".ai/runs/m001-r007/capture-plan-v2.json",
+    "canonical_order": "Protocol scene order, then candidate capture order, ordinals 1 through 60.",
+    "command_identity": "Each precommitted entry contains a unique command_id, complete scene parameters, view_id, sequence, pose, exact argv, and expected output path.",
+    "provenance_binding": "Capture executes each canonical entry in order, atomically commits that command's stdout only to its precommitted path, and records command digest, stdout/frame SHA-256, and decoded header under the same command_id.",
+    "validation": "Recompute the full plan from this protocol and reject any permutation, rename, scene reassignment, path or command mismatch, duplicate command ID/path/hash, missing entry, extra entry, or unexpected file."
+  },
+  "primary_gate": {
+    "name": "all_12_total_eligible_and_each_within_5pct",
+    "required_total_eligible": 12,
+    "required_total_within_limit": 12,
+    "absolute_relative_total_volume_error_max": 0.05,
+    "formula": "abs(estimated_total_m3 - exact_true_total_m3) / exact_true_total_m3",
+    "partial_policy": "Any partial, unavailable, invalid, or otherwise ineligible scene fails the entire gate; unsupported cells are never zero-filled.",
+    "no_aggregate_substitution": "Mean, median, pooled, or family-level performance cannot replace every-scene passage."
+  },
+  "secondary_diagnostics": {
+    "reported": [
+      "signed total-volume error",
+      "integrated absolute cell-volume error",
+      "spatial error percent",
+      "cancellation ratio",
+      "support and unsupported truth volume",
+      "accepted-return hull and estimator rejection diagnostics",
+      "invalid and unavailable frames",
+      "raw and merged points, merge conflicts, and triangle counts",
+      "single local reconstruction time"
+    ],
+    "gate_effect": "None. Spatial error and cancellation are mandatory disclosures and cannot alter, rescue, or tighten the preregistered primary gate."
+  },
+  "truth_boundary": {
+    "truth_module": "experiments/truth.py",
+    "truth_import": "Only inside the scoring runner evaluator function, after all 12 truth-free reconstructions have completed.",
+    "acquisition_runner_truth_access": false,
+    "estimator_truth_access": false,
+    "scene_labels_or_shape_priors_in_estimator": false
+  },
+  "execution_policy": {
+    "independent_pre_open_release_required": true,
+    "independent_pre_score_release_required": true,
+    "capture_once": true,
+    "score_once": true,
+    "overwrite_allowed": false,
+    "post_open_tuning_allowed": false,
+    "post_open_scene_selection_allowed": false,
+    "failed_or_partial_capture_consumes_holdout": true
+  },
+  "frozen_artifact_manifest": ".ai/runs/m001-r007/pre-open-manifest.json",
+  "superseded_pre_open_manifest": {
+    "version": 1,
+    "sha256": "95e34ff295f0d6561fb85713f6bd93d6f693eff6963ec68f05ec06e500a490bd",
+    "status": "INVALIDATED_BLOCKED_REVIEW",
+    "record": ".ai/runs/m001-r007/PREOPEN-V1-SUPERSEDED.md"
+  },
+  "interpretation_limits": [
+    "R007 is a reserved simulation holdout, not evidence of physical sensor accuracy, hardware reliability, or deployment readiness.",
+    "The simulator uses ideal center rays with deterministic dropout and simplified beam geometry; it omits finite-zone optics, noise, multipath, calibration drift, and many material effects.",
+    "D003 global Delaunay interpolation can bridge discontinuities or occluded gaps; low total error can coexist with large spatial error and cancellation.",
+    "The 12 simulator scenes are fixed parametric variants from five supported shape families, not independent physical replications or a complete operating envelope."
+  ]
+}

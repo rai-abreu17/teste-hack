@@ -1,15 +1,21 @@
 # BoxFlow — relatório atual de P&D
 
-## Estado de 16/09/2026 — D003 reprovada, abstração compilada, D004 em preparação
+## Estado de 16/09/2026 — D004 passa desenvolvimento; R007 em pré-registro
 
 A D003 reuniu em uma única triangulação os pontos das quatro vistas K4 já arquivadas. **Nenhuma das nove cenas produziu um volume total elegível**: sete cobriram 196/400 células e as duas camadas, 324/400. O candidato recuperou lacunas internas e reduziu erro espacial em 8/9 cenas, mas prisma e rampa ainda apresentaram erros próprios de 45,71% e 40,33%. Revisão Sol verificou 48/48 hashes; arbitragem Astra rejeitou a promoção. R007 continua intacta.
 
-A causa dominante de parcialidade é o casco dos retornos aceitos não alcançar os centros periféricos. A próxima rodada definida é D004: duas aquisições pareadas de cinco vistas, z=40 cm, estimador D003 congelado e mudança apenas no XY das quatro diagonais. Ela não repete a varredura de altura já concluída. O pré-registro e as 36 únicas capturas novas estão em preparação antes da pontuação.
+A causa dominante de parcialidade era o casco dos retornos aceitos não alcançar os centros periféricos. A D004 comparou duas aquisições pareadas de cinco vistas, z=40 cm, estimador D003 congelado e mudança apenas no XY das quatro diagonais. Foram geradas somente 36 capturas novas depois do pré-registro e da revisão independente.
+
+**A D004 passou o gate de desenvolvimento:** o candidato produziu 9/9 totais e 9/9 erros absolutos de volume total ≤5%, entre 0,027% e 3,263%. O controle produziu 7/9 totais e 4/9 dentro de 5%. Nas duas camadas, o candidato recuperou 76 células periféricas sem perder células. A auditoria pós-score verificou 120/120 hashes, reproduziu as 18 reconstruções e recalculou todas as métricas.
+
+Esse PASS não é validação independente nem hardware. Há erro espacial relevante no prisma (21,135%) e na rampa (18,859%); duas pilhas tem cancelamento de 342,52x. A D004 autoriza preparar R007, mantendo esses diagnósticos, mas não autoriza declarar precisão final. O pré-registro R007 está sendo materializado com candidato, executor e avaliador congelados antes de abrir novas cenas.
 
 A lacuna de software entre sensor simulado e físico foi reduzida: `ITofSensor` e `SimTofSensor` foram implementados, preservando o contrato BFLD. O firmware atual foi compilado com Arduino-ESP32 3.3.0 e passou 26/26 testes. O backend físico continua ausente e falha explicitamente se selecionado. Duas tentativas no editor Wokwi não chegaram à simulação por falha de rede/fila remota; a CLI instalada exige um token não disponível. Assim, a execução ESP32 → chip → HTTP → dashboard e hardware real continuam pendentes.
 
 - [Relatório e arbitragem D003](runs/m001-d003/REPORT.md)
 - [Decisão Astra D003/D004](runs/m001-d003/astra-decision.md)
+- [Resultado D004](runs/m001-d004/REPORT.md)
+- [Auditoria pós-score D004](runs/m001-d004/sol-post-score-review.md)
 - [Abstração e compilação ESP32](runs/m001-driver-abstraction/REPORT.md)
 
 ## Auditoria do plano — prioridade revisada em 15/09/2026
