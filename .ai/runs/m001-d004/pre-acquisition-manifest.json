@@ -1,0 +1,928 @@
+{
+  "experiment_id": "D-004",
+  "created_at_utc": "2026-09-16T14:01:48.090556Z",
+  "phase": "before candidate acquisition and before all scoring",
+  "protocol_sha256": "ddfcf8013a9661b81679e9efce1544afd35f1bd1c3dc9785edc7135fbceff521",
+  "frozen_files": {
+    ".ai/experiments/m001/d003_estimator.py": "bdc14436bf06d54ca2d43bc90da40a937817a39d6f5779fd5627817663b0df83",
+    ".ai/experiments/m001/protocol.json": "36ff044546272f70759e565dfc0afc3f18980ee632d1dcae7276a9a48c091a7e",
+    ".ai/experiments/m001/protocol.sha256": "7741415894fbfb0a4e8488ba17ee166efa7d0080d54c76a247db06ade5975805",
+    ".ai/experiments/m001/protocol_d003.json": "e2d769b83910d8e4c2954ff6ab36f5afb8f6884a6991e8e688ed9a37a63ff957",
+    ".ai/experiments/m001/protocol_d003.sha256": "75cda2afccb066059d5b991d13000a7dd9653c6b5420c9011294f88e7a3bc94d",
+    ".ai/experiments/m001/protocol_d004.json": "ddfcf8013a9661b81679e9efce1544afd35f1bd1c3dc9785edc7135fbceff521",
+    ".ai/experiments/m001/protocol_d004.sha256": "d958ab2b9b5dffb8952816d236d113c11306795b7cb8a288c52deae07006e60f",
+    ".ai/experiments/m001/r005_estimator.py": "0ad8c40357c04af306a999e8011058d0ba71bdf176adffdd17658573d3646a8a",
+    ".ai/experiments/m001/run_d004.py": "daeb5cb4f281947b7878cbe1ff7767421e25461c5242395bfce3e79003ac20c6",
+    ".ai/experiments/m001/scene_dump_m001.c": "32239a94172bee8570f4f26a23c7373fffc3587abd62b6e2a429bc68612f6270",
+    ".ai/experiments/m001/test_d003.py": "e9c3535dd8479d470131d09def6d55a485571c9a452be1d811af70cd6b4ef3ea",
+    ".ai/experiments/m001/test_d004.py": "9f7560ae5dd26d61b076d1a642b7c389a6a050cfe5b7d914f99aa44b59150533",
+    ".ai/runs/m001-implementation/bin/scene_dump_m001.exe": "865f3e1a84e8278d5f31ce8d13b1449ab372433b510b81a575f30e6988cf6e7e",
+    ".ai/runs/m001-implementation/results/capture-commands.json": "0ff7d5531465184f37abc268c7c92b65eb9ed1131998d5add9d362388c4dc017",
+    ".ai/runs/m001-implementation/results/comparisons.json": "6c5035c5d9478199d0ec3d6abf0a3211e06178a334e7386cc54f22d35cea9079",
+    ".ai/runs/m001-implementation/results/hash-manifest.json": "ff82f9caf395c99dff71745f91a17f65cf0004a6caba943b1ea8369ff28e2167",
+    "server/geometry.py": "35a8c563ba5ba5047d29eedc3bd4cf6e14353fb40e8e34b19aee987df8854b0b"
+  },
+  "selected_archived_frames": {
+    ".ai/runs/m001-implementation/results/frames/layer/baseline_fixed1-1.bin": {
+      "sha256": "8fab5560c054b9ab8807133f277c8149b9a53ab788b270e5ad8d20bb15f7a376",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "36bfe1dc"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer/translated4_corners_level-1.bin": {
+      "sha256": "3495ea950a7103eca0ee8754f52e720fd142d7232c49f8822a0c431f1841497e",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "2c21dc80"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer/translated4_corners_level-2.bin": {
+      "sha256": "c050785975dc63f1060fc338ccf4cb9a930599a358a568b00a57cfbea7a8de9b",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "004ada49"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer/translated4_corners_level-3.bin": {
+      "sha256": "f56eb4d2d62f9fb217cb4642f9b15cea85063f12c1bde4e74ef45e218adbc26f",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "d85c15c3"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer/translated4_corners_level-4.bin": {
+      "sha256": "cd6342dd8522bbab0fb342349696a4bd016f518da884fbe3edfac13abe89a897",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "01ecc9da"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer_beam/baseline_fixed1-1.bin": {
+      "sha256": "5626573ed84429d1d345cdd520a93ed9991db3995643f8312c7151d92d8832fe",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "f1a1a391"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer_beam/translated4_corners_level-1.bin": {
+      "sha256": "e650295547ffeeb8751a1eb0de396417e984960909cb46a858a415d9b763f9b0",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "99ddb92d"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer_beam/translated4_corners_level-2.bin": {
+      "sha256": "52249eef58275741ced262e7b3d6a7addba0242a0f00a58bdead3fff704f6372",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "719a01e8"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer_beam/translated4_corners_level-3.bin": {
+      "sha256": "aec807bca9db1ee3584223bf44bacfbfd89b11800e14d0aa3416d840b41c9c78",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "2643c805"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/layer_beam/translated4_corners_level-4.bin": {
+      "sha256": "6cbb6fb55d46459aa5d76b87f63f5495e81f8081e16f2d2001179bfe35796d3d",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "7d8fb0e3"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/prism/baseline_fixed1-1.bin": {
+      "sha256": "966fa138acb73f172a00fd266c72fb7946c8ab8d7044ddeaf329e457a3709379",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "ce5e3f32"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/prism/translated4_corners_level-1.bin": {
+      "sha256": "032358aa207823492f911788fe0f8b8f8966a33b890f53156359b2b1de570120",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "5ec69ded"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/prism/translated4_corners_level-2.bin": {
+      "sha256": "1b9dadded520faa4297128d42172eb10a15ee6818e971124918ab6883d46275b",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "3224d6a1"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/prism/translated4_corners_level-3.bin": {
+      "sha256": "6a9f9dec78d5f042a0fd35d301bc318c4898ea5f710a8760a6d41c48f5e43326",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "0d958a87"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/prism/translated4_corners_level-4.bin": {
+      "sha256": "f235fc05d86f3fab2dc2bcf1f4877e3fb6772bf265afd4decce998b5b01a0e2a",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "76612aae"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam/baseline_fixed1-1.bin": {
+      "sha256": "a00aa18fbe298a93333f0285b3cefcfd79786a669adfa14249875641d18483ee",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "05ae5953"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam/translated4_corners_level-1.bin": {
+      "sha256": "958a6adbe73e39dda7534d465a09767eeb800ac5eac464b1782a7db403cc27ea",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "bb2174a0"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam/translated4_corners_level-2.bin": {
+      "sha256": "468ed1d7e1ebb821ae164488c68824a30c19270fb7167e1d7cf0cffb79aff7c7",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "517c4f4e"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam/translated4_corners_level-3.bin": {
+      "sha256": "f806434726a7755dd703033ba1e3b6ecc2f901f81bd19002ba0add0081a66e62",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "c445c5cf"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam/translated4_corners_level-4.bin": {
+      "sha256": "dc898f2a1a1487a993cbd05ed4b3d836dd47a6c52acc9a659f52fb3972389502",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "fadc2db2"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam_dropout20/baseline_fixed1-1.bin": {
+      "sha256": "efd98bfcfcd6e519ace33dbdf72934d8ff677c9f8e9dc992a1787abf714fe85e",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "d91d65ac"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam_dropout20/translated4_corners_level-1.bin": {
+      "sha256": "5ae83abe635f45babda08f8cd09758b748fffd769ad85b2f4e70feee0a6b9890",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "a59b3b3e"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam_dropout20/translated4_corners_level-2.bin": {
+      "sha256": "a59edec58efa57a38b2feceb77d7fe062c15d32102611e39e0c193e0f4d04c24",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "c6e4c9f0"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam_dropout20/translated4_corners_level-3.bin": {
+      "sha256": "6a8ec7e270319f2a91d8734b70cfd25282495d8fc42399f5f05473bbad8c61c6",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "d1095792"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam_dropout20/translated4_corners_level-4.bin": {
+      "sha256": "5fed0c9f848c05c8fcb37fed490341d62eb80df87e43de367a67daef34e79397",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "f20f1509"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_center/baseline_fixed1-1.bin": {
+      "sha256": "7181061bee22c37e5edfc89a3d643457670efd067818804780ad228f13874bb0",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "99d93444"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_center/translated4_corners_level-1.bin": {
+      "sha256": "2dc4136e1744e3b23cb1d0dfc85f6c80cb21ec269fe53692bfa15b5175e9c237",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "d0a9fd54"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_center/translated4_corners_level-2.bin": {
+      "sha256": "7bb6c8363b24b02047ffd4fc50ac8a71b379d980b1494e0573f75bbd53eae388",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "59ba8b38"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_center/translated4_corners_level-3.bin": {
+      "sha256": "c99b0b48e33d1715bfb6b086309bd51e7d67b4e5eaba32184b9021c34f2e2063",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "a846e4da"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_center/translated4_corners_level-4.bin": {
+      "sha256": "b9a3c4a4d0dfab8459b31d9dd782d22d4324b0d156e4488b66e3a8d420640116",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "6a5f079a"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_shifted_013/baseline_fixed1-1.bin": {
+      "sha256": "e85da6a09cbad6f525fccd0834aead9126480ad90215e6b1eefb696493787076",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "7989ad98"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_shifted_013/translated4_corners_level-1.bin": {
+      "sha256": "c161d593b59a40daf663ddd621ca05892f2537f748939efa6e9864c600585e34",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "3ae34e91"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_shifted_013/translated4_corners_level-2.bin": {
+      "sha256": "a64bf018dcd21c31be4a0a0fd6a6f19f8574f644d80b82a58cb7ec4d2930098e",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "fee8df82"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_shifted_013/translated4_corners_level-3.bin": {
+      "sha256": "74169599fd200f4a4d6a6c7e03944e72f65d7df846428192264d5b8f2674281f",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "befcaecd"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_shifted_013/translated4_corners_level-4.bin": {
+      "sha256": "fe45a99c7112f4f78c4f19434615433ba001ae18039cd8a0334fce40e92ec252",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "7cb0aac3"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/ramp/baseline_fixed1-1.bin": {
+      "sha256": "0dfe305495bc4718bb36d348ae5e94063ee83b8ce0257fe5b5a119ad758f938d",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "3552f2c4"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/ramp/translated4_corners_level-1.bin": {
+      "sha256": "8350cf76fc7a19164efaf6779763f34279df130481d7101b163a60e230707f48",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "6704d0a3"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/ramp/translated4_corners_level-2.bin": {
+      "sha256": "e90f82a38fe2d8679d61c03fbccdeec3bdefa717595946c7c7f22eca65a1f454",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "26c156b4"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/ramp/translated4_corners_level-3.bin": {
+      "sha256": "a47dfb60bc01a727511c3cc05156c7e09ea63d5e586d05ff0733b00831e1b4d3",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "83f443cd"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/ramp/translated4_corners_level-4.bin": {
+      "sha256": "0ed00296c5b228fe0394a9dab2077ac2666915521ecfba5455f201b5e8a4066b",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "e6dfa12b"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/two_stacks/baseline_fixed1-1.bin": {
+      "sha256": "d493ba1d7ed65c5cda57c9481f9e1ef0bb6f4af98133477b7fe3539884cc47d1",
+      "role": "shared_center_seq101",
+      "header": {
+        "sequence": 101,
+        "sensor_pose": {
+          "translation_m": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "89d2936d"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/two_stacks/translated4_corners_level-1.bin": {
+      "sha256": "1d37a9d50827fec37b7a65b389a05c9d74be10acae2c7ed99a9ae91ea86617e1",
+      "role": "control_k4",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "eab3d75a"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/two_stacks/translated4_corners_level-2.bin": {
+      "sha256": "056d089d11360c8632b0d163f8f1b44fc90a25d238c2f5bef7e0b8712d460529",
+      "role": "control_k4",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.10000000149011612,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "7b68b900"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/two_stacks/translated4_corners_level-3.bin": {
+      "sha256": "60704866890a1f3b30ee48169a9b661baba12c74c3547f9937e39a3dd30e3fc3",
+      "role": "control_k4",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.10000000149011612,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "14948755"
+      }
+    },
+    ".ai/runs/m001-implementation/results/frames/two_stacks/translated4_corners_level-4.bin": {
+      "sha256": "94b95e5c9bb8d478e584166434f1ebac4d7e38a48fee3b36eee2744ddaef9aeb",
+      "role": "control_k4",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "84b8469a"
+      }
+    }
+  },
+  "centre_identity_aliases": {
+    ".ai/runs/m001-implementation/results/frames/layer/fixed3-1.bin": {
+      "sha256": "8fab5560c054b9ab8807133f277c8149b9a53ab788b270e5ad8d20bb15f7a376",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/layer/baseline_fixed1-1.bin"
+    },
+    ".ai/runs/m001-implementation/results/frames/layer_beam/fixed3-1.bin": {
+      "sha256": "5626573ed84429d1d345cdd520a93ed9991db3995643f8312c7151d92d8832fe",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/layer_beam/baseline_fixed1-1.bin"
+    },
+    ".ai/runs/m001-implementation/results/frames/prism/fixed3-1.bin": {
+      "sha256": "966fa138acb73f172a00fd266c72fb7946c8ab8d7044ddeaf329e457a3709379",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/prism/baseline_fixed1-1.bin"
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam/fixed3-1.bin": {
+      "sha256": "a00aa18fbe298a93333f0285b3cefcfd79786a669adfa14249875641d18483ee",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/pyramid_beam/baseline_fixed1-1.bin"
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_beam_dropout20/fixed3-1.bin": {
+      "sha256": "efd98bfcfcd6e519ace33dbdf72934d8ff677c9f8e9dc992a1787abf714fe85e",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/pyramid_beam_dropout20/baseline_fixed1-1.bin"
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_center/fixed3-1.bin": {
+      "sha256": "7181061bee22c37e5edfc89a3d643457670efd067818804780ad228f13874bb0",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/pyramid_center/baseline_fixed1-1.bin"
+    },
+    ".ai/runs/m001-implementation/results/frames/pyramid_shifted_013/fixed3-1.bin": {
+      "sha256": "e85da6a09cbad6f525fccd0834aead9126480ad90215e6b1eefb696493787076",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/pyramid_shifted_013/baseline_fixed1-1.bin"
+    },
+    ".ai/runs/m001-implementation/results/frames/ramp/fixed3-1.bin": {
+      "sha256": "0dfe305495bc4718bb36d348ae5e94063ee83b8ce0257fe5b5a119ad758f938d",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/ramp/baseline_fixed1-1.bin"
+    },
+    ".ai/runs/m001-implementation/results/frames/two_stacks/fixed3-1.bin": {
+      "sha256": "d493ba1d7ed65c5cda57c9481f9e1ef0bb6f4af98133477b7fe3539884cc47d1",
+      "identical_to": ".ai/runs/m001-implementation/results/frames/two_stacks/baseline_fixed1-1.bin"
+    }
+  },
+  "counts": {
+    "selected_archived_frames": 45,
+    "control_k4": 36,
+    "shared_centres": 9,
+    "centre_aliases_checked": 9,
+    "candidate_frames_existing": 0
+  },
+  "truth_or_estimator_used": false
+}

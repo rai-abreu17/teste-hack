@@ -1,0 +1,92 @@
+{
+  "experiment_id": "D-003",
+  "status": "frozen before truth scoring",
+  "scope": "SIMULATED development on nine previously inspected scenes; not holdout and not physical validation",
+  "purpose": "Test whether triangulating all registered XYZ returns from four archived translated views before rasterization improves total support and volume error compared with per-view R005 grids fused by median.",
+  "inputs": {
+    "scene_ids": [
+      "pyramid_center",
+      "pyramid_shifted_013",
+      "two_stacks",
+      "prism",
+      "ramp",
+      "layer",
+      "pyramid_beam",
+      "layer_beam",
+      "pyramid_beam_dropout20"
+    ],
+    "acquisition": "translated4_corners_level",
+    "captures_per_scene": 4,
+    "expected_archived_frames": 36,
+    "new_captures": 0,
+    "source": ".ai/runs/m001-implementation/results"
+  },
+  "control": {
+    "algorithm": "R005 per-view local TIN followed by conventional cellwise median",
+    "module": ".ai/experiments/m001/r005_estimator.py",
+    "reference_offset_m": 0.0,
+    "trim_kappa": null,
+    "lower": false
+  },
+  "candidate": {
+    "algorithm_id": "d003-pooled-xyz-delaunay-v1",
+    "module": ".ai/experiments/m001/d003_estimator.py",
+    "registration": "Use decoded world XYZ supplied by each frame pose; pool all usable returns before one XY triangulation.",
+    "xy_merge_quantum_m": 0.0005,
+    "merge_rule": "Round XY to the nearest fixed 0.5 mm bin in deterministic order. Retain median measured XYZ only when observed Z range is <= 0.003 m; otherwise withhold the cluster as a conflict.",
+    "triangulation": "scipy.spatial.Delaunay over merged XY with qhull_options Qbb Qc Qz Q12; simplices sorted deterministically before rasterization",
+    "scipy_runtime_version": "1.17.0",
+    "numpy_runtime_version": "2.4.2",
+    "maximum_3d_triangle_edge_m": 0.10,
+    "raster": "Same grid centers, known base subtraction, below-reference threshold and barycentric interpolation conventions as server.geometry; average multiple accepted triangle contributions per cell.",
+    "outside_convex_hull": "unsupported",
+    "truth_free": true,
+    "scene_labels_or_shape_priors": false,
+    "total_eligibility": "400/400 supported cells, zero invalid frames, zero unavailable input views, no Qhull error and no input points omitted in Delaunay.coplanar"
+  },
+  "novelty_check": "Existing E0-E4, P001-P004, R005-R006 and D001 rasterize each view independently or fit a declared shape/plane. None pool registered raw XYZ from multiple views before one global triangulation. No height sweep or new acquisition is included.",
+  "assessment": {
+    "company_threshold_relative": 0.05,
+    "candidate_gate": "All nine scenes must produce eligible total volume with absolute relative error <= 0.05 before R007 may be prepared.",
+    "partial_policy": "Unsupported cells are never zero-filled; partial estimates are not approved totals.",
+    "domains": [
+      "own supported cells",
+      "same-scene intersection of R005 and D003 support",
+      "whole box only for eligible totals",
+      "unsupported exact volume in evaluator only"
+    ],
+    "metrics": [
+      "total signed and absolute volume error",
+      "integrated absolute cell-volume error and cancellation ratio",
+      "support cells and exact missing volume in evaluator only",
+      "raw and merged point counts",
+      "merge conflicts and accepted/rejected triangle counts",
+      "single local processing time, descriptive only"
+    ],
+    "no_post_score_tuning": true,
+    "latency_requirement": null
+  },
+  "interpretation_limits": [
+    "All scenes and acquisitions were previously inspected; this is development evidence, not independent validation.",
+    "Global Delaunay can join points across a discontinuity or occluded gap even when every triangle edge is <=0.10 m.",
+    "The 3 mm merge-conflict threshold is an engineering assumption, not calibrated uncertainty.",
+    "Pooling, cross-view merge and global triangulation are one bundled intervention; this experiment does not causally separate their effects.",
+    "TIN support is interpolation support, not directly observed area.",
+    "Ideal center rays omit finite-zone optics, noise, multipath and hardware effects.",
+    "A low net total error can result from cancellation and must be read with integrated absolute spatial error."
+  ],
+  "documentation": {
+    "context7_scipy_resolve": ".ai/research/raw/context7-resolve-1789565711572.json",
+    "context7_scipy_query": ".ai/research/raw/context7-query-1789565717880.json",
+    "note": "Current SciPy documentation confirms Delaunay.coplanar records input points omitted by numerical degeneracy; D003 abstains rather than enabling QJ perturbation."
+  },
+  "frozen_sources": {
+    ".ai/experiments/m001/d003_estimator.py": "bdc14436bf06d54ca2d43bc90da40a937817a39d6f5779fd5627817663b0df83",
+    ".ai/experiments/m001/test_d003.py": "e9c3535dd8479d470131d09def6d55a485571c9a452be1d811af70cd6b4ef3ea",
+    ".ai/experiments/m001/run_d003.py": "b0b02d5aa5c32b6ed01c98fff22a8c9c30321ff14d4b13a4102f156c4400c656",
+    ".ai/experiments/m001/r005_estimator.py": "0ad8c40357c04af306a999e8011058d0ba71bdf176adffdd17658573d3646a8a",
+    "server/geometry.py": "35a8c563ba5ba5047d29eedc3bd4cf6e14353fb40e8e34b19aee987df8854b0b",
+    "experiments/truth.py": "fb88a8e3db2e9e57b9c813ce05c7a63d021985db28e158571194fa331e9ab351",
+    ".ai/runs/m001-implementation/results/comparisons.json": "6c5035c5d9478199d0ec3d6abf0a3211e06178a334e7386cc54f22d35cea9079"
+  }
+}

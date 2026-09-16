@@ -1,0 +1,126 @@
+{
+  "reference_id": "bench-vl53-30cm-v3",
+  "notice": "Ideal zone centers; footprint does not guarantee support or physical precision.",
+  "results": [
+    {
+      "sensor_height_m": 0.35,
+      "scene": "vazio",
+      "nominal_floor_footprint_side_m": 0.2899494936611665,
+      "nominal_footprint_at_10cm_side_m": 0.2071067811865475,
+      "coverage_fraction": 0.64,
+      "state": "partial",
+      "observed_m3": 9.292360853718639e-07,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.35,
+      "scene": "piramide-75",
+      "nominal_floor_footprint_side_m": 0.2899494936611665,
+      "nominal_footprint_at_10cm_side_m": 0.2071067811865475,
+      "coverage_fraction": 0.64,
+      "state": "partial",
+      "observed_m3": 0.0006473699166266485,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.35,
+      "scene": "camada-75",
+      "nominal_floor_footprint_side_m": 0.2899494936611665,
+      "nominal_footprint_at_10cm_side_m": 0.2071067811865475,
+      "coverage_fraction": 0.49,
+      "state": "partial",
+      "observed_m3": 0.003304828721675001,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.4,
+      "scene": "vazio",
+      "nominal_floor_footprint_side_m": 0.33137084989847604,
+      "nominal_footprint_at_10cm_side_m": 0.24852813742385707,
+      "coverage_fraction": 1.0,
+      "state": "valid",
+      "observed_m3": 4.44060281598585e-06,
+      "total_m3": 4.44060281598585e-06
+    },
+    {
+      "sensor_height_m": 0.4,
+      "scene": "piramide-75",
+      "nominal_floor_footprint_side_m": 0.33137084989847604,
+      "nominal_footprint_at_10cm_side_m": 0.24852813742385707,
+      "coverage_fraction": 1.0,
+      "state": "valid",
+      "observed_m3": 0.0006609339357486352,
+      "total_m3": 0.0006609339357486352
+    },
+    {
+      "sensor_height_m": 0.4,
+      "scene": "camada-75",
+      "nominal_floor_footprint_side_m": 0.33137084989847604,
+      "nominal_footprint_at_10cm_side_m": 0.24852813742385707,
+      "coverage_fraction": 0.64,
+      "state": "partial",
+      "observed_m3": 0.004328525590095029,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.45,
+      "scene": "vazio",
+      "nominal_floor_footprint_side_m": 0.37279220613578556,
+      "nominal_footprint_at_10cm_side_m": 0.2899494936611665,
+      "coverage_fraction": 0.64,
+      "state": "partial",
+      "observed_m3": 5.905717858393315e-06,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.45,
+      "scene": "piramide-75",
+      "nominal_floor_footprint_side_m": 0.37279220613578556,
+      "nominal_footprint_at_10cm_side_m": 0.2899494936611665,
+      "coverage_fraction": 0.64,
+      "state": "partial",
+      "observed_m3": 0.000598411600699655,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.45,
+      "scene": "camada-75",
+      "nominal_floor_footprint_side_m": 0.37279220613578556,
+      "nominal_footprint_at_10cm_side_m": 0.2899494936611665,
+      "coverage_fraction": 0.81,
+      "state": "partial",
+      "observed_m3": 0.005464490623912246,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.5,
+      "scene": "vazio",
+      "nominal_floor_footprint_side_m": 0.41421356237309503,
+      "nominal_footprint_at_10cm_side_m": 0.33137084989847604,
+      "coverage_fraction": 0.81,
+      "state": "partial",
+      "observed_m3": 7.4401303040681946e-06,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.5,
+      "scene": "piramide-75",
+      "nominal_floor_footprint_side_m": 0.41421356237309503,
+      "nominal_footprint_at_10cm_side_m": 0.33137084989847604,
+      "coverage_fraction": 0.81,
+      "state": "partial",
+      "observed_m3": 0.0005459853819079162,
+      "total_m3": null
+    },
+    {
+      "sensor_height_m": 0.5,
+      "scene": "camada-75",
+      "nominal_floor_footprint_side_m": 0.41421356237309503,
+      "nominal_footprint_at_10cm_side_m": 0.33137084989847604,
+      "coverage_fraction": 0.49,
+      "state": "partial",
+      "observed_m3": 0.003301104299292048,
+      "total_m3": null
+    }
+  ]
+}

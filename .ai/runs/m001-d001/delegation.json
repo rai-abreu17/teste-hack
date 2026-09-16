@@ -1,0 +1,14 @@
+{
+  "experiment": "D-001",
+  "real_invocations_only": true,
+  "agents": [
+    {"task": "/root/surface_candidate", "model": "gpt-5.6-sol", "effort": "high", "scope": "implement truth-free estimator and synthetic contract tests", "status": "completed", "tests_passed": 9},
+    {"task": "/root/d001_review", "model": "gpt-5.6-sol", "effort": "high", "scope": "independent evaluator and estimator review before scoring; follow-up audit of results, hashes and cancellation", "status": "completed", "artifact": "sol-review.md"},
+    {"task": "m001-d001-opus/001-investigator", "model": "claude-opus-5", "effort": "high", "scope": "geometric critique using self-contained text before scoring; no code access", "status": "completed", "artifact": "../m001-d001-opus/001-investigator/result.md", "metadata": "../m001-d001-opus/001-investigator/metadata.json"},
+    {"task": "/root/d001_arbitration", "model": "gpt-6-astra", "effort": "high", "scope": "independent final arbitration and next experimental direction", "status": "completed", "artifact": "astra-decision.md"}
+  ],
+  "root_scope": "protocol, paired evaluator, execution, integrity verification, synthesis, correction of unsupported review claims",
+  "implemented_pre_score_review_changes": ["preserve median instead of adding max fusion", "strict evaluator total eligibility assertions", "separate observed and reconstructed volume fields", "document four-point step/ramp ambiguity", "full support plus invalid/unavailable inputs test"],
+  "post_score_estimator_changes": false,
+  "prior_work_reused": true
+}

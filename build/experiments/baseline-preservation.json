@@ -1,0 +1,431 @@
+{
+  "baseline_zip_sha256": "56b7251cd463cf6e5e38bbe46412ba08e13d09f836e7298c86357bfd8ceea490",
+  "files": [
+    {
+      "file": "README.md",
+      "baseline_sha256": "4d2246e28e71079ab0a7d7f171d7f0bdbc5705ef88dd3f1017367c2783501471",
+      "current_sha256": "ec6e5917a62a7cbf307da76353fd918d7d0cb26ed1a37fab5f0f62d8b6c21c2c",
+      "unchanged": false
+    },
+    {
+      "file": "build/comparison-summary.txt",
+      "baseline_sha256": "616785db1f0a3f944fc5a2acf80e53e2d89f7e17eef337f74f466d120dd4569f",
+      "current_sha256": "616785db1f0a3f944fc5a2acf80e53e2d89f7e17eef337f74f466d120dd4569f",
+      "unchanged": true
+    },
+    {
+      "file": "build/firmware/BoxFlow.ino.bin",
+      "baseline_sha256": "dc183829272d3bd065047e042c04d62dbdabe4ee207f08c4651698a9cca0fd37",
+      "current_sha256": "dc183829272d3bd065047e042c04d62dbdabe4ee207f08c4651698a9cca0fd37",
+      "unchanged": true
+    },
+    {
+      "file": "build/firmware/BoxFlow.ino.bootloader.bin",
+      "baseline_sha256": "17a546b0b936fce668e35c8428b1806f9cb9e09f41f7eb86613cff68dfab8f2e",
+      "current_sha256": "17a546b0b936fce668e35c8428b1806f9cb9e09f41f7eb86613cff68dfab8f2e",
+      "unchanged": true
+    },
+    {
+      "file": "build/firmware/BoxFlow.ino.elf",
+      "baseline_sha256": "b378b4469c1da51b17251aebbb3411a7afa897d90d9b715ce656ec768326337b",
+      "current_sha256": "b378b4469c1da51b17251aebbb3411a7afa897d90d9b715ce656ec768326337b",
+      "unchanged": true
+    },
+    {
+      "file": "build/firmware/BoxFlow.ino.merged.bin",
+      "baseline_sha256": "b2cdd61170202a4dc083a167be8859352b47d37cfecb59598bc22b96fac30660",
+      "current_sha256": "b2cdd61170202a4dc083a167be8859352b47d37cfecb59598bc22b96fac30660",
+      "unchanged": true
+    },
+    {
+      "file": "build/firmware/BoxFlow.ino.partitions.bin",
+      "baseline_sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "current_sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "unchanged": true
+    },
+    {
+      "file": "build/firmware-compile.txt",
+      "baseline_sha256": "c61d80c4617ca7a5452aa49747d9f230e8d6e91f29e59252827def8c53e0f766",
+      "current_sha256": "c61d80c4617ca7a5452aa49747d9f230e8d6e91f29e59252827def8c53e0f766",
+      "unchanged": true
+    },
+    {
+      "file": "build/http-verification-v3.json",
+      "baseline_sha256": "b1f7c08bef0587e21060127168688efa95ceb8736fbf0110d2140cc68a062697",
+      "current_sha256": "b1f7c08bef0587e21060127168688efa95ceb8736fbf0110d2140cc68a062697",
+      "unchanged": true
+    },
+    {
+      "file": "build/mounting-comparison.json",
+      "baseline_sha256": "ec42ef0c14b04323c68ce68ffcdfd1e792db0a044adc207f54bfe5475017e1bf",
+      "current_sha256": "ec42ef0c14b04323c68ce68ffcdfd1e792db0a044adc207f54bfe5475017e1bf",
+      "unchanged": true
+    },
+    {
+      "file": "build/mounting-summary.txt",
+      "baseline_sha256": "261a91b687d6f0a49ef2ace470e4416c58dd7198675fdb079adb75afc0d04acf",
+      "current_sha256": "261a91b687d6f0a49ef2ace470e4416c58dd7198675fdb079adb75afc0d04acf",
+      "unchanged": true
+    },
+    {
+      "file": "build/reference-sensitivity-summary.txt",
+      "baseline_sha256": "d7283201cf7b2449b74a6671357e5705da45ed3373679b0da7ab30cf252c4cca",
+      "current_sha256": "d7283201cf7b2449b74a6671357e5705da45ed3373679b0da7ab30cf252c4cca",
+      "unchanged": true
+    },
+    {
+      "file": "build/reference-sensitivity.json",
+      "baseline_sha256": "c0dbcbd4917205277e216eba2b2583e780e47dd0e2684de48b1d42398468a9b8",
+      "current_sha256": "c0dbcbd4917205277e216eba2b2583e780e47dd0e2684de48b1d42398468a9b8",
+      "unchanged": true
+    },
+    {
+      "file": "build/resolution-comparison.json",
+      "baseline_sha256": "417fb5b983e613454b72ccb617d1f10ca6a98fc81c4277627b3e764246d71f2a",
+      "current_sha256": "417fb5b983e613454b72ccb617d1f10ca6a98fc81c4277627b3e764246d71f2a",
+      "unchanged": true
+    },
+    {
+      "file": "build/verification-v3.txt",
+      "baseline_sha256": "1528a1dc7d5bb96474db2bb8237f106081e3284fc60620a296f97ed8c1156a0f",
+      "current_sha256": "1528a1dc7d5bb96474db2bb8237f106081e3284fc60620a296f97ed8c1156a0f",
+      "unchanged": true
+    },
+    {
+      "file": "build/wasm-frame.bin",
+      "baseline_sha256": "48feb03b33b6a5536909596624048d5a749600f3ee8f5128e0f5f0662785c97b",
+      "current_sha256": "48feb03b33b6a5536909596624048d5a749600f3ee8f5128e0f5f0662785c97b",
+      "unchanged": true
+    },
+    {
+      "file": "build/wasm-results.txt",
+      "baseline_sha256": "0819d754b5232a1182e232a03a5af8a972d51bb5a8041139750a9bc5e8b66e00",
+      "current_sha256": "0819d754b5232a1182e232a03a5af8a972d51bb5a8041139750a9bc5e8b66e00",
+      "unchanged": true
+    },
+    {
+      "file": "docs/COMPARACAO.md",
+      "baseline_sha256": "baba45acaf05ac0bf9b3e25fe7300638ba9aad79d1ea98de81ad4a739dfe3be6",
+      "current_sha256": "c896f1a4743a4f5bf2bbe68df18ab4d6517bdb5f76e5d5203c5af70d252152b8",
+      "unchanged": false
+    },
+    {
+      "file": "docs/CONTRATO.md",
+      "baseline_sha256": "b7b3bd0dc76feb8a4b2e1aeb035363344542259fb3b0717b0dfc61b969175637",
+      "current_sha256": "b7b3bd0dc76feb8a4b2e1aeb035363344542259fb3b0717b0dfc61b969175637",
+      "unchanged": true
+    },
+    {
+      "file": "docs/DECISOES.md",
+      "baseline_sha256": "41f45c2c8500610bf1c02bd5da24a90f0064d5ac8c2edbadccb59ce97a86d574",
+      "current_sha256": "41f45c2c8500610bf1c02bd5da24a90f0064d5ac8c2edbadccb59ce97a86d574",
+      "unchanged": true
+    },
+    {
+      "file": "docs/GEOMETRIA.md",
+      "baseline_sha256": "d0dfa3ad86927e47b0049d3246d76b52aec36886cef8bac6c7cc579e444e6ef0",
+      "current_sha256": "d0dfa3ad86927e47b0049d3246d76b52aec36886cef8bac6c7cc579e444e6ef0",
+      "unchanged": true
+    },
+    {
+      "file": "docs/MONTAGEM_30CM.md",
+      "baseline_sha256": "b1f59086e9e49e7c304a57be7637205a4719beb703db7b8b35a52aa9165070d5",
+      "current_sha256": "b1f59086e9e49e7c304a57be7637205a4719beb703db7b8b35a52aa9165070d5",
+      "unchanged": true
+    },
+    {
+      "file": "docs/TESTES.md",
+      "baseline_sha256": "6c2fd98c6c2c89ac7f6ed6337f00fc361154b47a4afa833eb5ff7bb94a2f64dc",
+      "current_sha256": "6c2fd98c6c2c89ac7f6ed6337f00fc361154b47a4afa833eb5ff7bb94a2f64dc",
+      "unchanged": true
+    },
+    {
+      "file": "docs/framebuffer.png",
+      "baseline_sha256": "1ab71281b99f4e357929a91244884f9b1e62d626959317644d9a04a86a823bb9",
+      "current_sha256": "1ab71281b99f4e357929a91244884f9b1e62d626959317644d9a04a86a823bb9",
+      "unchanged": true
+    },
+    {
+      "file": "docs/reference-sensitivity.png",
+      "baseline_sha256": "a18bde3f6003307582b962409260a8a2afcec38708b79ec5b38a2bff2c5e50d3",
+      "current_sha256": "a18bde3f6003307582b962409260a8a2afcec38708b79ec5b38a2bff2c5e50d3",
+      "unchanged": true
+    },
+    {
+      "file": "docs/third-party/DEPENDENCIAS.md",
+      "baseline_sha256": "c5de6bbe11be009553721d6b700d535b0935943fd27f9df890b61aaa14856b08",
+      "current_sha256": "c5de6bbe11be009553721d6b700d535b0935943fd27f9df890b61aaa14856b08",
+      "unchanged": true
+    },
+    {
+      "file": "docs/third-party/WOKWI_API_LICENSE.txt",
+      "baseline_sha256": "33947387305acc2a90356c8715d729c369ead27b7d909c912c993863fb8f68ae",
+      "current_sha256": "33947387305acc2a90356c8715d729c369ead27b7d909c912c993863fb8f68ae",
+      "unchanged": true
+    },
+    {
+      "file": "docs/third-party/wokwi-api.h",
+      "baseline_sha256": "a4031b0f9c6b8b9b57c0a43a6fc661be88794fc40b4ed8f4e6835f1a29564a29",
+      "current_sha256": "a4031b0f9c6b8b9b57c0a43a6fc661be88794fc40b4ed8f4e6835f1a29564a29",
+      "unchanged": true
+    },
+    {
+      "file": "samples/01-vazio.bin",
+      "baseline_sha256": "95e194231a19f5abfee511a17cfa190a226b0148ad88fa778b5bf51b7c1e6205",
+      "current_sha256": "95e194231a19f5abfee511a17cfa190a226b0148ad88fa778b5bf51b7c1e6205",
+      "unchanged": true
+    },
+    {
+      "file": "samples/02-entrada-25.bin",
+      "baseline_sha256": "d0f22f81fdc4ac5fecd915cbf9cb320bdbb57c18982065577cda62daa9801ef4",
+      "current_sha256": "d0f22f81fdc4ac5fecd915cbf9cb320bdbb57c18982065577cda62daa9801ef4",
+      "unchanged": true
+    },
+    {
+      "file": "samples/03-entrada-50.bin",
+      "baseline_sha256": "e687e53b1bd70180ea0eab7aaa73cfaa395f28623ec434b961a74b6870391269",
+      "current_sha256": "e687e53b1bd70180ea0eab7aaa73cfaa395f28623ec434b961a74b6870391269",
+      "unchanged": true
+    },
+    {
+      "file": "samples/04-entrada-75.bin",
+      "baseline_sha256": "e2fd0b4dc330eec1a29bade9002aa2e7620db5f68d1e717eb5b0981cdc7189d0",
+      "current_sha256": "e2fd0b4dc330eec1a29bade9002aa2e7620db5f68d1e717eb5b0981cdc7189d0",
+      "unchanged": true
+    },
+    {
+      "file": "samples/05-entrada-100.bin",
+      "baseline_sha256": "02067b8d8cfeefe39398450b481a5697abd27462ad7066a5a9e8e5e950850149",
+      "current_sha256": "02067b8d8cfeefe39398450b481a5697abd27462ad7066a5a9e8e5e950850149",
+      "unchanged": true
+    },
+    {
+      "file": "samples/06-redistribuicao.bin",
+      "baseline_sha256": "3bfb0a9d2d8571792b3bc134f2d038e086e829d744b15ecf9ce0145411484a1e",
+      "current_sha256": "3bfb0a9d2d8571792b3bc134f2d038e086e829d744b15ecf9ce0145411484a1e",
+      "unchanged": true
+    },
+    {
+      "file": "samples/07-duas-pilhas.bin",
+      "baseline_sha256": "0f35688a54d199a5ae7b29bc30151aee77ed612a5acbec540ea21b119c967433",
+      "current_sha256": "0f35688a54d199a5ae7b29bc30151aee77ed612a5acbec540ea21b119c967433",
+      "unchanged": true
+    },
+    {
+      "file": "samples/08-oclusao.bin",
+      "baseline_sha256": "86fc570831a518247cf2ba6646fbd2dbf5f24e6c195bf5e89b9529e07170b564",
+      "current_sha256": "86fc570831a518247cf2ba6646fbd2dbf5f24e6c195bf5e89b9529e07170b564",
+      "unchanged": true
+    },
+    {
+      "file": "samples/09-sem-retorno.bin",
+      "baseline_sha256": "cbb5872559c8a7e3df0ed6a2a0b67370ad60dfc6a0bd3e8d6a549a7f1a50a846",
+      "current_sha256": "cbb5872559c8a7e3df0ed6a2a0b67370ad60dfc6a0bd3e8d6a549a7f1a50a846",
+      "unchanged": true
+    },
+    {
+      "file": "samples/10-fora-alcance.bin",
+      "baseline_sha256": "0ab38cbc54a77713c2403f6c25c2bb5c9f09ff028e66e24b3b4f0f9d8e125156",
+      "current_sha256": "0ab38cbc54a77713c2403f6c25c2bb5c9f09ff028e66e24b3b4f0f9d8e125156",
+      "unchanged": true
+    },
+    {
+      "file": "samples/11-retirada-50.bin",
+      "baseline_sha256": "01af0d17480e25bd102de6811d4714d1abab6c03a614febc520e5d3a00a1e5fb",
+      "current_sha256": "01af0d17480e25bd102de6811d4714d1abab6c03a614febc520e5d3a00a1e5fb",
+      "unchanged": true
+    },
+    {
+      "file": "samples/12-retirada-25.bin",
+      "baseline_sha256": "426dcb589f7e0c4189072923eeac3f7c69f00cc46870a708ef5da6e414f41d36",
+      "current_sha256": "426dcb589f7e0c4189072923eeac3f7c69f00cc46870a708ef5da6e414f41d36",
+      "unchanged": true
+    },
+    {
+      "file": "samples/13-retirada-vazio.bin",
+      "baseline_sha256": "9bf0e2c5670a3424bcb75a16d6253dabda333db13dea2bb2270ddcbdaca778b4",
+      "current_sha256": "9bf0e2c5670a3424bcb75a16d6253dabda333db13dea2bb2270ddcbdaca778b4",
+      "unchanged": true
+    },
+    {
+      "file": "samples/14-prisma.bin",
+      "baseline_sha256": "2d31e9d6ebd394b54e22288312774079bd878d2117687624c812c09737c62c36",
+      "current_sha256": "2d31e9d6ebd394b54e22288312774079bd878d2117687624c812c09737c62c36",
+      "unchanged": true
+    },
+    {
+      "file": "samples/15-rampa.bin",
+      "baseline_sha256": "7d0eb855ffdc39c06163a2840e340c5e62619fa048c2a6ec0fbfbdc8bcabd767",
+      "current_sha256": "7d0eb855ffdc39c06163a2840e340c5e62619fa048c2a6ec0fbfbdc8bcabd767",
+      "unchanged": true
+    },
+    {
+      "file": "samples/16-camada.bin",
+      "baseline_sha256": "0ea127f454a632ac516e4aa113b49bb5cec620a02ce5eabee63df1a98c7ce94a",
+      "current_sha256": "0ea127f454a632ac516e4aa113b49bb5cec620a02ce5eabee63df1a98c7ce94a",
+      "unchanged": true
+    },
+    {
+      "file": "samples/17-principal.bin",
+      "baseline_sha256": "c7e649a9b91b360bb7a0fa3766ddf48d0496f70f12afe80fd7a39b3f2a8aa587",
+      "current_sha256": "c7e649a9b91b360bb7a0fa3766ddf48d0496f70f12afe80fd7a39b3f2a8aa587",
+      "unchanged": true
+    },
+    {
+      "file": "samples/manifest.json",
+      "baseline_sha256": "98d4a4f1984b5d229c69c12d554fd3ff8ab5bfea983994ae06eb64d474852c7a",
+      "current_sha256": "98d4a4f1984b5d229c69c12d554fd3ff8ab5bfea983994ae06eb64d474852c7a",
+      "unchanged": true
+    },
+    {
+      "file": "server/app.py",
+      "baseline_sha256": "d39ed6908df6229a89a3aa594ffb949f31d19f2c225a942082801c22668a3f70",
+      "current_sha256": "d39ed6908df6229a89a3aa594ffb949f31d19f2c225a942082801c22668a3f70",
+      "unchanged": true
+    },
+    {
+      "file": "server/geometry.py",
+      "baseline_sha256": "35a8c563ba5ba5047d29eedc3bd4cf6e14353fb40e8e34b19aee987df8854b0b",
+      "current_sha256": "35a8c563ba5ba5047d29eedc3bd4cf6e14353fb40e8e34b19aee987df8854b0b",
+      "unchanged": true
+    },
+    {
+      "file": "server/static/app.js",
+      "baseline_sha256": "1362b5c77e7870550d8697622c561e1a67a791954eb0b57b0c5f6829f01b3b3e",
+      "current_sha256": "1362b5c77e7870550d8697622c561e1a67a791954eb0b57b0c5f6829f01b3b3e",
+      "unchanged": true
+    },
+    {
+      "file": "server/static/index.html",
+      "baseline_sha256": "bfd744cef8b687db3e95440e4a2ff475609cc8bc7eeba252250eb24e6bc9424c",
+      "current_sha256": "bfd744cef8b687db3e95440e4a2ff475609cc8bc7eeba252250eb24e6bc9424c",
+      "unchanged": true
+    },
+    {
+      "file": "server/static/style.css",
+      "baseline_sha256": "e5f95e2fc175426dd2c86f09b4abb7b4063c51b4c68f6158064e0165065303a6",
+      "current_sha256": "e5f95e2fc175426dd2c86f09b4abb7b4063c51b4c68f6158064e0165065303a6",
+      "unchanged": true
+    },
+    {
+      "file": "tests/fixtures/v1/geometry_v1.py",
+      "baseline_sha256": "6c6dae4946761a986f59a0a6f571cc6dc43d0229446a9f95256a4aefcb9d0e1a",
+      "current_sha256": "6c6dae4946761a986f59a0a6f571cc6dc43d0229446a9f95256a4aefcb9d0e1a",
+      "unchanged": true
+    },
+    {
+      "file": "tests/fixtures/v1/pyramid_6m3.bin",
+      "baseline_sha256": "f45bd4fa53fbd1bed206e12018d2e91daec0aa6a3d53fa8ecd89ee45b6ad219d",
+      "current_sha256": "f45bd4fa53fbd1bed206e12018d2e91daec0aa6a3d53fa8ecd89ee45b6ad219d",
+      "unchanged": true
+    },
+    {
+      "file": "tests/test_system.py",
+      "baseline_sha256": "4283d2e239bae7bbc8718c256fceecf4a7dd6416792af6b1f83b51e98ae3d2c8",
+      "current_sha256": "4283d2e239bae7bbc8718c256fceecf4a7dd6416792af6b1f83b51e98ae3d2c8",
+      "unchanged": true
+    },
+    {
+      "file": "tests/test_wasm.mjs",
+      "baseline_sha256": "e5e462c034ce64450c3250d26becc2efb9252af2f90081f21547ff9de3852a54",
+      "current_sha256": "e5e462c034ce64450c3250d26becc2efb9252af2f90081f21547ff9de3852a54",
+      "unchanged": true
+    },
+    {
+      "file": "tools/build_firmware.py",
+      "baseline_sha256": "18a07f84ebbd0715c76a161bb65fca1b0adf4d2d712a8b9a5b09021baee0e4bd",
+      "current_sha256": "18a07f84ebbd0715c76a161bb65fca1b0adf4d2d712a8b9a5b09021baee0e4bd",
+      "unchanged": true
+    },
+    {
+      "file": "tools/check_mounting.py",
+      "baseline_sha256": "e78c12cd465dc859e0eaf3610eff7a366c7489cf13fa6d87ed88111a581c4dd9",
+      "current_sha256": "e78c12cd465dc859e0eaf3610eff7a366c7489cf13fa6d87ed88111a581c4dd9",
+      "unchanged": true
+    },
+    {
+      "file": "tools/compare_resolution.py",
+      "baseline_sha256": "57b0b0fdc8b779d2bb5e2d7bd856e0f3aec61a79bad8be3ebae6050bc382b525",
+      "current_sha256": "57b0b0fdc8b779d2bb5e2d7bd856e0f3aec61a79bad8be3ebae6050bc382b525",
+      "unchanged": true
+    },
+    {
+      "file": "tools/generate_samples.py",
+      "baseline_sha256": "2d66c157af2c7a846458479cccdd6ca5c5378d38861512f26ca4492557111a59",
+      "current_sha256": "2d66c157af2c7a846458479cccdd6ca5c5378d38861512f26ca4492557111a59",
+      "unchanged": true
+    },
+    {
+      "file": "tools/reference_sensitivity.py",
+      "baseline_sha256": "83ffd67bdac492c2a7b622f65fe4eb6083c1029c75d5d170a8f2c59f54ab47f2",
+      "current_sha256": "83ffd67bdac492c2a7b622f65fe4eb6083c1029c75d5d170a8f2c59f54ab47f2",
+      "unchanged": true
+    },
+    {
+      "file": "tools/replay_demo.py",
+      "baseline_sha256": "bfe1378a7c4ae8a22409cb11704a0f5e5847a8c34da080ea31d1b870313e08c7",
+      "current_sha256": "bfe1378a7c4ae8a22409cb11704a0f5e5847a8c34da080ea31d1b870313e08c7",
+      "unchanged": true
+    },
+    {
+      "file": "tools/scene_dump.c",
+      "baseline_sha256": "86370c5c4be653ff6f9906a8e31f35c5f442b45c1f61e9fe59d2b4f6b44cf676",
+      "current_sha256": "86370c5c4be653ff6f9906a8e31f35c5f442b45c1f61e9fe59d2b4f6b44cf676",
+      "unchanged": true
+    },
+    {
+      "file": "wokwi/boxflow-lidar.chip.c",
+      "baseline_sha256": "a77f9a3c7d84e4b43a5986ca7fef1f3e471dd2558b0e1f10ad073b2aa905705b",
+      "current_sha256": "a77f9a3c7d84e4b43a5986ca7fef1f3e471dd2558b0e1f10ad073b2aa905705b",
+      "unchanged": true
+    },
+    {
+      "file": "wokwi/boxflow-lidar.chip.json",
+      "baseline_sha256": "0b2ac0c1c7fbcf89d149a64a986b60697c19bc0b63683528d8e60b5cb54f740d",
+      "current_sha256": "0b2ac0c1c7fbcf89d149a64a986b60697c19bc0b63683528d8e60b5cb54f740d",
+      "unchanged": true
+    },
+    {
+      "file": "wokwi/boxflow-lidar.chip.wasm",
+      "baseline_sha256": "b0c7698f98c974fd83495f97e3ac2fb9e13e1feacc263721a1cd8c2d99616c1a",
+      "current_sha256": "b0c7698f98c974fd83495f97e3ac2fb9e13e1feacc263721a1cd8c2d99616c1a",
+      "unchanged": true
+    },
+    {
+      "file": "wokwi/config.h",
+      "baseline_sha256": "c2ad451986bb13ef63a55bc1153a68bfa91081933aadf79868522d843e4b5350",
+      "current_sha256": "c2ad451986bb13ef63a55bc1153a68bfa91081933aadf79868522d843e4b5350",
+      "unchanged": true
+    },
+    {
+      "file": "wokwi/diagram.json",
+      "baseline_sha256": "a46ed16f4162e047c338f4d8736bcd6c9d375cf200dde6aa6dcbc2943461b5ac",
+      "current_sha256": "a46ed16f4162e047c338f4d8736bcd6c9d375cf200dde6aa6dcbc2943461b5ac",
+      "unchanged": true
+    },
+    {
+      "file": "wokwi/libraries.txt",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "current_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "file": "wokwi/sketch.ino",
+      "baseline_sha256": "6c40694087b6e92d5fd229a1d374d9444497eba4b5d4ea109589c73f0862379d",
+      "current_sha256": "6c40694087b6e92d5fd229a1d374d9444497eba4b5d4ea109589c73f0862379d",
+      "unchanged": true
+    },
+    {
+      "file": "wokwi/wokwi.toml",
+      "baseline_sha256": "85df0be2cf7718f02be3d18ff535ffd5f72351e36dd35c7dd2b1156818c098a6",
+      "current_sha256": "85df0be2cf7718f02be3d18ff535ffd5f72351e36dd35c7dd2b1156818c098a6",
+      "unchanged": true
+    },
+    {
+      "file": "build/artifact-hashes.json",
+      "baseline_sha256": "edb645610603304bb7004d3726c11c9afc05283dc112245f9aef11532adc7000",
+      "current_sha256": "edb645610603304bb7004d3726c11c9afc05283dc112245f9aef11532adc7000",
+      "unchanged": true
+    }
+  ]
+}

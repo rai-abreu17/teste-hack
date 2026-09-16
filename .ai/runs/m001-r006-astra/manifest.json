@@ -1,0 +1,17 @@
+{
+  "runId": "m001-r006-astra",
+  "createdAt": "2026-09-14T16:23:46.232Z",
+  "invocations": [
+    {
+      "agent": "astra",
+      "status": "completed",
+      "requestedModel": "gpt-6-astra",
+      "observedModel": null,
+      "directory": "001-astra"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-09-14T16:23:46.232Z",
+  "completedAt": "2026-09-14T16:23:46.258Z",
+  "finalResult": "001-astra\\result.md"
+}

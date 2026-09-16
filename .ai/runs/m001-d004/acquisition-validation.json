@@ -1,0 +1,29 @@
+{
+  "experiment_id": "D-004",
+  "checked_at_utc": "2026-09-16T14:01:50.280101Z",
+  "phase": "ready for independent pre-scoring review",
+  "passed": true,
+  "checks": {
+    "protocol_hash_matches": true,
+    "pre_manifest_unchanged": true,
+    "frozen_sources_unchanged": true,
+    "archived_45_unchanged": true,
+    "centre_9_identity_pairs_unchanged": true,
+    "candidate_frame_count_36": true,
+    "candidate_hashes_match": true,
+    "only_candidate_sequences_201_204": true,
+    "no_truth_or_estimator_used": true,
+    "no_volume_results": true,
+    "reserved_r007_unused": true
+  },
+  "counts": {
+    "new_candidate_frames": 36,
+    "reused_control_frames": 36,
+    "reused_shared_centres": 9,
+    "total_inputs_per_arm": 45
+  },
+  "protocol_sha256": "ddfcf8013a9661b81679e9efce1544afd35f1bd1c3dc9785edc7135fbceff521",
+  "pre_acquisition_manifest_sha256": "6ec13daa6f7049123e8649ba22c69cacb5ff6e4b8d7e2426f37cf456e152df5b",
+  "acquisition_manifest_sha256": "2413dc80b289242d391e51d2aaccac3c8eef048d5289df20c35738e2b30c4c8c",
+  "capture_commands_sha256": "fbaa0308c9304dee9ed7ef68bb365e6f5580f6816b7669168e51ec643c72f6ca"
+}

@@ -1,0 +1,64 @@
+[    3628ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://wokwi.com/api/logout:0
+[    4989ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.google-analytics.com/analytics.js:0
+[    6326ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://analytics.google.com/g/collect?v=2&tid=G-NCK2JJ7E5V&gtm=45je69f0h2v9135776967za20g&_p=1789565835806&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAIACQC&cid=714463981.1789522576&frm=0&ibt=1&ir=1&ngs=1&pscdl=noapi&rcb=9&sr=1536x864&uaa=x86&uab=64&uafvl=Chromium%3B152.0.7977.83%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.83&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=pt-br&_s=1&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789565662&sct=2&seg=1&dl=https%3A%2F%2Fwokwi.com%2Fprojects%2Fnew%2Fesp32&dt=New%20ESP32%20Project%20-%20Wokwi%20Simulator&en=page_view&tfd=6266:0
+[   11344ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[   41549ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[   44350ms] [LOG] [chip-boxflow-lidar] 🐞 Compiling custom chip... @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[   44729ms] [LOG] [chip-boxflow-lidar] 🍕 Custom chip compiled successfully @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[   48113ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[   73794ms] [LOG] Build aborted @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[   77117ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[   81329ms] [WARNING] Failed to parse diagram SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at get diagram (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:32844)
+    at e5 (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:21140)
+    at t.computeValue_ (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:18509)
+    at t.trackAndCompute (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:18354)
+    at t.get (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:17619)
+    at e4 (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:20734)
+    at t.runReaction_ (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:25029)
+    at tm (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:27289)
+    at tg (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:27017) @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[   82945ms] [WARNING] Failed to parse diagram SyntaxError: Unexpected non-whitespace character after JSON at position 36534 (line 116 column 1)
+    at JSON.parse (<anonymous>)
+    at get diagram (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:32844)
+    at e5 (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:21140)
+    at t.computeValue_ (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:18509)
+    at t.trackAndCompute (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:18354)
+    at t.get (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:17619)
+    at t.getObservablePropValue_ (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:50360)
+    at Object.get (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:55155)
+    at t.get_ (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:50926)
+    at Object.get (https://wokwi.com/_next/static/chunks/6468630d-22307b9b819d1ded.js:1:34286) @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  160004ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[  164873ms] [LOG] [chip-boxflow-lidar] 🐞 Compiling custom chip... @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  164891ms] [LOG] [chip-boxflow-lidar] 🍕 Custom chip compiled successfully @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  257497ms] [ERROR] SSE connection error: Event @ https://wokwi.com/_next/static/chunks/8619-7a3de8f920a1306f.js:0
+[  257497ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR.QUIC_PACKET_WRITE_ERROR @ https://wokwi.com/api/hexi/monitor:0
+[  257808ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://wokwi.com/build:0
+[  257814ms] [ERROR] TypeError: Failed to fetch
+    at O (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:26589)
+    at async aX (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:183553)
+    at async aQ.build (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:184195)
+    at async E.build (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:68730)
+    at async E.start (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:68049) @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  259911ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://analytics.google.com/g/collect?v=2&tid=G-NCK2JJ7E5V&gtm=45je69f0h2v9135776967za20g&_p=1789565835806&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAIACQC&cid=714463981.1789522576&frm=0&ibt=1&ir=1&ngs=1&pscdl=noapi&rcb=9&sr=1536x864&uaa=x86&uab=64&uafvl=Chromium%3B152.0.7977.83%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.83&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=pt-br&_s=2&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789565662&sct=2&seg=1&dl=https%3A%2F%2Fwokwi.com%2Fprojects%2Fnew%2Fesp32&dt=New%20ESP32%20Project%20-%20Wokwi%20Simulator&en=build_network_error&_ee=1&ep.event_category=build&ep.event_label=Failed%20to%20fetch&_et=251555&tfd=257840:0
+[  260812ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[  261141ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://wokwi.com/api/ev:0
+[  261161ms] TypeError: Failed to fetch
+    at i (https://wokwi.com/_next/static/chunks/306-fc3d7c1dbf7d3934.js:4:797)
+    at push.98619.O.onBuildNetworkError (https://wokwi.com/_next/static/chunks/8619-7a3de8f920a1306f.js:70:9806)
+    at E.start (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:68286)
+[  261144ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.google.com.br/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-NCK2JJ7E5V&cid=714463981.1789522576&gtm=45je69f0h2v9135776967za20g&rcb=9&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&z=2100856383:0
+[  261144ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.google.com/g/collect?v=2&tid=G-NCK2JJ7E5V&gtm=45je69f0h2v9135776967za20g&_p=1789565835806&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAIACQC&cid=714463981.1789522576&frm=0&ibt=1&ir=1&ngs=1&pscdl=noapi&rcb=9&sr=1536x864&uaa=x86&uab=64&uafvl=Chromium%3B152.0.7977.83%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.83&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=pt-br&_s=2&tag_exp=115616986~115938465~115938469~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789565662&sct=2&seg=1&dl=https%3A%2F%2Fwokwi.com%2Fprojects%2Fnew%2Fesp32&dt=New%20ESP32%20Project%20-%20Wokwi%20Simulator&en=build_network_error&_ee=1&ep.event_category=build&ep.event_label=Failed%20to%20fetch&_et=251555&tfd=257840&gaf=1:0
+[  264146ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[  310775ms] [LOG] [chip-boxflow-lidar] 🐞 Compiling custom chip... @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  310782ms] [LOG] [chip-boxflow-lidar] 🍕 Custom chip compiled successfully @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  439352ms] [ERROR] Failed to load resource: the server responded with a status of 524 () @ https://wokwi.com/build:0
+[  439485ms] [ERROR] k: Project compilation takes too long, perhaps our build servers are too busy right now. You can try to compile the project on your computer and use Wokwi for VS Code to simulate it, or upgrade to a paid plan for access to high-performance builds: https://wokwi.com/pricing
+    at O (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:26838)
+    at async aX (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:183553)
+    at async aQ.build (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:184195)
+    at async E.build (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:68730)
+    at async E.start (https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:164:68049) @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  443538ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0

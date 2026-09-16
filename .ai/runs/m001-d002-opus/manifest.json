@@ -1,0 +1,16 @@
+{
+  "runId": "m001-d002-opus",
+  "createdAt": "2026-09-15T00:18:57.239Z",
+  "invocations": [
+    {
+      "agent": "investigator",
+      "status": "failed",
+      "requestedModel": "claude-opus-5",
+      "observedModel": "claude-opus-5",
+      "directory": "001-investigator"
+    }
+  ],
+  "status": "failed",
+  "updatedAt": "2026-09-15T00:18:57.239Z",
+  "failedAt": "2026-09-15T00:18:57.241Z"
+}

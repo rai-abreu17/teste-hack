@@ -1,0 +1,618 @@
+You are the researcher in a controlled multi-agent analysis. Work only from the supplied context. Do not assume access to files, tools, prior conversations, or other agents unless their text appears below. Be explicit about uncertainty. Produce a self-contained answer.
+
+ROLE INSTRUCTION
+Pesquise questões documentais delimitadas e organize evidências para o BoxFlow. Priorize datasheets e documentação ST, Espressif, Wokwi e bibliotecas; depois papers e fontes técnicas. Fóruns são evidência secundária. Use Context7 para bibliotecas, SDKs, APIs, CLIs e serviços quando disponível; Firecrawl ou outras ferramentas de pesquisa para fontes físicas e papers.
+
+Primeiro consulte o índice existente. Não refaça pesquisas já adequadas; revalide apenas fontes desatualizadas, afirmações frágeis ou questões novas. Cada fato precisa de URL, documento/revisão/página quando aplicável, condições de ensaio e limite de aplicação. Separe fonte primária, inferência e lacuna.
+
+Não conclua que uma tecnologia venceu por reputação, nem invente pesquisa realizada. Se ferramentas estiverem desabilitadas, limite-se às fontes fornecidas e enumere consultas pendentes. Escale questões físicas difíceis ao investigador.
+
+
+CONTEXT
+# Pesquisa direcionada M-001 — fontes primárias recuperadas via Firecrawl MCP
+
+Tarefa: verificar o alcance das afirmações abaixo, separar especificação de marketing, reunir até700 palavras em português com URLs. Não navegar novamente; os textos foram efetivamente recuperados pelo orquestrador. Identifique implicações para sensor parado durante integração/movimento, necessidade de calibração por pose, zone vs raio, hardware MVP vs industrial. Não afirmar que LiDAR ou laser pontual resolve volume genérico. Não reproduzir longas citações; não inventar detalhes faltantes. Pesquisa adicional só se lacuna decisiva. Nenhum hardware ensaiado.
+
+## ST VL53L5CX
+URL: https://www.st.com/resource/en/datasheet/vl53l5cx.pdf
+2.2 Field of view
+
+Rx (or collector) exclusion zone includes all modules assembly tolerances and is used to define the cover glass
+dimensions. The cover glass opening must be equal to or wider than the exclusion zone.
+The detection volume represents the applicative or system FoV in which a target is detected, and a distance
+
+The detection volume represents the applicative or system FoV in which a target is detected, and a distance
+measured. It is determined by the Rx lens or the Rx aperture, and is narrower than the exclusion zone.
+
+Figure 1. System FoV and exclusion zone description (not to scale)
+
+|  | Horizontal | Vertical | Diagonal |
+| --- | --- | --- | --- |
+| Detection volume | 45° | 45° | 65° |
+| Collector exclusion zone | 55.5° | 61° | 82° |
+
+Table 2. FoV angles
+
+Note: Detection volume depends on the environment and sensor configuration. It also depends on target distance,
+reflectance, ambient light level, sensor resolution, sharpener, ranging mode, and integration time.
+
+Note: The detection volume of Table 2. FoV angles was measured with a white 88% reflectance perpendicular target
+in full FoV. The target was located at 1 m from the sensor, without ambient light (dark conditions), with an 8x8
+resolution and 14% sharpener (default value), in continuous mode at 15 Hz.
+
+* * *
+
+2.3 Field of illumination
+
+The VCSEL field of illumination (FoI) is shown in the figure below. The relative emitted signal power depends on
+the FoI angle, and corresponds to:
+
+• 50° x 50° considering a beam with 75% signal from maximum
+
+$$
+5 0 ^ {\\circ} \\times 5 0 ^ {\\circ}
+$$
+
+• 65° x 65° considering a beam with 10% signal from maximum
+
+$$
+6 5 ^ {\\circ} \\times 6 5 ^ {\\circ}
+$$
+
+Figure 2. VL53L5CX FoI
+
+* * *
+
+2.4 System block diagram
+
+Figure 3. VL53L5CX block diagram
+
+2.5 Device pinou
+3 Functional description
+
+3.1 Software interface
+
+This section shows the software interface of the device. The host customer application controls the VL53L5CX
+using an application programming interface (API). The API implementation is delivered to the customer as a driver
+(C code and reference Linux® driver). The driver provides the customer application with a set of high-level
+functions. They allow control of the VL53L5CX firmware such as device initialization, ranging start/stop, and mode
+select.
+
+Figure 6. VL53L5CX system functional description
+
+Figure 7. Power state machine
+
+Table 4. Power state description
+
+| Device state | Description |
+| --- | --- |
+| LP idle | Low power idle state with data retentionRAM and register content retainedAllows fast resume to HP idleI$^{2}$C communication is disabled if using LPn |
+| HP idle | High power idle stateDevice needs to be in HP idle state to start rangingPower-up state |
+| Ranging | Full operationVCSEL is active(pulsing) |
+
+* * *
+
+3.3 Power up sequence
+
+The recommended power up sequence is shown in the figure below. When powering up the device, the IOVDD
+supply should be applied at the same time or after AVDD. When removing power, the AVDD supply should be
+removed at the same time or after IOVDD.
+
+Note: Avoid powering IOVDD while AVDD is unpowered to prevent increased leakage current.
+
+Figure 8. Power up sequence
+
+Table 5. Power up timing table
+
+| Time | Description | Min. |
+| --- | --- | --- |
+| $t\_{1}$ | IOVDD rises after AVDD | 0s |
+| t\_{2}$ | IOVDD falls before AVDD | 0s |
+
+$$
+t \_ {1}
+$$
+
+$$
+t \_ {2}
+$$
+
+* * *
+
+3.3.1 Power up slew
+
+To ensure proper operation of the module, the following minimum slew rates on the supplies must be met for
+correct operation of the power on reset (POR) circuitry. The POR circuitry triggers at 0.9 V, but the supplies
+should reach their operation levels in accordance with the slew rates listed in the table below.
+
+Figure 9. Power up slew
+
+| AVDD&IOVDD regardless of which supply is enabled first | AVDD | Min slew rate=0.001Vμs-1 |
+| --- | --- | --- |
+| IOVDD | Min slew rate=0.012Vμs-1 |  |
+
+Note: The minimum reset time is the minimum time required for the device ROM to load and boot up after IOVDD
+reaches the POR rising threshold. The supply must have reached the minimum operating level (1.6 V) within this
+time.
+
+Note: The AVDD rise time is determined by the internal analog leve
+SECTION NOT FOUND
+
+## ABB LLT100
+URL: https://new.abb.com/products/measurement-products/level/laser-level-transmitters/llt100
+# Laser level transmitter   LLT100
+
+The LLT100 is a high performance laser transmitter that accurately measures level, distance and position over short and long ranges. It is a non-contact, level measuring instrument designed for industrial applications and harsh environments.
+
+[![](https://webimages.imagebank.abb.com/public/default/product/9AAC186836/preview)](https://webimages.imagebank.abb.com/public/default/product/9AAC186836/presentation)
+
+[![Features 1_390x195](https://www07.abb.com/images/librariesprovider98/default-album/features-1_390x195.jpg?sfvrsn=1)\\
+\\
+Overview: transmitter features\\
+\\
+ABB brings laser level transmitters to the next level of non-contact measurements by packaging laser ranging technology with the required features for industrial applications.](https://www07.abb.com/images/librariesprovider98/default-album/features-1---llt100-for-website-with-textv5.jpg?sfvrsn=1)
+
+[![LLT100 video tile2 for web](https://www07.abb.com/images/librariesprovider98/default-album/llt100-video-tile2-for-web.jpg?sfvrsn=672e1714_1)\\
+\\
+Video: LLT100 non-contact laser level measurement for industrial applications](https://www.youtube-nocookie.com/embed/UQicN59ZPXQ?html5=1&rel=0&wmode=transparent&autoplay=1)
+
+[![](https://imageservice.abb.com/public/v2/4a4d0068-b581-4e5a-937b-d1b2205fb807/sitefinity_32.jpg?target=https%3a%2f%2fwebimages.imagebank.abb.com%2fpublic%2fv2%2f4a4d0068-b581-4e5a-937b-d1b2205fb807%2fsitefinity_32.jpg%3fcrop%3d0%2c0%2c0%2c0%26width%3d0%26height%3d0&key=638a0b001f0138b7e16525429f567602)](https://webimages.imagebank.abb.com/public/v2/4a4d0068-b581-4e5a-937b-d1b2205fb807/presentation.jpg)
+
+[![](https://imageservice.abb.com/public/v2/7d5e6dfe-9151-43b5-98e2-88e09ddefff9/sitefinity_32.jpg?target=https%3a%2f%2fwebimages.imagebank.abb.com%2fpublic%2fv2%2f7d5e6dfe-9151-43b5-98e2-88e09ddefff9%2fsitefinity_32.jpg%3fcrop%3d0%2c0%2c0%2c0%26width%3d0%26height%3d0&key=1e55f2311e6cd0491b455977885c2965)](https://webimages.imagebank.abb.com/public/v2/7d5e6dfe-9151-43b5-98e2-88e09ddefff9/presentation.jpg)
+
+[![](https://imageservice.abb.com/public/v2/f85bcc04-af46-4fd4-b199-3c1cf87c8cff/sitefinity_32.jpg?target=https%3a%2f%2fwebimages.imagebank.abb.com%2fpublic%2fv2%2ff85bcc04-af46-4fd4-b199-3c1cf87c8cff%2fsitefinity_32.jpg%3fcrop%3d0%2c0%2c0%2c0%26width%3d0%26height%3d0&key=f0613295953eebf6cc7cd10b0d75b3ce)](https://webimages.imagebank.abb.com/public/v2/f85bcc04-af46-4fd4-b199-3c1cf87c8cff/presentation.jpg)
+
+Overview
+
+Data
+
+Fieldbus & HART
+
+Downloads
+
+Service
+
+### Overview
+
+The LLT100 is specifically made for industrial applications and harsh environments. It provides continuous, non-contact level measurement capabilities for process automation and inventory management in industries such as mining, aggregates, oil and gas, chemicals, food and beverages, power, pulp and paper, pharma, and water and waste water.
+
+Low cost of ownership– No maintenance
+
+– No calibration necessary
+
+– Versatile level transmitter
+
+Reliable– Precise measurement of any solid or liquid surface
+
+– Dust and fog penetration capabilities
+
+– Explosion proof class 1 / division 1 (zone 1)
+
+Convenient– Fast and flexible installation
+
+– Easy setup function
+
+– 2 wire powered and HART communication
+
+Accessories
+
+Dust tube
+
+– Avoids dirt or splashing liquids on the window
+
+Cooling tube
+
+– Increases max. process temperature to 280°C/535°F
+
+Heated window
+
+– Prevents condensation on window (requires 4 wire power)
+
+Integral Through-the-Glass user interface
+
+– Configuration directly on the unit
+
+Rotating bracket
+
+– Ideal for aiming the LLT100 laser beam
+
+Swivel flange
+
+– Provides precise aiming of the LLT100 laser beam. Especially useful in liquid applications
+
+Laser pointer tool
+
+– Used to provide a visual reference when aligning LLT100
+
+![Accessories - llt100-alu-dust-tube-3821resize](https://www07.abb.com/images/librariesprovider98/default-album/accessories---llt100-alu-dust-tube-3821resize.jpg?sfvrsn=1)
+
+Process flanges
+
+Universal flange (aluminum or stainless steel)
+
+– Flange bolt pattern fits both 2 in. ASME150 and DN50 PN 16
+
+– Maximum pressure: 2 bar (29 psi)
+
+– Hazarous area class 1 / division 1 (zone 1)
+
+High pressure
+
+– 2 in. class 150 flange
+
+– 2 in. class 300 flange
+
+– DN50 PN16 flange
+
+– DN50 PN40 flange
+
+– Hazardous area class 1 / division 1 (zone 1)
+
+– Can be used to form a barrier to zone 0
+
+Hygienic interface
+
+– 4 in. triclover clamp
+
+![Process flanges - lsrc-alu-300-d-16473 (1)](https://www07.abb.com/images/librariesprovider98/default-album/process-flanges---lsrc-alu-300-d-16473-(1).jpg?sfvrsn=1)
+
+### Data
+
+Measurement
+
+- Range
+
+0.5 to 30 m (2 to 100 ft) for liquids
+
+0.5 to 100 m (2 to 330 ft) for solids
+
+
+0.5 to 200 m (2 to 660 ft) for positioning applications1
+
+- Resolution
+
+5 mm (0.2 in)
+
+- Typical accuracy
+
+
+±11 mm (0.4 in)
+
+- Measuring beam
+
+
+Laser wavelength: 905 nm, eye safe, Class 1
+
+- Laser beam divergence
+
+
+< 0.35°
+
+
+Environmental conditions
+
+- Operating temperature
+
+
+         –40° to +60°C (–40 to +140°F)
+
+- Storage temperature
+
+
+         –40 to +85°C (-40 to +185°F)
+
+
+- Survival temperature
+
+
+–40°C to +80°C (–40°F to +175°F)
+
+- Process pressure
+
+
+– Base model: –1 to +2 bar (29 psi)
+
+
+– Hygienic model: –1 to +1 bar (15 psi)
+
+
+– Pressure-rated model: –1 to +49.6 bar (719 psi), depending on flange
+
+
+Vibration resistance
+
+-  Compliant with IEC 60068–2–6:2007 Environmental testing
+
+
+– Part 2
+
+
+– 6: Tests
+
+
+– Test Fc: Vibration (sinusoidal), 10
+
+
+– 150 Hz 0.35mm
+
+
+– 50m/s²
+
+Output
+
+-  Analog
+
+
+    4 to 20 mA, NAMUR compliant
+- Digital
+
+
+    HART 7 (multi-variable output)
+- Communication
+
+
+    Local HMI, EDD/DTM, handheld
+
+Power supply
+
+-  Powered from the current loop (flameproof/explosion proof/ dust-ignition proof version):
+
+
+    4 to 20 mA, 16 to 42 V DC (if using HART, minimum input voltage is 21 V DC)
+- For intrinsically safe version:
+
+
+4 to 20 mA, 15.5 to 30 V DC maximum (21 to 30 V DC for HART)
+
+- Heated lens option (for flameproof/explosion proof/dust ignition protection only)
+
+
+    24 V DC (3W)
+
+Mechanical
+
+- Housing material
+
+
+Powder coated aluminum (standard), 316L stainless steel (option)
+- Dimensions
+
+
+– Universal - flat flange W 247 x H 215 x D 165 mm (9.7 x 8.5 x 6.5 in.)
+
+
+– Class 150 - raised flange W 240 x H 242 x D 154 mm (9.5 x 9.5 x 6.1 in.)
+
+
+– Class 300 - raised flange W 247 x H 242 x D 165 mm (9.7 x 9.5 x 6.5 in.)
+
+
+– DIN PN 16 - raised flange W 247 x H 242 x D 165 mm (9.7 in x 9.5 x 6.5 in.)
+
+
+– DIN PN 40 - raised flange W 247 x H 242 mm  x D 165 (9.7 x 9.5 x 6.5 in.)
+
+
+– Hygienic flange W 223 x H 215 x D 137 mm (8.8 x 8.5 x 5.4 in.)
+- Weight of standard model
+
+
+    – Aluminum enclosure with universal aluminum flange: 3.7 kg (8.2 lb)
+
+
+    – 316L SST enclosure with universal stainless steel flange: 8.6 kg (19.0 lb)
+- Weight of pressure rated model (depending on flange)
+
+
+    – Aluminum enclosure: 6.7 to 7.2 kg (14.8 to 15.9 lb), depending on flange
+
+
+    – 316L SST enclosure: 10.0 to 10.5 kg (22.1 to 23.2 lb), depending on flange
+- Weight of hygienic model
+
+
+– Aluminum enclosure: 5.8 kg (12.8 lb)
+
+
+– 316L SST enclosure: 9.1 kg (20.1 lb)
+- Protection class
+
+
+IP66 / IP67/ Nema 4 (SS version 4X)
+- Process fitting
+
+
+– Flange (ASME 2”, DN50)
+
+
+– Hygienic fitting / tri-clamp 4 in. (ISO2852)
+- Wetted parts
+
+
+–Flange A: Aluminum, borosilicate window, silicone O–ring
+
+
+–Flange B: 316L SST, borosilicate window, silicone O–ring
+
+
+–Flanges C, D, F, G: duplex 2205 ring with fused borosilicate window (high pressure models) with a 316 SST pressure retaining flange
+
+
+–Flange H: 316L SST, polycarbonate window, silicone SB70 O–ring, 3–A approved
+- Mean time between failures (MTBF)
+
+
+–25 years
+
+
+Operation
+
+- Display
+
+
+– Integrated 128x64 pixels LCD display with TTG (Through-The-Glass) interface
+- Software features
+
+
+– Volume computation, damping, filtering, thresholds/alarms, user-defined display(with HMI)
+
+Optical
+
+- Total optical aperture
+
+
+– 50 mm (2 in)
+- Standard window material (flanges A and B)
+
+
+– Tempered borosilicate glass
+- Pressure rated window material (flanges C, D, F, G)
+
+
+– Borosilicate fused glass
+- Hygienic window material (flange H)
+
+
+– Polycarbonate window
+- H flange maximum permissible cleaning temperature
+
+
+
+|     |     |     |     |
+| --- | --- | --- | --- |
+| CIP cleaning | Tmax | Tmax minutes | Tamb |
+| Steam | 100 °C <br> (212 °F) | 30 | 25 °C <br> (77 °F) |
+
+- Lens impact resistance
+
+
+– Tested at 4 joules
+- Beam divergence
+
+
+– Δ < 0.3°
+- Beam spot width
+
+
+
+|     |     |     |     |     |     |     |     |     |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Distance | 1 m <br> (3 ft) | 3 m <br> (10 ft) | 5 m <br> (16 ft) | 10 m (33 ft) | 20 m <br> (66 ft) | 30 m (98 ft) | 50 m (164 ft) | 100 m (328 ft) | 150 m (492 ft) |
+| Approx. <br> spot width | 0.7 cm <br> (0.3 in) | 2.0 cm (0.8 in) | 3.3 cm (1.3 in) | 6.6 cm (2.6 in) | 13.5 cm (5.3 in) | 20 cm (7.9 in) | 34 cm (13.4 in) | 69 cm (27.2 in) | 108 cm (42.5 in) |
+
+- Beam direction
+
+
+– 90° ±5° from mounting flange for liquids measurements
+
+Laser
+
+- Measuring laser
+
+
+– 905 nm near infrared pulsed semiconductor laser
+
+
+– 7.1 μW average power output
+
+
+– 45 W peak power output
+
+- Measuring laser safety
+
+
+– Always on IEC60825–1 Ed. 2, 2007 A Class 1 laser is safe for all conditions of use
+
+### Fieldbus & HART
+
+The Version Matrix document shows, for each protocol, the Software Revision that’s compatible to the Hardware and Firmware Revision of the device.
+
+**Read first:**
+
+[Version Matrix](https://search-ext.abb.com/library/Downl
+
+## BinMaster 3DLevelScanner
+URL: https://binmaster.com/3d-details/
+# 3D Level Scanners for Bulk Inventory Measurement
+
+The BinMaster 3D Level Scanner is the **only level measurement technology** that **maps multiple points** across the material surface to create a **3D representation** of stored material inside a silo or bin. After measuring multiple points, the scanner **generates an accurate image** of the material's surface topography and **calculates the volume**, even when the surface is irregular.
+
+**Unlike single-point level sensors**, the 3D Level Scanner identifies **cone-up** or **cone-down conditions**, **sidewall buildup**, and uneven material distribution that can affect inventory accuracy and silo safety. Using acoustic technology, the sensor penetrates dust and measures solids and powders—including low dielectric materials—without contacting the material.
+
+[Multi-Point Accuracy](https://binmaster.com/3d-details/#multipoint) [Industries & Applications](https://binmaster.com/3d-details/#industries) [Select Your 3D Sensor](https://binmaster.com/3d-details/#options) [Mounting Options](https://binmaster.com/3d-details/#mounting) [Specifications](https://binmaster.com/3d-details/#specs) [3DLevelScanner Documents](https://binmaster.com/3d-details/#documents)
+
+![The 3D Level Scanner from BinMaster uses acoustic technology to provide a detailed image of the bulk material surface topography](https://cdn11.bigcommerce.com/s-ncrfq5jlmz/images/stencil/800w/image-manager/binmaster-website-3d-level-scanner-page-image-1.jpg?t=1776720960)
+
+### Acoustic-Based Measurements
+
+#### How the 3DLevelScanner Works
+
+The 3D Level Scanner uses **advanced acoustic technology** to **measure multiple points** on the material surface inside a bin or silo.
+
+Three transducers emit extremely low-frequency sound waves that **travel through the vessel** and **reflect off the material surface**. The sound is faint, similar to a chirp.
+
+Echoes returning from multiple points on the material surface are **received** and **converted into distance measurements**.
+
+Advanced algorithms **assign XYZ coordinates** to each measurement point. These coordinates are **mapped into a 3D model** of the material surface.
+
+When used with optional visualization software, the system produces a **3D graphical representation** of the bin contents, allowing processors to see surface variations and accurately report volume.
+
+* * *
+
+## What Makes the 3DLevelScanner Unique
+
+BinMaster's 3DLevelScanner sensor **measures multiple points across the material surface**, providing greater volume accuracy than single-point sensors.
+
+![Value proposition icon](https://cdn11.bigcommerce.com/s-ncrfq5jlmz/images/stencil/original/image-manager/binmaster-website-icon-3d-image.png?t=1776345057)
+
+Generates a **3D image** of material topography
+
+![Value proposition icon](https://cdn11.bigcommerce.com/s-ncrfq5jlmz/images/stencil/original/image-manager/binmaster-website-icon-minimum-maximum-level.png?t=1776345208)
+
+Reports **minimum**, **maximum**, and **average** material levels
+
+![Value proposition icon](https://cdn11.bigcommerce.com/s-ncrfq5jlmz/images/stencil/original/image-manager/binmaster-website-icon-cone-up-cone-down.png?t=1776345264)
+
+Detects **cone-up** and **cone-down** conditions
+
+![Value proposition icon](https://cdn11.bigcommerce.com/s-ncrfq5jlmz/images/stencil/original/image-manager/binmaster-website-icon-sidewall-buildup.png?t=1776345250)
+
+Identifies **sidewall buildup** that may cause structural stress
+
+![Value proposition icon](https://cdn11.bigcommerce.com/s-ncrfq5jlmz/images/stencil/original/image-manager/binmaster-website-icon-segmented-bin.png?t=1776345281)
+
+Measures bulk materials in **segmented** or **compartmented bins**
+
+![Value proposition icon](https://cdn11.bigcommerce.com/s-ncrfq5jlmz/images/stencil/original/image-manager/binmaster-website-icon-multiple-scanners.png?t=1776345292)
+
+Supports accurate inventory calculations in **large-diameter silos** using **multiple scanners**
+
+* * *
+
+![3D MultiVision software expands the capability of 3DLevelScanners from BinMaster with multi-bin visibility and 3D surface imaging](https://cdn11.bigcommerce.com/s-ncrfq5jlmz/images/stencil/800w/image-manager/binmaster-website-3d-level-scanner-page-image-2.jpg?t=1776721417)
+
+### Visualize Inventory Across Multiple Bins
+
+#### 3D MultiVision Software
+
+MultiVision software provides **centralized inventory monitoring** for facilities using 3D Level Scanners.
+
+Installed on a local network, the software allows operators to **monitor multiple bins simultaneously** and **view real-time inventory information**.
+
+Users can easily switch between bins, view detailed level data, and examine the 3D profile of the stored material **with a single click**.
+
+- Displays **multiple bins** in one interface
+- Provides **automatic inventory updates**
+- Allows **customizable user dashboards**
+- Compatible with **all** 3D Level Scanner models
+- **Generates reports** for purchasing, finance, logistics, and operations
+
+* * *
+
+## Industries and Applications 
+
+IMPORTANT: Identifique explicitamente alegações comerciais, especialmente 'only level measurement technology'; não adote exclusividade como fato. Não confundir volume calculado por modelo em transmissor de nível com topografia medida.
+
+
+Completion protocol: finish your response with this exact marker on its own line:
+<<ORCHESTRATION_COMPLETE>>

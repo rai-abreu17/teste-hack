@@ -1,0 +1,21 @@
+You are the investigator in a controlled multi-agent analysis. Work only from the supplied context. Do not assume access to files, tools, prior conversations, or other agents unless their text appears below. Be explicit about uncertainty. Produce a self-contained answer.
+
+ROLE INSTRUCTION
+Faça a crítica geométrica independente solicitada no contexto. Não há ferramentas; use somente o contexto fornecido.
+
+CONTEXT
+# D001 — crítica prévia de reconstrução por superfícies
+
+Contexto autocontido: BoxFlow estima volume em caixa de 0,30 x 0,30 m, grade 20 x 20 (células de 0,015 m), com sensor ideal de 8 x 8 raios, FoV 45 graus e origem z=0,40 m. Distâncias quantizadas em milímetros. Nove cenas simuladas existentes: pirâmide central/deslocada, duas pilhas, prisma, rampa, camada e três cenas com viga/dropout. Nenhuma validação física. Meta empresarial: erro relativo absoluto <=5% do volume TOTAL; estimativa parcial não é total aprovado.
+
+Referência: triangulação somente entre raios vizinhos, aresta máxima 0,10 m, sem extrapolação; média das contribuições por célula e mediana entre três quadros. fixed3 usa mesma pose em todos os quadros; translated3_aimed usa x=0,1/0,15/0,2 m com inclinação dirigida ao centro. Cada aquisição será comparada consigo mesma. Totais de ambas: 2/9 dentro de 5%, 2/9 acima, 5/9 parciais. Pirâmide central tem erro 17,5% fixed3, rampa 10,8%. Transições concentram erro, mas isso não prova a causa. Mesmo zerar os resíduos verdadeiros numa faixa congelada de 1,5 cm nas transições deixa rampa >5% e não recupera lacunas. Camada tem 256/400 células TIN mesmo sem viga.
+
+Filtros anteriores (não repetir): diminuir aresta TIN, rejeitar por inclinação, selecionar vista por compactness, aparar vistas por kappa, mediana inferior; nenhum aprovado. Há ajuste paramétrico de pirâmide/cone, mas com prior de forma e validade restrita.
+
+D001 em desenvolvimento: segmentação determinística de planos com suporte em pelo menos quatro vértices observados e tolerância vertical 0,002 m. Reconstrução limitada ao domínio sustentado pelos pontos (eventual casco convexo explicitamente rotulado como suporte de modelo), rejeitando interpolação entre superfícies incompatíveis; sem usar verdade, tipo da cena ou parâmetros da simulação no estimador. Sol implementa um candidato único. O algoritmo exato será registrado e seu código congelado antes de pontuar as nove cenas já conhecidas. Esta é uma rodada de desenvolvimento, não conjunto reservado R007. Não alterar aquisição, não varrer limiares depois dos resultados.
+
+Solicitação: critique os riscos geométricos deste mecanismo ANTES da pontuação: plano falso cruzando degraus, conectividade, cascos atravessando oclusões/concavidades, interseções ambíguas, cobertura perdida e falsa aprovação por cancelamento. Sugira verificações concretas e condições de abstenção. Não proponha consulta à verdade no algoritmo, oráculos como solução, nem afirme ter lido arquivos. Sua crítica não aprova código ainda não apresentado. Seja breve e tecnicamente preciso.
+
+
+Completion protocol: finish your response with this exact marker on its own line:
+<<ORCHESTRATION_COMPLETE>>

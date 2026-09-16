@@ -1,0 +1,1 @@
+Faça a auditoria independente de software, matemática e experimento. Verifique integridade dos 72 registros, cálculos, domínios comuns, invariantes, vazamento de verdade e se as conclusões seguem dos dados. Proponha a menor correção ou próximo experimento necessário.

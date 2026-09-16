@@ -1,0 +1,76 @@
+{
+  "experiment_id": "D-001",
+  "status": "frozen before truth scoring",
+  "purpose": "One observed-plane reconstruction candidate, with acquisition held fixed within each paired comparison. Previously inspected development scenes, not independent validation.",
+  "scene_ids": [
+    "pyramid_center",
+    "pyramid_shifted_013",
+    "two_stacks",
+    "prism",
+    "ramp",
+    "layer",
+    "pyramid_beam",
+    "layer_beam",
+    "pyramid_beam_dropout20"
+  ],
+  "acquisitions": [
+    "fixed3",
+    "translated3_aimed"
+  ],
+  "primary_acquisition": "fixed3",
+  "new_captures": false,
+  "algorithm": {
+    "plane": "material height h=a*x+b*y+c; least squares over distinct observed vertices, with known base/reference subtracted",
+    "max_vertical_residual_m": 0.002,
+    "max_triangle_edge_m": 0.1,
+    "min_patch_triangles": 2,
+    "min_distinct_vertices": 4,
+    "connectivity": "edge-adjacent local ray-grid triangles; seed is smallest unassigned triangle id; seed neighbor minimizes (maximum fit residual, triangle id); frontier growth in ascending triangle id; every accepted growth must satisfy residual threshold over all unique vertices; failed unpaired seeds are rejected permanently",
+    "unsupported_triangles": "reject triangles without a consistent supported patch; no fallback to original mixed triangle",
+    "observed_support": "union of accepted local triangle domains; this is interpolation support, not directly observed area",
+    "model_support": "inside convex hull of patch observed vertices, and at most 0.05 m from nearest patch vertex; used only absent observed support; does not establish visibility or continuity across gaps",
+    "within_view": "observed candidates first; incompatible heights spanning more than 0.002 m cause abstention; otherwise conventional median",
+    "between_views": "observed candidates first, model candidates only absent observed; conventional median as control; no maximum or trimming",
+    "truth_free": "estimator inputs only frame bytes and optional reference offset; no scene labels, truth volumes, true planes or residual feedback"
+  },
+  "assessment": {
+    "company_threshold_relative": 0.05,
+    "eligible_total": "400 supported cells and no invalid/unavailable input; disclose model-only support and distinguish model-based totals",
+    "partial": "never use partial volume as approved total; unsupported cells not zero-filled",
+    "domains": [
+      "own supported cells",
+      "paired common support within same acquisition",
+      "whole box only when eligible"
+    ],
+    "metrics": [
+      "total volume error",
+      "integrated absolute cell-volume error",
+      "support lost and gained",
+      "missing true volume evaluator only",
+      "observed/model support",
+      "single-run processing time descriptive only"
+    ],
+    "candidate_gate": "All nine primary acquisition scenes must have eligible total <=5%; do not trade lost coverage for lower common-domain error. Passing development would justify preregistering R007, not deployment or accuracy guarantee.",
+    "no_post_score_tuning": true,
+    "latency_requirement": null
+  },
+  "limitations": [
+    "ideal millimeter-quantized simulator only",
+    "plane tolerance is engineering assumption, not calibrated uncertainty",
+    "convex hull can bridge unobserved boundaries",
+    "several coplanar points do not prove intervening surface",
+    "nine scenes correlated and already inspected",
+    "parameter selection cannot be presented as blinded validation"
+  ],
+  "pre_score_smoke": "One archived center fixed3 acquisition was decoded by implementer without truth or scoring; 382 supported cells reported. Algorithm and parameters were declared before that smoke. Not blinded even as to coverage.",
+  "frozen_sources": {
+    ".ai/experiments/m001/d001_estimator.py": "04006938e70de4e07523eb5efdaa6f32d6094ac42d680bd113c4ff5228fb1ea0",
+    ".ai/experiments/m001/test_d001.py": "0bf2f8e6e83189c0303d36de05977555a6a87ca121054549c05f1bcb06d6e1ab",
+    ".ai/experiments/m001/run_d001.py": "85056d2bc8ae6e8266024ef1da06146a23fe7f63923fc579fc1767db63c3d73c",
+    ".ai/experiments/m001/r005_estimator.py": "0ad8c40357c04af306a999e8011058d0ba71bdf176adffdd17658573d3646a8a",
+    ".ai/experiments/m001/run_r006.py": "1504de87ba96a748e9cd90ba42e232fab3580d2f4d9c2f3963b0a5d7056835dc",
+    "server/geometry.py": "35a8c563ba5ba5047d29eedc3bd4cf6e14353fb40e8e34b19aee987df8854b0b",
+    "experiments/truth.py": "fb88a8e3db2e9e57b9c813ce05c7a63d021985db28e158571194fa331e9ab351"
+  },
+  "frozen_at_utc": "2026-09-14T22:52:49.726448+00:00"
+}

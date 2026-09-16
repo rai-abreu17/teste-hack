@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-16T01:36:57.307Z",
+  "mode": "resolve",
+  "subject": "scipy",
+  "query": "scipy.spatial.Delaunay construction simplices qhull options deterministic triangulation",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Available Libraries:\n\n- Title: SciPy\n- Context7-compatible library ID: /scipy/scipy\n- Description: SciPy library main repository\n- Code Snippets: 3847\n- Source Reputation: High\n- Benchmark Score: 71.44\n- Versions: v1.16.1"
+      }
+    ]
+  }
+}

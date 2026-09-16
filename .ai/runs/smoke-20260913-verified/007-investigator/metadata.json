@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "runId": "smoke-20260913-verified",
+  "timestamp": "2026-09-13T22:57:56.152Z",
+  "agent": "investigator",
+  "agentTask": "investigator cross-review",
+  "provider": "claude",
+  "requestedModel": "claude-opus-5",
+  "observedModel": "claude-opus-5",
+  "observedModelSource": "cli-json-stream",
+  "auxiliaryModels": [],
+  "modelUsage": {
+    "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 2844,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 1612,
+      "webSearchRequests": 0,
+      "costUSD": 0.08723,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+    }
+  },
+  "diagnosticModels": [],
+  "effort": "high",
+  "prompt": {
+    "file": "prompt.txt",
+    "sha256": "88508cbc9c40d92d523d2d5bd2fe58ceee860c2ab5e3805ce9dbeb44b84fc809"
+  },
+  "context": {
+    "source": "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\smoke-context.md",
+    "file": "context.txt",
+    "sha256": "dda5aa76b5b5c90de33ce996dffd75ac5b07ace612e4e05355f87de505168d53"
+  },
+  "command": "C:\\Users\\Raí\\AppData\\Roaming\\npm\\\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+  "argv": [
+    "-p",
+    "--model",
+    "claude-opus-5",
+    "--effort",
+    "high",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "",
+    "--disable-slash-commands",
+    "--safe-mode",
+    "--system-prompt",
+    "You are a text-only analysis worker. Follow the user prompt exactly. Do not use tools, files, memory, skills, plugins, hooks, or external context.",
+    "--settings",
+    "{\"disableAllHooks\":true}",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\smoke-20260913-verified\\007-investigator\\empty-mcp.json",
+    "--setting-sources",
+    "user",
+    "--no-session-persistence"
+  ],
+  "entrypointSource": "C:\\Users\\Raí\\AppData\\Roaming\\npm\\claude.cmd",
+  "environmentOverrides": [
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC",
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "stdout.jsonl",
+  "stderr": "stderr.log",
+  "result": "result.md",
+  "durationMs": 42868,
+  "timedOut": false,
+  "protocolComplete": true,
+  "completionMarkerPresent": true,
+  "status": "completed",
+  "failureCode": null,
+  "failureCodes": [],
+  "failureReasons": []
+}

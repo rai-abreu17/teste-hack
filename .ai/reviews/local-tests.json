@@ -1,0 +1,12 @@
+{
+  "classification": "LOCAL SOFTWARE TESTS WITH EXPLICIT FAKE MODEL FIXTURES",
+  "command": "node --test .ai/test/orchestrate.test.mjs",
+  "exitCode": 0,
+  "tests": 15,
+  "passed": 15,
+  "failed": 0,
+  "durationMs": 13526.3344,
+  "source": "Actual exec_command / write_stdin output observed in this session; summary, not a second test execution.",
+  "coverage": ["exact requested model argv", "authentication failure", "empty output", "missing marker", "missing completion event", "model mismatch", "unavailable model", "fatal protocol event", "permission denial", "missing executable", "usage limit", "resume without duplicate calls", "tampered output rejected"],
+  "limitation": "Does not prove model availability, physical accuracy, or a completed live Astra arbitration."
+}

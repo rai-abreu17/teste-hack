@@ -1,0 +1,15 @@
+{
+  "id": "R006-C",
+  "purpose": "Evaluator-only counterfactual: quantify residual error outside the already-frozen transition band",
+  "source": ".ai/runs/m001-r006/results/results.json",
+  "methods": ["fixed3_median", "aimed_median"],
+  "scenes": "all nine R006 scenes; report without selecting winners",
+  "operation": "Replace estimated cell volumes with exact reference only in supported cells labelled transition; equivalently remove the signed transition residual from the domain signed residual",
+  "domains": ["own", "common_fixed3_aimed"],
+  "coverage": "unchanged; never fill unsupported cells using truth",
+  "primary_diagnostic_scenes": ["pyramid_center", "ramp"],
+  "question": "For originally total-eligible primary scenes, would perfect transition-band reconstruction alone reduce absolute total-volume error to <=5%?",
+  "limitations": ["Not an implementable estimator", "Uses true cell volumes in evaluator only", "Cannot prove a sensor or algorithm can realize the counterfactual", "Cannot attribute cause or recover missing coverage", "Absolute error need not decrease when cancellation is removed", "two_stacks has all material within transition band; descriptive only"],
+  "new_capture_allowed": false,
+  "modify_prior_results": false
+}

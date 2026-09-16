@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>BoxFlow • Volume por box</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><a class="brand" href="/" aria-label="BoxFlow início"><span class="mark">B</span>BoxFlow<span class="brand-sub">VOLUMETRIA</span></a><span class="sim">AMBIENTE SIMULADO</span></header>
+<main>
+  <div class="heading"><div><div class="eyebrow">MONITORAMENTO DE ARMAZENAGEM</div><h1>Volume por box</h1><p>Superfície medida, referência conhecida e qualidade explícita.</p></div><div class="connection"><span id="connection-dot"></span><span id="connection">Conectando ao receptor</span></div></div>
+  <div class="notice"><strong>Maquete de 30 × 30 cm · perfil VL53L5CX 8×8.</strong> 64 zonas simuladas por raios centrais ideais. As células interpoladas não acrescentam resolução ao sensor. Sem medição do terminal.</div>
+  <section class="summary" aria-label="Resumo da medição">
+    <article class="card volume"><div class="card-label"><span id="box">BOX-DEMO-01</span><span id="state" class="state unavailable">Indisponível</span></div><h2 id="volume-label">Volume observado</h2><div class="metric"><span id="volume">—</span><small>m³</small></div><p id="condition">Aguardando a primeira varredura.</p></article>
+    <article class="card"><h2>Área com suporte de medição</h2><div class="metric smaller"><span id="coverage">—</span><small>%</small></div><div class="progress"><div id="coverage-bar"></div></div><p id="area">A cobertura representa área, não quantidade de raios.</p></article>
+    <article class="card"><h2>Última atualização</h2><div id="updated" class="date">—</div><div id="age" class="age">Nenhum dado recebido</div><p id="clock">Horário de recebimento no servidor. A aquisição usa o relógio da simulação.</p></article>
+  </section>
+  <div id="reason" class="reason" role="status" aria-live="polite">Execute o Wokwi e conecte o receptor para iniciar.</div>
+  <section class="visuals" aria-label="Visualização da superfície e histórico">
+    <article class="card surface"><div class="section-head"><div><h2>Superfície reconstruída</h2><p>Altura do material acima da referência do box vazio</p></div><div class="tabs"><button class="active" id="map-mode" aria-pressed="true">Mapa</button><button id="points-mode" aria-pressed="false">Pontos 3D</button></div></div><canvas id="surface" aria-label="Mapa da superfície reconstruída. Células hachuradas não têm observação suficiente.">Seu navegador precisa oferecer suporte a canvas.</canvas><div class="legend"><span><i class="low"></i>0 m</span><div class="gradient"></div><span>0,10 m ou mais</span><span class="unknown"><i></i>Sem observação</span></div><div class="caption" id="surface-caption">Piso com bases inclinadas de 0,01 m. Frente aberta em y = 0.</div></article>
+    <article class="card history"><div class="section-head"><div><h2>Entrada e retirada</h2><p>Histórico do volume observado</p></div><span class="count" id="history-count">0 leituras</span></div><canvas id="history" aria-label="Histórico de volume observado e cobertura espacial"></canvas><p class="history-note">A linha azul é o volume observado. A linha tracejada acompanha a cobertura. Mudanças de cobertura podem alterar o volume sem entrada ou retirada de material.</p></article>
+  </section>
+  <details class="card details"><summary>Detalhes da aquisição e dados brutos</summary><dl id="details"></dl><a href="/api/raw/latest" target="_blank" rel="noopener">Abrir última varredura em JSON ↗</a><p>Os raios são simulados. Um estado válido descreve a reconstrução nesta geometria; não certifica precisão industrial.</p></details>
+  <footer><span>BoxFlow · Desafio 3 · Demonstração técnica</span><span>Volume em m³ · Sem conversão para toneladas</span></footer>
+</main><script src="/app.js"></script></body></html>

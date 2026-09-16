@@ -1,0 +1,33 @@
+{
+  "experiment_id": "D-004",
+  "checked_at_utc": "2026-09-16T14:13:40.957106Z",
+  "passed": true,
+  "checks": {
+    "released_hash_chain_verified_before_estimation": true,
+    "truth_free_reconstruction_count_18": true,
+    "scene_pair_count_9": true,
+    "same_center_path_per_pair": true,
+    "five_frames_per_arm": true,
+    "no_invalid_frames": true,
+    "no_unavailable_views": true,
+    "partial_never_passes_company_gate": true,
+    "candidate_gate_consistent": true,
+    "reserved_R007_unused": true
+  },
+  "gate": {
+    "candidate_total_eligible": 9,
+    "candidate_total_within_5pct": 9,
+    "candidate_partial": 0,
+    "coverage_gate_9_of_9": true,
+    "company_gate_9_of_9_total_and_within_5pct": true,
+    "reserved_R007_used": false
+  },
+  "protocol_sha256": "ddfcf8013a9661b81679e9efce1544afd35f1bd1c3dc9785edc7135fbceff521",
+  "pre_score_release_sha256": "a5bba458fe3502ce60cefd2fdd79aec3558c008bfb638c259067b4823392b99d",
+  "estimator_sha256": "bdc14436bf06d54ca2d43bc90da40a937817a39d6f5779fd5627817663b0df83",
+  "result_hashes": {
+    "results.json": "ad93bb17edfe48a3e44e48a37776481c198c7352e25b1e0bbf35894234c77e91",
+    "details.json": "8a708d7becefba30998d6c9bd77a580e2fabee7d3e4c2659abccf2c601358131",
+    "summary.csv": "e88ad5963b7e458b304440d4b735f7ccf4af827c4b64f66f2ea50b5ed52e096c"
+  }
+}

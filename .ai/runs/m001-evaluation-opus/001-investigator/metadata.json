@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "runId": "m001-evaluation-opus",
+  "timestamp": "2026-09-14T11:36:53.837Z",
+  "agent": "investigator",
+  "agentTask": "investigator",
+  "provider": "claude",
+  "requestedModel": "claude-opus-5",
+  "observedModel": "claude-opus-5",
+  "observedModelSource": "cli-json-stream",
+  "auxiliaryModels": [],
+  "modelUsage": {
+    "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 4217,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 2057,
+      "webSearchRequests": 0,
+      "costUSD": 0.126005,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+    }
+  },
+  "diagnosticModels": [],
+  "effort": "high",
+  "prompt": {
+    "file": "prompt.txt",
+    "sha256": "96efaeb399aba00faf753cd20a01b16fde3d8c36577fecd04623a7dc61cb0fb0"
+  },
+  "context": {
+    "source": "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-evaluation\\review-context.md",
+    "file": "context.txt",
+    "sha256": "bacbbd4983109ad9207aea8ac12522658e9ecc059db29aebd84ec3374e92d4fe"
+  },
+  "command": "C:\\Users\\Raí\\AppData\\Roaming\\npm\\\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+  "argv": [
+    "-p",
+    "--model",
+    "claude-opus-5",
+    "--effort",
+    "high",
+    "--output-format",
+    "stream-json",
+    "--verbose",
+    "--tools",
+    "",
+    "--disable-slash-commands",
+    "--safe-mode",
+    "--system-prompt",
+    "You are a text-only analysis worker. Follow the user prompt exactly. Do not use tools, files, memory, skills, plugins, hooks, or external context.",
+    "--settings",
+    "{\"disableAllHooks\":true}",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-evaluation-opus\\001-investigator\\empty-mcp.json",
+    "--setting-sources",
+    "user",
+    "--no-session-persistence"
+  ],
+  "entrypointSource": "C:\\Users\\Raí\\AppData\\Roaming\\npm\\claude.cmd",
+  "environmentOverrides": [
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC",
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE"
+  ],
+  "exitCode": 0,
+  "signal": null,
+  "stdout": "stdout.jsonl",
+  "stderr": "stderr.log",
+  "result": "result.md",
+  "resultSha256": "93c9f8eb2e7a42b8f0078b5038e4d091620da0e172c5e1538a3601ee902603d1",
+  "durationMs": 66652,
+  "timedOut": false,
+  "protocolComplete": true,
+  "completionMarkerPresent": true,
+  "status": "completed",
+  "failureCode": null,
+  "failureCodes": [],
+  "failureReasons": []
+}

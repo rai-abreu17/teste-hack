@@ -1,0 +1,38 @@
+test_analytic_constant_thickness_layer (test_system.GeometryTests.test_analytic_constant_thickness_layer) ... ok
+test_empty_includes_sloped_bases (test_system.GeometryTests.test_empty_includes_sloped_bases) ... ok
+test_fixed_8x8_profile_and_protocol_v2 (test_system.GeometryTests.test_fixed_8x8_profile_and_protocol_v2) ... ok
+test_input_output_sequence (test_system.GeometryTests.test_input_output_sequence) ... ok
+test_no_return_is_not_zero (test_system.GeometryTests.test_no_return_is_not_zero) ... ok
+test_occlusion_does_not_publish_total (test_system.GeometryTests.test_occlusion_does_not_publish_total) ... ok
+test_occlusion_masks_beam_and_preserves_unknowns (test_system.GeometryTests.test_occlusion_masks_beam_and_preserves_unknowns) ... ok
+test_pose_transform (test_system.GeometryTests.test_pose_transform) ... ok
+test_previous_reference_is_rejected_even_with_valid_crc (test_system.GeometryTests.test_previous_reference_is_rejected_even_with_valid_crc) ... ok
+test_redistribution_changes_points_not_reference (test_system.GeometryTests.test_redistribution_changes_points_not_reference) ... ok
+test_reference_offset_must_be_finite (test_system.GeometryTests.test_reference_offset_must_be_finite) ... ok
+test_reference_shift_is_independent_of_measurements (test_system.GeometryTests.test_reference_shift_is_independent_of_measurements) ... ok
+test_short_range (test_system.GeometryTests.test_short_range) ... ok
+test_small_bench_output_uses_square_metres_and_cubic_metres (test_system.GeometryTests.test_small_bench_output_uses_square_metres_and_cubic_metres) ... ok
+test_truncation_corruption_and_invalid_direction (test_system.GeometryTests.test_truncation_corruption_and_invalid_direction) ... ok
+test_vertical_faces_do_not_imply_complete_coverage (test_system.GeometryTests.test_vertical_faces_do_not_imply_complete_coverage) ... ok
+test_end_to_end_http_dashboard_and_raw (test_system.HTTPTests.test_end_to_end_http_dashboard_and_raw) ... 127.0.0.1 - - [13/Sep/2026 21:46:16] "POST /api/scans HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:46:16] "GET /api/latest HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:46:16] "GET /api/raw/latest HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:46:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:46:16] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:46:16] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [13/Sep/2026 21:46:16] "GET /health HTTP/1.1" 200 -
+ok
+test_reject_unauthorized_and_truncated (test_system.HTTPTests.test_reject_unauthorized_and_truncated) ... 127.0.0.1 - - [13/Sep/2026 21:46:17] "POST /api/scans HTTP/1.1" 401 -
+127.0.0.1 - - [13/Sep/2026 21:46:17] "POST /api/scans HTTP/1.1" 400 -
+ok
+test_boot_session_allows_new_sequence (test_system.StoreTests.test_boot_session_allows_new_sequence) ... ok
+test_duplicate_does_not_refresh_measurement (test_system.StoreTests.test_duplicate_does_not_refresh_measurement) ... ok
+test_interrupted_update_and_fault_recovery (test_system.StoreTests.test_interrupted_update_and_fault_recovery) ... ok
+test_old_frame_receipt_does_not_become_current (test_system.StoreTests.test_old_frame_receipt_does_not_become_current) ... ok
+test_persistence (test_system.StoreTests.test_persistence) ... ok
+test_same_identity_different_data_and_out_of_order (test_system.StoreTests.test_same_identity_different_data_and_out_of_order) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 1.105s
+
+OK

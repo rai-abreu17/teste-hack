@@ -1,0 +1,17 @@
+{
+  "runId": "m001-sol-results",
+  "createdAt": "2026-09-14T11:11:41.768Z",
+  "invocations": [
+    {
+      "agent": "engineer",
+      "status": "completed",
+      "requestedModel": "gpt-5.6-sol",
+      "observedModel": null,
+      "directory": "001-engineer"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-09-14T11:11:41.768Z",
+  "completedAt": "2026-09-14T11:11:41.785Z",
+  "finalResult": "001-engineer\\result.md"
+}

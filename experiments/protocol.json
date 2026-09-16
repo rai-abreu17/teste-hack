@@ -1,0 +1,124 @@
+{
+  "purpose": "Measure dispersion with fixed configurations; no tuning against position sweep truth.",
+  "baseline_package_sha256": "56b7251cd463cf6e5e38bbe46412ba08e13d09f836e7298c86357bfd8ceea490",
+  "position_m": [
+    0.13,
+    0.132,
+    0.134,
+    0.136,
+    0.138,
+    0.14,
+    0.142,
+    0.144,
+    0.146,
+    0.148,
+    0.15,
+    0.152,
+    0.154,
+    0.156,
+    0.158,
+    0.16,
+    0.162,
+    0.164,
+    0.166,
+    0.168,
+    0.17
+  ],
+  "held_out_position_m": [
+    0.131,
+    0.133,
+    0.135,
+    0.137,
+    0.139,
+    0.141,
+    0.143,
+    0.145,
+    0.147,
+    0.149,
+    0.151,
+    0.153,
+    0.155,
+    0.157,
+    0.159,
+    0.161,
+    0.163,
+    0.165,
+    0.167,
+    0.169
+  ],
+  "held_out_fill_percent": [
+    40,
+    65,
+    90
+  ],
+  "sensor_z_m": 0.4,
+  "roi_sizes": [
+    8,
+    6,
+    4
+  ],
+  "gradient_limits_deg": [
+    35,
+    45,
+    55
+  ],
+  "primary_gradient_limit_deg": 45,
+  "parametric_priors": [
+    "square_pyramid",
+    "cone"
+  ],
+  "fit_bounds": {
+    "center_margin_m": 0.03,
+    "height_m": [
+      0.005,
+      0.14
+    ],
+    "slope_deg": [
+      10,
+      65
+    ]
+  },
+  "fit_gates": {
+    "minimum_positive_points": 6,
+    "minimum_floor_points": 8,
+    "positive_threshold_m": 0.003,
+    "maximum_rms_m": 0.0015,
+    "maximum_absolute_residual_m": 0.004,
+    "maximum_jacobian_condition": 100000
+  },
+  "shared_bias_mm": [
+    -10,
+    -5,
+    -1,
+    0,
+    1,
+    5,
+    10
+  ],
+  "drift_mm": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ],
+  "measured_zero_frames": 8,
+  "metrics": [
+    "signed_median_percent",
+    "signed_mean_percent",
+    "range_pp",
+    "population_std_pp",
+    "valid_count",
+    "state_changes",
+    "own_observed_domain_error",
+    "shared_observed_domain_error",
+    "reference_volume_retained_fraction"
+  ],
+  "notes": [
+    "The truth module is evaluation-only and is never imported by estimators.",
+    "No multiplicative calibration is fitted.",
+    "Partial observed volumes are not scored as accepted totals.",
+    "Model volume remains separate from directly observed volume.",
+    "Angle bounds and gates are synthetic development assumptions, not measured material or sensor accuracy."
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "experiment_id": "P-003",
+  "scope": "SIMULATED",
+  "summary": {
+    "protocol_sha256": "22d2f23a11bf1e1727e7208c769c0231eff26690bc57ee33c314949ed56afb44",
+    "comparison_count": 18,
+    "paired": [
+      {
+        "scene_id": "pyramid_center",
+        "baseline_absolute_error_percent": 17.265626327054605,
+        "challenger_absolute_error_percent": 13.497043887052854,
+        "absolute_error_reduction_pp": 3.768582440001751
+      },
+      {
+        "scene_id": "pyramid_shifted_013",
+        "baseline_absolute_error_percent": 1.6228149039381812,
+        "challenger_absolute_error_percent": 0.8281790547492281,
+        "absolute_error_reduction_pp": 0.794635849188953
+      },
+      {
+        "scene_id": "two_stacks",
+        "baseline_absolute_error_percent": 5.37446950127931,
+        "challenger_absolute_error_percent": 4.256419847288835,
+        "absolute_error_reduction_pp": 1.1180496539904752
+      },
+      {
+        "scene_id": "prism",
+        "baseline_absolute_error_percent": 3.973006100247305,
+        "challenger_absolute_error_percent": 7.864099274115597,
+        "absolute_error_reduction_pp": -3.8910931738682923
+      },
+      {
+        "scene_id": "ramp",
+        "baseline_absolute_error_percent": 10.651691904321666,
+        "challenger_absolute_error_percent": 13.8752462383096,
+        "absolute_error_reduction_pp": -3.2235543339879342
+      },
+      {
+        "scene_id": "layer",
+        "baseline_absolute_error_percent": 0.19556750067053397,
+        "challenger_absolute_error_percent": 0.019916135611788514,
+        "absolute_error_reduction_pp": 0.17565136505874546
+      },
+      {
+        "scene_id": "pyramid_beam",
+        "baseline_absolute_error_percent": 13.965766069974075,
+        "challenger_absolute_error_percent": 11.057915023147604,
+        "absolute_error_reduction_pp": 2.9078510468264707
+      },
+      {
+        "scene_id": "layer_beam",
+        "baseline_absolute_error_percent": 0.1866578422454635,
+        "challenger_absolute_error_percent": 0.03022038913984424,
+        "absolute_error_reduction_pp": 0.15643745310561927
+      },
+      {
+        "scene_id": "pyramid_beam_dropout20",
+        "baseline_absolute_error_percent": 37.251253429627845,
+        "challenger_absolute_error_percent": 30.986447416014766,
+        "absolute_error_reduction_pp": 6.264806013613079
+      }
+    ],
+    "median_absolute_error_reduction_pp": 0.794635849188953,
+    "scene_wins": 7,
+    "maximum_regression_pp": 3.8910931738682923,
+    "challenger_median_support_fraction": 0.96,
+    "challenger_total_selected_count": 4,
+    "challenger_original_domain_complete_count": 9,
+    "approved": false
+  },
+  "rows": [
+    {
+      "scene_id": "pyramid_center",
+      "variant": "median",
+      "original_common_cells": 196,
+      "original_domain_complete": true,
+      "tin_support_fraction": 1.0,
+      "total_selected": true,
+      "signed_error_percent": 15.277116598130842,
+      "absolute_error_percent": 15.277116598130842,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "pyramid_center",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 196,
+      "original_domain_complete": true,
+      "tin_support_fraction": 1.0,
+      "total_selected": true,
+      "signed_error_percent": 13.497043887052854,
+      "absolute_error_percent": 13.497043887052854,
+      "selected_cells_by_view": [
+        159,
+        82,
+        159
+      ]
+    },
+    {
+      "scene_id": "pyramid_shifted_013",
+      "variant": "median",
+      "original_common_cells": 196,
+      "original_domain_complete": true,
+      "tin_support_fraction": 1.0,
+      "total_selected": true,
+      "signed_error_percent": 1.9544486960504155,
+      "absolute_error_percent": 1.9544486960504155,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "pyramid_shifted_013",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 196,
+      "original_domain_complete": true,
+      "tin_support_fraction": 1.0,
+      "total_selected": true,
+      "signed_error_percent": 0.8281790547492281,
+      "absolute_error_percent": 0.8281790547492281,
+      "selected_cells_by_view": [
+        149,
+        92,
+        159
+      ]
+    },
+    {
+      "scene_id": "two_stacks",
+      "variant": "median",
+      "original_common_cells": 196,
+      "original_domain_complete": true,
+      "tin_support_fraction": 1.0,
+      "total_selected": true,
+      "signed_error_percent": -5.877589798260513,
+      "absolute_error_percent": 5.877589798260513,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "two_stacks",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 196,
+      "original_domain_complete": true,
+      "tin_support_fraction": 1.0,
+      "total_selected": true,
+      "signed_error_percent": -4.256419847288835,
+      "absolute_error_percent": 4.256419847288835,
+      "selected_cells_by_view": [
+        146,
+        104,
+        150
+      ]
+    },
+    {
+      "scene_id": "prism",
+      "variant": "median",
+      "original_common_cells": 132,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.95,
+      "total_selected": false,
+      "signed_error_percent": 5.6138947424268615,
+      "absolute_error_percent": 5.6138947424268615,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "prism",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 132,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.95,
+      "total_selected": false,
+      "signed_error_percent": 7.864099274115597,
+      "absolute_error_percent": 7.864099274115597,
+      "selected_cells_by_view": [
+        137,
+        106,
+        137
+      ]
+    },
+    {
+      "scene_id": "ramp",
+      "variant": "median",
+      "original_common_cells": 196,
+      "original_domain_complete": true,
+      "tin_support_fraction": 1.0,
+      "total_selected": true,
+      "signed_error_percent": 10.662329876171878,
+      "absolute_error_percent": 10.662329876171878,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "ramp",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 196,
+      "original_domain_complete": true,
+      "tin_support_fraction": 1.0,
+      "total_selected": true,
+      "signed_error_percent": 13.8752462383096,
+      "absolute_error_percent": 13.8752462383096,
+      "selected_cells_by_view": [
+        171,
+        109,
+        120
+      ]
+    },
+    {
+      "scene_id": "layer",
+      "variant": "median",
+      "original_common_cells": 254,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.64,
+      "total_selected": false,
+      "signed_error_percent": 0.04811067000504248,
+      "absolute_error_percent": 0.04811067000504248,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "layer",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 254,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.64,
+      "total_selected": false,
+      "signed_error_percent": 0.019916135611788514,
+      "absolute_error_percent": 0.019916135611788514,
+      "selected_cells_by_view": [
+        90,
+        76,
+        90
+      ]
+    },
+    {
+      "scene_id": "pyramid_beam",
+      "variant": "median",
+      "original_common_cells": 112,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.96,
+      "total_selected": false,
+      "signed_error_percent": 11.917711687796613,
+      "absolute_error_percent": 11.917711687796613,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "pyramid_beam",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 112,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.96,
+      "total_selected": false,
+      "signed_error_percent": 11.057915023147604,
+      "absolute_error_percent": 11.057915023147604,
+      "selected_cells_by_view": [
+        198,
+        85,
+        101
+      ]
+    },
+    {
+      "scene_id": "layer_beam",
+      "variant": "median",
+      "original_common_cells": 168,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.6,
+      "total_selected": false,
+      "signed_error_percent": 0.05104585035207647,
+      "absolute_error_percent": 0.05104585035207647,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "layer_beam",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 168,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.6,
+      "total_selected": false,
+      "signed_error_percent": 0.03022038913984424,
+      "absolute_error_percent": 0.03022038913984424,
+      "selected_cells_by_view": [
+        122,
+        54,
+        64
+      ]
+    },
+    {
+      "scene_id": "pyramid_beam_dropout20",
+      "variant": "median",
+      "original_common_cells": 45,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.4975,
+      "total_selected": false,
+      "signed_error_percent": 32.727625385816395,
+      "absolute_error_percent": 32.727625385816395,
+      "selected_cells_by_view": null
+    },
+    {
+      "scene_id": "pyramid_beam_dropout20",
+      "variant": "most_compact_local_triangle",
+      "original_common_cells": 45,
+      "original_domain_complete": true,
+      "tin_support_fraction": 0.4975,
+      "total_selected": false,
+      "signed_error_percent": 30.986447416014766,
+      "absolute_error_percent": 30.986447416014766,
+      "selected_cells_by_view": [
+        80,
+        95,
+        24
+      ]
+    }
+  ]
+}

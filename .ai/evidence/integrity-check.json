@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-09-13T23:09:36.401Z",
+  "application": {
+    "beforeCount": 382,
+    "currentCount": 383,
+    "changed": [],
+    "added": [
+      "BoxFlow_Resumo_Testes_Resultados_Antes_Orquestracao.md"
+    ],
+    "baselinePreserved": true,
+    "fileSetUnchanged": false,
+    "addedFileNote": "A summary document appeared after the initial snapshot. It was inspected, preserved, and indexed; its creation is not attributed to this audit."
+  },
+  "priorExperiments": {
+    "hashesChecked": 24,
+    "mismatches": [],
+    "reexecuted": false
+  },
+  "liveSmoke": {
+    "runId": "smoke-20260913-verified",
+    "status": "failed",
+    "successfulCalls": 6,
+    "failedCalls": 2,
+    "arbitrationPending": true
+  },
+  "note": "Integrity verification, not a rerun of application experiments or evidence of real sensor accuracy."
+}

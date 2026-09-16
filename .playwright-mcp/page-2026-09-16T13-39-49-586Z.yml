@@ -1,0 +1,54 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - banner [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e13]:
+          - group [ref=e14]:
+            - button "Save" [ref=e417] [cursor=pointer]
+            - button [ref=e15] [cursor=pointer]
+          - button [ref=e231] [cursor=pointer]
+        - navigation [ref=e21]:
+          - link "Docs" [ref=e232] [cursor=pointer]:
+            - /url: https://docs.wokwi.com/?utm_source=wokwi
+        - button "toggle dark mode" [ref=e233] [cursor=pointer]
+        - button "Sign in Sign up" [ref=e234] [cursor=pointer]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Sign in
+            - text: Sign up
+    - main [ref=e29]:
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - button "sketch.ino" [ref=e235]
+            - button "diagram.json" [ref=e236]
+            - button "Library Manager" [ref=e237]
+            - button "boxflow-lidar.chip.c" [ref=e238]
+            - button "boxflow-lidar.chip.json" [ref=e239]
+            - button "config.h" [ref=e240]
+            - button "ITofSensor.h" [ref=e241]
+            - button "SimTofSensor.h" [ref=e242]
+            - button "SimTofSensor.cpp" [ref=e243]
+            - button [ref=e40]
+          - code [ref=e8151]:
+            - generic [ref=e8152]:
+              - textbox "Editor content;Press Alt+F1 for Accessibility Options." [active] [ref=e8155]: "}"
+              - generic [ref=e8134]:
+                - generic [ref=e8156]:
+                  - generic [ref=e8157]: "50"
+                  - generic [ref=e8158]: 
+                - generic [ref=e8159]:
+                  - generic [ref=e8160]: "87"
+                  - generic [ref=e8161]: 
+                - generic [ref=e8141]:
+                  - list:
+                    - listitem [ref=e8162]:
+                      - generic [ref=e8163]: "\"connections\": ["
+                    - listitem [ref=e8164]:
+                      - generic [ref=e8165]: "["
+        - button "Simulation" [ref=e260]
+  - alert [ref=e106]
+  - generic [ref=e193]:
+    - alert
+    - alert

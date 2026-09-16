@@ -1,0 +1,18 @@
+{
+  "scenes_accepted": 17,
+  "total_returns": 64,
+  "reference_id": "bench-vl53-30cm-v3",
+  "last_observed_volume_m3": 0.0006609339357486352,
+  "transport": "native-c-test",
+  "favicon_status": 204,
+  "geometry": {
+    "width_m": 0.3,
+    "depth_m": 0.3,
+    "height_m": 0.15,
+    "hypothetical": true,
+    "reference_id": "bench-vl53-30cm-v3",
+    "base_width_m": 0.01,
+    "display_max_height_m": 0.1
+  },
+  "note": "Native C HTTP replay, not ESP32 runtime or browser execution."
+}

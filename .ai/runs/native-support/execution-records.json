@@ -1,0 +1,24 @@
+{
+  "recordType": "native collaboration tool executions, separate from CLI smoke",
+  "timestampNote": "Start timestamp, CLI exit code and duration were not exposed by the collaboration tool; null means unavailable, not a fabricated value.",
+  "executions": [
+    {
+      "RUN_ID": "native-orchestration-engineer", "TIMESTAMP": null,
+      "AGENT": "/root/orchestration_engineer", "MODEL": "gpt-5.6-sol", "EFFORT": "high",
+      "COMMAND": "collaboration.spawn_agent",
+      "CONTEXT_SUMMARY": "Bounded implementation of .ai/orchestrate.mjs, tests and docs; confirmed CLI syntax supplied; no model calls delegated.",
+      "EXIT_CODE": null, "DURATION": null,
+      "STDOUT_FILE": "implementation-outcome.txt", "STDERR_FILE": "usage-limit.txt", "STATUS": "USAGE_LIMIT",
+      "artifactOutcome": "Runner and tests created; no final implementation report returned. Parent finished local verification and remaining work."
+    },
+    {
+      "RUN_ID": "native-runner-review", "TIMESTAMP": null,
+      "AGENT": "/root/runner_review", "MODEL": "gpt-5.6-sol", "EFFORT": "high",
+      "COMMAND": "collaboration.spawn_agent",
+      "CONTEXT_SUMMARY": "Independent read-only review of runner, tests and fake fixture; no model calls or implementation edits.",
+      "EXIT_CODE": null, "DURATION": null,
+      "STDOUT_FILE": null, "STDERR_FILE": "usage-limit.txt", "STATUS": "USAGE_LIMIT",
+      "artifactOutcome": "No final independent review returned; do not claim reviewer approval."
+    }
+  ]
+}

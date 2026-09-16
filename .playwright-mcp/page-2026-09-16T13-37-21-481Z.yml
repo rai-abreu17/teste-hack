@@ -1,0 +1,73 @@
+- generic [ref=e1]:
+  - generic [aria-hidden] [ref=e2]:
+    - banner [ref=e3]:
+      - banner [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e13]:
+          - group [ref=e14]:
+            - button [disabled]:
+              - generic: Save
+            - button [ref=e15] [cursor=pointer]
+          - button [ref=e107] [cursor=pointer]: Share
+        - navigation [ref=e21]:
+          - link [ref=e108] [cursor=pointer]:
+            - /url: https://docs.wokwi.com/?utm_source=wokwi
+            - text: Docs
+        - button [ref=e109] [cursor=pointer]
+        - button [ref=e110] [cursor=pointer]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Sign in
+            - text: Sign up
+    - main [ref=e29]:
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - button [ref=e111]: sketch.ino
+            - button [ref=e112]: diagram.json
+            - button [ref=e113]: Library Manager
+            - button [ref=e40]
+          - code [ref=e116]:
+            - generic [ref=e117]:
+              - generic [aria-hidden] [ref=e120]:
+                - generic [ref=e121]:
+                  - generic [ref=e123] [cursor=pointer]: 
+                  - generic [ref=e124]: "1"
+                - generic [ref=e125]: "2"
+                - generic [ref=e127]: "3"
+                - generic [ref=e129]: "4"
+                - generic [ref=e131]: "5"
+                - generic [ref=e133]: "6"
+                - generic [ref=e135]:
+                  - generic [ref=e136] [cursor=pointer]: 
+                  - generic [ref=e137]: "7"
+                - generic [ref=e138]: "8"
+                - generic [ref=e140]: "9"
+                - generic [ref=e142]: "10"
+                - generic [ref=e144]: "11"
+              - generic [aria-hidden] [ref=e166]:
+                - generic [ref=e167]: "void setup() {"
+                - generic [ref=e169]: "// put your setup code here, to run once:"
+                - generic [ref=e171]: Serial.begin(115200);
+                - generic [ref=e173]: Serial.println("Hello, ESP32!");
+                - generic [ref=e175]: "}"
+                - generic [ref=e178]: "void loop() {"
+                - generic [ref=e180]: "// put your main code here, to run repeatedly:"
+                - generic [ref=e182]: delay(10); // this speeds up the simulation
+                - generic [ref=e184]: "}"
+              - textbox [ref=e188]: "void setup() { // put your setup code here, to run once: Serial.begin(115200); Serial.println(\"Hello, ESP32!\"); } void loop() { // put your main code here, to run repeatedly: delay(10); // this speeds up the simulation }"
+        - generic [ref=e46]:
+          - button [ref=e189]: Simulation
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - button [ref=e190] [cursor=pointer]
+              - button [ref=e191] [cursor=pointer]
+              - button [ref=e192] [cursor=pointer]
+            - generic [ref=e64] [cursor=pointer]
+  - alert [ref=e106]
+  - menu [ref=e196]:
+    - menuitem "Format code" [active] [ref=e197] [cursor=pointer]
+    - menuitem "Rename" [ref=e203] [cursor=pointer]
+    - menuitem "Delete" [ref=e209] [cursor=pointer]
+    - menuitem "New file..." [ref=e215] [cursor=pointer]
+    - menuitem "Upload file(s)..." [ref=e221] [cursor=pointer]

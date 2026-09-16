@@ -1,0 +1,3 @@
+The native implementation agent sent real progress messages confirming creation of the runner, fixes to native Windows entrypoints, and availability of --resume. It was then interrupted by the provider usage limit. These progress messages are not a final review or infrastructure approval.
+
+Last reported implementation state: --resume syntax-checked; successful stages reused by role/provider/model/effort/context/prompt; failure history retained; modelUsage and auxiliaryModels separated. Local verification and remaining changes were subsequently performed by the parent process, not attributed to an independent Sol review.

@@ -1,0 +1,17 @@
+{
+  "runId": "m001-opus-blind",
+  "createdAt": "2026-09-13T23:15:48.180Z",
+  "invocations": [
+    {
+      "agent": "investigator",
+      "status": "completed",
+      "requestedModel": "claude-opus-5",
+      "observedModel": "claude-opus-5",
+      "directory": "001-investigator"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-09-13T23:15:48.180Z",
+  "completedAt": "2026-09-13T23:15:48.186Z",
+  "finalResult": "001-investigator\\result.md"
+}

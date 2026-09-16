@@ -1,0 +1,55 @@
+You are the investigator in a controlled multi-agent analysis. Work only from the supplied context. Do not assume access to files, tools, prior conversations, or other agents unless their text appears below. Be explicit about uncertainty. Produce a self-contained answer.
+
+ROLE INSTRUCTION
+Cross-critique the anonymous peer finding. Identify agreements, contradictions, unsupported claims, and decisive tests.
+
+CONTEXT
+# Teste mínimo de orquestração — geometria ideal
+
+Esta é uma pergunta matemática pequena para testar chamadas reais, não uma investigação do BoxFlow nem validação de um sensor real. Nenhum arquivo da aplicação deve ser alterado. Responda apenas com base neste contexto, sem ferramentas, navegação, arquivos ou delegação.
+
+Uma caixa tem base quadrada interna de 30 cm por 30 cm. O material ocupa altura uniforme de 12 cm. Um sensor ideal de perspectiva, centralizado sobre a base e perpendicular a ela, fica 20 cm acima da superfície do material. Seu campo de visão completo é de 60 graus em cada um dos dois eixos ortogonais, formando uma projeção quadrada (não circular), com lados paralelos aos lados da caixa. Desconsidere distorção, ruído, reflectância e obstáculos para os cálculos de cobertura.
+
+Determine: (1) volume em litros; (2) lado da projeção na superfície em cm usando w = 2 h tan(FoV/2); (3) fração da base coberta em uma única captura; (4) por que girar um sensor mantendo exatamente o mesmo centro óptico não garante revelar uma superfície ocluída, embora possa mudar a região enquadrada. Não conclua que servo ou qualquer arquitetura real está validada.
+
+Limite: 250 palavras. Inclua fórmulas, unidades, hipóteses e uma limitação da idealização. Não declare seu próprio modelo: a identidade será verificada pelos metadados do processo.
+
+
+ANONYMOUS PEER FINDING
+Hipóteses: superfície plana e uniforme; sensor ideal a \(h=20\,\text{cm}\), centralizado e perpendicular; FoV completo \(\theta=60^\circ\) em ambos os eixos; projeção quadrada alinhada à base.
+
+1. Volume:
+
+\[
+V=L^2H=(30\,\text{cm})^2(12\,\text{cm})
+=10\,800\,\text{cm}^3=10{,}8\,\text{L},
+\]
+
+usando \(1\,\text{L}=1000\,\text{cm}^3\).
+
+2. Lado projetado:
+
+\[
+w=2h\tan(\theta/2)
+=2(20\,\text{cm})\tan(30^\circ)
+\approx23{,}09\,\text{cm}.
+\]
+
+3. Como \(w<30\,\text{cm}\), a projeção centralizada fica inteiramente dentro da base:
+
+\[
+f=\frac{w^2}{L^2}
+=\frac{(23{,}09)^2}{30^2}
+\approx0{,}5926,
+\]
+
+ou aproximadamente \(59{,}26\%\) da base.
+
+4. Girar o sensor sem deslocar seu centro óptico não cria paralaxe. Para um ponto específico, o segmento visual entre o centro óptico e esse ponto permanece o mesmo; se um obstáculo intercepta esse segmento, a oclusão continua. A rotação pode apenas alterar a orientação do campo de visão e, portanto, quais regiões ficam enquadradas.
+
+Validação aritmética: a meia largura é \(20\tan30^\circ\approx11{,}55\,\text{cm}\), menor que os \(15\,\text{cm}\) do centro até cada borda.
+
+Limitação: o modelo ignora distorção, ruído, obstáculos e relevo; logo, não valida servo, sensor ou arquitetura real.
+
+Completion protocol: finish your response with this exact marker on its own line:
+<<ORCHESTRATION_COMPLETE>>

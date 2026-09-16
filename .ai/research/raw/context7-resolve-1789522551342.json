@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-16T01:35:51.342Z",
+  "mode": "resolve",
+  "subject": "Wokwi",
+  "query": "Wokwi CLI run local project custom chip firmware serial log private gateway token",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Available Libraries:\n\n- Title: Wokwi\n- Context7-compatible library ID: /wokwi/wokwi-docs\n- Description: Wokwi is an online simulator and development environment for microcontrollers and embedded systems, allowing users to build, test, and debug projects in the browser.\n- Code Snippets: 906\n- Source Reputation: High\n- Benchmark Score: 60.56\n----------\n- Title: Wokwi\n- Context7-compatible library ID: /websites/wokwi\n- Description: Wokwi is an online electronics simulator that allows users to simulate Arduino, ESP32, STM32, and other popular boards, parts, and sensors directly in their browser.\n- Code Snippets: 683\n- Source Reputation: High\n- Benchmark Score: 29.5"
+      }
+    ]
+  }
+}

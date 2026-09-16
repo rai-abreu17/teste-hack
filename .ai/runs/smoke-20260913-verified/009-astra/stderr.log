@@ -1,0 +1,2 @@
+2026-09-13T23:11:43.350378Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+2026-09-13T23:11:46.014234Z ERROR codex_models_manager::manager: failed to renew cache TTL: trailing characters at line 673 column 2

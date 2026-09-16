@@ -1,0 +1,11 @@
+Error: ENOENT: no such file or directory, open 'C:\Users\Ra�\AppData\Roaming\npm\codex.cmd'
+    at readFileSync (node:fs:441:20)
+    at parseNpmShim (file:///C:/Users/Ra%C3%AD/Downloads/BoxFlow_30x30%20(1)/boxflow-wokwi/.ai/orchestrate.mjs:118:16)
+    at resolveEntrypoint (file:///C:/Users/Ra%C3%AD/Downloads/BoxFlow_30x30%20(1)/boxflow-wokwi/.ai/orchestrate.mjs:157:20)
+    at invokeAgent (file:///C:/Users/Ra%C3%AD/Downloads/BoxFlow_30x30%20(1)/boxflow-wokwi/.ai/orchestrate.mjs:335:13)
+    at runOne (file:///C:/Users/Ra%C3%AD/Downloads/BoxFlow_30x30%20(1)/boxflow-wokwi/.ai/orchestrate.mjs:444:24)
+    at main (file:///C:/Users/Ra%C3%AD/Downloads/BoxFlow_30x30%20(1)/boxflow-wokwi/.ai/orchestrate.mjs:520:37)
+    at file:///C:/Users/Ra%C3%AD/Downloads/BoxFlow_30x30%20(1)/boxflow-wokwi/.ai/orchestrate.mjs:528:100
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:547:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)

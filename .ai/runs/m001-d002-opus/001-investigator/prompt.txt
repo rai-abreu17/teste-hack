@@ -1,0 +1,23 @@
+You are the investigator in a controlled multi-agent analysis. Work only from the supplied context. Do not assume access to files, tools, prior conversations, or other agents unless their text appears below. Be explicit about uncertainty. Produce a self-contained answer.
+
+ROLE INSTRUCTION
+Faça a crítica prévia delimitada no contexto, sem ferramentas nem pesquisa externa.
+
+CONTEXT
+D002: crítica física prévia, sem resultados novos.
+
+BoxFlow simulado mede volume em caixa de0,30x0,30m com paredes de0,15m, chão conhecido com pequenos chanfros e grade20x20 de1,5cm. Sensor8x8 de raios pontuais ideais, direções (sx,sy,-1) normalizadas, sx=(2*(col+0,5)/8-1)*tan22,5graus, col0..7; sy igual. Distância arredondada em milímetros. Sem física de zonas, ruído, multipath ou hardware. Raios intersectam primeiro triângulo/parede/viga. Pontos fora da caixa, na parede ou viga são excluídos. Viga física x0,17..0,20,y0..0,30,z0,18..0,20m.
+
+Estimador R005 existente: TIN apenas entre raios vizinhos; aresta3D máxima0,10m; alturas por média dos triângulos no centro das células; mediana por célula entre vistas. Não extrapola. Total somente400/400 e nenhuma entrada inválida/indisponível. Meta empresarial: erro relativo absoluto do total <=5%. Parcial não vira zero. Domínio TIN não equivale a área observada diretamente.
+
+Experimento D002 já escolhido pela arbitragem Astra: alterar SOMENTE origem z0,40→0,50m, mantendo x=y0,15m,yaw=tilt0, três quadros seq101/102/103 e R005 intacto. Nove cenas já conhecidas de desenvolvimento (pirâmide central/deslocada, duas pilhas, prisma,rampa,camada,pirâmide comviga,camada comviga,pirâmide comviga/dropout20). Fill75 corresponde a altura nominal0,075m. Mesmas cenas e sequências em ambos braços. Reutilizar27controles e gerar somente27novos após protocolo/código congelados. A família shape e verdade só avaliador. Não há varredura de alturas. R007 reservado intocado.
+
+Motivação geométrica: numa superfície hipotética z0,10, vão nominal dos centros extremos =2*0,875*tan22,5*(z_sensor-0,10):0,2175m a40cm e0,290m a50cm, ante vão de0,285m dos centros das células. Isso NÃO garante TIN completo, menor erro, visibilidade nem aptidão física. A camada usada de fato está a0,075m; o cálculo em0,10 motivou escolha, não é medição.
+
+Histórico relevante: controlefixed3 nas9cenas tem2totais<=5%,2acima,5parciais; camadas TIN256/400 e176/400 comviga. D001 tentou segmentarplanos/hull mantendoaltura e foi reprovado, todosfixed3parciais. Não usar D001 na nova comparação. Alguns erros de total são cancelamento forte; reportaremos erro espacial integrado, domínios próprios e comuns e cobertura.
+
+Solicitação: critique interpretação causal e riscos do experimento proposto, diga quais diagnósticos já extraíveis dos quadros devem ser obrigatórios. Não proponha outra altura ou aquisição nesta rodada; não declare impossibilidade universal baseada em Nyquist ou espaçamento, nem deduza causa exclusiva de erros. Diferencie matemática nominal, hipóteses e física não simulada. Não há código ou resultados D002 apresentados: não afirme aprová-los. Responda concisamente em português.
+
+
+Completion protocol: finish your response with this exact marker on its own line:
+<<ORCHESTRATION_COMPLETE>>

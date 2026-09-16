@@ -1,0 +1,23 @@
+{
+  "experiment_id": "P-004",
+  "frozen_before_execution": true,
+  "input": "reuse P-001 translated3_aimed frames",
+  "fusion": "trimmed3_kappa2",
+  "kappa": 2.0,
+  "rule": "retain views with compactness <= kappa times minimum, then lower median",
+  "max_edge_m": 0.10,
+  "evaluation_domain": "original P-001 common_all mask per scene",
+  "predictions": {
+    "prism_and_ramp_max_regression_pp": 2.0,
+    "retain_half_gain_for": ["pyramid_center", "pyramid_beam", "pyramid_beam_dropout20"]
+  },
+  "approval": {
+    "median_paired_absolute_error_reduction_pp_min": 1.0,
+    "scene_wins_min": 7,
+    "maximum_regression_pp": 2.0,
+    "median_support_fraction_min": 0.84,
+    "total_selected_min": 4,
+    "original_domain_complete_count": 9
+  },
+  "scope": "SIMULATED"
+}

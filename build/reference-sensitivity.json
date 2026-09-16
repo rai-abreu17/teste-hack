@@ -1,0 +1,1629 @@
+{
+  "note": "Only the estimator reference is shifted. Curves include diagnostic observed values even when measurement is unavailable; they are not accepted totals.",
+  "sha256_raw": {
+    "v1": "f45bd4fa53fbd1bed206e12018d2e91daec0aa6a3d53fa8ecd89ee45b6ad219d",
+    "v3": "e2fd0b4dc330eec1a29bade9002aa2e7620db5f68d1e717eb5b0981cdc7189d0"
+  },
+  "results": [
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -30,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.460261134276254,
+      "total_volume_m3": 7.460261134276254,
+      "difference_m3": 1.4602611342762541,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -30,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0033573731368810333,
+      "total_volume_m3": 0.0033573731368810333,
+      "difference_m3": 0.0027948731368810332,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -29,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.412261134276254,
+      "total_volume_m3": 7.412261134276254,
+      "difference_m3": 1.412261134276254,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -29,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0032673731368810335,
+      "total_volume_m3": 0.0032673731368810335,
+      "difference_m3": 0.0027048731368810334,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -28,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.364261134276255,
+      "total_volume_m3": 7.364261134276255,
+      "difference_m3": 1.364261134276255,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -28,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0031773731368810337,
+      "total_volume_m3": 0.0031773731368810337,
+      "difference_m3": 0.0026148731368810336,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -27,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.316261134276254,
+      "total_volume_m3": 7.316261134276254,
+      "difference_m3": 1.316261134276254,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -27,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0030873731368810334,
+      "total_volume_m3": 0.0030873731368810334,
+      "difference_m3": 0.0025248731368810334,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -26,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.268261134276255,
+      "total_volume_m3": 7.268261134276255,
+      "difference_m3": 1.2682611342762549,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -26,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.002997373136881033,
+      "total_volume_m3": 0.002997373136881033,
+      "difference_m3": 0.002434873136881033,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -25,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.220261134276254,
+      "total_volume_m3": 7.220261134276254,
+      "difference_m3": 1.220261134276254,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -25,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.002907373136881034,
+      "total_volume_m3": 0.002907373136881034,
+      "difference_m3": 0.0023448731368810338,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -24,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.172261134276255,
+      "total_volume_m3": 7.172261134276255,
+      "difference_m3": 1.1722611342762548,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -24,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0028173731368810336,
+      "total_volume_m3": 0.0028173731368810336,
+      "difference_m3": 0.0022548731368810335,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -23,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.124261134276254,
+      "total_volume_m3": 7.124261134276254,
+      "difference_m3": 1.1242611342762538,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -23,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0027273731368810334,
+      "total_volume_m3": 0.0027273731368810334,
+      "difference_m3": 0.0021648731368810333,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -22,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.076261134276255,
+      "total_volume_m3": 7.076261134276255,
+      "difference_m3": 1.0762611342762547,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -22,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0026373731368810336,
+      "total_volume_m3": 0.0026373731368810336,
+      "difference_m3": 0.0020748731368810335,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -21,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 7.028261134276255,
+      "total_volume_m3": 7.028261134276255,
+      "difference_m3": 1.0282611342762547,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -21,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0025473731368810338,
+      "total_volume_m3": 0.0025473731368810338,
+      "difference_m3": 0.0019848731368810337,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -20,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.980261134276255,
+      "total_volume_m3": 6.980261134276255,
+      "difference_m3": 0.9802611342762546,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -20,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0024573731368810335,
+      "total_volume_m3": 0.0024573731368810335,
+      "difference_m3": 0.0018948731368810335,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -19,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.932261134276255,
+      "total_volume_m3": 6.932261134276255,
+      "difference_m3": 0.9322611342762546,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -19,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0023673731368810337,
+      "total_volume_m3": 0.0023673731368810337,
+      "difference_m3": 0.0018048731368810337,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -18,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.8842611342762545,
+      "total_volume_m3": 6.8842611342762545,
+      "difference_m3": 0.8842611342762545,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -18,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0022773731368810335,
+      "total_volume_m3": 0.0022773731368810335,
+      "difference_m3": 0.0017148731368810334,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -17,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.8362611342762545,
+      "total_volume_m3": 6.8362611342762545,
+      "difference_m3": 0.8362611342762545,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -17,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0021873731368810333,
+      "total_volume_m3": 0.0021873731368810333,
+      "difference_m3": 0.0016248731368810332,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -16,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.788261134276254,
+      "total_volume_m3": 6.788261134276254,
+      "difference_m3": 0.7882611342762544,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -16,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0020973731368810335,
+      "total_volume_m3": 0.0020973731368810335,
+      "difference_m3": 0.0015348731368810334,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -15,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.740261134276254,
+      "total_volume_m3": 6.740261134276254,
+      "difference_m3": 0.7402611342762544,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -15,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.002007373136881033,
+      "total_volume_m3": 0.002007373136881033,
+      "difference_m3": 0.0014448731368810331,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -14,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.692261134276254,
+      "total_volume_m3": 6.692261134276254,
+      "difference_m3": 0.6922611342762544,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -14,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0019173731368810336,
+      "total_volume_m3": 0.0019173731368810336,
+      "difference_m3": 0.0013548731368810338,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -13,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.644261134276254,
+      "total_volume_m3": 6.644261134276254,
+      "difference_m3": 0.6442611342762543,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -13,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0018273731368810334,
+      "total_volume_m3": 0.0018273731368810334,
+      "difference_m3": 0.0012648731368810335,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -12,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.596261134276254,
+      "total_volume_m3": 6.596261134276254,
+      "difference_m3": 0.5962611342762543,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -12,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0017373731368810334,
+      "total_volume_m3": 0.0017373731368810334,
+      "difference_m3": 0.0011748731368810333,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -11,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.548261134276254,
+      "total_volume_m3": 6.548261134276254,
+      "difference_m3": 0.5482611342762542,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -11,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0016473731368810331,
+      "total_volume_m3": 0.0016473731368810331,
+      "difference_m3": 0.001084873136881033,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -10,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.500261134276254,
+      "total_volume_m3": 6.500261134276254,
+      "difference_m3": 0.5002611342762542,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -10,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0015573731368810333,
+      "total_volume_m3": 0.0015573731368810333,
+      "difference_m3": 0.0009948731368810333,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -9,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.452261134276254,
+      "total_volume_m3": 6.452261134276254,
+      "difference_m3": 0.45226113427625414,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -9,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0014673731368810333,
+      "total_volume_m3": 0.0014673731368810333,
+      "difference_m3": 0.0009048731368810334,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -8,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.404261134276254,
+      "total_volume_m3": 6.404261134276254,
+      "difference_m3": 0.4042611342762541,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -8,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0013773731368810333,
+      "total_volume_m3": 0.0013773731368810333,
+      "difference_m3": 0.0008148731368810333,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -7,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.356261134276254,
+      "total_volume_m3": 6.356261134276254,
+      "difference_m3": 0.35626113427625405,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -7,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0012873731368810335,
+      "total_volume_m3": 0.0012873731368810335,
+      "difference_m3": 0.0007248731368810335,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -6,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.308261134276254,
+      "total_volume_m3": 6.308261134276254,
+      "difference_m3": 0.308261134276254,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -6,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0011973731368810335,
+      "total_volume_m3": 0.0011973731368810335,
+      "difference_m3": 0.0006348731368810335,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -5,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.260261134276254,
+      "total_volume_m3": 6.260261134276254,
+      "difference_m3": 0.26026113427625397,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -5,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0011073731368810335,
+      "total_volume_m3": 0.0011073731368810335,
+      "difference_m3": 0.0005448731368810335,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -4,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.212261134276254,
+      "total_volume_m3": 6.212261134276254,
+      "difference_m3": 0.21226113427625393,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -4,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0010173731368810334,
+      "total_volume_m3": 0.0010173731368810334,
+      "difference_m3": 0.0004548731368810335,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -3,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.164261134276254,
+      "total_volume_m3": 6.164261134276254,
+      "difference_m3": 0.16426113427625388,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -3,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0009273731368810335,
+      "total_volume_m3": 0.0009273731368810335,
+      "difference_m3": 0.00036487313688103357,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -2,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.116261134276254,
+      "total_volume_m3": 6.116261134276254,
+      "difference_m3": 0.11626113427625384,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -2,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0008373731368810336,
+      "total_volume_m3": 0.0008373731368810336,
+      "difference_m3": 0.00027487313688103366,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": -1,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.068261134276254,
+      "total_volume_m3": 6.068261134276254,
+      "difference_m3": 0.0682611342762538,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": -1,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0007473731368810336,
+      "total_volume_m3": 0.0007473731368810336,
+      "difference_m3": 0.00018487313688103364,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 0,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.022768903620242,
+      "total_volume_m3": 6.022768903620242,
+      "difference_m3": 0.022768903620241865,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 0,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0006609339357486352,
+      "total_volume_m3": 0.0006609339357486352,
+      "difference_m3": 9.843393574863525e-05,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 1,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 6.003621356886326,
+      "total_volume_m3": 6.003621356886326,
+      "difference_m3": 0.0036213568863256995,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 1,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0006181026216895622,
+      "total_volume_m3": 0.0006181026216895622,
+      "difference_m3": 5.560262168956222e-05,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 2,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.990005890564493,
+      "total_volume_m3": 5.990005890564493,
+      "difference_m3": -0.009994109435506715,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 2,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0005774193947902877,
+      "total_volume_m3": 0.0005774193947902877,
+      "difference_m3": 1.4919394790287766e-05,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 3,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.978005890564494,
+      "total_volume_m3": 5.978005890564494,
+      "difference_m3": -0.02199410943550628,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 3,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0004324504850185483,
+      "total_volume_m3": null,
+      "difference_m3": -0.00013004951498145166,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 4,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.966005890564493,
+      "total_volume_m3": 5.966005890564493,
+      "difference_m3": -0.033994109435506736,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 4,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.00041805048501854827,
+      "total_volume_m3": null,
+      "difference_m3": -0.0001444495149814517,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 5,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.954005890564494,
+      "total_volume_m3": 5.954005890564494,
+      "difference_m3": -0.0459941094355063,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 5,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.00040365048501854835,
+      "total_volume_m3": null,
+      "difference_m3": -0.0001588495149814516,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 6,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.942005890564493,
+      "total_volume_m3": 5.942005890564493,
+      "difference_m3": -0.05799410943550676,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 6,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0003892504850185483,
+      "total_volume_m3": null,
+      "difference_m3": -0.00017324951498145168,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 7,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.930005890564494,
+      "total_volume_m3": 5.930005890564494,
+      "difference_m3": -0.06999410943550632,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 7,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0003748504850185483,
+      "total_volume_m3": null,
+      "difference_m3": -0.00018764951498145165,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 8,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.918005890564493,
+      "total_volume_m3": 5.918005890564493,
+      "difference_m3": -0.08199410943550678,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 8,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.00036045048501854833,
+      "total_volume_m3": null,
+      "difference_m3": -0.00020204951498145162,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 9,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.906005890564494,
+      "total_volume_m3": 5.906005890564494,
+      "difference_m3": -0.09399410943550635,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 9,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0003460504850185483,
+      "total_volume_m3": null,
+      "difference_m3": -0.00021644951498145165,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 10,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.894005890564493,
+      "total_volume_m3": 5.894005890564493,
+      "difference_m3": -0.1059941094355068,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 10,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0003316504850185483,
+      "total_volume_m3": null,
+      "difference_m3": -0.00023084951498145167,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 11,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.882005890564494,
+      "total_volume_m3": 5.882005890564494,
+      "difference_m3": -0.11799410943550637,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 11,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0003172504850185483,
+      "total_volume_m3": null,
+      "difference_m3": -0.00024524951498145164,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 12,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.870005890564493,
+      "total_volume_m3": 5.870005890564493,
+      "difference_m3": -0.12999410943550682,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 12,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.00030285048501854834,
+      "total_volume_m3": null,
+      "difference_m3": -0.0002596495149814516,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 13,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.858005890564494,
+      "total_volume_m3": 5.858005890564494,
+      "difference_m3": -0.1419941094355064,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 13,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.00028845048501854826,
+      "total_volume_m3": null,
+      "difference_m3": -0.0002740495149814517,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 14,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.846005890564493,
+      "total_volume_m3": 5.846005890564493,
+      "difference_m3": -0.15399410943550684,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 14,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0002740504850185483,
+      "total_volume_m3": null,
+      "difference_m3": -0.00028844951498145166,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 15,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.834005890564494,
+      "total_volume_m3": 5.834005890564494,
+      "difference_m3": -0.1659941094355064,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 15,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.0002596504850185483,
+      "total_volume_m3": null,
+      "difference_m3": -0.00030284951498145163,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 16,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.822005890564493,
+      "total_volume_m3": 5.822005890564493,
+      "difference_m3": -0.17799410943550686,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 16,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.000246405853053765,
+      "total_volume_m3": null,
+      "difference_m3": -0.00031609414694623496,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 17,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.810005890564494,
+      "total_volume_m3": 5.810005890564494,
+      "difference_m3": -0.18999410943550643,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 17,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.00023335585305376492,
+      "total_volume_m3": null,
+      "difference_m3": -0.00032914414694623504,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 18,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.798005890564493,
+      "total_volume_m3": 5.798005890564493,
+      "difference_m3": -0.20199410943550689,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 18,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 0.00022030585305376495,
+      "total_volume_m3": null,
+      "difference_m3": -0.000342194146946235,
+      "state": "unavailable",
+      "coverage_fraction": 0.16
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 19,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.7860058905644935,
+      "total_volume_m3": 5.7860058905644935,
+      "difference_m3": -0.21399410943550645,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 19,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 3.412660569934928e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005283733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 20,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.774005890564493,
+      "total_volume_m3": 5.774005890564493,
+      "difference_m3": -0.2259941094355069,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 20,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 3.322660569934928e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005292733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 21,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.7620058905644935,
+      "total_volume_m3": 5.7620058905644935,
+      "difference_m3": -0.23799410943550647,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 21,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 3.232660569934928e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005301733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 22,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.750005890564493,
+      "total_volume_m3": 5.750005890564493,
+      "difference_m3": -0.24999410943550693,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 22,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 3.1426605699349285e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005310733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 23,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.7380058905644935,
+      "total_volume_m3": 5.7380058905644935,
+      "difference_m3": -0.2619941094355065,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 23,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 3.052660569934929e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005319733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 24,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.726005890564493,
+      "total_volume_m3": 5.726005890564493,
+      "difference_m3": -0.27399410943550695,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 24,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.9626605699349286e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005328733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 25,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.7140058905644935,
+      "total_volume_m3": 5.7140058905644935,
+      "difference_m3": -0.2859941094355065,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 25,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.8726605699349284e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005337733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 26,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.702005890564493,
+      "total_volume_m3": 5.702005890564493,
+      "difference_m3": -0.29799410943550697,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 26,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.7826605699349286e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005346733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 27,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.6900058905644935,
+      "total_volume_m3": 5.6900058905644935,
+      "difference_m3": -0.30999410943550654,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 27,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.6926605699349288e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005355733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 28,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.678005890564493,
+      "total_volume_m3": 5.678005890564493,
+      "difference_m3": -0.321994109435507,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 28,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.6026605699349286e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005364733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 29,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.666005890564493,
+      "total_volume_m3": 5.666005890564493,
+      "difference_m3": -0.33399410943550656,
+      "state": "valid",
+      "coverage_fraction": 1.0
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 29,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.512660569934928e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005373733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 30,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.654005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.345994109435507,
+      "state": "unavailable",
+      "coverage_fraction": 0.3489583333333333
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 30,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.4226605699349283e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005382733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 31,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.642005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.3579941094355066,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 31,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.3326605699349285e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005391733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 32,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.630005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.36999410943550703,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 32,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.2426605699349284e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005400733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 33,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.618005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.3819941094355066,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 33,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.1526605699349285e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005409733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 34,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.606005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.39399410943550706,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 34,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 2.062660569934928e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005418733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 35,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.594005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.4059941094355066,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 35,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.9726605699349282e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005427733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 36,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.582005890564494,
+      "total_volume_m3": null,
+      "difference_m3": -0.4179941094355062,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 36,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.8826605699349287e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005436733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 37,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.570005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.42999410943550664,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 37,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.792660569934929e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005445733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 38,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.558005890564494,
+      "total_volume_m3": null,
+      "difference_m3": -0.4419941094355062,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 38,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.7026605699349284e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005454733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 39,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.546005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.45399410943550667,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 39,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.6126605699349286e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005463733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 40,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.534005890564494,
+      "total_volume_m3": null,
+      "difference_m3": -0.46599410943550623,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 40,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.5226605699349285e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005472733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 41,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.522005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.4779941094355067,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 41,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.4326605699349285e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005481733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 42,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.510005890564494,
+      "total_volume_m3": null,
+      "difference_m3": -0.48999410943550625,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 42,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.3426605699349283e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005490733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 43,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.498005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.5019941094355067,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 43,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.2526605699349289e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005499733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 44,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.486005890564494,
+      "total_volume_m3": null,
+      "difference_m3": -0.5139941094355063,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 44,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.1626605699349289e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005508733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 45,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.474005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.5259941094355067,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 45,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 1.0726605699349287e-05,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005517733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 46,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.462005890564494,
+      "total_volume_m3": null,
+      "difference_m3": -0.5379941094355063,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 46,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 9.826605699349287e-06,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005526733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 47,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.450005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.5499941094355068,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 47,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 8.926605699349286e-06,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005535733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 48,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.438005890564494,
+      "total_volume_m3": null,
+      "difference_m3": -0.5619941094355063,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 48,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 8.026605699349286e-06,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005544733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 49,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.426005890564493,
+      "total_volume_m3": null,
+      "difference_m3": -0.5739941094355068,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 49,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 7.126605699349284e-06,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005553733943006507,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    },
+    {
+      "profile": "v1-48m2",
+      "reference_offset_mm": 50,
+      "analytical_volume_m3": 6.0,
+      "observed_volume_m3": 5.414005890564494,
+      "total_volume_m3": null,
+      "difference_m3": -0.5859941094355063,
+      "state": "unavailable",
+      "coverage_fraction": 0.25
+    },
+    {
+      "profile": "vl53-maquette-0.09m2",
+      "reference_offset_mm": 50,
+      "analytical_volume_m3": 0.0005625,
+      "observed_volume_m3": 6.226605699349284e-06,
+      "total_volume_m3": null,
+      "difference_m3": -0.0005562733943006506,
+      "state": "unavailable",
+      "coverage_fraction": 0.01
+    }
+  ]
+}

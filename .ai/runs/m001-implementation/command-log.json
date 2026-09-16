@@ -1,0 +1,74 @@
+{
+  "delegation_started_at_utc": "2026-09-13T23:17:47Z",
+  "executor_started_at_utc": "2026-09-14T11:07:04.737837Z",
+  "commands": [
+    {
+      "command": [
+        "C:\\ProgramData\\mingw64\\mingw64\\bin\\gcc.EXE",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\experiments\\m001\\scene_dump_m001.c",
+        "-lm",
+        "-o",
+        "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe"
+      ],
+      "started_at_utc": "2026-09-14T11:07:04.737837Z",
+      "finished_at_utc": "2026-09-14T11:07:05.624495Z",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\ProgramData\\mingw64\\mingw64\\bin\\gcc.EXE",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\tools\\scene_dump.c",
+        "-lm",
+        "-o",
+        "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_legacy.exe"
+      ],
+      "started_at_utc": "2026-09-14T11:07:05.624495Z",
+      "finished_at_utc": "2026-09-14T11:07:06.436335Z",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\Raí\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\experiments\\m001",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "started_at_utc": "2026-09-14T11:07:06.436335Z",
+      "finished_at_utc": "2026-09-14T11:07:07.434751Z",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_evaluator_truth_does_not_leak_into_fusion (test_m001.P001Tests.test_evaluator_truth_does_not_leak_into_fusion) ... ok\ntest_frame_and_pose_are_valid (test_m001.P001Tests.test_frame_and_pose_are_valid) ... ok\ntest_frame_order_does_not_change_fusion (test_m001.P001Tests.test_frame_order_does_not_change_fusion) ... ok\ntest_new_harness_defaults_match_original_harness_exactly (test_m001.P001Tests.test_new_harness_defaults_match_original_harness_exactly) ... ok\ntest_no_dropout_repetition_changes_neither_height_nor_support (test_m001.P001Tests.test_no_dropout_repetition_changes_neither_height_nor_support) ... ok\ntest_one_view_reproduces_geometry_estimate (test_m001.P001Tests.test_one_view_reproduces_geometry_estimate) ... ok\ntest_protocol_count_and_aim_angles_are_frozen (test_m001.P001Tests.test_protocol_count_and_aim_angles_are_frozen) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.428s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Raí\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+        "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\experiments\\m001\\run_p001.py"
+      ],
+      "started_at_utc": "2026-09-14T11:07:07.434751Z",
+      "finished_at_utc": "2026-09-14T11:07:15.750966Z",
+      "exit_code": 0,
+      "stdout": "P-001 1/9: pyramid_center\nP-001 2/9: pyramid_shifted_013\nP-001 3/9: two_stacks\nP-001 4/9: prism\nP-001 5/9: ramp\nP-001 6/9: layer\nP-001 7/9: pyramid_beam\nP-001 8/9: layer_beam\nP-001 9/9: pyramid_beam_dropout20\n{\"comparison_count\": 72, \"results\": \".ai\\\\runs\\\\m001-implementation\\\\results\\\\comparisons.json\", \"summary\": [{\"arm_id\": \"baseline_fixed1\", \"budget_group\": \"K1_reference\", \"ray_budget\": 64, \"total_selected_count\": 4, \"total_rejected_count\": 5, \"median_tin_support_fraction\": 0.84, \"median_effective_point_bin_fraction\": 0.16, \"median_oracle_intrinsic_visibility_fraction\": 0.945, \"median_own_domain_signed_error_percent\": 4.075523656500977, \"median_common_group_signed_error_percent\": 4.075523656500977, \"median_common_all_signed_error_percent\": 3.973006100247305, \"median_max_view_disagreement_mm\": null, \"excluded_aggregate\": {\"no_return\": 15, \"out_of_range\": 0, \"beam\": 21, \"wall_or_outside\": 0, \"below_reference\": 0}}, {\"arm_id\": \"fixed3\", \"budget_group\": \"K3\", \"ray_budget\": 192, \"total_selected_count\": 4, \"total_rejected_count\": 5, \"median_tin_support_fraction\": 0.84, \"median_effective_point_bin_fraction\": 0.16, \"median_oracle_intrinsic_visibility_fraction\": 0.945, \"median_own_domain_signed_error_percent\": 4.075523656500977, \"median_common_group_signed_error_percent\": 4.075523656500977, \"median_common_all_signed_error_percent\": 3.973006100247305, \"median_max_view_disagreement_mm\": 0.0, \"excluded_aggregate\": {\"no_return\": 44, \"out_of_range\": 0, \"beam\": 65, \"wall_or_outside\": 0, \"below_reference\": 0}}, {\"arm_id\": \"center_tilt3\", \"budget_group\": \"K3\", \"ray_budget\": 192, \"total_selected_count\": 4, \"total_rejected_count\": 5, \"median_tin_support_fraction\": 0.88, \"median_effective_point_bin_fraction\": 0.3, \"median_oracle_intrinsic_visibility_fraction\": 0.945, \"median_own_domain_signed_error_percent\": 8.40111744925806, \"median_common_group_signed_error_percent\": 9.7323078678481, \"median_common_all_signed_error_percent\": 8.985401047440135, \"median_max_view_disagreement_mm\": 8.086671949266897, \"excluded_aggregate\": {\"no_return\": 58, \"out_of_range\": 0, \"beam\": 87, \"wall_or_outside\": 266, \"below_reference\": 0}}, {\"arm_id\": \"translated3_level\", \"budget_group\": \"K3\", \"ray_budget\": 192, \"total_selected_count\": 4, \"total_rejected_count\": 5, \"median_tin_support_fraction\": 0.965, \"median_effective_point_bin_fraction\": 0.3, \"median_oracle_intrinsic_visibility_fraction\": 1.0, \"median_own_domain_signed_error_percent\": 7.876908335085473, \"median_common_group_signed_error_percent\": 9.460888126020784, \"median_common_all_signed_error_percent\": 9.10017820586887, \"median_max_view_disagreement_mm\": 10.477550235599512, \"excluded_aggregate\": {\"no_return\": 44, \"out_of_range\": 0, \"beam\": 67, \"wall_or_outside\": 247, \"below_reference\": 0}}, {\"arm_id\": \"translated3_aimed\", \"budget_group\": \"K3\", \"ray_budget\": 192, \"total_selected_count\": 4, \"total_rejected_count\": 5, \"median_tin_support_fraction\": 0.96, \"median_effective_point_bin_fraction\": 0.255, \"median_oracle_intrinsic_visibility_fraction\": 1.0, \"median_own_domain_signed_error_percent\": 8.070619706776728, \"median_common_group_signed_error_percent\": 5.775862170333274, \"median_common_all_signed_error_percent\": 5.6138947424268615, \"median_max_view_disagreement_mm\": 5.264540284794755, \"excluded_aggregate\": {\"no_return\": 56, \"out_of_range\": 0, \"beam\": 70, \"wall_or_outside\": 149, \"below_reference\": 0}}, {\"arm_id\": \"fixed4\", \"budget_group\": \"K4\", \"ray_budget\": 256, \"total_selected_count\": 4, \"total_rejected_count\": 5, \"median_tin_support_fraction\": 0.84, \"median_effective_point_bin_fraction\": 0.16, \"median_oracle_intrinsic_visibility_fraction\": 0.945, \"median_own_domain_signed_error_percent\": 4.075523656500977, \"median_common_group_signed_error_percent\": 3.973006100247305, \"median_common_all_signed_error_percent\": 3.973006100247305, \"median_max_view_disagreement_mm\": 0.0, \"excluded_aggregate\": {\"no_return\": 57, \"out_of_range\": 0, \"beam\": 89, \"wall_or_outside\": 0, \"below_reference\": 0}}, {\"arm_id\": \"center_angles4\", \"budget_group\": \"K4\", \"ray_budget\": 256, \"total_selected_count\": 0, \"total_rejected_count\": 9, \"median_tin_support_fraction\": 0.745, \"median_effective_point_bin_fraction\": 0.37, \"median_oracle_intrinsic_visibility_fraction\": 0.945, \"median_own_domain_signed_error_percent\": 4.712379395850657, \"median_common_group_signed_error_percent\": 4.211412006466231, \"median_common_all_signed_error_percent\": 4.211412006466231, \"median_max_view_disagreement_mm\": 13.185000910653681, \"excluded_aggregate\": {\"no_return\": 243, \"out_of_range\": 0, \"beam\": 124, \"wall_or_outside\": 474, \"below_reference\": 0}}, {\"arm_id\": \"translated4_corners_level\", \"budget_group\": \"K4\", \"ray_budget\": 256, \"total_selected_count\": 0, \"total_rejected_count\": 9, \"median_tin_support_fraction\": 0.49, \"median_effective_point_bin_fraction\": 0.285, \"median_oracle_intrinsic_visibility_fraction\": 1.0, \"median_own_domain_signed_error_percent\": 3.6271417711007157, \"median_common_group_signed_error_percent\": 2.468863369737244, \"median_common_all_signed_error_percent\": 7.669747880744255, \"median_max_view_disagreement_mm\": 18.33775076530618, \"excluded_aggregate\": {\"no_return\": 254, \"out_of_range\": 0, \"beam\": 89, \"wall_or_outside\": 662, \"below_reference\": 0}}]}\n",
+      "stderr": ""
+    }
+  ],
+  "executor_finished_at_utc": "2026-09-14T11:07:15.750966Z"
+}

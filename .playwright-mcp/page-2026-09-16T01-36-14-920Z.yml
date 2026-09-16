@@ -1,0 +1,35 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - banner [ref=e4]:
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /
+      - generic [ref=e13]:
+        - group [ref=e14]:
+          - button "Save" [disabled]
+          - button [ref=e15] [cursor=pointer]
+        - button [ref=e18] [cursor=pointer]
+      - navigation [ref=e21]:
+        - link "Docs" [ref=e22] [cursor=pointer]:
+          - /url: https://docs.wokwi.com/?utm_source=wokwi
+      - button "toggle dark mode" [ref=e23] [cursor=pointer]
+      - button "Sign in Sign up" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: Sign in
+          - text: Sign up
+  - main [ref=e29]:
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - button "sketch.ino" [ref=e36]
+          - button "diagram.json" [ref=e37]
+          - button "Library Manager" [ref=e38]
+          - button [ref=e39]
+        - code [ref=e43]: "void setup() { // put your setup code here, to run once: Serial.begin(115200); Serial.println(\"Hello, ESP32!\"); } void loop() { // put your main code here, to run repeatedly: delay(10); // this speeds up the simulation }"
+      - generic [ref=e45]:
+        - button "Simulation" [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - button "Start the simulation" [ref=e51] [cursor=pointer]
+            - button "Add a new part" [ref=e55] [cursor=pointer]
+            - button "Zoom, grid, and more" [ref=e59] [cursor=pointer]
+          - generic [ref=e63] [cursor=pointer]

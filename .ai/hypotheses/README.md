@@ -1,0 +1,1 @@
+O registro canônico está em [hypothesis-register.md](../hypothesis-register.md). Documentos específicos de hipóteses podem ser adicionados aqui quando houver evidência nova; não duplicar o registro nem transformar os status importados em validação física.

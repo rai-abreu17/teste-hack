@@ -1,0 +1,1 @@
+Faça a leitura física e geométrica independente. Priorize oclusão, FoV, incidência, suporte e se translação realmente oferece informação observável útil. Procure explicações alternativas e possíveis artefatos do oráculo ou da reconstrução.

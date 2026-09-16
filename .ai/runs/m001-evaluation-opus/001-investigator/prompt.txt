@@ -1,0 +1,46 @@
+You are the investigator in a controlled multi-agent analysis. Work only from the supplied context. Do not assume access to files, tools, prior conversations, or other agents unless their text appears below. Be explicit about uncertainty. Produce a self-contained answer.
+
+ROLE INSTRUCTION
+Audite criticamente as inferências com os novos controles; não proponha outro ajuste de compactness.
+
+CONTEXT
+# Reavaliação factual de P001-P004 para próximas rodadas
+
+Trabalhe somente com este contexto autocontido. A tarefa é revisar validade causal e desenho seguinte, não pesquisar física externa ou inventar mecanismos.
+
+Histórico: P003 compara translated3_aimed+seleção por menor aresta com fixed3+mediana: 7/9 vitórias, ganho mediano 0,795 pp, regressão máxima 3,891 pp. P004 compara aimed+trim kappa2+mediana inferior com fixed3+mediana: 6/9, ganho 0,181 pp, regressão máxima 0,503 pp. Gates falharam. Todos com total selecionado 4/9; isso indica suporte completo da interpolação, não verdade física nem precisão garantida.
+
+Código lido nesta revisão:
+- P003 calcula por vista/célula q=min(max(arestas 3D)) dentre triângulos locais e escolhe a ALTURA MÉDIA da TIN dessa vista, não necessariamente altura do triângulo que deu q.
+- P004 mantém q<=2*q_min e usa sorted(heights)[(n-1)//2]. P001 usa statistics.median, que faz média dos dois centrais para n par.
+- O indicador principal integra alturas na máscara e só então calcula abs(V_est-V_ref)/V_ref. Não é MAE por célula e permite cancelamento espacial.
+- Total P003/P004 usa all(height is not None). P001 também rejeita frames inválidos e vistas unavailable. Quadros históricos usados são válidos; o desvio contratual é um risco para próximos ensaios, não evidência de corrupção histórica.
+
+Nova auditoria diagnóstica (não novo candidato, não holdout): reutilizou 27 frames, verificou seus hashes e preservou arquivos históricos. Reproduziu mediana P001 e P004. Calculou o controle 2x2: mediana usual/inferior x sem trim/trim2.
+
+Tabela: cena | células common_all /400 | fração do volume verdadeiro nessa máscara | células com trim no grid inteiro | ganho P003 vs mediana da MESMA aquisição | ganho P004 vs mesma aquisição (pp de erro absoluto, positivo melhor)
+
+center |196|100%|0|+1,780|0
+shifted |196|100%|0|+1,126|0
+two_stacks |196|99,27%|0|+1,621|0
+prism |132|76%|8|-2,250|+1,525
+ramp |196|100%|0|-3,213|+0,201
+layer |254|63,5%|0|+0,028|0
+pyramid_beam |112|64,80%|0|+0,860|+0,811
+layer_beam |168|42%|0|+0,021|+0,045
+dropout20 |45|16,30%|0|+1,741|+1,903
+
+Conclusão local a criticar: P004 não sustenta que trimming conteve regressões da rampa/viga/dropout, pois nessas cenas não retirou vistas. A contribuição veio da mediana inferior; nos ganhos contra fixed3 também entra aquisição diferente. O gate histórico continua falhando, mas a alegação de mecanismo confirmado deve ser retirada. Não usar gaussianidade/independência de ruído para explicar este simulador determinístico.
+
+Próximas etapas propostas:
+1. Sanear contrato avaliador/estimador e atualizar atribuição, sem ajustar gates históricos.
+2. Diagnóstico de alcance/FoV/oclusão versus interpolação por célula; manter altura, suporte e métrica de qualidade do mesmo triângulo/conjunto; verdade somente no avaliador. Prioridade: erro nas transições e suporte com viga. Não selecionar novos kappa nas nove cenas.
+3. Somente depois escolher UM candidato, congelar código e parâmetros e validar em conjunto reservado. Variação de altura/centro/sequência não significa nova família geométrica: combinar combinações inéditas com superfícies fora das famílias de treino. Comparar aquisição isolada e fusão isolada. Reportar volume total quando elegível, erro espacial, domínio comum e cobertura/abstenções; erros de vazio em litros, não porcentagem.
+
+User briefing diz não adotar novo limite percentual arbitrário. Os gates 1 pp/7 de9/2 pp eram requisitos experimentais propostos por agente; mantê-los para histórico, não tratá-los como requisito do produto. Critério MVP físico de volume/erro/custo ainda precisa ser especificado.
+
+Entregue no máximo 650 palavras: quais conclusões sobrevivem, quais retirar, ordem das próximas rodadas e críticas ao desenho proposto. Não alegue acesso a arquivos nem aprovação de hardware.
+
+
+Completion protocol: finish your response with this exact marker on its own line:
+<<ORCHESTRATION_COMPLETE>>

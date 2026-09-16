@@ -1,0 +1,703 @@
+{
+  "experiment_id": "D-004",
+  "created_at_utc": "2026-09-16T14:01:50.179095Z",
+  "phase": "acquisition complete; reconstruction and volume scoring not run",
+  "protocol_sha256": "ddfcf8013a9661b81679e9efce1544afd35f1bd1c3dc9785edc7135fbceff521",
+  "pre_acquisition_manifest_sha256": "6ec13daa6f7049123e8649ba22c69cacb5ff6e4b8d7e2426f37cf456e152df5b",
+  "simulator_sha256": "865f3e1a84e8278d5f31ce8d13b1449ab372433b510b81a575f30e6988cf6e7e",
+  "candidate_frames": {
+    ".ai/runs/m001-d004/frames/layer/candidate_diagonals-201.bin": {
+      "sha256": "5e5f1d47c9abb2cb6f09c1a5093bc4ba69d6aec3842a25f3eaef97fecbd42f06",
+      "scene_id": "layer",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "8fe840a9"
+      }
+    },
+    ".ai/runs/m001-d004/frames/layer/candidate_diagonals-202.bin": {
+      "sha256": "affdb0a7d4e6cfe1af278183e3291c6d9a2642d8e997cf3bbbaac05d500162c8",
+      "scene_id": "layer",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "286904c2"
+      }
+    },
+    ".ai/runs/m001-d004/frames/layer/candidate_diagonals-203.bin": {
+      "sha256": "58cd457eb5c58cbd723e356af3c97870ae892f6006e1966609139dd0db11aaec",
+      "scene_id": "layer",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "ec500297"
+      }
+    },
+    ".ai/runs/m001-d004/frames/layer/candidate_diagonals-204.bin": {
+      "sha256": "37365349f33b027a79729d9c695ca4f9d3969e27cd4fa384ec5ccbd13b10be8b",
+      "scene_id": "layer",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "be644674"
+      }
+    },
+    ".ai/runs/m001-d004/frames/layer_beam/candidate_diagonals-201.bin": {
+      "sha256": "7febf825d72e3411dfadbcd58d1676667cbd7f9c1b7cfb891566969964715e7b",
+      "scene_id": "layer_beam",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "78160d85"
+      }
+    },
+    ".ai/runs/m001-d004/frames/layer_beam/candidate_diagonals-202.bin": {
+      "sha256": "461cdb70fc7503cb477afe71979840225ed4be1d1c61d81bcac3ee03e99a1d0f",
+      "scene_id": "layer_beam",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "d0a18af6"
+      }
+    },
+    ".ai/runs/m001-d004/frames/layer_beam/candidate_diagonals-203.bin": {
+      "sha256": "a08497837af85e549b7ed6f48772d3351e3d6d58a0bd303a42ed86af2aad2827",
+      "scene_id": "layer_beam",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "1bae4fbb"
+      }
+    },
+    ".ai/runs/m001-d004/frames/layer_beam/candidate_diagonals-204.bin": {
+      "sha256": "fb1502ffb6ed7ac62800b5ca9db53c6fd5d02cce594567f16dfeec9cf6396e79",
+      "scene_id": "layer_beam",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "46acc840"
+      }
+    },
+    ".ai/runs/m001-d004/frames/prism/candidate_diagonals-201.bin": {
+      "sha256": "939bb8e8d29b9b6b1e6f6b8dd7b58f40f27718dadfb0426a21f99902da8aa8a1",
+      "scene_id": "prism",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "323fafe5"
+      }
+    },
+    ".ai/runs/m001-d004/frames/prism/candidate_diagonals-202.bin": {
+      "sha256": "c582f4fde4792788081001df7bb2e712e2fb279630cfc1613fa4fec4371e5795",
+      "scene_id": "prism",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "7c48938b"
+      }
+    },
+    ".ai/runs/m001-d004/frames/prism/candidate_diagonals-203.bin": {
+      "sha256": "d0f28a5941a70c0a73e17d3c02daa3806a712731a3ff5c03260491c00d5ba6ea",
+      "scene_id": "prism",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "ec1757af"
+      }
+    },
+    ".ai/runs/m001-d004/frames/prism/candidate_diagonals-204.bin": {
+      "sha256": "3e0b844bac897c7f4cfbb07fe22afa1b31f8b668aeb263633c3c3a97b4372b44",
+      "scene_id": "prism",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "6108acf6"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_beam/candidate_diagonals-201.bin": {
+      "sha256": "84206ba05ce4517de3ca4dc59a026835cc477cde9fad5532894d73a09eb4d7ce",
+      "scene_id": "pyramid_beam",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "97979409"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_beam/candidate_diagonals-202.bin": {
+      "sha256": "f00672b712dfd6d6feb0158b7e6875683053d69f675abcb492e23f248b600b54",
+      "scene_id": "pyramid_beam",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "ef0886db"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_beam/candidate_diagonals-203.bin": {
+      "sha256": "f5e66cdbb1afe97b8b8006831ea46dce41fdd008aa850e158cbd25f7e7c07288",
+      "scene_id": "pyramid_beam",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "550fbcfe"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_beam/candidate_diagonals-204.bin": {
+      "sha256": "636c7c090bd02f81bc0b6e405797fed8acd30a3a19a32ea3d44ea917c36dc970",
+      "scene_id": "pyramid_beam",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "134d1fed"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_beam_dropout20/candidate_diagonals-201.bin": {
+      "sha256": "a080224526c7bb3b85206d4eaff1da79acde321003ae59a18eeefb52521a787f",
+      "scene_id": "pyramid_beam_dropout20",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "810ea8c5"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_beam_dropout20/candidate_diagonals-202.bin": {
+      "sha256": "360aad749ddf46734b9458ac20a501e976fc3b2be0b5ffa5e6d72ebee31e920c",
+      "scene_id": "pyramid_beam_dropout20",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "0784c001"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_beam_dropout20/candidate_diagonals-203.bin": {
+      "sha256": "9ffe7cac4c041546ac27665ef548b6173ff03d3c933eb92f28a2b0da607ed44a",
+      "scene_id": "pyramid_beam_dropout20",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "a2fe6ac1"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_beam_dropout20/candidate_diagonals-204.bin": {
+      "sha256": "1028ec692a1214e17b96fa799aca212f696a32820627f9e23dca7e855cde3436",
+      "scene_id": "pyramid_beam_dropout20",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "d1f02091"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_center/candidate_diagonals-201.bin": {
+      "sha256": "bc8443c907969931ba0c4a7bc480e7924a175316b6752c391d861aee38a8b50a",
+      "scene_id": "pyramid_center",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "fa018609"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_center/candidate_diagonals-202.bin": {
+      "sha256": "d60c4ebe8bc96ac500c00bb973b1bb4bacf62c7e88539538e6fec82d0bf6143d",
+      "scene_id": "pyramid_center",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "6642cfa0"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_center/candidate_diagonals-203.bin": {
+      "sha256": "26d721969984493500350264caac3f87589ccad7181b73330b7bbbe3c7e0e752",
+      "scene_id": "pyramid_center",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "90f576ef"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_center/candidate_diagonals-204.bin": {
+      "sha256": "aff9372dd04eecbc6a1398459758c68d11868d5706268c986864a6e10f487d91",
+      "scene_id": "pyramid_center",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "14d260ee"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_shifted_013/candidate_diagonals-201.bin": {
+      "sha256": "1f236dcf3a214e0d84994eb9e256848206c0d92c5f50fec0cc2aff1d54cbf614",
+      "scene_id": "pyramid_shifted_013",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "473748fc"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_shifted_013/candidate_diagonals-202.bin": {
+      "sha256": "8db990c29a1582f12a70123285ba9a50a119e48adbe477d6037cfadef3238549",
+      "scene_id": "pyramid_shifted_013",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "76712f43"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_shifted_013/candidate_diagonals-203.bin": {
+      "sha256": "36c9e742e4c51ea2cf93a962361368949d9293d674ccbf0c38a1a262843c84fb",
+      "scene_id": "pyramid_shifted_013",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "041fcbe0"
+      }
+    },
+    ".ai/runs/m001-d004/frames/pyramid_shifted_013/candidate_diagonals-204.bin": {
+      "sha256": "28edbbf27efac64c408a438bfdbc5265e8f7e4abaeb3ce923434882cc7a9a69d",
+      "scene_id": "pyramid_shifted_013",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "e5adcf0e"
+      }
+    },
+    ".ai/runs/m001-d004/frames/ramp/candidate_diagonals-201.bin": {
+      "sha256": "316c5badf6acba1bafd299afd91f49b090a23a6b76a1dab3b358c2543881afe6",
+      "scene_id": "ramp",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "3c9fdcb8"
+      }
+    },
+    ".ai/runs/m001-d004/frames/ramp/candidate_diagonals-202.bin": {
+      "sha256": "02a17278067264e2a8c82fc41712925bd6bc6a9a143f02b452fe05dffba246c7",
+      "scene_id": "ramp",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "dfe52ad9"
+      }
+    },
+    ".ai/runs/m001-d004/frames/ramp/candidate_diagonals-203.bin": {
+      "sha256": "b4c11d3dfdbe392de1d6f27c72efb0107b0da65d0ad983b667d027eee2b5ce5f",
+      "scene_id": "ramp",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "8241ebd3"
+      }
+    },
+    ".ai/runs/m001-d004/frames/ramp/candidate_diagonals-204.bin": {
+      "sha256": "c8409c1d8b82d295ad0a94c958002a0b35a4aca7681ef5f385bd3c132791ef1d",
+      "scene_id": "ramp",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "e36b497a"
+      }
+    },
+    ".ai/runs/m001-d004/frames/two_stacks/candidate_diagonals-201.bin": {
+      "sha256": "280ae3e1e0d1dbb46933f0ccea94093bf9bd4d0ff8a8ed7c8f5f61195c06e0f1",
+      "scene_id": "two_stacks",
+      "header": {
+        "sequence": 201,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "13b1c492"
+      }
+    },
+    ".ai/runs/m001-d004/frames/two_stacks/candidate_diagonals-202.bin": {
+      "sha256": "37b008a3bb9894ef7d0a4db86f1d653fddcb87e80530ae9a56a55d11a8a095f6",
+      "scene_id": "two_stacks",
+      "header": {
+        "sequence": 202,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.12250000238418579,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "8b2da6d6"
+      }
+    },
+    ".ai/runs/m001-d004/frames/two_stacks/candidate_diagonals-203.bin": {
+      "sha256": "140d0289a5c52ace551c632d6fd5761bb14ace40b229bcdc33aab03506523105",
+      "scene_id": "two_stacks",
+      "header": {
+        "sequence": 203,
+        "sensor_pose": {
+          "translation_m": [
+            0.12250000238418579,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "83421333"
+      }
+    },
+    ".ai/runs/m001-d004/frames/two_stacks/candidate_diagonals-204.bin": {
+      "sha256": "10f6c4a55eb5e3a704aef1b97537e1cf43c23ae0ad1068703518357d52a680aa",
+      "scene_id": "two_stacks",
+      "header": {
+        "sequence": 204,
+        "sensor_pose": {
+          "translation_m": [
+            0.17749999463558197,
+            0.17749999463558197,
+            0.4000000059604645
+          ],
+          "yaw_deg": 0.0,
+          "tilt_deg": 0.0,
+          "roll_deg": 0.0
+        },
+        "bytes": 704,
+        "crc32": "e748999e"
+      }
+    }
+  },
+  "counts": {
+    "new_candidate_frames": 36,
+    "reused_control_frames": 36,
+    "reused_shared_centres": 9,
+    "total_inputs_per_arm": 45
+  },
+  "capture_commands_sha256": "fbaa0308c9304dee9ed7ef68bb365e6f5580f6816b7669168e51ec643c72f6ca",
+  "truth_or_estimator_used": false,
+  "volume_results_present": false
+}

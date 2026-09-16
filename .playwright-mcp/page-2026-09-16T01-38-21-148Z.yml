@@ -1,0 +1,72 @@
+- generic [ref=e1]:
+  - generic [ref=e67]:
+    - banner [ref=e68]:
+      - banner [ref=e69]:
+        - link [ref=e70] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e78]:
+          - group [ref=e79]:
+            - button "Save" [ref=e447] [cursor=pointer]
+            - button [ref=e80] [cursor=pointer]
+          - button [ref=e431] [cursor=pointer]
+        - navigation [ref=e86]:
+          - link "Docs" [ref=e432] [cursor=pointer]:
+            - /url: https://docs.wokwi.com/?utm_source=wokwi
+        - button "toggle dark mode" [ref=e433] [cursor=pointer]
+        - button "Sign in Sign up" [ref=e434] [cursor=pointer]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: Sign in
+            - text: Sign up
+    - main [ref=e94]:
+      - generic [ref=e98]:
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - button "sketch.ino" [ref=e435]
+            - button "diagram.json" [ref=e436]
+            - button "Library Manager" [ref=e437]
+            - button "boxflow-lidar.chip.c" [ref=e438]
+            - button "boxflow-lidar.chip.json" [ref=e439]
+            - button "config.h" [ref=e440]
+            - button [ref=e105]
+          - code [ref=e451]:
+            - generic [ref=e452]:
+              - generic [aria-hidden] [ref=e455]:
+                - generic [ref=e456]:
+                  - generic [ref=e458] [cursor=pointer]: 
+                  - generic [ref=e459]: "1"
+                - generic [ref=e460]: "2"
+                - generic [ref=e462]: "3"
+                - generic [ref=e464]: "4"
+                - generic [ref=e466]: "5"
+                - generic [ref=e468]: "6"
+                - generic [ref=e470]: "7"
+              - generic [aria-hidden] [ref=e488]:
+                - generic [ref=e489]: "{"
+                - generic [ref=e491]: "\"version\": 1,"
+                - generic [ref=e493]: "\"author\": \"Anonymous maker\","
+                - generic [ref=e495]: "\"editor\": \"wokwi\","
+                - generic [ref=e497]: "\"parts\": [ { \"id\": \"esp\", \"type\": \"board-esp32-devkit-c-v4\" } ],"
+                - generic [ref=e499]: "\"connections\": [ [ \"esp:TX\", \"$serialMonitor:RX\", \"\" ], [ \"esp:RX\", \"$serialMonitor:TX\", \"\" ] ]"
+                - generic [ref=e501]: "}"
+              - textbox "Editor content;Press Alt+F1 for Accessibility Options." [active] [ref=e505]: "{ \"version\": 1, \"author\": \"Anonymous maker\", \"editor\": \"wokwi\", \"parts\": [ { \"id\": \"esp\", \"type\": \"board-esp32-devkit-c-v4\" } ], \"connections\": [ [ \"esp:TX\", \"$serialMonitor:RX\", \"\" ], [ \"esp:RX\", \"$serialMonitor:TX\", \"\" ] ] }"
+        - generic [ref=e184]:
+          - button "Simulation" [ref=e442]
+          - generic [ref=e187]:
+            - generic [ref=e188]:
+              - button "Start the simulation" [ref=e443] [cursor=pointer]
+              - generic [ref=e355]:
+                - generic [ref=e357]:
+                  - paragraph [ref=e358]: Compiling project...
+                  - paragraph [ref=e359]: 42.30s
+                  - button "Cancel" [ref=e444] [cursor=pointer]
+                - generic [ref=e363]:
+                  - generic [ref=e364]:
+                    - paragraph [ref=e365]: Upgrade to a paid plan to skip the build queue and compile faster.
+                    - link "Wokwi Plans" [ref=e445] [cursor=pointer]:
+                      - /url: https://wokwi.com/pricing?ref=compiling
+                  - heading "Build server load" [level=6] [ref=e446]
+            - generic [ref=e202] [cursor=pointer]
+  - alert [ref=e244]
+  - generic [ref=e245]:
+    - alert
+    - alert

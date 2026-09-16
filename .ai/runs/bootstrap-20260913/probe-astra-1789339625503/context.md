@@ -1,0 +1,1 @@
+Geometria ideal; nenhuma informação ou arquivo do projeto é necessário.

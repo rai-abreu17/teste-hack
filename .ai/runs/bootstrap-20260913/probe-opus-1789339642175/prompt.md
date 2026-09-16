@@ -1,0 +1,1 @@
+Teste de infraestrutura: responda somente à pergunta matemática fornecida, sem ferramentas, leitura ou gravação de arquivos e sem delegar. Qual o volume em litros de uma caixa com base de 30 cm por 30 cm e preenchimento uniforme de 12 cm? Inclua a conta em uma frase. Não declare sua identidade de modelo.

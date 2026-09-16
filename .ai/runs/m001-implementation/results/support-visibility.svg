@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="560" viewBox="0 0 1160 560">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="40" y="36" font-family="sans-serif" font-size="24" font-weight="700">P-001: amostragem, suporte TIN e visibilidade geométrica</text>
+<line x1="95" y1="430.0" x2="1125" y2="430.0" stroke="#ddd"/>
+<text x="50" y="435.0" font-family="sans-serif" font-size="13">0%</text>
+<line x1="95" y1="358.0" x2="1125" y2="358.0" stroke="#ddd"/>
+<text x="50" y="363.0" font-family="sans-serif" font-size="13">20%</text>
+<line x1="95" y1="286.0" x2="1125" y2="286.0" stroke="#ddd"/>
+<text x="50" y="291.0" font-family="sans-serif" font-size="13">40%</text>
+<line x1="95" y1="214.0" x2="1125" y2="214.0" stroke="#ddd"/>
+<text x="50" y="219.0" font-family="sans-serif" font-size="13">60%</text>
+<line x1="95" y1="142.0" x2="1125" y2="142.0" stroke="#ddd"/>
+<text x="50" y="147.0" font-family="sans-serif" font-size="13">80%</text>
+<line x1="95" y1="70.0" x2="1125" y2="70.0" stroke="#ddd"/>
+<text x="50" y="75.0" font-family="sans-serif" font-size="13">100%</text>
+<rect x="119.1" y="372.4" width="24" height="57.6" fill="#276FBF"/>
+<rect x="146.1" y="127.6" width="24" height="302.4" fill="#F28E2B"/>
+<rect x="173.1" y="89.8" width="24" height="340.2" fill="#59A14F"/>
+<text transform="translate(124.1,452) rotate(35)" font-family="sans-serif" font-size="12">baseline fixed1</text>
+<rect x="245.4" y="372.4" width="24" height="57.6" fill="#276FBF"/>
+<rect x="272.4" y="127.6" width="24" height="302.4" fill="#F28E2B"/>
+<rect x="299.4" y="89.8" width="24" height="340.2" fill="#59A14F"/>
+<text transform="translate(250.4,452) rotate(35)" font-family="sans-serif" font-size="12">fixed3</text>
+<rect x="371.6" y="322.0" width="24" height="108.0" fill="#276FBF"/>
+<rect x="398.6" y="113.2" width="24" height="316.8" fill="#F28E2B"/>
+<rect x="425.6" y="89.8" width="24" height="340.2" fill="#59A14F"/>
+<text transform="translate(376.6,452) rotate(35)" font-family="sans-serif" font-size="12">center tilt3</text>
+<rect x="497.9" y="322.0" width="24" height="108.0" fill="#276FBF"/>
+<rect x="524.9" y="82.6" width="24" height="347.4" fill="#F28E2B"/>
+<rect x="551.9" y="70.0" width="24" height="360.0" fill="#59A14F"/>
+<text transform="translate(502.9,452) rotate(35)" font-family="sans-serif" font-size="12">translated3 level</text>
+<rect x="624.1" y="338.2" width="24" height="91.8" fill="#276FBF"/>
+<rect x="651.1" y="84.4" width="24" height="345.6" fill="#F28E2B"/>
+<rect x="678.1" y="70.0" width="24" height="360.0" fill="#59A14F"/>
+<text transform="translate(629.1,452) rotate(35)" font-family="sans-serif" font-size="12">translated3 aimed</text>
+<rect x="750.4" y="372.4" width="24" height="57.6" fill="#276FBF"/>
+<rect x="777.4" y="127.6" width="24" height="302.4" fill="#F28E2B"/>
+<rect x="804.4" y="89.8" width="24" height="340.2" fill="#59A14F"/>
+<text transform="translate(755.4,452) rotate(35)" font-family="sans-serif" font-size="12">fixed4</text>
+<rect x="876.6" y="296.8" width="24" height="133.2" fill="#276FBF"/>
+<rect x="903.6" y="161.8" width="24" height="268.2" fill="#F28E2B"/>
+<rect x="930.6" y="89.8" width="24" height="340.2" fill="#59A14F"/>
+<text transform="translate(881.6,452) rotate(35)" font-family="sans-serif" font-size="12">center angles4</text>
+<rect x="1002.9" y="327.4" width="24" height="102.6" fill="#276FBF"/>
+<rect x="1029.9" y="253.6" width="24" height="176.4" fill="#F28E2B"/>
+<rect x="1056.9" y="70.0" width="24" height="360.0" fill="#59A14F"/>
+<text transform="translate(1007.9,452) rotate(35)" font-family="sans-serif" font-size="12">translated4 corners level</text>
+<rect x="600" y="20" width="14" height="14" fill="#276FBF"/>
+<text x="620" y="32" font-family="sans-serif" font-size="13">bins com retornos</text>
+<rect x="775" y="20" width="14" height="14" fill="#F28E2B"/>
+<text x="795" y="32" font-family="sans-serif" font-size="13">suporte TIN</text>
+<rect x="950" y="20" width="14" height="14" fill="#59A14F"/>
+<text x="970" y="32" font-family="sans-serif" font-size="13">visibilidade oráculo</text>
+<text x="40" y="540" font-family="sans-serif" font-size="12" fill="#555">Medianas de 9 cenas. Suporte TIN é interpolado; visibilidade intrínseca ignora FoV e não é fornecida ao estimador.</text>
+</svg>

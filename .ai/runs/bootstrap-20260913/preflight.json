@@ -1,0 +1,96 @@
+[
+  {
+    "RUN_ID": "bootstrap-20260913",
+    "TIMESTAMP": "2026-09-13T22:44:00.138Z",
+    "AGENT": "PREFLIGHT_NO_MODEL",
+    "MODEL": null,
+    "EFFORT": null,
+    "PROMPT_FILE": null,
+    "CONTEXT_FILE": null,
+    "COMMAND": [
+      "C:\\Users\\Raí\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+      "--version"
+    ],
+    "EXIT_CODE": 0,
+    "STDOUT_FILE": "claude-version.stdout.txt",
+    "STDERR_FILE": "claude-version.stderr.txt",
+    "DURATION_MS": 848,
+    "STATUS": "SUCCESS"
+  },
+  {
+    "RUN_ID": "bootstrap-20260913",
+    "TIMESTAMP": "2026-09-13T22:44:00.986Z",
+    "AGENT": "PREFLIGHT_NO_MODEL",
+    "MODEL": null,
+    "EFFORT": null,
+    "PROMPT_FILE": null,
+    "CONTEXT_FILE": null,
+    "COMMAND": [
+      "C:\\Users\\Raí\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+      "--help"
+    ],
+    "EXIT_CODE": 0,
+    "STDOUT_FILE": "claude-help.stdout.txt",
+    "STDERR_FILE": "claude-help.stderr.txt",
+    "DURATION_MS": 635,
+    "STATUS": "SUCCESS"
+  },
+  {
+    "RUN_ID": "bootstrap-20260913",
+    "TIMESTAMP": "2026-09-13T22:44:01.621Z",
+    "AGENT": "PREFLIGHT_NO_MODEL",
+    "MODEL": null,
+    "EFFORT": null,
+    "PROMPT_FILE": null,
+    "CONTEXT_FILE": null,
+    "COMMAND": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Raí\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\bin\\codex.js",
+      "--version"
+    ],
+    "EXIT_CODE": 0,
+    "STDOUT_FILE": "codex-version.stdout.txt",
+    "STDERR_FILE": "codex-version.stderr.txt",
+    "DURATION_MS": 184,
+    "STATUS": "SUCCESS"
+  },
+  {
+    "RUN_ID": "bootstrap-20260913",
+    "TIMESTAMP": "2026-09-13T22:44:01.805Z",
+    "AGENT": "PREFLIGHT_NO_MODEL",
+    "MODEL": null,
+    "EFFORT": null,
+    "PROMPT_FILE": null,
+    "CONTEXT_FILE": null,
+    "COMMAND": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Raí\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\bin\\codex.js",
+      "--help"
+    ],
+    "EXIT_CODE": 0,
+    "STDOUT_FILE": "codex-help.stdout.txt",
+    "STDERR_FILE": "codex-help.stderr.txt",
+    "DURATION_MS": 678,
+    "STATUS": "SUCCESS"
+  },
+  {
+    "RUN_ID": "bootstrap-20260913",
+    "TIMESTAMP": "2026-09-13T22:44:02.483Z",
+    "AGENT": "PREFLIGHT_NO_MODEL",
+    "MODEL": null,
+    "EFFORT": null,
+    "PROMPT_FILE": null,
+    "CONTEXT_FILE": null,
+    "COMMAND": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Raí\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\bin\\codex.js",
+      "exec",
+      "--help"
+    ],
+    "EXIT_CODE": 0,
+    "STDOUT_FILE": "codex-exec-help.stdout.txt",
+    "STDERR_FILE": "codex-exec-help.stderr.txt",
+    "DURATION_MS": 189,
+    "STATUS": "SUCCESS"
+  }
+]

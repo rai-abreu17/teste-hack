@@ -1,0 +1,8 @@
+[wokwi]
+version = 1
+firmware = "../build/firmware/BoxFlow.ino.merged.bin"
+elf = "../build/firmware/BoxFlow.ino.elf"
+
+[[chip]]
+name = "boxflow-lidar"
+binary = "boxflow-lidar.chip.wasm"

@@ -1,0 +1,17 @@
+{
+  "runId": "m001-evaluation-opus",
+  "createdAt": "2026-09-14T11:38:00.572Z",
+  "invocations": [
+    {
+      "agent": "investigator",
+      "status": "completed",
+      "requestedModel": "claude-opus-5",
+      "observedModel": "claude-opus-5",
+      "directory": "001-investigator"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-09-14T11:38:00.572Z",
+  "completedAt": "2026-09-14T11:38:00.606Z",
+  "finalResult": "001-investigator\\result.md"
+}

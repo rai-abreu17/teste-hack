@@ -1,0 +1,36 @@
+You are the investigator in a controlled multi-agent analysis. Work only from the supplied context. Do not assume access to files, tools, prior conversations, or other agents unless their text appears below. Be explicit about uncertainty. Produce a self-contained answer.
+
+ROLE INSTRUCTION
+Analise a geometria e os mecanismos físicos simulados. Explique por que seleção dura por compactness pode ajudar descontinuidades e piorar prismas/rampas.
+
+
+CONTEXT
+# Revisão independente P-003
+
+P-003 reutilizou os frames P-001 de `translated3_aimed`. Aquisição, TIN local com aresta máxima 0,10 m, domínio common_all original e suporte ficaram fixos. A única mudança foi fusão entre vistas: mediana versus escolher, por célula, a vista com o menor máximo de aresta 3D entre triângulos locais que suportam a célula. A qualidade usa apenas geometria decodificada, sem truth. Empates usam menor índice da captura.
+
+Baseline de aprovação: `fixed3` com mediana. Gate congelado: redução mediana do erro absoluto >=1 pp; vitória >=7/9; nenhuma regressão >2 pp; suporte mediano >=84%; total >=4/9; domínio original completo 9/9.
+
+Integridade: protocolo SHA-256 `22d2f23a11bf1e1727e7208c769c0231eff26690bc57ee33c314949ed56afb44`; mediana reproduziu exatamente P-001 em todas as cenas; a nova fusão preservou exatamente o suporte; 18 comparações.
+
+Resultados, cada linha `cena: erro absoluto fixed3 -> desafiante; redução positiva em pp`:
+
+- pyramid_center: 17,266 -> 13,497; +3,769
+- pyramid_shifted_013: 1,623 -> 0,828; +0,795
+- two_stacks: 5,374 -> 4,256; +1,118
+- prism: 3,973 -> 7,864; -3,891
+- ramp: 10,652 -> 13,875; -3,224
+- layer: 0,196 -> 0,020; +0,176
+- pyramid_beam: 13,966 -> 11,058; +2,908
+- layer_beam: 0,187 -> 0,030; +0,156
+- pyramid_beam_dropout20: 37,251 -> 30,986; +6,265
+
+Agregado: melhora mediana 0,795 pp; 7/9 vitórias; regressão máxima 3,891 pp; suporte mediano 96%; total 4/9; domínio completo 9/9; REPROVADO.
+
+Limitações: simulador pinhole ideal; nenhuma evidência de hardware. `compactness` é tamanho geométrico do triângulo, não incerteza calibrada nem incidência real.
+
+Entregue: diagnóstico do padrão (especialmente prisma/rampa), veredito sobre a hipótese e uma única próxima ablação mínima reutilizando frames. A regra proposta deve usar apenas informação disponível ao estimador e conter uma previsão falsificável. Não invente dados.
+
+
+Completion protocol: finish your response with this exact marker on its own line:
+<<ORCHESTRATION_COMPLETE>>

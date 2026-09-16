@@ -1,0 +1,47 @@
+[    2595ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://wokwi.com/api/logout:0
+[    3199ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at r1 (https://wokwi.com/_next/static/chunks/4bd1b696-0562a75e9b1eb3c3.js:1:37065)
+    at ih (https://wokwi.com/_next/static/chunks/4bd1b696-0562a75e9b1eb3c3.js:1:89012)
+    at sy (https://wokwi.com/_next/static/chunks/4bd1b696-0562a75e9b1eb3c3.js:1:129322)
+    at https://wokwi.com/_next/static/chunks/4bd1b696-0562a75e9b1eb3c3.js:1:124201
+    at so (https://wokwi.com/_next/static/chunks/4bd1b696-0562a75e9b1eb3c3.js:1:124302)
+    at sG (https://wokwi.com/_next/static/chunks/4bd1b696-0562a75e9b1eb3c3.js:1:150889)
+    at MessagePort.w (https://wokwi.com/_next/static/chunks/3794-14e169df8ac0ea38.js:1:63104)
+[    3591ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.google-analytics.com/analytics.js:0
+[    4346ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://analytics.google.com/g/collect?v=2&tid=G-NCK2JJ7E5V&gtm=45je69e1v9135776967za20g&_p=1789522575141&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=EAAIACAC&cid=714463981.1789522576&frm=0&ibt=1&ir=1&ngs=1&pscdl=noapi&rcb=7&sr=1536x864&uaa=x86&uab=64&uafvl=Chromium%3B152.0.7977.83%7CNot%253FA_Brand%3B24.0.0.0%7CGoogle%2520Chrome%3B152.0.7977.83&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=pt-br&_s=1&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153&sid=1789522576&sct=1&seg=0&dl=https%3A%2F%2Fwokwi.com%2Fprojects%2Fnew%2Fesp32&dt=New%20ESP32%20Project%20-%20Wokwi%20Simulator&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=4214:0
+[    4408ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-NCK2JJ7E5V&cid=714463981.1789522576&gtm=45je69e1v9135776967za20g&rcb=7&aip=1&dma=0&gcd=13l3l3l3l1l1&npa=0&frm=0&tag_exp=115616986~115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153:0
+[   10374ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[   29982ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[   86815ms] [LOG] [chip-boxflow-lidar] 🐞 Compiling custom chip... @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[   88446ms] [LOG] [chip-boxflow-lidar] 🍕 Custom chip compiled successfully @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[   91439ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[  130065ms] [LOG] [chip-boxflow-lidar] 🐞 Compiling custom chip... @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  130075ms] [LOG] Build aborted @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  130084ms] [LOG] [chip-boxflow-lidar] 🍕 Custom chip compiled successfully @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  133106ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[  211333ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[  240626ms] [LOG] Build aborted @ https://wokwi.com/_next/static/chunks/626-9023708a7974fb62.js:163
+[  243789ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[ 2991229ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[ 3006882ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://wokwi.com/cdn/monaco-editor/0.48.0/vs/basic-languages/cpp/cpp.js:0
+[ 3006892ms] Error: [object Event]
+    at Object.y [as ensureError] (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:6:3403)
+    at c._createLoadError (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:8:7347)
+    at c._onLoadError (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:8:7446)
+    at l (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:8:9106)
+    at Object.errorback (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:8:9481)
+    at y.triggerErrorback (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:6:9402)
+    at https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:6:9153
+    at HTMLScriptElement.d (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:6:9549)
+[ 3006893ms] Error: [object Event]
+    at Object.y [as ensureError] (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:6:3403)
+    at c._createLoadError (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:8:7347)
+    at c._onLoadError (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:8:7446)
+    at l (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:8:9106)
+    at Object.errorback (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:8:9481)
+    at y.triggerErrorback (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:6:9402)
+    at https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:6:9153
+    at HTMLScriptElement.d (https://wokwi.com/cdn/monaco-editor/0.48.0/vs/loader.js:6:9549)
+[ 3009891ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[ 3022526ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0
+[ 3033094ms] [WARNING] The resource https://wokwi.com/_next/static/css/cb35204f43f26ded.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://wokwi.com/projects/new/esp32:0

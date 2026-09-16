@@ -1,0 +1,17 @@
+{
+  "runId": "m001-sonnet-research",
+  "createdAt": "2026-09-13T23:16:30.793Z",
+  "invocations": [
+    {
+      "agent": "researcher",
+      "status": "completed",
+      "requestedModel": "claude-sonnet-5",
+      "observedModel": "claude-sonnet-5",
+      "directory": "001-researcher"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-09-13T23:16:30.793Z",
+  "completedAt": "2026-09-13T23:16:30.798Z",
+  "finalResult": "001-researcher\\result.md"
+}

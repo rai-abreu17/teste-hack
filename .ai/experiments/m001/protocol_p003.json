@@ -1,0 +1,21 @@
+{
+  "experiment_id": "P-003",
+  "frozen_before_execution": true,
+  "input": "reuse P-001 frames only",
+  "baseline": "fixed3 with median fusion",
+  "challenger_acquisition": "translated3_aimed",
+  "fusion_variants": ["median", "most_compact_local_triangle"],
+  "max_edge_m": 0.10,
+  "quality_definition": "minimum maximum 3D edge among valid local triangles supporting the cell in each view",
+  "tie_break": "lowest capture index",
+  "evaluation_domain": "original P-001 common_all mask per scene",
+  "approval": {
+    "median_paired_absolute_error_reduction_pp_min": 1.0,
+    "scene_wins_min": 7,
+    "maximum_regression_pp": 2.0,
+    "median_support_fraction_min": 0.84,
+    "total_selected_min": 4,
+    "original_domain_complete_count": 9
+  },
+  "scope": "SIMULATED"
+}

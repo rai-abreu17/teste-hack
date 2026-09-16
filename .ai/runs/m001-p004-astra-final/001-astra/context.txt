@@ -1,0 +1,16 @@
+# Arbitragem após P-004
+
+P-004 executou `trimmed3_kappa2`, escolhido previamente por Astra. Mesmos frames P-001, TIN 0,10 m, domínio common_all original e gate congelado.
+
+Integridade: hash de protocolo `328a779f184de834ec246329a12b6a476a3428dc8795dbb3f1c4b82c1768b60e`; mediana P-001 reproduzida; suporte preservado; domínio 9/9.
+
+Resultado: melhora absoluta mediana 0,181 pp; 6/9 vitórias; regressão máxima 0,503 pp; suporte 96%; total 4/9; REPROVADO.
+
+Deltas por cena, positivo favorece desafiante:
+`pyramid_center +1.989; shifted -0.332; two_stacks -0.503; prism -0.116; ramp +0.190; layer +0.147; pyramid_beam +2.859; layer_beam +0.181; dropout20 +6.426`.
+
+As previsões mecanísticas passaram: regressões de prism/ramp <=2 pp; retenção >=50% do ganho P-003 em pyramid_center, pyramid_beam e dropout20. O gate geral falhou em mediana e número de vitórias.
+
+P-001: translated3_aimed venceu 5/9, mediana assinada -0,147 pp. P-002 aresta 0,07 falhou por cobertura. P-003 seleção dura venceu 7/9, mediana +0,795 pp, mas regrediu prism/ramp >3 pp. P-004 conteve cauda, mas diluiu ganho.
+
+Decida entre: (a) outra ablação de fusão claramente justificada, (b) mudar aquisição/geometria, ou (c) encerrar esta linha e manter fixed3. Não permita varrer κ nas mesmas nove cenas para promoção. Dê uma próxima ação concreta e falsificável, ou um critério de parada. Diferencie resultado simulado de inferência.

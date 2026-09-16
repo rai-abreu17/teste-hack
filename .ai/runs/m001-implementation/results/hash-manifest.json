@@ -1,0 +1,21 @@
+{
+  "generated_at_utc": "2026-09-14T11:07:15.582221Z",
+  "protocol_sha256": "36ff044546272f70759e565dfc0afc3f18980ee632d1dcae7276a9a48c091a7e",
+  "files": {
+    ".ai\\experiments\\m001\\protocol.json": "36ff044546272f70759e565dfc0afc3f18980ee632d1dcae7276a9a48c091a7e",
+    ".ai\\experiments\\m001\\protocol.sha256": "7741415894fbfb0a4e8488ba17ee166efa7d0080d54c76a247db06ade5975805",
+    ".ai\\experiments\\m001\\scene_dump_m001.c": "32239a94172bee8570f4f26a23c7373fffc3587abd62b6e2a429bc68612f6270",
+    ".ai\\experiments\\m001\\m001_estimator.py": "c8a035f8439b6a30c66e40f4787d423e443ad1979f0cb44ca952fdc8ce62a614",
+    ".ai\\experiments\\m001\\run_p001.py": "ae794a9aa9d65efd67f952929eb131ffb9eaa02ebada7001186ab5ad56f87ea8",
+    ".ai\\experiments\\m001\\test_m001.py": "2edf7bc97fe25488f85c3cda014a4068abaa54302b66c60efb7910083c2ae0b3",
+    ".ai\\runs\\m001\\implementation-task.md": "d8f3e9a59c3422c21100768a0442c74fa9a5a8d5954303226c0ebd9762cfacc9",
+    "wokwi\\boxflow-lidar.chip.c": "a77f9a3c7d84e4b43a5986ca7fef1f3e471dd2558b0e1f10ad073b2aa905705b",
+    "server\\geometry.py": "35a8c563ba5ba5047d29eedc3bd4cf6e14353fb40e8e34b19aee987df8854b0b",
+    "experiments\\truth.py": "fb88a8e3db2e9e57b9c813ce05c7a63d021985db28e158571194fa331e9ab351",
+    ".ai\\runs\\m001-implementation\\results\\comparisons.json": "6c5035c5d9478199d0ec3d6abf0a3211e06178a334e7386cc54f22d35cea9079",
+    ".ai\\runs\\m001-implementation\\results\\comparisons.csv": "a3f49154f76b70b3e2872df78fe52d354647df63d5056c92ee85a8524586b76c",
+    ".ai\\runs\\m001-implementation\\results\\summary.md": "93fb0f085a8cdc40601fab1c1071f1c3c86fd6f5eb657e0a6e1875784d55a05f",
+    ".ai\\runs\\m001-implementation\\results\\support-visibility.svg": "6c8eec748d8eb51f1fd7c9b5862c0b1184b9f2ff30d5b7c92bfec33b419d2fc3",
+    ".ai\\runs\\m001-implementation\\results\\capture-commands.json": "0ff7d5531465184f37abc268c7c92b65eb9ed1131998d5add9d362388c4dc017"
+  }
+}

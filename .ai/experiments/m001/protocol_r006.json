@@ -1,0 +1,103 @@
+{
+  "experiment_id": "R-006",
+  "protocol_version": 1,
+  "frozen_before_execution": true,
+  "purpose": "Post-hoc diagnostic localization of cellwise reconstruction error using only archived P-001 frames; this is not candidate ranking, tuning, holdout evaluation, or general validation.",
+  "inputs": {
+    "p001_protocol": ".ai/experiments/m001/protocol.json",
+    "p001_results": ".ai/runs/m001-implementation/results/comparisons.json",
+    "frames_root": ".ai/runs/m001-implementation/results/frames",
+    "scene_ids": [
+      "pyramid_center",
+      "pyramid_shifted_013",
+      "two_stacks",
+      "prism",
+      "ramp",
+      "layer",
+      "pyramid_beam",
+      "layer_beam",
+      "pyramid_beam_dropout20"
+    ],
+    "acquisitions": ["fixed3", "translated3_aimed"],
+    "captures_per_acquisition": 3,
+    "expected_frame_count": 54,
+    "new_capture_allowed": false
+  },
+  "estimator": {
+    "module": ".ai/experiments/m001/r005_estimator.py",
+    "truth_free_required": true,
+    "reference_offset_m": 0.0,
+    "fixed_acquisition_comparison": [
+      {"id": "fixed3_median", "acquisition": "fixed3", "trim_kappa": null, "lower": false},
+      {"id": "aimed_median", "acquisition": "translated3_aimed", "trim_kappa": null, "lower": false}
+    ],
+    "same_acquisition_attribution_only": [
+      {"id": "aimed_median", "acquisition": "translated3_aimed", "trim_kappa": null, "lower": false},
+      {"id": "aimed_lower", "acquisition": "translated3_aimed", "trim_kappa": null, "lower": true},
+      {"id": "aimed_median_trim2", "acquisition": "translated3_aimed", "trim_kappa": 2.0, "lower": false},
+      {"id": "aimed_lower_trim2", "acquisition": "translated3_aimed", "trim_kappa": 2.0, "lower": true}
+    ],
+    "attribution_variants_are_not_ranked_or_tuned": true
+  },
+  "grid": {"nx": 20, "ny": 20, "cell_m": 0.015, "cell_count": 400},
+  "truth_evaluator_only": {
+    "module": "experiments.truth",
+    "cell_reference": "exact experiments.truth.cell_volumes integration",
+    "center_height": "maximum material height of truth.faces at the cell center, plus server.geometry.base only for line segments and projection checks",
+    "transition_width_m": 0.015,
+    "transition_rule": "cell center is within one cell width of a projected truth-face boundary edge, or a shared projected edge whose adjacent non-degenerate face normals are non-coplanar",
+    "coplanar_diagonal_rule": "shared triangulation edges with parallel face normals and coplanar planes are excluded",
+    "normal_parallel_tolerance": 1e-09,
+    "plane_tolerance_m": 1e-09,
+    "beam_aabb_m": {"x": [0.17, 0.2], "y": [0.0, 0.3], "z": [0.18, 0.2]},
+    "beam_shadow_rule": "potential geometric beam blockage: segment from capture origin to true cell-center target intersects the closed physical beam AABB strictly before the target; all_views and any_view are recorded",
+    "beam_scope": "beam masks are false in scenes where obstacle=0",
+    "beam_limit": "does not raycast the rest of the true mesh, so it is not total line-of-sight or self-occlusion",
+    "fov_rule": "ideal continuous pinhole projection uses abs(local_x/-local_z) and abs(local_y/-local_z) <= tan(22.5 degrees); discrete zone-center span separately uses 0.875*tan(22.5 degrees)",
+    "fov_limit": "projection-only model; ignores occlusion, finite zone response, histograms, distortion, and physical detection probability"
+  },
+  "cell_diagnostics": [
+    "estimated height and exact truth volume/mean height",
+    "signed residual and absolute spatial cell error",
+    "per-view triangle contributors with triangle indices, contributed height, maximum 3D edge, and projected XY area",
+    "per-view mean contributor maximum edge quality",
+    "accepted usable return count landing in the cell",
+    "available-view count and pre-fusion cross-view height range and population standard deviation",
+    "TIN support, continuous ideal FoV, discrete zone-center span, potential beam blockage, planar/transition labels"
+  ],
+  "domains": {
+    "own": "cells supported by the evaluated method",
+    "common_fixed3_aimed": "intersection of fixed3_median and aimed_median support in the same scene",
+    "whole_box": "all 400 cells; volume error is eligible only when all cells are supported and total_selection.selected is true",
+    "unsupported": "reported separately as area and exact truth volume; never imputed as zero"
+  },
+  "zone_families": {
+    "surface_partition": ["transition", "planar"],
+    "beam_partition": ["potential_beam_shadow_all_views", "not_potential_beam_shadow_all_views"],
+    "hypothesis_partition": ["transition_or_shadow", "remaining"],
+    "overlap_partition": ["transition_and_shadow", "transition_only", "shadow_only", "neither"]
+  },
+  "metrics": {
+    "estimated_cell_volume_m3": "height_m * cell_m^2",
+    "signed_volume_error_m3": "sum(estimated_cell_volume_m3 - exact_truth_cell_volume_m3) over supported cells in domain",
+    "integrated_absolute_cell_error_m3": "sum(abs(estimated_cell_volume_m3 - exact_truth_cell_volume_m3)) over supported cells in domain",
+    "normalization": "signed and integrated absolute errors are divided by exact truth volume when nonzero",
+    "zone_outputs": ["cell_count", "area_m2", "truth_volume_m3", "signed_error_m3", "integrated_absolute_error_m3", "error_fraction", "area_fraction", "truth_fraction", "absolute_error_per_area_m", "absolute_error_over_truth_fraction"],
+    "falsifiable_concentration": "for each method/domain, compare transition_or_shadow versus remaining using integrated absolute error per supported area; support is favorable only when the former exceeds the latter; also disclose error, area, and truth fractions",
+    "aggregation": "report scenes individually and descriptive pooled totals by correlated shape family and beam/dropout condition; do not treat scenes as independent physical replications"
+  },
+  "integrity": {
+    "fail_on_malformed_or_missing_input": true,
+    "verify_archived_frame_sha256_against_p001_results": true,
+    "hash_all_input_frames_and_source_files": true,
+    "validate_exact_truth_total": true,
+    "validate_partitions_and_metric_residual_sums": true,
+    "never_overwrite_output_directory": ".ai/runs/m001-r006"
+  },
+  "interpretation_limits": [
+    "All scenes and frames are reused development artifacts from P-001.",
+    "This diagnostic cannot establish holdout performance, generalization, hardware accuracy, or causal dominance.",
+    "Potential beam blockage is not full scene visibility; ideal FoV membership is not a return or support guarantee.",
+    "Attribution variants are descriptive controls and cannot select kappa, median convention, acquisition, or a new candidate."
+  ]
+}

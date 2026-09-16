@@ -1,0 +1,17 @@
+{
+  "runId": "m001-opus-cross",
+  "createdAt": "2026-09-13T23:20:18.510Z",
+  "invocations": [
+    {
+      "agent": "investigator",
+      "status": "completed",
+      "requestedModel": "claude-opus-5",
+      "observedModel": "claude-opus-5",
+      "directory": "001-investigator"
+    }
+  ],
+  "status": "completed",
+  "updatedAt": "2026-09-13T23:20:18.511Z",
+  "completedAt": "2026-09-13T23:20:18.518Z",
+  "finalResult": "001-investigator\\result.md"
+}

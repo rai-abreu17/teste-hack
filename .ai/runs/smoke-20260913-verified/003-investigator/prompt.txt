@@ -1,0 +1,34 @@
+You are the investigator in a controlled multi-agent analysis. Work only from the supplied context. Do not assume access to files, tools, prior conversations, or other agents unless their text appears below. Be explicit about uncertainty. Produce a self-contained answer.
+
+ROLE INSTRUCTION
+Independently challenge assumptions, seek failure modes, and explain the strongest evidence needed. Do not speculate about other specialists.
+
+CONTEXT
+# Teste mínimo de orquestração — geometria ideal
+
+Esta é uma pergunta matemática pequena para testar chamadas reais, não uma investigação do BoxFlow nem validação de um sensor real. Nenhum arquivo da aplicação deve ser alterado. Responda apenas com base neste contexto, sem ferramentas, navegação, arquivos ou delegação.
+
+Uma caixa tem base quadrada interna de 30 cm por 30 cm. O material ocupa altura uniforme de 12 cm. Um sensor ideal de perspectiva, centralizado sobre a base e perpendicular a ela, fica 20 cm acima da superfície do material. Seu campo de visão completo é de 60 graus em cada um dos dois eixos ortogonais, formando uma projeção quadrada (não circular), com lados paralelos aos lados da caixa. Desconsidere distorção, ruído, reflectância e obstáculos para os cálculos de cobertura.
+
+Determine: (1) volume em litros; (2) lado da projeção na superfície em cm usando w = 2 h tan(FoV/2); (3) fração da base coberta em uma única captura; (4) por que girar um sensor mantendo exatamente o mesmo centro óptico não garante revelar uma superfície ocluída, embora possa mudar a região enquadrada. Não conclua que servo ou qualquer arquitetura real está validada.
+
+Limite: 250 palavras. Inclua fórmulas, unidades, hipóteses e uma limitação da idealização. Não declare seu próprio modelo: a identidade será verificada pelos metadados do processo.
+
+
+ASTRA PLAN
+Plano de investigação, sem executar os cálculos nem delegar tarefas.
+
+**Hipóteses:** base interna quadrada com lado \(L=30\,\text{cm}\); material com altura uniforme \(H=12\,\text{cm}\); distância sensor–superfície \(h=20\,\text{cm}\); campo de visão completo \(\theta=60^\circ\) em cada eixo. A projeção é quadrada, centralizada e alinhada à base.
+
+**Atribuições propostas:**
+
+- **Engenheiro:** calcular o volume por \(V=L^2H\), em \(\text{cm}^3\), e converter usando \(1\,\text{L}=1000\,\text{cm}^3\). Calcular o lado projetado por \(w=2h\tan(\theta/2)\), em centímetros. Determinar a cobertura pela interseção entre projeção e base: \(f=\min(w,L)^2/L^2\), válida para o alinhamento e a centralização dados.
+- **Investigador:** analisar separadamente mudança de enquadramento e visibilidade geométrica. Examinar se uma rotação com centro óptico fixo altera o segmento entre esse centro e um ponto da superfície, e verificar se um obstáculo continuaria interceptando esse segmento.
+- **Pesquisador:** revisar, exclusivamente pelo contexto, a interpretação de FoV completo, os dois eixos ortogonais, as unidades e a distinção entre cobertura projetada e superfície visível.
+
+**Critérios de decisão:** volume em litros; largura em centímetros; cobertura adimensional entre 0 e 1, também expressável em porcentagem; justificativa geométrica para a questão da oclusão. Nenhum resultado deve ser tratado como validação de servo ou arquitetura real.
+
+**Incertezas e limitação:** os dados bastam para os cálculos ideais. Não há geometria específica de obstáculos para quantificar oclusão. A idealização exclui distorção e ruído, portanto não demonstra desempenho de um sensor real.
+
+Completion protocol: finish your response with this exact marker on its own line:
+<<ORCHESTRATION_COMPLETE>>

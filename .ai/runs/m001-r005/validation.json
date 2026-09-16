@@ -1,0 +1,14 @@
+{
+  "scope": "R005 local completion after delegated agents reached provider usage limit",
+  "command": "python -m unittest discover -s .ai/experiments/m001 -p test_r005.py -v",
+  "executor": "root workspace execution tool",
+  "exit_code": 0,
+  "tests_run": 11,
+  "duration_reported_seconds": 2.776,
+  "archived_frames_equivalent": 225,
+  "archived_arm_results_equivalent": 72,
+  "properties": ["per-view heights and states exactly equal", "fused baseline heights, total selection and volumes exactly equal", "invalid and unavailable inputs never select total", "original frame indices preserved", "invalid configuration rejected even with empty inputs", "quality and height use same contributor set", "estimator imports no evaluator or truth"],
+  "fixture_correction": "The initial synthetic invalid-frame test added 20mm to a layer return without making it below reference; corrected to a geometric interior ray intersection at z=-0.01m and recomputed CRC. No historical frame was modified.",
+  "independent_agent_review_completed": false,
+  "new_sensor_captures": 0
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "runId": "sol-cli-probe-20260913",
+  "timestamp": "2026-09-13T22:48:30.475Z",
+  "agent": "engineer",
+  "provider": "codex",
+  "requestedModel": "gpt-5.6-sol",
+  "observedModel": null,
+  "observedModelSource": "not-reported-by-cli",
+  "effort": "high",
+  "prompt": {
+    "file": "prompt.txt",
+    "sha256": "3fc454b86c3f49b35d95aba8f480192e91d18d1426ae4df4039b59b8f4e4e087"
+  },
+  "context": {
+    "source": "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\smoke-context.md",
+    "file": "context.txt",
+    "sha256": "8ad154121623317d2cb39e77f7a0e1eb4064f6548dbeccbc9b682e047b7570d0"
+  },
+  "command": null,
+  "argv": [],
+  "entrypointSource": null,
+  "exitCode": null,
+  "signal": null,
+  "stdout": "stdout.jsonl",
+  "stderr": "stderr.log",
+  "result": "result.md",
+  "durationMs": 0,
+  "timedOut": false,
+  "protocolComplete": false,
+  "completionMarkerPresent": false,
+  "status": "failed",
+  "failureReasons": [
+    "unavailable: ENOENT: no such file or directory, open 'C:\\Users\\Ra�\\AppData\\Roaming\\npm\\codex.cmd'",
+    "exit code null",
+    "incomplete protocol: missing Codex completion event",
+    "empty output",
+    "incomplete output: completion marker absent"
+  ]
+}

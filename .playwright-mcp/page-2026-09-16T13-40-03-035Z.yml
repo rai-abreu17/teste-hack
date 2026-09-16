@@ -1,0 +1,139 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - banner [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e13]:
+          - group [ref=e14]:
+            - button "Save" [ref=e417] [cursor=pointer]
+            - button [ref=e15] [cursor=pointer]
+          - button [ref=e231] [cursor=pointer]
+        - navigation [ref=e21]:
+          - link "Docs" [ref=e232] [cursor=pointer]:
+            - /url: https://docs.wokwi.com/?utm_source=wokwi
+        - button "toggle dark mode" [ref=e233] [cursor=pointer]
+        - button "Sign in Sign up" [ref=e234] [cursor=pointer]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: Sign in
+            - text: Sign up
+    - main [ref=e29]:
+      - generic [ref=e33]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - button "sketch.ino" [ref=e235]
+            - button "diagram.json" [ref=e236]
+            - button "Library Manager" [ref=e237]
+            - button "boxflow-lidar.chip.c" [ref=e238]
+            - button "boxflow-lidar.chip.json" [ref=e239]
+            - button "config.h" [ref=e240]
+            - button "ITofSensor.h" [ref=e241]
+            - button "SimTofSensor.h" [ref=e242]
+            - button "SimTofSensor.cpp" [ref=e243]
+            - button [ref=e40]
+          - code [ref=e8151]:
+            - generic [ref=e8152]:
+              - generic [aria-hidden] [ref=e8168]:
+                - generic [ref=e8169]: "86"
+                - generic [ref=e8171]:
+                  - generic [ref=e8172] [cursor=pointer]: 
+                  - generic [ref=e8173]: "87"
+                - generic [ref=e8174]: "88"
+                - generic [ref=e8176]: "89"
+                - generic [ref=e8178]: "90"
+                - generic [ref=e8180]: "91"
+                - generic [ref=e8182]: "92"
+                - generic [ref=e8184]:
+                  - generic [ref=e8185] [cursor=pointer]: 
+                  - generic [ref=e8186]: "93"
+                - generic [ref=e8187]: "94"
+                - generic [ref=e8189]: "95"
+                - generic [ref=e8191]: "96"
+                - generic [ref=e8193]: "97"
+                - generic [ref=e8195]: "98"
+                - generic [ref=e8197]:
+                  - generic [ref=e8198] [cursor=pointer]: 
+                  - generic [ref=e8199]: "99"
+                - generic [ref=e8200]: "100"
+                - generic [ref=e8202]: "101"
+                - generic [ref=e8204]: "102"
+                - generic [ref=e8206]: "103"
+                - generic [ref=e8208]: "104"
+                - generic [ref=e8210]:
+                  - generic [ref=e8211] [cursor=pointer]: 
+                  - generic [ref=e8212]: "105"
+                - generic [ref=e8213]: "106"
+                - generic [ref=e8215]: "107"
+                - generic [ref=e8217]: "108"
+                - generic [ref=e8219]: "109"
+                - generic [ref=e8221]: "110"
+                - generic [ref=e8223]: "111"
+                - generic [ref=e8225]: "112"
+                - generic [ref=e8227]: "113"
+                - generic [ref=e8229]: "114"
+              - generic [aria-hidden] [ref=e8328]:
+                - generic [ref=e8329]: "],"
+                - generic [ref=e8331]: "["
+                - generic [ref=e8333]: "\"esp:3V3\","
+                - generic [ref=e8335]: "\"r2:1\","
+                - generic [ref=e8337]: "\"red\","
+                - generic [ref=e8339]: "[]"
+                - generic [ref=e8341]: "],"
+                - generic [ref=e8343]: "["
+                - generic [ref=e8345]: "\"r2:2\","
+                - generic [ref=e8347]: "\"lidar:SCL\","
+                - generic [ref=e8349]: "\"blue\","
+                - generic [ref=e8351]: "[]"
+                - generic [ref=e8353]: "],"
+                - generic [ref=e8355]: "["
+                - generic [ref=e8357]: "\"esp:TX\","
+                - generic [ref=e8359]: "\"$serialMonitor:RX\","
+                - generic [ref=e8361]: "\"\","
+                - generic [ref=e8363]: "[]"
+                - generic [ref=e8365]: "],"
+                - generic [ref=e8367]: "["
+                - generic [ref=e8369]: "\"esp:RX\","
+                - generic [ref=e8371]: "\"$serialMonitor:TX\","
+                - generic [ref=e8373]: "\"\","
+                - generic [ref=e8375]: "[]"
+                - generic [ref=e8377]: "]"
+                - generic [ref=e8379]: "],"
+                - generic [ref=e8381]: "\"dependencies\": {}"
+                - generic [ref=e8383]: "}"
+              - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=e8155]: "{ \"version\": 1, \"author\": \"BoxFlow\", \"editor\": \"wokwi\", \"parts\": [ { \"type\": \"board-esp32-devkit-c-v4\", \"id\": \"esp\", \"top\": 30, \"left\": 10,"
+              - generic [ref=e8134]:
+                - generic [ref=e8388]:
+                  - generic [ref=e8389]: "50"
+                  - generic [ref=e8390]: 
+                - generic [ref=e8391]:
+                  - generic [ref=e8392]: "87"
+                  - generic [ref=e8393]: 
+                - generic [ref=e8141]:
+                  - list:
+                    - listitem [ref=e8394]:
+                      - generic [ref=e8395]: "\"connections\": ["
+                    - listitem [ref=e8396]:
+                      - generic [ref=e8397]: "["
+        - generic [ref=e46]:
+          - button "Simulation" [ref=e260]
+          - generic [ref=e8398]:
+            - generic [ref=e8399]:
+              - button "Start the simulation" [active] [ref=e8401] [cursor=pointer]
+              - generic [ref=e8409]:
+                - generic [ref=e8411]:
+                  - paragraph [ref=e8412]: Compiling project...
+                  - paragraph [ref=e8413]: 6.01s
+                  - button "Cancel" [ref=e8416] [cursor=pointer]
+                - generic [ref=e8417]:
+                  - generic [ref=e8418]:
+                    - paragraph [ref=e8419]: Upgrade to a paid plan to skip the build queue and compile faster.
+                    - link "Wokwi Plans" [ref=e8420] [cursor=pointer]:
+                      - /url: https://wokwi.com/pricing?ref=compiling
+                  - heading "Build server load" [level=6] [ref=e8433]
+            - img [ref=e8478] [cursor=pointer]:
+              - generic [ref=e8484]: BoxFlow ToF Mock — perfil VL53L5CX 8x8Breakout
+  - alert [ref=e106]
+  - generic [ref=e193]:
+    - alert
+    - alert
+  - tooltip "Start the simulation" [ref=e8538]

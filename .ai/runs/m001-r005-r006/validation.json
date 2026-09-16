@@ -1,0 +1,11 @@
+{
+  "tests": {"r005": {"command": "python -m unittest discover -s .ai/experiments/m001 -p test_r005.py -v", "passed": 11, "failed": 0}, "r006": {"command": "python -m unittest discover -s .ai/experiments/m001 -p test_r006.py -v", "passed": 6, "failed": 0}},
+  "r005_equivalence": {"frames": 225, "arms": 72, "exact_conventional_heights_and_total_contract": true},
+  "r006": {"reused_frames": 54, "comparisons": 45, "cell_records": 18000, "view_records": 54, "source_output_hashes_verified": 65, "svg_xml_valid": true, "partition_conservation_assertions": "passed during execution"},
+  "r006_counterfactual": {"rows": 18, "domain_values": 36, "independently_recomputed_by_sol": true, "estimator_output": false},
+  "historical_integrity": {"protected_artifacts": 47, "mismatches": 0, "record": "integrity.json"},
+  "business_relative_error_limit": 0.05,
+  "five_methods_each": {"total_within_5pct": 2, "total_above_5pct": 2, "partial_abstentions": 5},
+  "new_captures": 0,
+  "hardware_validated": false
+}

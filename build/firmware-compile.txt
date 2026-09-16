@@ -1,0 +1,9 @@
+BoxFlow firmware compile — 2026-09-16
+Arduino CLI: 1.2.0
+Arduino-ESP32: 3.3.0
+FQBN: esp32:esp32:esp32
+Exit code: 0
+Sketch uses 1066159 bytes (81%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 48684 bytes (14%) of dynamic memory, leaving 278996 bytes for local variables. Maximum is 327680 bytes.
+Command: python tools/build_firmware.py --cli "C:\Program Files\Arduino IDE\resources\app\lib\backend\resources\arduino-cli.exe"
+Note: build_firmware.py applies an automatic Windows non-ASCII-path workaround for this workspace.

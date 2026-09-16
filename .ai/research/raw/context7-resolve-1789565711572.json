@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-16T13:35:11.572Z",
+  "mode": "resolve",
+  "subject": "SciPy",
+  "query": "scipy spatial Delaunay qhull_options simplices coplanar behavior current documentation",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Available Libraries:\n\n- Title: SciPy\n- Context7-compatible library ID: /scipy/scipy\n- Description: SciPy library main repository\n- Code Snippets: 3847\n- Source Reputation: High\n- Benchmark Score: 71.85\n- Versions: v1.16.1"
+      }
+    ]
+  }
+}

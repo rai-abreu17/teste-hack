@@ -1,0 +1,140 @@
+# Teste mínimo de orquestração — geometria ideal
+
+Esta é uma pergunta matemática pequena para testar chamadas reais, não uma investigação do BoxFlow nem validação de um sensor real. Nenhum arquivo da aplicação deve ser alterado. Responda apenas com base neste contexto, sem ferramentas, navegação, arquivos ou delegação.
+
+Uma caixa tem base quadrada interna de 30 cm por 30 cm. O material ocupa altura uniforme de 12 cm. Um sensor ideal de perspectiva, centralizado sobre a base e perpendicular a ela, fica 20 cm acima da superfície do material. Seu campo de visão completo é de 60 graus em cada um dos dois eixos ortogonais, formando uma projeção quadrada (não circular), com lados paralelos aos lados da caixa. Desconsidere distorção, ruído, reflectância e obstáculos para os cálculos de cobertura.
+
+Determine: (1) volume em litros; (2) lado da projeção na superfície em cm usando w = 2 h tan(FoV/2); (3) fração da base coberta em uma única captura; (4) por que girar um sensor mantendo exatamente o mesmo centro óptico não garante revelar uma superfície ocluída, embora possa mudar a região enquadrada. Não conclua que servo ou qualquer arquitetura real está validada.
+
+Limite: 250 palavras. Inclua fórmulas, unidades, hipóteses e uma limitação da idealização. Não declare seu próprio modelo: a identidade será verificada pelos metadados do processo.
+
+
+ASTRA PLAN
+
+Plano de investigação, sem executar os cálculos nem delegar tarefas.
+
+**Hipóteses:** base interna quadrada com lado \(L=30\,\text{cm}\); material com altura uniforme \(H=12\,\text{cm}\); distância sensor–superfície \(h=20\,\text{cm}\); campo de visão completo \(\theta=60^\circ\) em cada eixo. A projeção é quadrada, centralizada e alinhada à base.
+
+**Atribuições propostas:**
+
+- **Engenheiro:** calcular o volume por \(V=L^2H\), em \(\text{cm}^3\), e converter usando \(1\,\text{L}=1000\,\text{cm}^3\). Calcular o lado projetado por \(w=2h\tan(\theta/2)\), em centímetros. Determinar a cobertura pela interseção entre projeção e base: \(f=\min(w,L)^2/L^2\), válida para o alinhamento e a centralização dados.
+- **Investigador:** analisar separadamente mudança de enquadramento e visibilidade geométrica. Examinar se uma rotação com centro óptico fixo altera o segmento entre esse centro e um ponto da superfície, e verificar se um obstáculo continuaria interceptando esse segmento.
+- **Pesquisador:** revisar, exclusivamente pelo contexto, a interpretação de FoV completo, os dois eixos ortogonais, as unidades e a distinção entre cobertura projetada e superfície visível.
+
+**Critérios de decisão:** volume em litros; largura em centímetros; cobertura adimensional entre 0 e 1, também expressável em porcentagem; justificativa geométrica para a questão da oclusão. Nenhum resultado deve ser tratado como validação de servo ou arquitetura real.
+
+**Incertezas e limitação:** os dados bastam para os cálculos ideais. Não há geometria específica de obstáculos para quantificar oclusão. A idealização exclui distorção e ruído, portanto não demonstra desempenho de um sensor real.
+
+BLIND SPECIALIST ROUND
+
+## Specialist 1: engineer
+Hipóteses: superfície plana e uniforme; sensor ideal a \(h=20\,\text{cm}\), centralizado e perpendicular; FoV completo \(\theta=60^\circ\) em ambos os eixos; projeção quadrada alinhada à base.
+
+1. Volume:
+
+\[
+V=L^2H=(30\,\text{cm})^2(12\,\text{cm})
+=10\,800\,\text{cm}^3=10{,}8\,\text{L},
+\]
+
+usando \(1\,\text{L}=1000\,\text{cm}^3\).
+
+2. Lado projetado:
+
+\[
+w=2h\tan(\theta/2)
+=2(20\,\text{cm})\tan(30^\circ)
+\approx23{,}09\,\text{cm}.
+\]
+
+3. Como \(w<30\,\text{cm}\), a projeção centralizada fica inteiramente dentro da base:
+
+\[
+f=\frac{w^2}{L^2}
+=\frac{(23{,}09)^2}{30^2}
+\approx0{,}5926,
+\]
+
+ou aproximadamente \(59{,}26\%\) da base.
+
+4. Girar o sensor sem deslocar seu centro óptico não cria paralaxe. Para um ponto específico, o segmento visual entre o centro óptico e esse ponto permanece o mesmo; se um obstáculo intercepta esse segmento, a oclusão continua. A rotação pode apenas alterar a orientação do campo de visão e, portanto, quais regiões ficam enquadradas.
+
+Validação aritmética: a meia largura é \(20\tan30^\circ\approx11{,}55\,\text{cm}\), menor que os \(15\,\text{cm}\) do centro até cada borda.
+
+Limitação: o modelo ignora distorção, ruído, obstáculos e relevo; logo, não valida servo, sensor ou arquitetura real.
+
+## Specialist 2: investigator
+**1) Volume.** V = L²·H = (30 cm)²·12 cm = 10 800 cm³ = **10,8 L** (1 L = 1000 cm³). Supõe material nivelado, preenchendo a seção interna inteira.
+
+**2) Lado projetado.** w = 2h·tan(θ/2) = 2·20 cm·tan 30° = 40/√3 ≈ **23,09 cm**, com h = 20 cm medido até a *superfície do material*.
+
+**3) Cobertura.** Como w < L, f = min(w,L)²/L² = (1600/3)/900 = 16/27 ≈ **0,593 (59,3 %)**. Válido só porque a projeção é quadrada, centrada e com lados paralelos aos da caixa.
+
+**Desafios às hipóteses (falhas plausíveis):** (a) se h fosse até o *fundo* (32 cm), w ≈ 36,95 cm e f = 1 — a fração depende inteiramente do plano de referência; (b) se os 60° fossem FoV *diagonal*, w ≈ 16,3 cm e f ≈ 0,30; (c) w = 2h·tan(θ/2) pressupõe projeção retilínea (pinhole) ideal.
+
+**4) Rotação com centro óptico fixo.** Oclusão é propriedade do segmento C→P. Rotacionar em torno de C não move C nem P: o segmento é idêntico, logo qualquer obstáculo que o intercepte continua interceptando. A rotação apenas reorienta o cone de visão, redefinindo *quais* raios estão enquadrados — muda enquadramento, não visibilidade. Revelar superfície ocluída exige **paralaxe**: translação de C (ou outra vista), alterando a geometria do segmento.
+
+**Evidência mais forte necessária:** geometria explícita do obstáculo (posição, altura) e definição do datum de h; sem isso, oclusão não é quantificável.
+
+**Limitação:** modelo ideal (sem distorção, ruído, reflectância, bordas da caixa) — não valida servo nem qualquer arquitetura real.
+
+## Specialist 3: researcher
+**Fatos fornecidos:** base quadrada interna L = 30 cm; altura do material H = 12 cm; distância sensor–superfície h = 20 cm; FoV completo θ = 60° em cada eixo ortogonal; projeção quadrada, centralizada, alinhada aos lados da caixa; idealização sem distorção/ruído/reflectância/obstáculos.
+
+**(1) Volume:** V = L² · H = 30² × 12 = 8100 × ... = 10 800 cm³ → V = 10 800 / 1000 = **10,8 L**.
+
+**(2) Lado da projeção:** w = 2h·tan(θ/2) = 2×20×tan(30°) = 40×0,5774 ≈ **23,09 cm**.
+
+**(3) Fração coberta:** como w < L, a projeção cabe inteiramente dentro da base; f = w²/L² = 23,09²/900 ≈ 533,3/900 ≈ **0,593 (≈59,3%)**.
+
+**(4) Rotação e oclusão:** manter o centro óptico fixo e girar apenas a orientação do sensor muda a direção do eixo de visada e, portanto, qual região da superfície é enquadrada — mas não altera a posição do centro óptico nem os segmentos retilíneos entre esse centro e pontos fixos da cena. Se um obstáculo intercepta a linha de visada entre o centro e um ponto ocluído específico, essa reta geométrica permanece a mesma independentemente do ângulo de rotação; o obstáculo continua bloqueando esse ponto. Rotação só revela pontos que passam a entrar no novo cone de FoV a partir do mesmo centro, não pontos cuja linha de visada permanece obstruída pelo mesmo objeto.
+
+**Gaps/hipóteses:** assume alinhamento perfeito eixo-a-eixo e ausência de vinheteação; projeção tratada como plana na superfície (sem inclinação). Nenhuma geometria de obstáculo foi fornecida, logo oclusão é tratada apenas conceitualmente. Resultado é puramente geométrico-idealizado; não valida sensor real, servo ou arquitetura do BoxFlow.
+
+CROSS-CRITIQUES
+
+## Review 1: engineer
+Concordo com os resultados principais:
+
+1. \(V=30\,\text{cm}\times30\,\text{cm}\times12\,\text{cm}=10\,800\,\text{cm}^3=10{,}8\,\text{L}\).
+
+2. \(w=2h\tan(\mathrm{FoV}/2)=2(20\,\text{cm})\tan30^\circ=40/\sqrt3\approx23{,}09\,\text{cm}\).
+
+3. Sendo a projeção quadrada, centrada e paralela à base:
+\[
+f=\frac{w^2}{30^2}
+=\frac{1600/3}{900}
+=\frac{16}{27}\approx59{,}3\%.
+\]
+
+Não há contradição matemática relevante. Contudo, os casos de \(h=32\) cm e FoV diagonal não são “falhas plausíveis” do enunciado: o contexto define explicitamente \(h=20\) cm até a superfície e FoV de \(60^\circ\) em cada eixo. Eles são apenas testes de sensibilidade a interpretações alternativas.
+
+A afirmação sobre oclusão está correta para um ponto \(P\): com centro óptico \(C\) fixo, uma rotação pura não altera o segmento visual \(\overline{CP}\); portanto, o mesmo obstáculo continua bloqueando-o. A rotação pode mudar quais raios ficam dentro do enquadramento, mas não cria paralaxe nem torna visível um ponto geometricamente ocluído. Para uma superfície extensa, pode enquadrar outra porção já visível, sem revelar necessariamente a porção ocluída.
+
+Testes decisivos: confirmar o datum de \(h\), medir FoV por eixo e verificar interseções entre \(\overline{CP}\) e uma geometria explícita dos obstáculos. A idealização pinhole ignora distorção, ruído, reflectância e bordas; não valida servo nem arquitetura real.
+
+## Review 2: investigator
+## Cross-Critique of the Anonymous Peer Finding
+
+**Scope note:** this is a closed-form geometry exercise; nothing here validates any sensor, servo, or real architecture, and no application state exists to inspect.
+
+### Agreements (verified independently)
+- **Volume:** V = L²H = 30²·12 = 10 800 cm³ = **10.8 L**. Correct, unit conversion correct.
+- **Footprint:** w = 2h·tan(θ/2) = 40·tan 30° = 40/√3 ≈ **23.094 cm**. Correct.
+- **Containment:** half-width 11.55 cm < 15 cm, so the centred square lies wholly inside the 30 cm span. Correct, and the peer's arithmetic cross-check is a legitimate sanity test.
+- **Fraction:** f = w²/L² = (40/√3)²/900 = 1600/2700 = **16/27 ≈ 59.26 %**. Correct — and it is exactly rational; the peer reported the decimal without noting the closed form, which is a missed strengthening, not an error.
+- **Occlusion argument (item 4):** correct in substance. Rotation about the *exact* optical centre is a change of basis on the ray bundle, not a change of baseline; for any scene point P, the segment centre→P is invariant, so an interposed obstacle stays interposed. Only translation of the centre (parallax) or motion of the occluder can reveal P.
+
+### Contradictions / unsupported or under-specified points
+1. **Plane ambiguity (most material).** Item 3 says "fração da **base**", while item 2 says "projeção na **superfície**". The peer silently equates them. Defensible (the material fills the base, so the top surface's top-view extent is the same 30×30), but at the *base plane* h = 32 cm gives w ≈ 36.95 cm > 30 cm, i.e. nominal full coverage. The answer swings 59 % vs 100 % on an unstated choice; it should be stated, not assumed.
+2. **"Rotation only changes which regions are framed"** is stated more loosely than justified. A pure *roll* about the optical axis keeps the footprint square but rotates it: its half-diagonal is w/√2 ≈ 16.33 cm > 15 cm, so corners spill outside the base and coverage *drops below* 16/27. A *tilt* breaks the premise of item 2 entirely — the footprint becomes a keystone (trapezoid), and w = 2h·tan(θ/2) no longer applies. Neither case is flagged.
+3. **"Superfície plana e uniforme"** is asserted as a hypothesis but is also doing hidden work: with a flat, unoccluded ideal surface there is *no* occluder, so item 4 is a counterfactual about a scene the model has excluded.
+
+### Decisive tests
+- Recompute f symbolically as (2h tan(θ/2)/L)²; if it does not reduce to 16/27, an arithmetic slip exists.
+- Set h = 32 cm (base plane) and re-evaluate; divergence to >100 % confirms the ambiguity is decisive, not cosmetic.
+- Roll the square footprint 45° and compute the square–square intersection area; any claim that coverage is rotation-invariant fails immediately.
+- Formalise occlusion as: P occluded ⟺ ∃ obstacle on segment [C,P]. Apply rotation R about C: the segment is unchanged ⇒ predicate unchanged. This is the clean proof the peer gestures at.
+
+### Residual uncertainty
+The intended reference plane and whether "girar" means roll or tilt are not resolvable from the given text. Conditional on the peer's (reasonable) reading, all four answers stand.

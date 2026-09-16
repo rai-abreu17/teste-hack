@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-14T16:29:54.968942+00:00",
+  "historical_artifacts_checked": 47,
+  "sources": [
+    ".ai\\runs\\m001-implementation\\results\\hash-manifest.json",
+    ".ai\\runs\\m001-evaluation\\results\\attribution.json"
+  ],
+  "mismatches": [],
+  "passed": true
+}

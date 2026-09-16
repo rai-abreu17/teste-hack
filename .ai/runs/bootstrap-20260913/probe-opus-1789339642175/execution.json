@@ -1,0 +1,40 @@
+{
+    "RUN_ID":  "bootstrap-20260913",
+    "TIMESTAMP":  "2026-09-13T22:47:22.177Z",
+    "AGENT":  "opus",
+    "MODEL":  "claude-opus-5",
+    "EFFORT":  "high",
+    "PROMPT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-opus-1789339642175\\prompt.md",
+    "CONTEXT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-opus-1789339642175\\context.md",
+    "COMMAND":  [
+                    "C:\\Users\\Raí\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+                    "-p",
+                    "--model",
+                    "claude-opus-5",
+                    "--effort",
+                    "high",
+                    "--output-format",
+                    "stream-json",
+                    "--verbose",
+                    "--tools",
+                    "",
+                    "--strict-mcp-config",
+                    "--mcp-config",
+                    "C:\\Users\\RADB93~1\\AppData\\Local\\Temp\\boxflow-probe-T0HQDl\\empty-mcp.json",
+                    "--no-session-persistence",
+                    "--setting-sources",
+                    "user"
+                ],
+    "EXIT_CODE":  0,
+    "STDOUT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-opus-1789339642175\\stdout.jsonl",
+    "STDERR_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-opus-1789339642175\\stderr.txt",
+    "DURATION_MS":  15278,
+    "STATUS":  "COMPLETED",
+    "CWD":  "C:\\Users\\RADB93~1\\AppData\\Local\\Temp\\boxflow-probe-T0HQDl",
+    "SIGNAL":  null,
+    "OBSERVED_MODELS":  [
+                            "claude-opus-5"
+                        ],
+    "MODEL_EVIDENCE":  "assistant message.model in raw CLI stream",
+    "VALIDATED_AT":  "2026-09-13T22:55:36.6349367Z"
+}

@@ -1,0 +1,41 @@
+{
+    "RUN_ID":  "bootstrap-20260913",
+    "TIMESTAMP":  "2026-09-13T22:47:05.509Z",
+    "AGENT":  "astra",
+    "MODEL":  "gpt-6-astra",
+    "EFFORT":  "high",
+    "PROMPT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-astra-1789339625503\\prompt.md",
+    "CONTEXT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-astra-1789339625503\\context.md",
+    "COMMAND":  [
+                    "C:\\Program Files\\nodejs\\node.exe",
+                    "C:\\Users\\Raí\\AppData\\Roaming\\npm\\node_modules\\@openai\\codex\\bin\\codex.js",
+                    "-a",
+                    "never",
+                    "exec",
+                    "--model",
+                    "gpt-6-astra",
+                    "-c",
+                    "model_reasoning_effort=high",
+                    "--json",
+                    "--ephemeral",
+                    "--ignore-user-config",
+                    "--skip-git-repo-check",
+                    "-c",
+                    "project_doc_max_bytes=0",
+                    "-o",
+                    "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-astra-1789339625503\\result.md",
+                    "-"
+                ],
+    "EXIT_CODE":  0,
+    "STDOUT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-astra-1789339625503\\stdout.jsonl",
+    "STDERR_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-astra-1789339625503\\stderr.txt",
+    "DURATION_MS":  20433,
+    "STATUS":  "COMPLETED",
+    "CWD":  "C:\\Users\\RADB93~1\\AppData\\Local\\Temp\\boxflow-probe-hWfXMT",
+    "SIGNAL":  null,
+    "OBSERVED_MODELS":  [
+
+                        ],
+    "MODEL_EVIDENCE":  "Explicit --model argv; Codex JSONL does not report actual model",
+    "VALIDATED_AT":  "2026-09-13T22:55:36.4924365Z"
+}

@@ -1,0 +1,60 @@
+# M-001 — arbitragem final após P-001
+
+Decida o estado das hipóteses e a solução/experimento seguinte. Esta execução recebe dados autocontidos porque os revisores isolados não conseguiram ler o workspace.
+
+## Integridade verificada localmente
+
+- protocolo SHA-256: `36ff044546272f70759e565dfc0afc3f18980ee632d1dcae7276a9a48c091a7e`, igual no protocolo e resultado;
+- 9 cenas × 8 braços = 72 pares únicos, CSV e JSON com 72 linhas/registros;
+- 225 capturas, todas com exatamente 704 bytes, nenhuma inválida;
+- cada grid tem 400 células;
+- em todo braço/cena, suporte da união TIN é maior ou igual ao suporte de cada vista constituinte;
+- compilação C `-Wall -Wextra -Werror`; 7/7 testes passaram;
+- estimador importa somente `server.geometry`, nunca truth; verdade/oráculo ficam no avaliador;
+- aimed usa poses fixas congeladas no protocolo, não o centro da cena;
+- `fixedN` repete a pose e é controle determinístico; em dropout 20%, sequências diferentes aumentam suporte 32,2% (K1), 60% (K3), 70% (K4).
+
+## Definições
+
+- Cada captura forma TIN local; fusão por mediana de alturas por célula; nunca cria triângulos entre vistas.
+- Suporte TIN é domínio interpolado, não área diretamente observada.
+- `common_all` é a interseção dos suportes de todos os 8 braços, calculada por cena; todos são comparados na mesma máscara daquela cena.
+- Oráculo é união de linha de visada desde as origens até centros verdadeiros; ignora FoV/orientação e não entra no estimador.
+- Total só é selecionado com 400/400 células suportadas, nenhum frame inválido e nenhuma vista indisponível.
+
+## Resultado por cena
+
+Tuplas: `(cena, suporte TIN %, visibilidade oráculo %, erro common_all %, total selecionado)`.
+
+```text
+baseline_fixed1: pyramid_center 100/100/+17.27/T; shifted 100/100/+1.62/T; two_stacks 100/100/-5.37/T; prism 84/89/+3.97/F; ramp 100/94.5/+10.65/T; layer 64/100/+0.20/F; pyramid_beam 70/75/+13.97/F; layer_beam 44/85/+0.19/F; dropout20 32.2/75/+37.25/F
+fixed3:          pyramid_center 100/100/+17.27/T; shifted 100/100/+1.62/T; two_stacks 100/100/-5.37/T; prism 84/89/+3.97/F; ramp 100/94.5/+10.65/T; layer 64/100/+0.20/F; pyramid_beam 70/75/+13.97/F; layer_beam 44/85/+0.19/F; dropout20 60/75/+37.25/F
+center_tilt3:    pyramid_center 100/100/+11.52/T; shifted 100/100/+3.45/T; two_stacks 100/100/+0.76/T; prism 88/89/+9.07/F; ramp 100/94.5/+15.12/T; layer 80/100/+0.21/F; pyramid_beam 74.5/75/+8.99/F; layer_beam 64/85/+0.20/F; dropout20 50/75/+30.73/F
+translated3_level: pyramid_center 100/100/+11.27/T; shifted 100/100/+4.65/T; two_stacks 100/100/+0.21/T; prism 96.5/95/+13.62/F; ramp 100/97.5/+22.12/T; layer 72/100/+0.21/F; pyramid_beam 92/100/+9.10/F; layer_beam 64/100/+0.21/F; dropout20 53.5/100/+34.96/F
+translated3_aimed: pyramid_center 100/100/+15.28/T; shifted 100/100/+1.95/T; two_stacks 100/100/-5.88/T; prism 95/95/+5.61/F; ramp 100/97.5/+10.66/T; layer 64/100/+0.05/F; pyramid_beam 96/100/+11.92/F; layer_beam 60/100/+0.05/F; dropout20 49.8/100/+32.73/F
+fixed4: same as fixed3 except dropout20 support 70%.
+center_angles4: pyramid_center 81/100/+4.77/F; shifted 81/100/+3.05/F; two_stacks 81/100/-9.88/F; prism 74/89/+17.02/F; ramp 80.5/94.5/+17.53/F; layer 74.5/100/+0.19/F; pyramid_beam 50/75/+4.21/F; layer_beam 52/85/+0.19/F; dropout20 40.2/75/+20.66/F
+translated4_corners_level: pyramid_center 49/100/+8.63/F; shifted 49/100/+1.57/F; two_stacks 49/100/-7.27/F; prism 49/100/+32.84/F; ramp 49/100/+40.21/F; layer 81/100/+0.20/F; pyramid_beam 43/100/+7.67/F; layer_beam 72/100/+0.19/F; dropout20 37.8/100/+8.46/F
+```
+
+## Comparação pareada K3 contra fixed3, erro common_all
+
+- center_tilt3: mediana do delta de erro assinado +0,011 pp; vence em erro absoluto 4/9; deltas `[-5.74,+1.83,+6.13,+5.10,+4.47,+0.01,-4.98,+0.01,-6.52]`.
+- translated3_level: mediana +0,026 pp; vence 4/9; deltas `[-5.99,+3.02,+5.59,+9.65,+11.46,+0.02,-4.87,+0.03,-2.30]`.
+- translated3_aimed: mediana -0,147 pp; vence 5/9; deltas `[-1.99,+0.33,-0.50,+1.64,+0.01,-0.15,-2.05,-0.14,-4.52]`.
+
+Medianas agregadas: fixed3 suporte 84%, oráculo 94,5%, erro common_group +4,08%; translated3_level 96,5%/100%/+9,46%; translated3_aimed 96%/100%/+5,78%. Todos têm total selecionado 4/9.
+
+## Revisões independentes reais
+
+Claude Opus 5 concluiu, usando apenas o resumo: rotação no mesmo centro não recupera oclusão; translação recupera LoS intrínseca; quatro vistas não devem avançar; recomendou ablações de domínio/fusão/densidade. Porém alegou erroneamente que a união TIN não poderia cair entre braços diferentes e não conseguiu ler dados por cena. Essa crítica está refutada pelo invariante local: a união é monotônica dentro de cada braço; braços têm poses distintas.
+
+GPT-5.6 Sol concluiu, usando apenas o resumo: repetição não agrega informação determinística; translação cria novas LoS; `translated3_aimed` é desafiante, não vencedor; pediu auditoria por cena/integridade. Essa auditoria foi feita acima. Sol também não conseguiu ler os artefatos.
+
+Pesquisa Sonnet com fontes oficiais: VL53L5CX tem FoV nominal 45°×45° (65° diagonal), e desempenho depende de distância, refletância, ambiente/configuração; um laser industrial de feixe único mede nível/volume via geometria configurada. Não transferir desempenho do simulador pinhole para hardware.
+
+## Limitações obrigatórias
+
+Simulação ideal, nove cenas determinísticas, sem resposta finita de zona, histogramas, distorção, ruído real, calibração/extrínsecas, sincronização ou temperatura. O oráculo superestima realizabilidade. Nenhum resultado prova hardware.
+
+Entregue uma decisão técnica curta e rigorosa: hipóteses confirmadas/refutadas/inconclusivas; interpretação do aparente conflito visibilidade versus erro; candidato atual; próximo experimento mínimo com critério de aprovação quantitativo. Não peça nova pesquisa e não invente dados.

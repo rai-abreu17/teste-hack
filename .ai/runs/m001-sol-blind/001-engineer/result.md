@@ -1,0 +1,27 @@
+A grandeza desejada — volume total — não é diretamente observável com 64 primeiras interseções. Os quadros observam distâncias ao longo de raios; alturas, superfícies entre raios e regiões ocultas são inferências. Portanto, é necessário separar três domínios: pontos efetivamente retornados, células preenchidas por interpolação e células estimadas por extrapolação. Somente o primeiro constitui cobertura medida.
+
+**Restrições e mecanismos candidatos**
+
+- Sensor fixo: fornece uma única perspectiva, sujeita a discretização angular, oclusões e paredes. Repetir a captura pode reduzir ruído físico, mas no simulador determinístico atual tende apenas a duplicar retornos.
+- Rotação no mesmo centro óptico: desloca a malha angular sobre a cena e pode melhorar amostragem/interpolação. Entretanto, não cria linhas de visada capazes de contornar uma oclusão geométrica. Seu benefício esperado é densificação angular, não observação independente de superfícies escondidas.
+- Centros ópticos distintos: podem revelar regiões ocultas e aumentar cobertura geométrica real. Exigem registrar corretamente cada pose antes da fusão.
+- Reconstrução: TIN é reutilizável e não presume uma família específica, mas interpola entre amostras e pode atravessar descontinuidades. O ajuste piramidal deve permanecer apenas como comparador condicionado à forma; o resultado reservado conhecido não sustenta seu uso geral.
+- Fusão deve operar sobre retornos transformados para um referencial comum. Duplicatas ou múltiplos raios sobre a mesma região não devem ser contados como novas células cobertas.
+
+É improvável que apenas aumentar capturas fixas, densidade angular ou altura resolva o total: os resultados existentes já mostram pontos cegos geométricos, não monotonicidade com altura e erro sistemático de interpolação. Também é improvável que rotação pura no mesmo centro recupere superfícies totalmente ocultas. Essas são previsões geométricas, não resultados ainda medidos.
+
+**Lacunas de evidência**
+
+Não há comparação quantitativa entre repetição, rotação, translação e fusão. Também faltam mistura de retornos por zona, ruído, reflexões, interferência, deriva e comportamento físico do VL53L5CX. Logo, o experimento proposto testa apenas geometria simulada e reconstrução; não qualifica hardware nem desempenho industrial. Persistem ainda dúvidas sobre registro de pose, rejeição de raios por parede/faixa e sensibilidade a pequenas perturbações de posição.
+
+**Rodada pequena e reprodutível**
+
+1. **Separar número de capturas de ponto de vista.** Para cada cenário reservado, gerar quatro condições com o mesmo número \(K=4\) de quadros: pose fixa repetida; quatro yaws no mesmo centro; quatro centros distintos sem rotação; quatro centros distintos com orientação dirigida ao box. Incluir também a referência de um quadro fixo. Usar as mesmas cenas, quantização, sensorZ, dropout e range em todas as condições. Como o CLI ainda não expõe `originX/Y`, a única alteração proposta é adicioná-los ao harness `scene_dump.c`, reutilizando `Scene`; não tocar em firmware ou dashboard.
+
+2. **Comparar cobertura antes da reconstrução.** Transformar cada retorno válido pelo `server/geometry.py`, fundir por pose e calcular: retornos válidos, rejeições por motivo, células com suporte de observação e cobertura sobre as mesmas 400 células. A união de suportes mede ganho de ponto de vista; duplicatas da pose fixa medem apenas ganho por capturas. Relatar também sobreposição entre quadros. Interpolação TIN não aumenta essa cobertura.
+
+3. **Avaliar reconstrução em domínios explícitos.** Executar o mesmo TIN em todas as condições. No domínio suportado, comparar volume estimado parcial com o recorte exato por célula de `truth.py`, informando erro absoluto, erro relativo somente quando a verdade parcial for não nula, cobertura e rejeições. Para o domínio total, manter resultado nulo enquanto faltar suporte, conforme o contrato atual. Se uma variante experimental produzir total por preenchimento de lacunas, rotulá-lo explicitamente como extrapolado e avaliá-lo separadamente contra a verdade total, sem reclassificar suas células como cobertas.
+
+A matriz pode usar poucas instâncias já geráveis das famílias pirâmide, duas pilhas, prisma, rampa e camada, incluindo viga e uma condição de perdas, com sementes e poses fixadas em manifesto. Cada configuração deve receber exatamente as mesmas cenas e poses. A hipótese discriminante é: repetição fixa não altera geometria; yaw melhora amostragem, mas pouco a oclusão; centros distintos aumentam suporte onde há novas linhas de visada. Qualquer redução de erro sem aumento de cobertura deverá ser atribuída à reconstrução, não ao sensor.
+
+Esta é uma especificação; nenhum experimento foi executado nesta rodada.

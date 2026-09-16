@@ -1,0 +1,329 @@
+{
+  "notice": "Ideal dense benchmark, not a commercial sensor or a VL53L5CX mode.",
+  "controlled": {
+    "bench_m": [
+      0.3,
+      0.3,
+      0.15
+    ],
+    "pose_m": [
+      0.15,
+      0.15,
+      0.4
+    ],
+    "horizontal_fov_deg": 45,
+    "vertical_fov_deg": 45,
+    "range_limit_m": 4,
+    "grid_m": 0.015,
+    "max_edge_m": 0.1
+  },
+  "source_sha256": "a77f9a3c7d84e4b43a5986ca7fef1f3e471dd2558b0e1f10ad073b2aa905705b",
+  "results": [
+    {
+      "scene": "vazio",
+      "analytical_total_m3": 0,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 4.44060281598585e-06,
+        "total_m3": 4.44060281598585e-06,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": null
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 7.90591031816226e-06,
+        "total_m3": 7.90591031816226e-06,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": null
+      }
+    },
+    {
+      "scene": "entrada-25",
+      "analytical_total_m3": 0.00018749999999999998,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0002088226445133679,
+        "total_m3": 0.0002088226445133679,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 11.37207707379622
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0001960749088933095,
+        "total_m3": 0.0001960749088933095,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 4.573284743098419
+      }
+    },
+    {
+      "scene": "entrada-50",
+      "analytical_total_m3": 0.00037499999999999995,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0004338814253352934,
+        "total_m3": 0.0004338814253352934,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 15.701713422744923
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0003863533795092759,
+        "total_m3": 0.0003863533795092759,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 3.0275678691402597
+      }
+    },
+    {
+      "scene": "entrada-75",
+      "analytical_total_m3": 0.0005625,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0006609339357486352,
+        "total_m3": 0.0006609339357486352,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 17.499366355312933
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0005744183717119535,
+        "total_m3": 0.0005744183717119535,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 2.1188216376806244
+      }
+    },
+    {
+      "scene": "entrada-100",
+      "analytical_total_m3": 0.0007499999999999999,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0009059366217788594,
+        "total_m3": 0.0009059366217788594,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 20.7915495705146
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0007637944597283833,
+        "total_m3": 0.0007637944597283833,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 1.8392612971177902
+      }
+    },
+    {
+      "scene": "redistribuicao",
+      "analytical_total_m3": 0.0005625,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.000590570190010045,
+        "total_m3": 0.000590570190010045,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 4.990256001785791
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0005692389854629705,
+        "total_m3": 0.0005692389854629705,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 1.1980418600836455
+      }
+    },
+    {
+      "scene": "duas-pilhas",
+      "analytical_total_m3": 0.0004250000000000001,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0004357543792149591,
+        "total_m3": 0.0004357543792149591,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 2.5304421682256453
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0004319226257520204,
+        "total_m3": 0.0004319226257520204,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 1.6288531181224284
+      }
+    },
+    {
+      "scene": "oclusao",
+      "analytical_total_m3": 0.0005625,
+      "64_zones": {
+        "state": "partial",
+        "observed_m3": 0.000416720004984009,
+        "total_m3": null,
+        "coverage_fraction": 0.7,
+        "relative_total_error_percent": null
+      },
+      "3185_ideal_rays": {
+        "state": "partial",
+        "observed_m3": 0.00044962977695402943,
+        "total_m3": null,
+        "coverage_fraction": 0.75,
+        "relative_total_error_percent": null
+      }
+    },
+    {
+      "scene": "sem-retorno",
+      "analytical_total_m3": 0.0005625,
+      "64_zones": {
+        "state": "unavailable",
+        "observed_m3": null,
+        "total_m3": null,
+        "coverage_fraction": 0.0,
+        "relative_total_error_percent": null
+      },
+      "3185_ideal_rays": {
+        "state": "unavailable",
+        "observed_m3": null,
+        "total_m3": null,
+        "coverage_fraction": 0.0,
+        "relative_total_error_percent": null
+      }
+    },
+    {
+      "scene": "fora-alcance",
+      "analytical_total_m3": 0.0005625,
+      "64_zones": {
+        "state": "unavailable",
+        "observed_m3": null,
+        "total_m3": null,
+        "coverage_fraction": 0.0,
+        "relative_total_error_percent": null
+      },
+      "3185_ideal_rays": {
+        "state": "unavailable",
+        "observed_m3": null,
+        "total_m3": null,
+        "coverage_fraction": 0.0,
+        "relative_total_error_percent": null
+      }
+    },
+    {
+      "scene": "retirada-50",
+      "analytical_total_m3": 0.00037499999999999995,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0004338814253352934,
+        "total_m3": 0.0004338814253352934,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 15.701713422744923
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0003863533795092759,
+        "total_m3": 0.0003863533795092759,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 3.0275678691402597
+      }
+    },
+    {
+      "scene": "retirada-25",
+      "analytical_total_m3": 0.00018749999999999998,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0002088226445133679,
+        "total_m3": 0.0002088226445133679,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 11.37207707379622
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0001960749088933095,
+        "total_m3": 0.0001960749088933095,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 4.573284743098419
+      }
+    },
+    {
+      "scene": "retirada-vazio",
+      "analytical_total_m3": 0,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 4.44060281598585e-06,
+        "total_m3": 4.44060281598585e-06,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": null
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 7.90591031816226e-06,
+        "total_m3": 7.90591031816226e-06,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": null
+      }
+    },
+    {
+      "scene": "prisma",
+      "analytical_total_m3": 0.0016875,
+      "64_zones": {
+        "state": "partial",
+        "observed_m3": 0.0013347685908946232,
+        "total_m3": null,
+        "coverage_fraction": 0.84,
+        "relative_total_error_percent": null
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0021228617382899064,
+        "total_m3": 0.0021228617382899064,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 25.799214120883345
+      }
+    },
+    {
+      "scene": "rampa",
+      "analytical_total_m3": 0.00084375,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0009349384381016671,
+        "total_m3": 0.0009349384381016671,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 10.807518589827213
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0010379451620991808,
+        "total_m3": 0.0010379451620991808,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 23.015722915458472
+      }
+    },
+    {
+      "scene": "camada",
+      "analytical_total_m3": 0.00675,
+      "64_zones": {
+        "state": "partial",
+        "observed_m3": 0.004328525590095029,
+        "total_m3": null,
+        "coverage_fraction": 0.64,
+        "relative_total_error_percent": null
+      },
+      "3185_ideal_rays": {
+        "state": "partial",
+        "observed_m3": 0.005467448219538432,
+        "total_m3": null,
+        "coverage_fraction": 0.81,
+        "relative_total_error_percent": null
+      }
+    },
+    {
+      "scene": "principal",
+      "analytical_total_m3": 0.0005625,
+      "64_zones": {
+        "state": "valid",
+        "observed_m3": 0.0006609339357486352,
+        "total_m3": 0.0006609339357486352,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 17.499366355312933
+      },
+      "3185_ideal_rays": {
+        "state": "valid",
+        "observed_m3": 0.0005744183717119535,
+        "total_m3": 0.0005744183717119535,
+        "coverage_fraction": 1.0,
+        "relative_total_error_percent": 2.1188216376806244
+      }
+    }
+  ]
+}

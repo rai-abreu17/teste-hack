@@ -1,0 +1,40 @@
+{
+    "RUN_ID":  "bootstrap-20260913",
+    "TIMESTAMP":  "2026-09-13T22:47:22.179Z",
+    "AGENT":  "sonnet",
+    "MODEL":  "claude-sonnet-5",
+    "EFFORT":  "medium",
+    "PROMPT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-sonnet-1789339642176\\prompt.md",
+    "CONTEXT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-sonnet-1789339642176\\context.md",
+    "COMMAND":  [
+                    "C:\\Users\\Raí\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe",
+                    "-p",
+                    "--model",
+                    "claude-sonnet-5",
+                    "--effort",
+                    "medium",
+                    "--output-format",
+                    "stream-json",
+                    "--verbose",
+                    "--tools",
+                    "",
+                    "--strict-mcp-config",
+                    "--mcp-config",
+                    "C:\\Users\\RADB93~1\\AppData\\Local\\Temp\\boxflow-probe-tV6ntK\\empty-mcp.json",
+                    "--no-session-persistence",
+                    "--setting-sources",
+                    "user"
+                ],
+    "EXIT_CODE":  0,
+    "STDOUT_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-sonnet-1789339642176\\stdout.jsonl",
+    "STDERR_FILE":  "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\bootstrap-20260913\\probe-sonnet-1789339642176\\stderr.txt",
+    "DURATION_MS":  17921,
+    "STATUS":  "COMPLETED",
+    "CWD":  "C:\\Users\\RADB93~1\\AppData\\Local\\Temp\\boxflow-probe-tV6ntK",
+    "SIGNAL":  null,
+    "OBSERVED_MODELS":  [
+                            "claude-sonnet-5"
+                        ],
+    "MODEL_EVIDENCE":  "assistant message.model in raw CLI stream",
+    "VALIDATED_AT":  "2026-09-13T22:55:36.7249272Z"
+}

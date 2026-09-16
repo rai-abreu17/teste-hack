@@ -1,0 +1,122 @@
+{
+  "protocol_id": "P-001",
+  "protocol_version": 1,
+  "frozen_before_results": true,
+  "purpose": "Comparar repeticao, mudanca angular e centros opticos distintos sem confundir suporte TIN com cobertura optica.",
+  "geometry": {
+    "fov_deg": [45.0, 45.0],
+    "sensor_z_m": 0.4,
+    "range_m": 4.0,
+    "rays_per_capture": 64,
+    "grid": {"nx": 20, "ny": 20, "cell_m": 0.015},
+    "optical_noise": "none; unchanged ideal center-ray simulator"
+  },
+  "sequence_policy": {
+    "K1": [101],
+    "K3": [101, 102, 103],
+    "K4": [201, 202, 203, 204],
+    "note": "Sequences are identical between arms of the same budget group. Dropout is sequence-dependent."
+  },
+  "scenes": [
+    {"id": "pyramid_center", "fill": 75, "shape": 0, "cx": 0.15, "obstacle": 0, "dropout": 0},
+    {"id": "pyramid_shifted_013", "fill": 75, "shape": 0, "cx": 0.13, "obstacle": 0, "dropout": 0},
+    {"id": "two_stacks", "fill": 75, "shape": 1, "cx": 0.15, "obstacle": 0, "dropout": 0},
+    {"id": "prism", "fill": 75, "shape": 2, "cx": 0.15, "obstacle": 0, "dropout": 0},
+    {"id": "ramp", "fill": 75, "shape": 3, "cx": 0.15, "obstacle": 0, "dropout": 0},
+    {"id": "layer", "fill": 75, "shape": 4, "cx": 0.15, "obstacle": 0, "dropout": 0},
+    {"id": "pyramid_beam", "fill": 75, "shape": 0, "cx": 0.15, "obstacle": 1, "dropout": 0},
+    {"id": "layer_beam", "fill": 75, "shape": 4, "cx": 0.15, "obstacle": 1, "dropout": 0},
+    {"id": "pyramid_beam_dropout20", "fill": 75, "shape": 0, "cx": 0.15, "obstacle": 1, "dropout": 20}
+  ],
+  "arms": [
+    {
+      "id": "baseline_fixed1",
+      "budget_group": "K1_reference",
+      "captures": [{"sequence": 101, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0}]
+    },
+    {
+      "id": "fixed3",
+      "budget_group": "K3",
+      "captures": [
+        {"sequence": 101, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 102, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 103, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0}
+      ]
+    },
+    {
+      "id": "center_tilt3",
+      "budget_group": "K3",
+      "captures": [
+        {"sequence": 101, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": -10.0},
+        {"sequence": 102, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 103, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 10.0}
+      ]
+    },
+    {
+      "id": "translated3_level",
+      "budget_group": "K3",
+      "captures": [
+        {"sequence": 101, "origin": [0.1, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 102, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 103, "origin": [0.2, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0}
+      ]
+    },
+    {
+      "id": "translated3_aimed",
+      "budget_group": "K3",
+      "aim_target_m": [0.15, 0.15, 0.0],
+      "angle_formula": "tilt_deg = degrees(atan2(origin_x - target_x, origin_z - target_z)); yaw_deg = 0 because origin_y = target_y",
+      "captures": [
+        {"sequence": 101, "origin": [0.1, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": -7.125016348901798},
+        {"sequence": 102, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 103, "origin": [0.2, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 7.1250163489018}
+      ]
+    },
+    {
+      "id": "fixed4",
+      "budget_group": "K4",
+      "captures": [
+        {"sequence": 201, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 202, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 203, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 204, "origin": [0.15, 0.15, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0}
+      ]
+    },
+    {
+      "id": "center_angles4",
+      "budget_group": "K4",
+      "captures": [
+        {"sequence": 201, "origin": [0.15, 0.15, 0.4], "yaw_deg": -20.0, "tilt_deg": -10.0},
+        {"sequence": 202, "origin": [0.15, 0.15, 0.4], "yaw_deg": -20.0, "tilt_deg": 10.0},
+        {"sequence": 203, "origin": [0.15, 0.15, 0.4], "yaw_deg": 20.0, "tilt_deg": -10.0},
+        {"sequence": 204, "origin": [0.15, 0.15, 0.4], "yaw_deg": 20.0, "tilt_deg": 10.0}
+      ]
+    },
+    {
+      "id": "translated4_corners_level",
+      "budget_group": "K4",
+      "captures": [
+        {"sequence": 201, "origin": [0.1, 0.1, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 202, "origin": [0.2, 0.1, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 203, "origin": [0.1, 0.2, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0},
+        {"sequence": 204, "origin": [0.2, 0.2, 0.4], "yaw_deg": 0.0, "tilt_deg": 0.0}
+      ]
+    }
+  ],
+  "fusion": {
+    "per_capture": "existing local-adjacency TIN via server.geometry.estimate",
+    "support": "union of per-capture supported cells",
+    "height": "median of available per-capture cell heights with one equal vote per view",
+    "cross_view_triangles": false,
+    "reference_offset_m": 0.0
+  },
+  "evaluation": {
+    "truth_module": "experiments.truth, evaluator only",
+    "total_rule": "emit only with 400 supported cells, zero invalid frames, and no unavailable per-frame estimate",
+    "relative_error_rule": "undefined when reference volume is zero",
+    "common_domains": ["all arms", "within equal-budget group"],
+    "oracle": "evaluator-only intrinsic line-of-sight to true cell-center surface using the original C raycaster; independent of FoV and orientation; never passed to fusion"
+  },
+  "comparison_count": 72,
+  "comparison_count_derivation": "9 scenes x 8 arms"
+}

@@ -1,0 +1,15 @@
+test_bad_reference_and_corrupt_packet_are_rejected (experiments.test_experiments.ExperimentTests.test_bad_reference_and_corrupt_packet_are_rejected) ... ok
+test_baseline_matches_production_with_occlusion (experiments.test_experiments.ExperimentTests.test_baseline_matches_production_with_occlusion) ... ok
+test_clipped_linear_surface_has_exact_integral (experiments.test_experiments.ExperimentTests.test_clipped_linear_surface_has_exact_integral) ... ok
+test_conditional_model_recovers_an_off_center_pyramid (experiments.test_experiments.ExperimentTests.test_conditional_model_recovers_an_off_center_pyramid) ... ok
+test_conditional_model_rejects_unsupported_shapes_and_empty (experiments.test_experiments.ExperimentTests.test_conditional_model_rejects_unsupported_shapes_and_empty) ... ok
+test_measured_reference_does_not_extrapolate_outside_its_support (experiments.test_experiments.ExperimentTests.test_measured_reference_does_not_extrapolate_outside_its_support) ... ok
+test_roi_never_promotes_partial_to_whole_volume (experiments.test_experiments.ExperimentTests.test_roi_never_promotes_partial_to_whole_volume) ... ok
+test_shared_vertical_offset_cancels_with_measured_zero (experiments.test_experiments.ExperimentTests.test_shared_vertical_offset_cancels_with_measured_zero) ... ok
+test_truth_cells_sum_to_independent_solid_formulas (experiments.test_experiments.ExperimentTests.test_truth_cells_sum_to_independent_solid_formulas) ... ok
+test_vertical_drift_after_zero_still_changes_volume (experiments.test_experiments.ExperimentTests.test_vertical_drift_after_zero_still_changes_volume) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.185s
+
+OK

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-13T23:20:16.643Z",
+  "mode": "resolve",
+  "subject": "Wokwi",
+  "query": "Custom Chips C API simulation limitations testing custom chip outside ESP32 environment",
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Available Libraries:\n\n- Title: Wokwi\n- Context7-compatible library ID: /wokwi/wokwi-docs\n- Description: Wokwi is an online simulator and development environment for microcontrollers and embedded systems, allowing users to build, test, and debug projects in the browser.\n- Code Snippets: 906\n- Source Reputation: High\n- Benchmark Score: 60.37\n----------\n- Title: Wokwi\n- Context7-compatible library ID: /websites/wokwi\n- Description: Wokwi is an online electronics simulator that allows users to simulate Arduino, ESP32, STM32, and other popular boards, parts, and sensors directly in their browser.\n- Code Snippets: 683\n- Source Reputation: High\n- Benchmark Score: 29.5\n----------\n- Title: AVR8js\n- Context7-compatible library ID: /wokwi/avr8js\n- Description: AVR8js is a JavaScript library that implements the AVR 8-bit architecture, serving as the core for Arduino simulators like Wokwi.\n- Code Snippets: 18\n- Source Reputation: High\n- Benchmark Score: 52"
+      }
+    ]
+  }
+}

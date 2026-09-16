@@ -1,0 +1,1 @@
+Consulte o [registro de decisões](../decision-log.md). Acrescente pareceres completos aqui quando houver arbitragem real, com links aos logs e experimentos. Não crie uma decisão assinada por Astra a partir de uma chamada que falhou.

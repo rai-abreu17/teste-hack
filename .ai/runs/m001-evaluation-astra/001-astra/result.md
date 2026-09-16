@@ -1,0 +1,13 @@
+A decisão é avançar para R005–R007 como saneamento, diagnóstico e avaliação prospectiva. **P003/P004 continuam reprovados no gate antigo; não há confirmação de benefício causal do trimming.** Isso tampouco estabelece fixed3 como vencedor físico.
+
+A interpretação anterior deve ser corrigida: P004 mudou simultaneamente a aparagem e a mediana convencional para a inferior. Em 8/9 cenas não houve descarte; apenas prism descartou 8 células. No controle 2×2 de prism, a mediana inferior respondeu por −1,863060 pp no erro, e a aparagem adicional por +0,338551 pp. Com mediana convencional, aparar piorou o erro em +0,169276 pp. Nas cenas de rampa/viga/dropout, todo o efeito veio da mediana inferior.
+
+Os pequenos ganhos determinísticos são calculáveis, mas sua relevância prática permanece indefinida. Não há fundamento apresentado para um limiar de 0,1 pp nem para concluir, por medianas agregadas semelhantes, que aquisição não importa. O erro volumétrico líquido permite cancelamento: em pyramid_beam, ele melhora enquanto o erro absoluto espacial normalizado sobe de 25,3517% para 25,9389%.
+
+**Manter:** protocolo antigo, reprovações e artefatos intactos. A auditoria preservou SHA256 dos quatro resultados, verificou os 27 frames e reproduziu a mediana P001 e os valores P004, sem novas capturas. Os históricos utilizados são válidos; riscos futuros do tratamento de frames inválidos não invalidam esses resultados.
+
+1. **R005 — prioridade imediata: contrato e atribuição causal.** Uniformizar retornos inválidos, tornar coerentes os pares qualidade–altura e separar estimativa de verdade de referência. Hoje, qualidade é o mínimo das maiores arestas dos triângulos contribuintes, enquanto altura é sua média **local por célula/vista**, não global. **Saída exigida:** contrato explícito, validação das falhas e relatório 2×2 por fator, repetindo somente verificações afetadas pelas mudanças.
+
+2. **R006 — localizar erros antes de formular candidato.** Diagnosticar descontinuidades, sombras, FoV, densidade e interpolação por célula, com verdade restrita ao avaliador e sem ranking de novos kappa. **Saída exigida:** mapas de erro e cobertura, abstenções e hipóteses vinculadas às evidências. Common_all restringe fortemente o domínio; seus resultados exigem cobertura explícita.
+
+3. **R007 — avaliação prospectiva.** Definir previamente o critério MVP, congelar **um candidato** e executar uma avaliação primária única em cenas reservadas, com famílias novas e combinações paramétricas inéditas. **Saída exigida:** decisão pelo critério predefinido, volume, erro espacial, cobertura e abstenções; em cenas vazias, erro em litros e relativo indefinido. Versões antigas permanecem controles. Gates anteriores são experimentais, não requisitos do produto.

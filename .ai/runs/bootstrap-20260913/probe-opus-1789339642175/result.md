@@ -1,0 +1,1 @@
+30 cm × 30 cm × 12 cm = 10.800 cm³, que dividido por 1.000 dá **10,8 litros**.

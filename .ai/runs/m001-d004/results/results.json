@@ -1,0 +1,3060 @@
+{
+  "experiment_id": "D-004",
+  "scope": "SIMULATED paired development comparison; not holdout or physical validation",
+  "created_at_utc": "2026-09-16T14:13:40.754537Z",
+  "protocol_sha256": "ddfcf8013a9661b81679e9efce1544afd35f1bd1c3dc9785edc7135fbceff521",
+  "pre_score_release_sha256": "a5bba458fe3502ce60cefd2fdd79aec3558c008bfb638c259067b4823392b99d",
+  "estimator_sha256": "bdc14436bf06d54ca2d43bc90da40a937817a39d6f5779fd5627817663b0df83",
+  "truth_free_reconstructions_completed_before_truth_evaluation": 18,
+  "gate": {
+    "candidate_total_eligible": 9,
+    "candidate_total_within_5pct": 9,
+    "candidate_partial": 0,
+    "coverage_gate_9_of_9": true,
+    "company_gate_9_of_9_total_and_within_5pct": true,
+    "reserved_R007_used": false
+  },
+  "paired": [
+    {
+      "scene_id": "pyramid_center",
+      "control_support_cells": 400,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 0,
+      "gained_cell_count": 0,
+      "gained_cell_indices": [],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 400,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005952318915711511,
+        "signed_error_m3": 3.273189157115187e-05,
+        "absolute_volume_error_m3": 3.273189157115187e-05,
+        "integrated_absolute_error_m3": 3.748217843674183e-05,
+        "signed_error_percent": 5.819002945982563,
+        "absolute_error_percent": 5.819002945982563,
+        "spatial_error_percent": 6.663498388754112,
+        "mean_absolute_height_error_mm": 0.41646864929713145,
+        "cancellation_ratio": 1.1451271722339629
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.000568645811821045,
+        "signed_error_m3": 6.1458118210457195e-06,
+        "absolute_volume_error_m3": 6.1458118210457195e-06,
+        "integrated_absolute_error_m3": 1.8558045520706573e-05,
+        "signed_error_percent": 1.0925887681859072,
+        "absolute_error_percent": 1.0925887681859072,
+        "spatial_error_percent": 3.299208092570062,
+        "mean_absolute_height_error_mm": 0.2062005057856286,
+        "cancellation_ratio": 3.019624756025949
+      }
+    },
+    {
+      "scene_id": "pyramid_shifted_013",
+      "control_support_cells": 400,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 0,
+      "gained_cell_count": 0,
+      "gained_cell_indices": [],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 400,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999995,
+        "estimated_volume_m3": 0.0005451226643234592,
+        "signed_error_m3": -1.737733567654031e-05,
+        "absolute_volume_error_m3": 1.737733567654031e-05,
+        "integrated_absolute_error_m3": 4.288122901803894e-05,
+        "signed_error_percent": -3.089304120273835,
+        "absolute_error_percent": 3.089304120273835,
+        "spatial_error_percent": 7.62332960320693,
+        "mean_absolute_height_error_mm": 0.47645810020043267,
+        "cancellation_ratio": 2.4676526837154507
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999995,
+        "estimated_volume_m3": 0.0005566907872294122,
+        "signed_error_m3": -5.809212770587299e-06,
+        "absolute_volume_error_m3": 5.809212770587299e-06,
+        "integrated_absolute_error_m3": 3.6703461226206774e-05,
+        "signed_error_percent": -1.0327489369932985,
+        "absolute_error_percent": 1.0327489369932985,
+        "spatial_error_percent": 6.525059773547877,
+        "mean_absolute_height_error_mm": 0.407816235846742,
+        "cancellation_ratio": 6.318147169964328
+      }
+    },
+    {
+      "scene_id": "two_stacks",
+      "control_support_cells": 400,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 0,
+      "gained_cell_count": 0,
+      "gained_cell_indices": [],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 400,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004250000000000006,
+        "estimated_volume_m3": 0.00041227464688869703,
+        "signed_error_m3": -1.2725353111303578e-05,
+        "absolute_volume_error_m3": 1.2725353111303578e-05,
+        "integrated_absolute_error_m3": 4.156190314135861e-05,
+        "signed_error_percent": -2.994200732071426,
+        "absolute_error_percent": 2.994200732071426,
+        "spatial_error_percent": 9.779271327378483,
+        "mean_absolute_height_error_mm": 0.4617989237928735,
+        "cancellation_ratio": 3.266070715510466
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004250000000000006,
+        "estimated_volume_m3": 0.00042511460571049964,
+        "signed_error_m3": 1.1460571049903435e-07,
+        "absolute_volume_error_m3": 1.1460571049903435e-07,
+        "integrated_absolute_error_m3": 3.9254833940478224e-05,
+        "signed_error_percent": 0.026966049529184515,
+        "absolute_error_percent": 0.026966049529184515,
+        "spatial_error_percent": 9.236431515406627,
+        "mean_absolute_height_error_mm": 0.4361648215608692,
+        "cancellation_ratio": 342.52075022744157
+      }
+    },
+    {
+      "scene_id": "prism",
+      "control_support_cells": 400,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 0,
+      "gained_cell_count": 0,
+      "gained_cell_indices": [],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 400,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0016874999999999974,
+        "estimated_volume_m3": 0.0023015357328161224,
+        "signed_error_m3": 0.0006140357328161252,
+        "absolute_volume_error_m3": 0.0006140357328161252,
+        "integrated_absolute_error_m3": 0.0006161316170098461,
+        "signed_error_percent": 36.38730268540007,
+        "absolute_error_percent": 36.38730268540007,
+        "spatial_error_percent": 36.51150323021316,
+        "mean_absolute_height_error_mm": 6.845906855664957,
+        "cancellation_ratio": 1.003413293529529
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0016874999999999974,
+        "estimated_volume_m3": 0.0016324413712546417,
+        "signed_error_m3": -5.5058628745355666e-05,
+        "absolute_volume_error_m3": 5.5058628745355666e-05,
+        "integrated_absolute_error_m3": 0.0003566553247250964,
+        "signed_error_percent": -3.2627335552803407,
+        "absolute_error_percent": 3.2627335552803407,
+        "spatial_error_percent": 21.13513035407982,
+        "mean_absolute_height_error_mm": 3.962836941389961,
+        "cancellation_ratio": 6.477737147697875
+      }
+    },
+    {
+      "scene_id": "ramp",
+      "control_support_cells": 400,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 0,
+      "gained_cell_count": 0,
+      "gained_cell_indices": [],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 400,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0008437499999999993,
+        "estimated_volume_m3": 0.0011334241809515103,
+        "signed_error_m3": 0.000289674180951511,
+        "absolute_volume_error_m3": 0.000289674180951511,
+        "integrated_absolute_error_m3": 0.00029249698209899474,
+        "signed_error_percent": 34.33175477943837,
+        "absolute_error_percent": 34.33175477943837,
+        "spatial_error_percent": 34.66630898951051,
+        "mean_absolute_height_error_mm": 3.2499664677666082,
+        "cancellation_ratio": 1.0097447454178052
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0008437499999999993,
+        "estimated_volume_m3": 0.0008550491337953558,
+        "signed_error_m3": 1.1299133795356506e-05,
+        "absolute_volume_error_m3": 1.1299133795356506e-05,
+        "integrated_absolute_error_m3": 0.0001591203609815752,
+        "signed_error_percent": 1.3391565979681794,
+        "absolute_error_percent": 1.3391565979681794,
+        "spatial_error_percent": 18.858709449668186,
+        "mean_absolute_height_error_mm": 1.7680040109063913,
+        "cancellation_ratio": 14.082527374529128
+      }
+    },
+    {
+      "scene_id": "layer",
+      "control_support_cells": 324,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 76,
+      "gained_cell_count": 76,
+      "gained_cell_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        39,
+        40,
+        59,
+        60,
+        79,
+        80,
+        99,
+        100,
+        119,
+        120,
+        139,
+        140,
+        159,
+        160,
+        179,
+        180,
+        199,
+        200,
+        219,
+        220,
+        239,
+        240,
+        259,
+        260,
+        279,
+        280,
+        299,
+        300,
+        319,
+        320,
+        339,
+        340,
+        359,
+        360,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399
+      ],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 324,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005477908386108254,
+        "signed_error_m3": 1.0408386108234671e-05,
+        "absolute_volume_error_m3": 1.0408386108234671e-05,
+        "integrated_absolute_error_m3": 1.3887941555578917e-05,
+        "signed_error_percent": 0.19036828730195948,
+        "absolute_error_percent": 0.19036828730195948,
+        "spatial_error_percent": 0.25400899049984216,
+        "mean_absolute_height_error_mm": 0.19050674287488228,
+        "cancellation_ratio": 1.3343030716924855
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005476342406643309,
+        "signed_error_m3": 8.842406643289382e-06,
+        "absolute_volume_error_m3": 8.842406643289382e-06,
+        "integrated_absolute_error_m3": 1.268097298204474e-05,
+        "signed_error_percent": 0.16172668757730865,
+        "absolute_error_percent": 0.16172668757730865,
+        "spatial_error_percent": 0.23193366222303968,
+        "mean_absolute_height_error_mm": 0.1739502466672804,
+        "cancellation_ratio": 1.4341087775768033
+      }
+    },
+    {
+      "scene_id": "pyramid_beam",
+      "control_support_cells": 400,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 0,
+      "gained_cell_count": 0,
+      "gained_cell_indices": [],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 400,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005867156201509291,
+        "signed_error_m3": 2.42156201509299e-05,
+        "absolute_volume_error_m3": 2.42156201509299e-05,
+        "integrated_absolute_error_m3": 4.383503715297251e-05,
+        "signed_error_percent": 4.304999137943099,
+        "absolute_error_percent": 4.304999137943099,
+        "spatial_error_percent": 7.79289549386179,
+        "mean_absolute_height_error_mm": 0.4870559683663612,
+        "cancellation_ratio": 1.8101967605933562
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005781892586159364,
+        "signed_error_m3": 1.5689258615937166e-05,
+        "absolute_volume_error_m3": 1.5689258615937166e-05,
+        "integrated_absolute_error_m3": 4.9050390350350025e-05,
+        "signed_error_percent": 2.789201531722167,
+        "absolute_error_percent": 2.789201531722167,
+        "spatial_error_percent": 8.720069395617795,
+        "mean_absolute_height_error_mm": 0.5450043372261114,
+        "cancellation_ratio": 3.126367634766667
+      }
+    },
+    {
+      "scene_id": "layer_beam",
+      "control_support_cells": 324,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 76,
+      "gained_cell_count": 76,
+      "gained_cell_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        39,
+        40,
+        59,
+        60,
+        79,
+        80,
+        99,
+        100,
+        119,
+        120,
+        139,
+        140,
+        159,
+        160,
+        179,
+        180,
+        199,
+        200,
+        219,
+        220,
+        239,
+        240,
+        259,
+        260,
+        279,
+        280,
+        299,
+        300,
+        319,
+        320,
+        339,
+        340,
+        359,
+        360,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399
+      ],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 324,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005478083789370888,
+        "signed_error_m3": 1.058378937086877e-05,
+        "absolute_volume_error_m3": 1.058378937086877e-05,
+        "integrated_absolute_error_m3": 1.349126855853548e-05,
+        "signed_error_percent": 0.19357639452892056,
+        "absolute_error_percent": 0.19357639452892056,
+        "spatial_error_percent": 0.24675388310078525,
+        "mean_absolute_height_error_mm": 0.1850654123255896,
+        "cancellation_ratio": 1.274710605604961
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005477628973970045,
+        "signed_error_m3": 1.0128973970025892e-05,
+        "absolute_volume_error_m3": 1.0128973970025892e-05,
+        "integrated_absolute_error_m3": 1.4059617498716242e-05,
+        "signed_error_percent": 0.18525786867902802,
+        "absolute_error_percent": 0.18525786867902802,
+        "spatial_error_percent": 0.25714892544519785,
+        "mean_absolute_height_error_mm": 0.19286169408389908,
+        "cancellation_ratio": 1.3880593967683286
+      }
+    },
+    {
+      "scene_id": "pyramid_beam_dropout20",
+      "control_support_cells": 400,
+      "candidate_support_cells": 400,
+      "candidate_minus_control_support_cells": 0,
+      "gained_cell_count": 0,
+      "gained_cell_indices": [],
+      "lost_cell_count": 0,
+      "lost_cell_indices": [],
+      "common_cell_count": 400,
+      "control_k4_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.000572485551272001,
+        "signed_error_m3": 9.985551272001797e-06,
+        "absolute_volume_error_m3": 9.985551272001797e-06,
+        "integrated_absolute_error_m3": 5.864168084594059e-05,
+        "signed_error_percent": 1.7752091150225444,
+        "absolute_error_percent": 1.7752091150225444,
+        "spatial_error_percent": 10.425187705945008,
+        "mean_absolute_height_error_mm": 0.6515742316215621,
+        "cancellation_ratio": 5.872653321641272
+      },
+      "candidate_inset_diagonals_plus_shared_center_common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005798858959934722,
+        "signed_error_m3": 1.738589599347299e-05,
+        "absolute_volume_error_m3": 1.738589599347299e-05,
+        "integrated_absolute_error_m3": 5.638938928817989e-05,
+        "signed_error_percent": 3.0908259543952026,
+        "absolute_error_percent": 3.0908259543952026,
+        "spatial_error_percent": 10.024780317898662,
+        "mean_absolute_height_error_mm": 0.6265487698686655,
+        "cancellation_ratio": 3.2433985173585294
+      }
+    }
+  ],
+  "records": [
+    {
+      "scene_id": "pyramid_center",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005952318915711511,
+        "signed_error_m3": 3.273189157115187e-05,
+        "absolute_volume_error_m3": 3.273189157115187e-05,
+        "integrated_absolute_error_m3": 3.748217843674183e-05,
+        "signed_error_percent": 5.819002945982563,
+        "absolute_error_percent": 5.819002945982563,
+        "spatial_error_percent": 6.663498388754112,
+        "mean_absolute_height_error_mm": 0.41646864929713145,
+        "cancellation_ratio": 1.1451271722339629
+      },
+      "company_5pct_total_only": false,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005952318915711511,
+        "signed_error_m3": 3.273189157115187e-05,
+        "absolute_volume_error_m3": 3.273189157115187e-05,
+        "integrated_absolute_error_m3": 3.748217843674183e-05,
+        "signed_error_percent": 5.819002945982563,
+        "absolute_error_percent": 5.819002945982563,
+        "spatial_error_percent": 6.663498388754112,
+        "mean_absolute_height_error_mm": 0.41646864929713145,
+        "cancellation_ratio": 1.1451271722339629
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005952318915711511,
+        "signed_error_m3": 3.273189157115187e-05,
+        "absolute_volume_error_m3": 3.273189157115187e-05,
+        "integrated_absolute_error_m3": 3.748217843674183e-05,
+        "signed_error_percent": 5.819002945982563,
+        "absolute_error_percent": 5.819002945982563,
+        "spatial_error_percent": 6.663498388754112,
+        "mean_absolute_height_error_mm": 0.41646864929713145,
+        "cancellation_ratio": 1.1451271722339629
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 9.776899998541921,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 26,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 86,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 208,
+      "merged_point_count": 208,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 402,
+      "accepted_triangle_count": 394,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "pyramid_center",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.000568645811821045,
+        "signed_error_m3": 6.1458118210457195e-06,
+        "absolute_volume_error_m3": 6.1458118210457195e-06,
+        "integrated_absolute_error_m3": 1.8558045520706573e-05,
+        "signed_error_percent": 1.0925887681859072,
+        "absolute_error_percent": 1.0925887681859072,
+        "spatial_error_percent": 3.299208092570062,
+        "mean_absolute_height_error_mm": 0.2062005057856286,
+        "cancellation_ratio": 3.019624756025949
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.000568645811821045,
+        "signed_error_m3": 6.1458118210457195e-06,
+        "absolute_volume_error_m3": 6.1458118210457195e-06,
+        "integrated_absolute_error_m3": 1.8558045520706573e-05,
+        "signed_error_percent": 1.0925887681859072,
+        "absolute_error_percent": 1.0925887681859072,
+        "spatial_error_percent": 3.299208092570062,
+        "mean_absolute_height_error_mm": 0.2062005057856286,
+        "cancellation_ratio": 3.019624756025949
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.000568645811821045,
+        "signed_error_m3": 6.1458118210457195e-06,
+        "absolute_volume_error_m3": 6.1458118210457195e-06,
+        "integrated_absolute_error_m3": 1.8558045520706573e-05,
+        "signed_error_percent": 1.0925887681859072,
+        "absolute_error_percent": 1.0925887681859072,
+        "spatial_error_percent": 3.299208092570062,
+        "mean_absolute_height_error_mm": 0.2062005057856286,
+        "cancellation_ratio": 3.019624756025949
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 9.047400002600625,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "pyramid_shifted_013",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999995,
+        "estimated_volume_m3": 0.0005451226643234592,
+        "signed_error_m3": -1.737733567654031e-05,
+        "absolute_volume_error_m3": 1.737733567654031e-05,
+        "integrated_absolute_error_m3": 4.288122901803894e-05,
+        "signed_error_percent": -3.089304120273835,
+        "absolute_error_percent": 3.089304120273835,
+        "spatial_error_percent": 7.62332960320693,
+        "mean_absolute_height_error_mm": 0.47645810020043267,
+        "cancellation_ratio": 2.4676526837154507
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999995,
+        "estimated_volume_m3": 0.0005451226643234592,
+        "signed_error_m3": -1.737733567654031e-05,
+        "absolute_volume_error_m3": 1.737733567654031e-05,
+        "integrated_absolute_error_m3": 4.288122901803894e-05,
+        "signed_error_percent": -3.089304120273835,
+        "absolute_error_percent": 3.089304120273835,
+        "spatial_error_percent": 7.62332960320693,
+        "mean_absolute_height_error_mm": 0.47645810020043267,
+        "cancellation_ratio": 2.4676526837154507
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999995,
+        "estimated_volume_m3": 0.0005451226643234592,
+        "signed_error_m3": -1.737733567654031e-05,
+        "absolute_volume_error_m3": 1.737733567654031e-05,
+        "integrated_absolute_error_m3": 4.288122901803894e-05,
+        "signed_error_percent": -3.089304120273835,
+        "absolute_error_percent": 3.089304120273835,
+        "spatial_error_percent": 7.62332960320693,
+        "mean_absolute_height_error_mm": 0.47645810020043267,
+        "cancellation_ratio": 2.4676526837154507
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 7.932799999252893,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 26,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 86,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 208,
+      "merged_point_count": 208,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 402,
+      "accepted_triangle_count": 394,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "pyramid_shifted_013",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999995,
+        "estimated_volume_m3": 0.0005566907872294122,
+        "signed_error_m3": -5.809212770587299e-06,
+        "absolute_volume_error_m3": 5.809212770587299e-06,
+        "integrated_absolute_error_m3": 3.6703461226206774e-05,
+        "signed_error_percent": -1.0327489369932985,
+        "absolute_error_percent": 1.0327489369932985,
+        "spatial_error_percent": 6.525059773547877,
+        "mean_absolute_height_error_mm": 0.407816235846742,
+        "cancellation_ratio": 6.318147169964328
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999995,
+        "estimated_volume_m3": 0.0005566907872294122,
+        "signed_error_m3": -5.809212770587299e-06,
+        "absolute_volume_error_m3": 5.809212770587299e-06,
+        "integrated_absolute_error_m3": 3.6703461226206774e-05,
+        "signed_error_percent": -1.0327489369932985,
+        "absolute_error_percent": 1.0327489369932985,
+        "spatial_error_percent": 6.525059773547877,
+        "mean_absolute_height_error_mm": 0.407816235846742,
+        "cancellation_ratio": 6.318147169964328
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999995,
+        "estimated_volume_m3": 0.0005566907872294122,
+        "signed_error_m3": -5.809212770587299e-06,
+        "absolute_volume_error_m3": 5.809212770587299e-06,
+        "integrated_absolute_error_m3": 3.6703461226206774e-05,
+        "signed_error_percent": -1.0327489369932985,
+        "absolute_error_percent": 1.0327489369932985,
+        "spatial_error_percent": 6.525059773547877,
+        "mean_absolute_height_error_mm": 0.407816235846742,
+        "cancellation_ratio": 6.318147169964328
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 19.317600002977997,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "two_stacks",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004250000000000006,
+        "estimated_volume_m3": 0.00041227464688869703,
+        "signed_error_m3": -1.2725353111303578e-05,
+        "absolute_volume_error_m3": 1.2725353111303578e-05,
+        "integrated_absolute_error_m3": 4.156190314135861e-05,
+        "signed_error_percent": -2.994200732071426,
+        "absolute_error_percent": 2.994200732071426,
+        "spatial_error_percent": 9.779271327378483,
+        "mean_absolute_height_error_mm": 0.4617989237928735,
+        "cancellation_ratio": 3.266070715510466
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004250000000000006,
+        "estimated_volume_m3": 0.00041227464688869703,
+        "signed_error_m3": -1.2725353111303578e-05,
+        "absolute_volume_error_m3": 1.2725353111303578e-05,
+        "integrated_absolute_error_m3": 4.156190314135861e-05,
+        "signed_error_percent": -2.994200732071426,
+        "absolute_error_percent": 2.994200732071426,
+        "spatial_error_percent": 9.779271327378483,
+        "mean_absolute_height_error_mm": 0.4617989237928735,
+        "cancellation_ratio": 3.266070715510466
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004250000000000006,
+        "estimated_volume_m3": 0.00041227464688869703,
+        "signed_error_m3": -1.2725353111303578e-05,
+        "absolute_volume_error_m3": 1.2725353111303578e-05,
+        "integrated_absolute_error_m3": 4.156190314135861e-05,
+        "signed_error_percent": -2.994200732071426,
+        "absolute_error_percent": 2.994200732071426,
+        "spatial_error_percent": 9.779271327378483,
+        "mean_absolute_height_error_mm": 0.4617989237928735,
+        "cancellation_ratio": 3.266070715510466
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 8.181199998944066,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 26,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 86,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 208,
+      "merged_point_count": 208,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 402,
+      "accepted_triangle_count": 394,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "two_stacks",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004250000000000006,
+        "estimated_volume_m3": 0.00042511460571049964,
+        "signed_error_m3": 1.1460571049903435e-07,
+        "absolute_volume_error_m3": 1.1460571049903435e-07,
+        "integrated_absolute_error_m3": 3.9254833940478224e-05,
+        "signed_error_percent": 0.026966049529184515,
+        "absolute_error_percent": 0.026966049529184515,
+        "spatial_error_percent": 9.236431515406627,
+        "mean_absolute_height_error_mm": 0.4361648215608692,
+        "cancellation_ratio": 342.52075022744157
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004250000000000006,
+        "estimated_volume_m3": 0.00042511460571049964,
+        "signed_error_m3": 1.1460571049903435e-07,
+        "absolute_volume_error_m3": 1.1460571049903435e-07,
+        "integrated_absolute_error_m3": 3.9254833940478224e-05,
+        "signed_error_percent": 0.026966049529184515,
+        "absolute_error_percent": 0.026966049529184515,
+        "spatial_error_percent": 9.236431515406627,
+        "mean_absolute_height_error_mm": 0.4361648215608692,
+        "cancellation_ratio": 342.52075022744157
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004250000000000006,
+        "estimated_volume_m3": 0.00042511460571049964,
+        "signed_error_m3": 1.1460571049903435e-07,
+        "absolute_volume_error_m3": 1.1460571049903435e-07,
+        "integrated_absolute_error_m3": 3.9254833940478224e-05,
+        "signed_error_percent": 0.026966049529184515,
+        "absolute_error_percent": 0.026966049529184515,
+        "spatial_error_percent": 9.236431515406627,
+        "mean_absolute_height_error_mm": 0.4361648215608692,
+        "cancellation_ratio": 342.52075022744157
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 10.017299995524809,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "prism",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0016874999999999974,
+        "estimated_volume_m3": 0.0023015357328161224,
+        "signed_error_m3": 0.0006140357328161252,
+        "absolute_volume_error_m3": 0.0006140357328161252,
+        "integrated_absolute_error_m3": 0.0006161316170098461,
+        "signed_error_percent": 36.38730268540007,
+        "absolute_error_percent": 36.38730268540007,
+        "spatial_error_percent": 36.51150323021316,
+        "mean_absolute_height_error_mm": 6.845906855664957,
+        "cancellation_ratio": 1.003413293529529
+      },
+      "company_5pct_total_only": false,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0016874999999999974,
+        "estimated_volume_m3": 0.0023015357328161224,
+        "signed_error_m3": 0.0006140357328161252,
+        "absolute_volume_error_m3": 0.0006140357328161252,
+        "integrated_absolute_error_m3": 0.0006161316170098461,
+        "signed_error_percent": 36.38730268540007,
+        "absolute_error_percent": 36.38730268540007,
+        "spatial_error_percent": 36.51150323021316,
+        "mean_absolute_height_error_mm": 6.845906855664957,
+        "cancellation_ratio": 1.003413293529529
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0016874999999999974,
+        "estimated_volume_m3": 0.0023015357328161224,
+        "signed_error_m3": 0.0006140357328161252,
+        "absolute_volume_error_m3": 0.0006140357328161252,
+        "integrated_absolute_error_m3": 0.0006161316170098461,
+        "signed_error_percent": 36.38730268540007,
+        "absolute_error_percent": 36.38730268540007,
+        "spatial_error_percent": 36.51150323021316,
+        "mean_absolute_height_error_mm": 6.845906855664957,
+        "cancellation_ratio": 1.003413293529529
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 7.912799992482178,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 26,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 86,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 208,
+      "merged_point_count": 208,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 402,
+      "accepted_triangle_count": 394,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "prism",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0016874999999999974,
+        "estimated_volume_m3": 0.0016324413712546417,
+        "signed_error_m3": -5.5058628745355666e-05,
+        "absolute_volume_error_m3": 5.5058628745355666e-05,
+        "integrated_absolute_error_m3": 0.0003566553247250964,
+        "signed_error_percent": -3.2627335552803407,
+        "absolute_error_percent": 3.2627335552803407,
+        "spatial_error_percent": 21.13513035407982,
+        "mean_absolute_height_error_mm": 3.962836941389961,
+        "cancellation_ratio": 6.477737147697875
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0016874999999999974,
+        "estimated_volume_m3": 0.0016324413712546417,
+        "signed_error_m3": -5.5058628745355666e-05,
+        "absolute_volume_error_m3": 5.5058628745355666e-05,
+        "integrated_absolute_error_m3": 0.0003566553247250964,
+        "signed_error_percent": -3.2627335552803407,
+        "absolute_error_percent": 3.2627335552803407,
+        "spatial_error_percent": 21.13513035407982,
+        "mean_absolute_height_error_mm": 3.962836941389961,
+        "cancellation_ratio": 6.477737147697875
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0016874999999999974,
+        "estimated_volume_m3": 0.0016324413712546417,
+        "signed_error_m3": -5.5058628745355666e-05,
+        "absolute_volume_error_m3": 5.5058628745355666e-05,
+        "integrated_absolute_error_m3": 0.0003566553247250964,
+        "signed_error_percent": -3.2627335552803407,
+        "absolute_error_percent": 3.2627335552803407,
+        "spatial_error_percent": 21.13513035407982,
+        "mean_absolute_height_error_mm": 3.962836941389961,
+        "cancellation_ratio": 6.477737147697875
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 9.596400006557815,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "ramp",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0008437499999999993,
+        "estimated_volume_m3": 0.0011334241809515103,
+        "signed_error_m3": 0.000289674180951511,
+        "absolute_volume_error_m3": 0.000289674180951511,
+        "integrated_absolute_error_m3": 0.00029249698209899474,
+        "signed_error_percent": 34.33175477943837,
+        "absolute_error_percent": 34.33175477943837,
+        "spatial_error_percent": 34.66630898951051,
+        "mean_absolute_height_error_mm": 3.2499664677666082,
+        "cancellation_ratio": 1.0097447454178052
+      },
+      "company_5pct_total_only": false,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0008437499999999993,
+        "estimated_volume_m3": 0.0011334241809515103,
+        "signed_error_m3": 0.000289674180951511,
+        "absolute_volume_error_m3": 0.000289674180951511,
+        "integrated_absolute_error_m3": 0.00029249698209899474,
+        "signed_error_percent": 34.33175477943837,
+        "absolute_error_percent": 34.33175477943837,
+        "spatial_error_percent": 34.66630898951051,
+        "mean_absolute_height_error_mm": 3.2499664677666082,
+        "cancellation_ratio": 1.0097447454178052
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0008437499999999993,
+        "estimated_volume_m3": 0.0011334241809515103,
+        "signed_error_m3": 0.000289674180951511,
+        "absolute_volume_error_m3": 0.000289674180951511,
+        "integrated_absolute_error_m3": 0.00029249698209899474,
+        "signed_error_percent": 34.33175477943837,
+        "absolute_error_percent": 34.33175477943837,
+        "spatial_error_percent": 34.66630898951051,
+        "mean_absolute_height_error_mm": 3.2499664677666082,
+        "cancellation_ratio": 1.0097447454178052
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 7.963300013216212,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 26,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 86,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 208,
+      "merged_point_count": 208,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 402,
+      "accepted_triangle_count": 394,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "ramp",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0008437499999999993,
+        "estimated_volume_m3": 0.0008550491337953558,
+        "signed_error_m3": 1.1299133795356506e-05,
+        "absolute_volume_error_m3": 1.1299133795356506e-05,
+        "integrated_absolute_error_m3": 0.0001591203609815752,
+        "signed_error_percent": 1.3391565979681794,
+        "absolute_error_percent": 1.3391565979681794,
+        "spatial_error_percent": 18.858709449668186,
+        "mean_absolute_height_error_mm": 1.7680040109063913,
+        "cancellation_ratio": 14.082527374529128
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0008437499999999993,
+        "estimated_volume_m3": 0.0008550491337953558,
+        "signed_error_m3": 1.1299133795356506e-05,
+        "absolute_volume_error_m3": 1.1299133795356506e-05,
+        "integrated_absolute_error_m3": 0.0001591203609815752,
+        "signed_error_percent": 1.3391565979681794,
+        "absolute_error_percent": 1.3391565979681794,
+        "spatial_error_percent": 18.858709449668186,
+        "mean_absolute_height_error_mm": 1.7680040109063913,
+        "cancellation_ratio": 14.082527374529128
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0008437499999999993,
+        "estimated_volume_m3": 0.0008550491337953558,
+        "signed_error_m3": 1.1299133795356506e-05,
+        "absolute_volume_error_m3": 1.1299133795356506e-05,
+        "integrated_absolute_error_m3": 0.0001591203609815752,
+        "signed_error_percent": 1.3391565979681794,
+        "absolute_error_percent": 1.3391565979681794,
+        "spatial_error_percent": 18.858709449668186,
+        "mean_absolute_height_error_mm": 1.7680040109063913,
+        "cancellation_ratio": 14.082527374529128
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 9.61789999564644,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "layer",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 324,
+      "total_selection": {
+        "selected": false,
+        "rejection_reasons": [
+          "support_324_of_400"
+        ]
+      },
+      "whole_box": null,
+      "company_5pct_total_only": null,
+      "own": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005477908386108254,
+        "signed_error_m3": 1.0408386108234671e-05,
+        "absolute_volume_error_m3": 1.0408386108234671e-05,
+        "integrated_absolute_error_m3": 1.3887941555578917e-05,
+        "signed_error_percent": 0.19036828730195948,
+        "absolute_error_percent": 0.19036828730195948,
+        "spatial_error_percent": 0.25400899049984216,
+        "mean_absolute_height_error_mm": 0.19050674287488228,
+        "cancellation_ratio": 1.3343030716924855
+      },
+      "common": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005477908386108254,
+        "signed_error_m3": 1.0408386108234671e-05,
+        "absolute_volume_error_m3": 1.0408386108234671e-05,
+        "integrated_absolute_error_m3": 1.3887941555578917e-05,
+        "signed_error_percent": 0.19036828730195948,
+        "absolute_error_percent": 0.19036828730195948,
+        "spatial_error_percent": 0.25400899049984216,
+        "mean_absolute_height_error_mm": 0.19050674287488228,
+        "cancellation_ratio": 1.3343030716924855
+      },
+      "unsupported": {
+        "cell_count": 76,
+        "area_m2": 0.0171,
+        "truth_volume_m3": 0.0012824999999999998
+      },
+      "elapsed_ms_single_run": 8.724700004677288,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.015810146980951068,
+            0.08212986082383378
+          ],
+          [
+            0.01588499829734072,
+            0.01588499829734072
+          ],
+          [
+            0.08212986082383378,
+            0.015810146980951068
+          ],
+          [
+            0.21787014364651458,
+            0.015810146980951068
+          ],
+          [
+            0.28411500617300767,
+            0.01588499829734072
+          ],
+          [
+            0.2841898574893973,
+            0.08212986082383378
+          ],
+          [
+            0.2841898574893973,
+            0.21787014364651458
+          ],
+          [
+            0.28411500617300767,
+            0.28411500617300767
+          ],
+          [
+            0.21787014364651458,
+            0.2841898574893973
+          ],
+          [
+            0.08212986082383378,
+            0.2841898574893973
+          ],
+          [
+            0.01588499829734072,
+            0.28411500617300767
+          ],
+          [
+            0.015810146980951068,
+            0.21787014364651458
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.0720078125410625,
+        "bounds_m": {
+          "x": [
+            0.015810146980951068,
+            0.2841898574893973
+          ],
+          "y": [
+            0.015810146980951068,
+            0.2841898574893973
+          ]
+        },
+        "grid_centers_inside_or_on": 324
+      },
+      "outside_hull_cell_count": 76,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "layer",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.006750000000000047,
+        "estimated_volume_m3": 0.006757912207746983,
+        "signed_error_m3": 7.912207746936171e-06,
+        "absolute_volume_error_m3": 7.912207746936171e-06,
+        "integrated_absolute_error_m3": 1.5938100658349e-05,
+        "signed_error_percent": 0.11721789254720172,
+        "absolute_error_percent": 0.11721789254720172,
+        "spatial_error_percent": 0.2361200097533169,
+        "mean_absolute_height_error_mm": 0.17709000731498892,
+        "cancellation_ratio": 2.0143683240016896
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.006750000000000047,
+        "estimated_volume_m3": 0.006757912207746983,
+        "signed_error_m3": 7.912207746936171e-06,
+        "absolute_volume_error_m3": 7.912207746936171e-06,
+        "integrated_absolute_error_m3": 1.5938100658349e-05,
+        "signed_error_percent": 0.11721789254720172,
+        "absolute_error_percent": 0.11721789254720172,
+        "spatial_error_percent": 0.2361200097533169,
+        "mean_absolute_height_error_mm": 0.17709000731498892,
+        "cancellation_ratio": 2.0143683240016896
+      },
+      "common": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005476342406643309,
+        "signed_error_m3": 8.842406643289382e-06,
+        "absolute_volume_error_m3": 8.842406643289382e-06,
+        "integrated_absolute_error_m3": 1.268097298204474e-05,
+        "signed_error_percent": 0.16172668757730865,
+        "absolute_error_percent": 0.16172668757730865,
+        "spatial_error_percent": 0.23193366222303968,
+        "mean_absolute_height_error_mm": 0.1739502466672804,
+        "cancellation_ratio": 1.4341087775768033
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 10.217599992756732,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.005954243847522148,
+            0.03925610129647204
+          ],
+          [
+            0.006061403887817618,
+            0.006061403887817618
+          ],
+          [
+            0.03831014787502074,
+            0.00462986022778733
+          ],
+          [
+            0.261689849144747,
+            0.00462986022778733
+          ],
+          [
+            0.29393859313195014,
+            0.006061403887817618
+          ],
+          [
+            0.2940457531722456,
+            0.03925610129647204
+          ],
+          [
+            0.2940457531722456,
+            0.2607438957232957
+          ],
+          [
+            0.29393859313195014,
+            0.29393859313195014
+          ],
+          [
+            0.261689849144747,
+            0.29537013679198043
+          ],
+          [
+            0.03831014787502074,
+            0.29537013679198043
+          ],
+          [
+            0.006061403887817618,
+            0.29393859313195014
+          ],
+          [
+            0.005954243847522148,
+            0.2607438957232957
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08365974621953928,
+        "bounds_m": {
+          "x": [
+            0.005954243847522148,
+            0.2940457531722456
+          ],
+          "y": [
+            0.00462986022778733,
+            0.29537013679198043
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 0,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 0,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 320,
+      "merged_point_count": 320,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 618,
+      "accepted_triangle_count": 614,
+      "long_or_degenerate_triangle_count": 4,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "pyramid_beam",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005867156201509291,
+        "signed_error_m3": 2.42156201509299e-05,
+        "absolute_volume_error_m3": 2.42156201509299e-05,
+        "integrated_absolute_error_m3": 4.383503715297251e-05,
+        "signed_error_percent": 4.304999137943099,
+        "absolute_error_percent": 4.304999137943099,
+        "spatial_error_percent": 7.79289549386179,
+        "mean_absolute_height_error_mm": 0.4870559683663612,
+        "cancellation_ratio": 1.8101967605933562
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005867156201509291,
+        "signed_error_m3": 2.42156201509299e-05,
+        "absolute_volume_error_m3": 2.42156201509299e-05,
+        "integrated_absolute_error_m3": 4.383503715297251e-05,
+        "signed_error_percent": 4.304999137943099,
+        "absolute_error_percent": 4.304999137943099,
+        "spatial_error_percent": 7.79289549386179,
+        "mean_absolute_height_error_mm": 0.4870559683663612,
+        "cancellation_ratio": 1.8101967605933562
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005867156201509291,
+        "signed_error_m3": 2.42156201509299e-05,
+        "absolute_volume_error_m3": 2.42156201509299e-05,
+        "integrated_absolute_error_m3": 4.383503715297251e-05,
+        "signed_error_percent": 4.304999137943099,
+        "absolute_error_percent": 4.304999137943099,
+        "spatial_error_percent": 7.79289549386179,
+        "mean_absolute_height_error_mm": 0.4870559683663612,
+        "cancellation_ratio": 1.8101967605933562
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 7.18429998960346,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 22,
+        "out_of_range": 0,
+        "beam": 40,
+        "wall_or_outside": 82,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 176,
+      "merged_point_count": 176,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 338,
+      "accepted_triangle_count": 330,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "pyramid_beam",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005781892586159364,
+        "signed_error_m3": 1.5689258615937166e-05,
+        "absolute_volume_error_m3": 1.5689258615937166e-05,
+        "integrated_absolute_error_m3": 4.9050390350350025e-05,
+        "signed_error_percent": 2.789201531722167,
+        "absolute_error_percent": 2.789201531722167,
+        "spatial_error_percent": 8.720069395617795,
+        "mean_absolute_height_error_mm": 0.5450043372261114,
+        "cancellation_ratio": 3.126367634766667
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005781892586159364,
+        "signed_error_m3": 1.5689258615937166e-05,
+        "absolute_volume_error_m3": 1.5689258615937166e-05,
+        "integrated_absolute_error_m3": 4.9050390350350025e-05,
+        "signed_error_percent": 2.789201531722167,
+        "absolute_error_percent": 2.789201531722167,
+        "spatial_error_percent": 8.720069395617795,
+        "mean_absolute_height_error_mm": 0.5450043372261114,
+        "cancellation_ratio": 3.126367634766667
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005781892586159364,
+        "signed_error_m3": 1.5689258615937166e-05,
+        "absolute_volume_error_m3": 1.5689258615937166e-05,
+        "integrated_absolute_error_m3": 4.9050390350350025e-05,
+        "signed_error_percent": 2.789201531722167,
+        "absolute_error_percent": 2.789201531722167,
+        "spatial_error_percent": 8.720069395617795,
+        "mean_absolute_height_error_mm": 0.5450043372261114,
+        "cancellation_ratio": 3.126367634766667
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 7.786699992720969,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 11,
+        "out_of_range": 0,
+        "beam": 56,
+        "wall_or_outside": 43,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 210,
+      "merged_point_count": 210,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 406,
+      "accepted_triangle_count": 398,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "layer_beam",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 324,
+      "total_selection": {
+        "selected": false,
+        "rejection_reasons": [
+          "support_324_of_400"
+        ]
+      },
+      "whole_box": null,
+      "company_5pct_total_only": null,
+      "own": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005478083789370888,
+        "signed_error_m3": 1.058378937086877e-05,
+        "absolute_volume_error_m3": 1.058378937086877e-05,
+        "integrated_absolute_error_m3": 1.349126855853548e-05,
+        "signed_error_percent": 0.19357639452892056,
+        "absolute_error_percent": 0.19357639452892056,
+        "spatial_error_percent": 0.24675388310078525,
+        "mean_absolute_height_error_mm": 0.1850654123255896,
+        "cancellation_ratio": 1.274710605604961
+      },
+      "common": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005478083789370888,
+        "signed_error_m3": 1.058378937086877e-05,
+        "absolute_volume_error_m3": 1.058378937086877e-05,
+        "integrated_absolute_error_m3": 1.349126855853548e-05,
+        "signed_error_percent": 0.19357639452892056,
+        "absolute_error_percent": 0.19357639452892056,
+        "spatial_error_percent": 0.24675388310078525,
+        "mean_absolute_height_error_mm": 0.1850654123255896,
+        "cancellation_ratio": 1.274710605604961
+      },
+      "unsupported": {
+        "cell_count": 76,
+        "area_m2": 0.0171,
+        "truth_volume_m3": 0.0012824999999999998
+      },
+      "elapsed_ms_single_run": 8.263399999123067,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.015810146980951068,
+            0.08212986082383378
+          ],
+          [
+            0.01588499829734072,
+            0.01588499829734072
+          ],
+          [
+            0.08212986082383378,
+            0.015810146980951068
+          ],
+          [
+            0.28411500617300767,
+            0.01588499829734072
+          ],
+          [
+            0.2841898574893973,
+            0.08212986082383378
+          ],
+          [
+            0.2841898574893973,
+            0.21787014364651458
+          ],
+          [
+            0.28411500617300767,
+            0.28411500617300767
+          ],
+          [
+            0.08212986082383378,
+            0.2841898574893973
+          ],
+          [
+            0.01588499829734072,
+            0.28411500617300767
+          ],
+          [
+            0.015810146980951068,
+            0.21787014364651458
+          ]
+        ],
+        "vertex_count": 10,
+        "area_m2": 0.07199765220220612,
+        "bounds_m": {
+          "x": [
+            0.015810146980951068,
+            0.2841898574893973
+          ],
+          "y": [
+            0.015810146980951068,
+            0.2841898574893973
+          ]
+        },
+        "grid_centers_inside_or_on": 324
+      },
+      "outside_hull_cell_count": 76,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 12,
+        "out_of_range": 0,
+        "beam": 40,
+        "wall_or_outside": 44,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 224,
+      "merged_point_count": 224,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 436,
+      "accepted_triangle_count": 426,
+      "long_or_degenerate_triangle_count": 10,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "layer_beam",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.006750000000000047,
+        "estimated_volume_m3": 0.0067594958120919734,
+        "signed_error_m3": 9.495812091926715e-06,
+        "absolute_volume_error_m3": 9.495812091926715e-06,
+        "integrated_absolute_error_m3": 1.7576887297027948e-05,
+        "signed_error_percent": 0.1406786976581726,
+        "absolute_error_percent": 0.1406786976581726,
+        "spatial_error_percent": 0.2603983303263382,
+        "mean_absolute_height_error_mm": 0.19529874774475497,
+        "cancellation_ratio": 1.8510146501289466
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.006750000000000047,
+        "estimated_volume_m3": 0.0067594958120919734,
+        "signed_error_m3": 9.495812091926715e-06,
+        "absolute_volume_error_m3": 9.495812091926715e-06,
+        "integrated_absolute_error_m3": 1.7576887297027948e-05,
+        "signed_error_percent": 0.1406786976581726,
+        "absolute_error_percent": 0.1406786976581726,
+        "spatial_error_percent": 0.2603983303263382,
+        "mean_absolute_height_error_mm": 0.19529874774475497,
+        "cancellation_ratio": 1.8510146501289466
+      },
+      "common": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.005467500000000019,
+        "estimated_volume_m3": 0.005477628973970045,
+        "signed_error_m3": 1.0128973970025892e-05,
+        "absolute_volume_error_m3": 1.0128973970025892e-05,
+        "integrated_absolute_error_m3": 1.4059617498716242e-05,
+        "signed_error_percent": 0.18525786867902802,
+        "absolute_error_percent": 0.18525786867902802,
+        "spatial_error_percent": 0.25714892544519785,
+        "mean_absolute_height_error_mm": 0.19286169408389908,
+        "cancellation_ratio": 1.3880593967683286
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 9.323499994934537,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.005954243847522148,
+            0.03925610129647204
+          ],
+          [
+            0.006061403887817618,
+            0.006061403887817618
+          ],
+          [
+            0.03831014787502074,
+            0.00462986022778733
+          ],
+          [
+            0.261689849144747,
+            0.00462986022778733
+          ],
+          [
+            0.29393859313195014,
+            0.006061403887817618
+          ],
+          [
+            0.2940457531722456,
+            0.03925610129647204
+          ],
+          [
+            0.2940457531722456,
+            0.2607438957232957
+          ],
+          [
+            0.29393859313195014,
+            0.29393859313195014
+          ],
+          [
+            0.261689849144747,
+            0.29537013679198043
+          ],
+          [
+            0.03831014787502074,
+            0.29537013679198043
+          ],
+          [
+            0.006061403887817618,
+            0.29393859313195014
+          ],
+          [
+            0.005954243847522148,
+            0.2607438957232957
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08365974621953928,
+        "bounds_m": {
+          "x": [
+            0.005954243847522148,
+            0.2940457531722456
+          ],
+          "y": [
+            0.00462986022778733,
+            0.29537013679198043
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 0,
+        "out_of_range": 0,
+        "beam": 56,
+        "wall_or_outside": 0,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 264,
+      "merged_point_count": 264,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 508,
+      "accepted_triangle_count": 502,
+      "long_or_degenerate_triangle_count": 6,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "pyramid_beam_dropout20",
+      "arm_id": "control_k4_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.000572485551272001,
+        "signed_error_m3": 9.985551272001797e-06,
+        "absolute_volume_error_m3": 9.985551272001797e-06,
+        "integrated_absolute_error_m3": 5.864168084594059e-05,
+        "signed_error_percent": 1.7752091150225444,
+        "absolute_error_percent": 1.7752091150225444,
+        "spatial_error_percent": 10.425187705945008,
+        "mean_absolute_height_error_mm": 0.6515742316215621,
+        "cancellation_ratio": 5.872653321641272
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.000572485551272001,
+        "signed_error_m3": 9.985551272001797e-06,
+        "absolute_volume_error_m3": 9.985551272001797e-06,
+        "integrated_absolute_error_m3": 5.864168084594059e-05,
+        "signed_error_percent": 1.7752091150225444,
+        "absolute_error_percent": 1.7752091150225444,
+        "spatial_error_percent": 10.425187705945008,
+        "mean_absolute_height_error_mm": 0.6515742316215621,
+        "cancellation_ratio": 5.872653321641272
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.000572485551272001,
+        "signed_error_m3": 9.985551272001797e-06,
+        "absolute_volume_error_m3": 9.985551272001797e-06,
+        "integrated_absolute_error_m3": 5.864168084594059e-05,
+        "signed_error_percent": 1.7752091150225444,
+        "absolute_error_percent": 1.7752091150225444,
+        "spatial_error_percent": 10.425187705945008,
+        "mean_absolute_height_error_mm": 0.6515742316215621,
+        "cancellation_ratio": 5.872653321641272
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 7.01610000396613,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ],
+          [
+            0.0063672667786559,
+            0.08844126048382947
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29363274514227306,
+            0.08844126048382947
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.08786324409437751,
+            0.2949814093599426
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08316398357565324,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 91,
+        "out_of_range": 0,
+        "beam": 30,
+        "wall_or_outside": 60,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 139,
+      "merged_point_count": 139,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 264,
+      "accepted_triangle_count": 256,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "pyramid_beam_dropout20",
+      "arm_id": "candidate_inset_diagonals_plus_shared_center",
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005798858959934722,
+        "signed_error_m3": 1.738589599347299e-05,
+        "absolute_volume_error_m3": 1.738589599347299e-05,
+        "integrated_absolute_error_m3": 5.638938928817989e-05,
+        "signed_error_percent": 3.0908259543952026,
+        "absolute_error_percent": 3.0908259543952026,
+        "spatial_error_percent": 10.024780317898662,
+        "mean_absolute_height_error_mm": 0.6265487698686655,
+        "cancellation_ratio": 3.2433985173585294
+      },
+      "company_5pct_total_only": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005798858959934722,
+        "signed_error_m3": 1.738589599347299e-05,
+        "absolute_volume_error_m3": 1.738589599347299e-05,
+        "integrated_absolute_error_m3": 5.638938928817989e-05,
+        "signed_error_percent": 3.0908259543952026,
+        "absolute_error_percent": 3.0908259543952026,
+        "spatial_error_percent": 10.024780317898662,
+        "mean_absolute_height_error_mm": 0.6265487698686655,
+        "cancellation_ratio": 3.2433985173585294
+      },
+      "common": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005624999999999992,
+        "estimated_volume_m3": 0.0005798858959934722,
+        "signed_error_m3": 1.738589599347299e-05,
+        "absolute_volume_error_m3": 1.738589599347299e-05,
+        "integrated_absolute_error_m3": 5.638938928817989e-05,
+        "signed_error_percent": 3.0908259543952026,
+        "absolute_error_percent": 3.0908259543952026,
+        "spatial_error_percent": 10.024780317898662,
+        "mean_absolute_height_error_mm": 0.6265487698686655,
+        "cancellation_ratio": 3.2433985173585294
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 8.255900000222027,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ],
+          [
+            0.0063672667786559,
+            0.08844126048382947
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29363274514227306,
+            0.08844126048382947
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.08786324409437751,
+            0.2949814093599426
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08316398357565324,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 81,
+        "out_of_range": 0,
+        "beam": 47,
+        "wall_or_outside": 31,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 161,
+      "merged_point_count": 161,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 308,
+      "accepted_triangle_count": 300,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    }
+  ],
+  "interpretation_limits": [
+    "All scenes and the control acquisition were previously inspected; this is development evidence, not independent validation.",
+    "The candidate coordinates were chosen with knowledge of development scenes, so even a 9/9 result cannot replace reserved or physical validation.",
+    "Global Delaunay can join points across a discontinuity or occluded gap even when every triangle edge is <=0.10 m.",
+    "TIN support is interpolation support, not directly observed area.",
+    "Ideal center rays omit finite-zone optics, noise, multipath, registration error, and hardware effects.",
+    "A low net total error can result from cancellation and must be read with integrated absolute spatial error."
+  ]
+}

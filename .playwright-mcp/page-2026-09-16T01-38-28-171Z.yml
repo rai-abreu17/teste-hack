@@ -1,0 +1,132 @@
+- generic [ref=e1]:
+  - generic [ref=e67]:
+    - banner [ref=e68]:
+      - banner [ref=e69]:
+        - link [ref=e70] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e78]:
+          - group [ref=e79]:
+            - button "Save" [ref=e447] [cursor=pointer]
+            - button [ref=e80] [cursor=pointer]
+          - button [ref=e431] [cursor=pointer]
+        - navigation [ref=e86]:
+          - link "Docs" [ref=e432] [cursor=pointer]:
+            - /url: https://docs.wokwi.com/?utm_source=wokwi
+        - button "toggle dark mode" [ref=e433] [cursor=pointer]
+        - button "Sign in Sign up" [ref=e434] [cursor=pointer]:
+          - generic [ref=e92]:
+            - generic [ref=e93]: Sign in
+            - text: Sign up
+    - main [ref=e94]:
+      - generic [ref=e98]:
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - button "sketch.ino" [ref=e435]
+            - button "diagram.json" [ref=e436]
+            - button "Library Manager" [ref=e437]
+            - button "boxflow-lidar.chip.c" [ref=e438]
+            - button "boxflow-lidar.chip.json" [ref=e439]
+            - button "config.h" [ref=e440]
+            - button [ref=e105]
+          - code [ref=e451]:
+            - generic [ref=e452]:
+              - generic [aria-hidden] [ref=e455]:
+                - generic [ref=e506]:
+                  - generic [ref=e508] [cursor=pointer]: 
+                  - generic [ref=e509]: "1"
+                - generic [ref=e510]: "2"
+                - generic [ref=e512]: "3"
+                - generic [ref=e514]: "4"
+                - generic [ref=e516]:
+                  - generic [ref=e517] [cursor=pointer]: 
+                  - generic [ref=e518]: "5"
+                - generic [ref=e519]:
+                  - generic [ref=e520] [cursor=pointer]: 
+                  - generic [ref=e521]: "6"
+                - generic [ref=e522]: "7"
+                - generic [ref=e524]: "8"
+                - generic [ref=e526]: "9"
+                - generic [ref=e528]: "10"
+                - generic [ref=e530]: "11"
+                - generic [ref=e532]: "12"
+                - generic [ref=e534]:
+                  - generic [ref=e535] [cursor=pointer]: 
+                  - generic [ref=e536]: "13"
+                - generic [ref=e537]: "14"
+                - generic [ref=e539]: "15"
+                - generic [ref=e541]: "16"
+                - generic [ref=e543]: "17"
+                - generic [ref=e545]:
+                  - generic [ref=e546] [cursor=pointer]: 
+                  - generic [ref=e547]: "18"
+                - generic [ref=e548]: "19"
+                - generic [ref=e550]: "20"
+                - generic [ref=e552]: "21"
+                - generic [ref=e554]: "22"
+                - generic [ref=e556]: "23"
+                - generic [ref=e558]: "24"
+                - generic [ref=e560]: "25"
+                - generic [ref=e562]: "26"
+                - generic [ref=e564]: "27"
+                - generic [ref=e566]: "28"
+                - generic [ref=e568]:
+                  - generic [ref=e569] [cursor=pointer]: 
+                  - generic [ref=e570]: "29"
+                - generic [ref=e571]: "30"
+                - generic [ref=e573]: "31"
+              - generic [aria-hidden] [ref=e488]:
+                - generic [ref=e692]: "{"
+                - generic [ref=e694]: "\"version\": 1,"
+                - generic [ref=e696]: "\"author\": \"BoxFlow\","
+                - generic [ref=e698]: "\"editor\": \"wokwi\","
+                - generic [ref=e700]: "\"parts\": ["
+                - generic [ref=e702]: "{"
+                - generic [ref=e704]: "\"type\": \"board-esp32-devkit-c-v4\","
+                - generic [ref=e706]: "\"id\": \"esp\","
+                - generic [ref=e708]: "\"top\": 30,"
+                - generic [ref=e710]: "\"left\": 10,"
+                - generic [ref=e712]: "\"attrs\": {}"
+                - generic [ref=e714]: "},"
+                - generic [ref=e716]: "{"
+                - generic [ref=e718]: "\"type\": \"chip-boxflow-lidar\","
+                - generic [ref=e720]: "\"id\": \"lidar\","
+                - generic [ref=e722]: "\"top\": -30,"
+                - generic [ref=e724]: "\"left\": 300,"
+                - generic [ref=e726]: "\"attrs\": {"
+                - generic [ref=e728]: "\"fill\": \"75\","
+                - generic [ref=e730]: "\"shape\": \"0\","
+                - generic [ref=e732]: "\"centerX\": \"0.15\","
+                - generic [ref=e734]: "\"obstacle\": \"0\","
+                - generic [ref=e736]: "\"rangeM\": \"4\","
+                - generic [ref=e738]: "\"sensorX\": \"0.15\","
+                - generic [ref=e740]: "\"sensorY\": \"0.15\","
+                - generic [ref=e742]: "\"sensorZ\": \"0.40\""
+                - generic [ref=e744]: "}"
+                - generic [ref=e746]: "},"
+                - generic [ref=e748]: "{"
+                - generic [ref=e750]: "\"type\": \"wokwi-resistor\","
+                - generic [ref=e752]: "\"id\": \"r1\","
+              - textbox "Editor content;Press Alt+F1 for Accessibility Options." [ref=e505]: "{ \"version\": 1, \"author\": \"BoxFlow\", \"editor\": \"wokwi\", \"parts\": [ { \"type\": \"board-esp32-devkit-c-v4\", \"id\": \"esp\", \"top\": 30, \"left\": 10,"
+        - generic [ref=e184]:
+          - button "Simulation" [ref=e442]
+          - generic [ref=e187]:
+            - generic [ref=e188]:
+              - button "Start the simulation" [active] [ref=e443] [cursor=pointer]
+              - generic [ref=e755]:
+                - generic [ref=e757]:
+                  - paragraph [ref=e758]: Compiling project...
+                  - paragraph [ref=e759]: 6.04s
+                  - button "Cancel" [ref=e762] [cursor=pointer]
+                - generic [ref=e763]:
+                  - generic [ref=e764]:
+                    - paragraph [ref=e765]: Upgrade to a paid plan to skip the build queue and compile faster.
+                    - link "Wokwi Plans" [ref=e766] [cursor=pointer]:
+                      - /url: https://wokwi.com/pricing?ref=compiling
+                  - heading "Build server load" [level=6] [ref=e779]
+            - img [ref=e819] [cursor=pointer]:
+              - generic [ref=e825]: BoxFlow ToF Mock — perfil VL53L5CX 8x8Breakout
+  - alert [ref=e244]
+  - generic [ref=e245]:
+    - alert
+    - alert
+  - tooltip "Start the simulation" [ref=e879]
