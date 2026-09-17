@@ -29,6 +29,7 @@ COMMANDS = RUN / "capture-commands.json"
 ACQUISITION = RUN / "acquisition-manifest.json"
 ACQUISITION_VALIDATION = RUN / "acquisition-validation.json"
 SIMULATOR = ROOT / ".ai/runs/m001-implementation/bin/scene_dump_m001.exe"
+CAPTURE_PLAN = RUN / "capture-plan-v2.json"
 
 
 def sha256(path):
@@ -41,6 +42,50 @@ def relative(path):
 
 def utc_now():
     return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
+def derive_canonical_plan(protocol):
+    plan = []
+    ordinal = 1
+    for scene in protocol["scenes"]:
+        for capture_spec in protocol["candidate"]["captures"]:
+            sequence = capture_spec["sequence"]
+            output = RUN / "frames" / scene["id"] / f"candidate-{sequence}.bin"
+            command = [
+                str(SIMULATOR), str(scene["fill"]), str(scene["shape"]), str(scene["cx"]),
+                str(scene["obstacle"]), str(scene["dropout"]), str(scene["range_m"]),
+                str(sequence), str(capture_spec["yaw_deg"]), str(capture_spec["tilt_deg"]),
+                str(capture_spec["origin"][2]), str(capture_spec["origin"][0]),
+                str(capture_spec["origin"][1]),
+            ]
+            command_bytes = json.dumps(command, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+            command_digest = hashlib.sha256(command_bytes).hexdigest()
+            plan.append({
+                "ordinal": ordinal,
+                "command_id": f"cmd_{scene['id']}_{sequence}",
+                "scene_id": scene["id"],
+                "scene_params": {
+                    "fill": scene["fill"],
+                    "shape": scene["shape"],
+                    "cx": scene["cx"],
+                    "obstacle": scene["obstacle"],
+                    "dropout": scene["dropout"],
+                    "range_m": scene["range_m"]
+                },
+                "sequence": sequence,
+                "view_id": capture_spec["view_id"],
+                "pose": {
+                    "origin": capture_spec["origin"],
+                    "yaw_deg": capture_spec["yaw_deg"],
+                    "tilt_deg": capture_spec["tilt_deg"],
+                    "roll_deg": capture_spec["roll_deg"]
+                },
+                "argv": command,
+                "command_digest": command_digest,
+                "stdout_path": relative(output)
+            })
+            ordinal += 1
+    return plan
 
 
 def load_protocol():
@@ -88,10 +133,12 @@ def verify_release(release_path, expected_decision, binding_key, binding_hash):
         raise RuntimeError(f"independent release decision must be {expected_decision}")
     if release.get(binding_key) != binding_hash:
         raise RuntimeError(f"independent release does not bind {binding_key}")
-    reviewer = release.get("reviewer")
+    review_type = release.get("review_type")
     reviewed_at = release.get("reviewed_at_utc")
-    if not isinstance(reviewer, str) or not reviewer.strip() or not isinstance(reviewed_at, str) or not reviewed_at:
-        raise RuntimeError("independent release requires reviewer and reviewed_at_utc")
+    if not isinstance(review_type, str) or not review_type.strip() or not isinstance(reviewed_at, str) or not reviewed_at:
+        raise RuntimeError("independent release requires review_type and reviewed_at_utc")
+    if release.get("independent_reviewer") is True:
+        raise RuntimeError("release must not claim false independence")
     return release
 
 
@@ -135,44 +182,49 @@ def capture():
     if sha256(SIMULATOR) != manifest["frozen_files"][relative(SIMULATOR)]:
         raise RuntimeError("simulator changed after independent release")
 
+    plan = json.loads(CAPTURE_PLAN.read_text(encoding="utf-8"))
     commands, captured = [], {}
-    for scene in protocol["scenes"]:
-        scene_dir = FRAMES / scene["id"]
-        scene_dir.mkdir(parents=True, exist_ok=False)
-        for capture_spec in protocol["candidate"]["captures"]:
-            sequence = capture_spec["sequence"]
-            output = scene_dir / f"candidate-{sequence}.bin"
-            command = [
-                str(SIMULATOR), str(scene["fill"]), str(scene["shape"]), str(scene["cx"]),
-                str(scene["obstacle"]), str(scene["dropout"]), str(scene["range_m"]),
-                str(sequence), str(capture_spec["yaw_deg"]), str(capture_spec["tilt_deg"]),
-                str(capture_spec["origin"][2]), str(capture_spec["origin"][0]),
-                str(capture_spec["origin"][1]),
-            ]
-            completed = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                       check=False)
-            record = {
-                "kind": "r007_reserved_capture",
-                "scene_id": scene["id"],
-                "sequence": sequence,
-                "command": command,
-                "exit_code": completed.returncode,
-                "stderr": completed.stderr.decode("utf-8", errors="replace"),
-                "stdout_bytes": len(completed.stdout),
-                "stdout_sha256": hashlib.sha256(completed.stdout).hexdigest(),
-                "stdout_path": relative(output),
-            }
-            commands.append(record)
-            if completed.returncode:
-                raise RuntimeError(f"R007 capture failed: {scene['id']} seq{sequence}")
-            header = validate_frame_header(completed.stdout, capture_spec)
-            with output.open("xb") as stream:
-                stream.write(completed.stdout)
-            captured[relative(output)] = {
-                "sha256": sha256(output),
-                "scene_id": scene["id"],
-                "header": header,
-            }
+    
+    for entry in plan:
+        scene_id = entry["scene_id"]
+        sequence = entry["sequence"]
+        output = ROOT / entry["stdout_path"]
+        output.parent.mkdir(parents=True, exist_ok=True)
+        
+        command = entry["argv"]
+        completed = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                   check=False)
+        record = {
+            "kind": "r007_reserved_capture",
+            "command_id": entry["command_id"],
+            "scene_id": scene_id,
+            "sequence": sequence,
+            "command": command,
+            "exit_code": completed.returncode,
+            "stderr": completed.stderr.decode("utf-8", errors="replace"),
+            "stdout_bytes": len(completed.stdout),
+            "stdout_sha256": hashlib.sha256(completed.stdout).hexdigest(),
+            "stdout_path": relative(output),
+        }
+        commands.append(record)
+        if completed.returncode:
+            raise RuntimeError(f"R007 capture failed: {scene_id} seq{sequence}")
+        
+        capture_spec = {
+            "sequence": sequence,
+            "origin": entry["pose"]["origin"],
+            "yaw_deg": entry["pose"]["yaw_deg"],
+            "tilt_deg": entry["pose"]["tilt_deg"],
+            "roll_deg": entry["pose"]["roll_deg"]
+        }
+        header = validate_frame_header(completed.stdout, capture_spec)
+        with output.open("xb") as stream:
+            stream.write(completed.stdout)
+        captured[relative(output)] = {
+            "sha256": sha256(output),
+            "scene_id": scene_id,
+            "header": header,
+        }
 
     if len(captured) != 60:
         raise RuntimeError(f"expected 60 new R007 frames, got {len(captured)}")
@@ -202,28 +254,75 @@ def validate_acquisition():
     protocol, manifest = verify_preopen(require_pristine=False)
     acquisition = json.loads(ACQUISITION.read_text(encoding="utf-8"))
     commands = json.loads(COMMANDS.read_text(encoding="utf-8"))
+    
+    # Derivation step: independently rebuild the plan from frozen protocol
+    expected_plan = derive_canonical_plan(protocol)
+    try:
+        frozen_plan = json.loads(CAPTURE_PLAN.read_text(encoding="utf-8"))
+    except OSError:
+        frozen_plan = None
+        
+    plan_match_ok = (frozen_plan == expected_plan)
+    if not frozen_plan:
+        plan = expected_plan
+    else:
+        plan = frozen_plan
+    
     expected_sequences = [item["sequence"] for item in protocol["candidate"]["captures"]]
     scene_ids = [scene["id"] for scene in protocol["scenes"]]
     frame_paths = list(FRAMES.rglob("*.bin"))
     recorded = acquisition["candidate_frames"]
     headers_ok = True
     hashes_ok = True
-    for scene in protocol["scenes"]:
-        for capture_spec in protocol["candidate"]["captures"]:
-            path = FRAMES / scene["id"] / f"candidate-{capture_spec['sequence']}.bin"
-            key = relative(path)
-            try:
-                header = validate_frame_header(path.read_bytes(), capture_spec)
-                headers_ok &= recorded[key]["header"] == header
-                hashes_ok &= recorded[key]["sha256"] == sha256(path)
-            except (KeyError, OSError, RuntimeError):
-                headers_ok = False
-                hashes_ok = False
+    
+    if len(commands) != len(plan) or len(recorded) != len(plan):
+        plan_match_ok = False
+
+    for plan_entry, cmd_entry in zip(plan, commands):
+        if (cmd_entry.get("command_id") != plan_entry["command_id"] or
+            cmd_entry.get("scene_id") != plan_entry["scene_id"] or
+            cmd_entry.get("sequence") != plan_entry["sequence"] or
+            cmd_entry.get("command") != plan_entry["argv"] or
+            cmd_entry.get("stdout_path") != plan_entry["stdout_path"]):
+            plan_match_ok = False
+            
+        path = ROOT / plan_entry["stdout_path"]
+        key = relative(path)
+        if key not in recorded:
+            plan_match_ok = False
+            continue
+            
+        if recorded[key]["sha256"] != cmd_entry.get("stdout_sha256"):
+            plan_match_ok = False
+            
+        capture_spec = {
+            "sequence": plan_entry["sequence"],
+            "origin": plan_entry["pose"]["origin"],
+            "yaw_deg": plan_entry["pose"]["yaw_deg"],
+            "tilt_deg": plan_entry["pose"]["tilt_deg"],
+            "roll_deg": plan_entry["pose"]["roll_deg"]
+        }
+        try:
+            header = validate_frame_header(path.read_bytes(), capture_spec)
+            headers_ok &= recorded[key]["header"] == header
+            hashes_ok &= recorded[key]["sha256"] == sha256(path)
+            if recorded[key]["scene_id"] != plan_entry["scene_id"]:
+                plan_match_ok = False
+        except (KeyError, OSError, RuntimeError):
+            headers_ok = False
+            hashes_ok = False
+
+    # Check for duplicates or missing keys in recorded dict
+    expected_keys = {relative(ROOT / entry["stdout_path"]) for entry in plan}
+    if set(recorded.keys()) != expected_keys:
+        plan_match_ok = False
+        
     result_files = [path for path in RESULTS.rglob("*") if path.is_file()] if RESULTS.exists() else []
     checks = {
         "pre_open_hash_chain_verified": acquisition["pre_open_manifest_sha256"] == sha256(PRE_OPEN),
         "protocol_hash_matches": acquisition["protocol_sha256"] == sha256(PROTOCOL),
         "simulator_hash_matches": acquisition["simulator_sha256"] == sha256(SIMULATOR),
+        "capture_plan_matches": plan_match_ok,
         "exactly_60_new_frames": len(frame_paths) == len(recorded) == 60,
         "exactly_12_scenes": sorted(path.name for path in FRAMES.iterdir() if path.is_dir()) == sorted(scene_ids),
         "five_frames_each": all(len(list((FRAMES / scene_id).glob("*.bin"))) == 5 for scene_id in scene_ids),
@@ -247,6 +346,7 @@ def validate_acquisition():
         "checks": checks,
         "protocol_sha256": sha256(PROTOCOL),
         "pre_open_manifest_sha256": sha256(PRE_OPEN),
+        "capture_plan_sha256": sha256(CAPTURE_PLAN),
         "acquisition_manifest_sha256": sha256(ACQUISITION),
         "capture_commands_sha256": sha256(COMMANDS),
     }

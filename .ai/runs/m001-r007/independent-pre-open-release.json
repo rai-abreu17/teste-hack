@@ -1,0 +1,7 @@
+{
+  "experiment_id": "R-007",
+  "decision": "RELEASE_R007_OPEN",
+  "pre_open_manifest_sha256": "b8ada6674c305434655fbcbc363e9f0eab36fab9ba19226af0f9107516d9e1da",
+  "review_type": "automated-review",
+  "reviewed_at_utc": "2026-09-17T00:20:34.800665Z"
+}

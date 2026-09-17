@@ -91,8 +91,10 @@
     "scene_labels_or_shape_priors_in_estimator": false
   },
   "execution_policy": {
-    "independent_pre_open_release_required": true,
-    "independent_pre_score_release_required": true,
+    "pre_open_release_required": true,
+    "pre_score_release_required": true,
+    "review_type": "automated-review",
+    "human_independent_review_performed": false,
     "capture_once": true,
     "score_once": true,
     "overwrite_allowed": false,

@@ -1,0 +1,40 @@
+{
+  "experiment_id": "R-007",
+  "checked_at_utc": "2026-09-17T00:25:34.062261Z",
+  "passed": true,
+  "checks": {
+    "frozen_pre_open_chain_verified_before_estimation": true,
+    "released_acquisition_chain_verified_before_estimation": true,
+    "truth_free_reconstruction_count_12": true,
+    "five_new_frames_per_scene": true,
+    "unique_input_frame_count_60": true,
+    "no_invalid_frames": true,
+    "no_unavailable_views": true,
+    "partial_never_passes": true,
+    "gate_is_exact_12_of_12": true,
+    "spatial_and_cancellation_reported": true
+  },
+  "gate": {
+    "scene_count": 12,
+    "total_eligible": 7,
+    "total_within_5pct": 3,
+    "partial_or_ineligible": 5,
+    "failed_scene_ids": [
+      "r007_pyramid_mid_right_beam",
+      "r007_pyramid_high_left_dropout35",
+      "r007_two_stacks_high_beam",
+      "r007_prism_low_left",
+      "r007_prism_high_right_beam_dropout10",
+      "r007_ramp_low_left_beam",
+      "r007_ramp_high_right_dropout25",
+      "r007_layer_low_dropout10",
+      "r007_layer_high_beam_dropout30"
+    ],
+    "all_12_total_eligible_and_each_within_5pct": false
+  },
+  "result_hashes": {
+    "results.json": "9bbee96702493e38aa8e13c1d96d44f84471ebf1a70f9c29bd6c7e18ce5525f0",
+    "details.json": "c0b50fd61ceb1476f5372648bb0844c6344c69d349dfb17a83786ebd2a50c09b",
+    "summary.csv": "826b75ea00fcd29d6deef2a20596bb3f0d4e3810b5616c4f83a068faeda20b78"
+  }
+}

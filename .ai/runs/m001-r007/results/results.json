@@ -1,0 +1,1562 @@
+{
+  "experiment_id": "R-007",
+  "scope": "SIMULATED reserved holdout validation; not physical or deployment validation",
+  "created_at_utc": "2026-09-17T00:25:33.921272Z",
+  "protocol_sha256": "174d056b6e1e057167a55d8e8a09b6b4defdf13cb3e2939eddf703f005ceb232",
+  "pre_open_manifest_sha256": "b8ada6674c305434655fbcbc363e9f0eab36fab9ba19226af0f9107516d9e1da",
+  "acquisition_manifest_sha256": "c27c9deb60ac895c45d993464a36cf39117acf54452d73ef9b6a3940781c744d",
+  "acquisition_validation_sha256": "9e4528873fcc3564b2f57165f845b64eb853f453c34093aae1f8533ffce6e8c7",
+  "score_release_sha256": "0e215910b5db83c784c30ca08f42d409ca1dccdc769bf27096a8ac7fc0912e97",
+  "truth_free_reconstructions_completed_before_truth_evaluation": 12,
+  "gate": {
+    "scene_count": 12,
+    "total_eligible": 7,
+    "total_within_5pct": 3,
+    "partial_or_ineligible": 5,
+    "failed_scene_ids": [
+      "r007_pyramid_mid_right_beam",
+      "r007_pyramid_high_left_dropout35",
+      "r007_two_stacks_high_beam",
+      "r007_prism_low_left",
+      "r007_prism_high_right_beam_dropout10",
+      "r007_ramp_low_left_beam",
+      "r007_ramp_high_right_dropout25",
+      "r007_layer_low_dropout10",
+      "r007_layer_high_beam_dropout30"
+    ],
+    "all_12_total_eligible_and_each_within_5pct": false
+  },
+  "records": [
+    {
+      "scene_id": "r007_pyramid_low_left",
+      "shape": 0,
+      "fill": 25,
+      "obstacle": 0,
+      "dropout": 0,
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.00018750000000000003,
+        "estimated_volume_m3": 0.0001915669260728678,
+        "signed_error_m3": 4.066926072867783e-06,
+        "absolute_volume_error_m3": 4.066926072867783e-06,
+        "integrated_absolute_error_m3": 6.840083495424574e-06,
+        "signed_error_percent": 2.1690272388628173,
+        "absolute_error_percent": 2.1690272388628173,
+        "spatial_error_percent": 3.6480445308931055,
+        "mean_absolute_height_error_mm": 0.07600092772693973,
+        "cancellation_ratio": 1.6818804602959763
+      },
+      "primary_scene_pass": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.00018750000000000003,
+        "estimated_volume_m3": 0.0001915669260728678,
+        "signed_error_m3": 4.066926072867783e-06,
+        "absolute_volume_error_m3": 4.066926072867783e-06,
+        "integrated_absolute_error_m3": 6.840083495424574e-06,
+        "signed_error_percent": 2.1690272388628173,
+        "absolute_error_percent": 2.1690272388628173,
+        "spatial_error_percent": 3.6480445308931055,
+        "mean_absolute_height_error_mm": 0.07600092772693973,
+        "cancellation_ratio": 1.6818804602959763
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 56.050600003800355,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_pyramid_high_right",
+      "shape": 0,
+      "fill": 95,
+      "obstacle": 0,
+      "dropout": 0,
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0007124999999999998,
+        "estimated_volume_m3": 0.0007084507697885543,
+        "signed_error_m3": -4.049230211445458e-06,
+        "absolute_volume_error_m3": 4.049230211445458e-06,
+        "integrated_absolute_error_m3": 2.2732144453110635e-05,
+        "signed_error_percent": -0.5683130121326959,
+        "absolute_error_percent": 0.5683130121326959,
+        "spatial_error_percent": 3.1904764144716693,
+        "mean_absolute_height_error_mm": 0.2525793828123404,
+        "cancellation_ratio": 5.613942222612213
+      },
+      "primary_scene_pass": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0007124999999999998,
+        "estimated_volume_m3": 0.0007084507697885543,
+        "signed_error_m3": -4.049230211445458e-06,
+        "absolute_volume_error_m3": 4.049230211445458e-06,
+        "integrated_absolute_error_m3": 2.2732144453110635e-05,
+        "signed_error_percent": -0.5683130121326959,
+        "absolute_error_percent": 0.5683130121326959,
+        "spatial_error_percent": 3.1904764144716693,
+        "mean_absolute_height_error_mm": 0.2525793828123404,
+        "cancellation_ratio": 5.613942222612213
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 11.856700002681464,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_pyramid_mid_right_beam",
+      "shape": 0,
+      "fill": 55,
+      "obstacle": 1,
+      "dropout": 0,
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004125,
+        "estimated_volume_m3": 0.000376959972731002,
+        "signed_error_m3": -3.554002726899803e-05,
+        "absolute_volume_error_m3": 3.554002726899803e-05,
+        "integrated_absolute_error_m3": 5.253146483728799e-05,
+        "signed_error_percent": -8.615764186423764,
+        "absolute_error_percent": 8.615764186423764,
+        "spatial_error_percent": 12.73490056661527,
+        "mean_absolute_height_error_mm": 0.5836829426365333,
+        "cancellation_ratio": 1.4780929806182728
+      },
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0004125,
+        "estimated_volume_m3": 0.000376959972731002,
+        "signed_error_m3": -3.554002726899803e-05,
+        "absolute_volume_error_m3": 3.554002726899803e-05,
+        "integrated_absolute_error_m3": 5.253146483728799e-05,
+        "signed_error_percent": -8.615764186423764,
+        "absolute_error_percent": 8.615764186423764,
+        "spatial_error_percent": 12.73490056661527,
+        "mean_absolute_height_error_mm": 0.5836829426365333,
+        "cancellation_ratio": 1.4780929806182728
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 22.487900001578964,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 11,
+        "out_of_range": 0,
+        "beam": 56,
+        "wall_or_outside": 43,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 210,
+      "merged_point_count": 210,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 406,
+      "accepted_triangle_count": 398,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_pyramid_high_left_dropout35",
+      "shape": 0,
+      "fill": 85,
+      "obstacle": 0,
+      "dropout": 35,
+      "support_cells": 385,
+      "total_selection": {
+        "selected": false,
+        "rejection_reasons": [
+          "support_385_of_400"
+        ]
+      },
+      "whole_box": null,
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 385,
+        "area_m2": 0.086625,
+        "truth_volume_m3": 0.0006375000000000003,
+        "estimated_volume_m3": 0.0006327185916968472,
+        "signed_error_m3": -4.781408303153055e-06,
+        "absolute_volume_error_m3": 4.781408303153055e-06,
+        "integrated_absolute_error_m3": 5.282798616321465e-05,
+        "signed_error_percent": -0.7500248318671456,
+        "absolute_error_percent": 0.7500248318671456,
+        "spatial_error_percent": 8.286742927563079,
+        "mean_absolute_height_error_mm": 0.6098468821150321,
+        "cancellation_ratio": 11.048624759441214
+      },
+      "unsupported": {
+        "cell_count": 15,
+        "area_m2": 0.003375,
+        "truth_volume_m3": 0.0
+      },
+      "elapsed_ms_single_run": 9.55999999132473,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29363274514227306,
+            0.08844126048382947
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.28108189428449853,
+            0.2675200087451479
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.0063672667786559,
+            0.21155875143709948
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08241400504974647,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 394
+      },
+      "outside_hull_cell_count": 6,
+      "inside_hull_unsupported_cell_count": 9,
+      "rejected_returns": {
+        "no_return": 123,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 25,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 172,
+      "merged_point_count": 172,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 330,
+      "accepted_triangle_count": 324,
+      "long_or_degenerate_triangle_count": 6,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_two_stacks_low",
+      "shape": 1,
+      "fill": 30,
+      "obstacle": 0,
+      "dropout": 0,
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0001700000000000002,
+        "estimated_volume_m3": 0.000168503082163213,
+        "signed_error_m3": -1.496917836787204e-06,
+        "absolute_volume_error_m3": 1.496917836787204e-06,
+        "integrated_absolute_error_m3": 1.6137563579265566e-05,
+        "signed_error_percent": -0.8805399039924718,
+        "absolute_error_percent": 0.8805399039924718,
+        "spatial_error_percent": 9.492684458391498,
+        "mean_absolute_height_error_mm": 0.17930626199183963,
+        "cancellation_ratio": 10.78052728258032
+      },
+      "primary_scene_pass": true,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0001700000000000002,
+        "estimated_volume_m3": 0.000168503082163213,
+        "signed_error_m3": -1.496917836787204e-06,
+        "absolute_volume_error_m3": 1.496917836787204e-06,
+        "integrated_absolute_error_m3": 1.6137563579265566e-05,
+        "signed_error_percent": -0.8805399039924718,
+        "absolute_error_percent": 0.8805399039924718,
+        "spatial_error_percent": 9.492684458391498,
+        "mean_absolute_height_error_mm": 0.17930626199183963,
+        "cancellation_ratio": 10.78052728258032
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 14.823100005742162,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_two_stacks_high_beam",
+      "shape": 1,
+      "fill": 90,
+      "obstacle": 1,
+      "dropout": 0,
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005099999999999998,
+        "estimated_volume_m3": 0.00047514503550334414,
+        "signed_error_m3": -3.485496449665571e-05,
+        "absolute_volume_error_m3": 3.485496449665571e-05,
+        "integrated_absolute_error_m3": 7.866201010198454e-05,
+        "signed_error_percent": -6.834306764050141,
+        "absolute_error_percent": 6.834306764050141,
+        "spatial_error_percent": 15.42392354940874,
+        "mean_absolute_height_error_mm": 0.874022334466495,
+        "cancellation_ratio": 2.2568380498431457
+      },
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0005099999999999998,
+        "estimated_volume_m3": 0.00047514503550334414,
+        "signed_error_m3": -3.485496449665571e-05,
+        "absolute_volume_error_m3": 3.485496449665571e-05,
+        "integrated_absolute_error_m3": 7.866201010198454e-05,
+        "signed_error_percent": -6.834306764050141,
+        "absolute_error_percent": 6.834306764050141,
+        "spatial_error_percent": 15.42392354940874,
+        "mean_absolute_height_error_mm": 0.874022334466495,
+        "cancellation_ratio": 2.2568380498431457
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 12.714199998299591,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 11,
+        "out_of_range": 0,
+        "beam": 56,
+        "wall_or_outside": 43,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 210,
+      "merged_point_count": 210,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 406,
+      "accepted_triangle_count": 398,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_prism_low_left",
+      "shape": 2,
+      "fill": 35,
+      "obstacle": 0,
+      "dropout": 0,
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0007874999999999995,
+        "estimated_volume_m3": 0.0008670752325656307,
+        "signed_error_m3": 7.957523256563133e-05,
+        "absolute_volume_error_m3": 7.957523256563133e-05,
+        "integrated_absolute_error_m3": 0.00015991821359057055,
+        "signed_error_percent": 10.104791436905572,
+        "absolute_error_percent": 10.104791436905572,
+        "spatial_error_percent": 20.30707474165977,
+        "mean_absolute_height_error_mm": 1.7768690398952283,
+        "cancellation_ratio": 2.0096480831353483
+      },
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0007874999999999995,
+        "estimated_volume_m3": 0.0008670752325656307,
+        "signed_error_m3": 7.957523256563133e-05,
+        "absolute_volume_error_m3": 7.957523256563133e-05,
+        "integrated_absolute_error_m3": 0.00015991821359057055,
+        "signed_error_percent": 10.104791436905572,
+        "absolute_error_percent": 10.104791436905572,
+        "spatial_error_percent": 20.30707474165977,
+        "mean_absolute_height_error_mm": 1.7768690398952283,
+        "cancellation_ratio": 2.0096480831353483
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 15.782400005264208,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 14,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 46,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 260,
+      "merged_point_count": 260,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 506,
+      "accepted_triangle_count": 498,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_prism_high_right_beam_dropout10",
+      "shape": 2,
+      "fill": 90,
+      "obstacle": 1,
+      "dropout": 10,
+      "support_cells": 339,
+      "total_selection": {
+        "selected": false,
+        "rejection_reasons": [
+          "support_339_of_400"
+        ]
+      },
+      "whole_box": null,
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 339,
+        "area_m2": 0.076275,
+        "truth_volume_m3": 0.0015187500000000008,
+        "estimated_volume_m3": 0.0016144421718875246,
+        "signed_error_m3": 9.569217188752374e-05,
+        "absolute_volume_error_m3": 9.569217188752374e-05,
+        "integrated_absolute_error_m3": 0.00027743633266247086,
+        "signed_error_percent": 6.300719136627074,
+        "absolute_error_percent": 6.300719136627074,
+        "spatial_error_percent": 18.267412850203833,
+        "mean_absolute_height_error_mm": 3.6373167179609425,
+        "cancellation_ratio": 2.8992583948096464
+      },
+      "unsupported": {
+        "cell_count": 61,
+        "area_m2": 0.013725,
+        "truth_volume_m3": 0.0005062500000000001
+      },
+      "elapsed_ms_single_run": 12.107899994589388,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 61,
+      "rejected_returns": {
+        "no_return": 41,
+        "out_of_range": 0,
+        "beam": 50,
+        "wall_or_outside": 36,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 193,
+      "merged_point_count": 193,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 372,
+      "accepted_triangle_count": 348,
+      "long_or_degenerate_triangle_count": 24,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_ramp_low_left_beam",
+      "shape": 3,
+      "fill": 25,
+      "obstacle": 1,
+      "dropout": 0,
+      "support_cells": 400,
+      "total_selection": {
+        "selected": true,
+        "rejection_reasons": []
+      },
+      "whole_box": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0002812499999999999,
+        "estimated_volume_m3": 0.0003987290403104533,
+        "signed_error_m3": 0.00011747904031045334,
+        "absolute_volume_error_m3": 0.00011747904031045334,
+        "integrated_absolute_error_m3": 0.00012233267394335642,
+        "signed_error_percent": 41.77032544371676,
+        "absolute_error_percent": 41.77032544371676,
+        "spatial_error_percent": 43.49606184652674,
+        "mean_absolute_height_error_mm": 1.3592519327039605,
+        "cancellation_ratio": 1.0413148900440174
+      },
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 400,
+        "area_m2": 0.09,
+        "truth_volume_m3": 0.0002812499999999999,
+        "estimated_volume_m3": 0.0003987290403104533,
+        "signed_error_m3": 0.00011747904031045334,
+        "absolute_volume_error_m3": 0.00011747904031045334,
+        "integrated_absolute_error_m3": 0.00012233267394335642,
+        "signed_error_percent": 41.77032544371676,
+        "absolute_error_percent": 41.77032544371676,
+        "spatial_error_percent": 43.49606184652674,
+        "mean_absolute_height_error_mm": 1.3592519327039605,
+        "cancellation_ratio": 1.0413148900440174
+      },
+      "unsupported": {
+        "cell_count": 0,
+        "area_m2": 0.0,
+        "truth_volume_m3": 0
+      },
+      "elapsed_ms_single_run": 11.347199993906543,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.04736405973299922
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.29353235036734493,
+            0.29353235036734493
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.006304383219237125,
+            0.2526359521879297
+          ]
+        ],
+        "vertex_count": 12,
+        "area_m2": 0.08322176837905594,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 400
+      },
+      "outside_hull_cell_count": 0,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 11,
+        "out_of_range": 0,
+        "beam": 56,
+        "wall_or_outside": 43,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 210,
+      "merged_point_count": 210,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 406,
+      "accepted_triangle_count": 398,
+      "long_or_degenerate_triangle_count": 8,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_ramp_high_right_dropout25",
+      "shape": 3,
+      "fill": 95,
+      "obstacle": 0,
+      "dropout": 25,
+      "support_cells": 344,
+      "total_selection": {
+        "selected": false,
+        "rejection_reasons": [
+          "support_344_of_400"
+        ]
+      },
+      "whole_box": null,
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 344,
+        "area_m2": 0.0774,
+        "truth_volume_m3": 0.0008764937500000007,
+        "estimated_volume_m3": 0.000890417983018228,
+        "signed_error_m3": 1.3924233018227285e-05,
+        "absolute_volume_error_m3": 1.3924233018227285e-05,
+        "integrated_absolute_error_m3": 6.404712793020101e-05,
+        "signed_error_percent": 1.5886288998897338,
+        "absolute_error_percent": 1.5886288998897338,
+        "spatial_error_percent": 7.307197333717549,
+        "mean_absolute_height_error_mm": 0.8274822730000131,
+        "cancellation_ratio": 4.599688029233724
+      },
+      "unsupported": {
+        "cell_count": 56,
+        "area_m2": 0.0126,
+        "truth_volume_m3": 0.00019225625000000014
+      },
+      "elapsed_ms_single_run": 12.016900000162423,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.006304383219237125,
+            0.04736405973299922
+          ],
+          [
+            0.006467661553584025,
+            0.006467661553584025
+          ],
+          [
+            0.04641810631154793,
+            0.004979999599502322
+          ],
+          [
+            0.25358190560938104,
+            0.004979999599502322
+          ],
+          [
+            0.29353235036734493,
+            0.006467661553584025
+          ],
+          [
+            0.29369562870169186,
+            0.2526359521879297
+          ],
+          [
+            0.28108189428449853,
+            0.2675200087451479
+          ],
+          [
+            0.25358190560938104,
+            0.2950200123214266
+          ],
+          [
+            0.04641810631154793,
+            0.2950200123214266
+          ],
+          [
+            0.006467661553584025,
+            0.29353235036734493
+          ],
+          [
+            0.0063672667786559,
+            0.21155875143709948
+          ]
+        ],
+        "vertex_count": 11,
+        "area_m2": 0.082408340301027,
+        "bounds_m": {
+          "x": [
+            0.006304383219237125,
+            0.29369562870169186
+          ],
+          "y": [
+            0.004979999599502322,
+            0.2950200123214266
+          ]
+        },
+        "grid_centers_inside_or_on": 394
+      },
+      "outside_hull_cell_count": 6,
+      "inside_hull_unsupported_cell_count": 50,
+      "rejected_returns": {
+        "no_return": 91,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 29,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 200,
+      "merged_point_count": 200,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 387,
+      "accepted_triangle_count": 370,
+      "long_or_degenerate_triangle_count": 17,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_layer_low_dropout10",
+      "shape": 4,
+      "fill": 20,
+      "obstacle": 0,
+      "dropout": 10,
+      "support_cells": 324,
+      "total_selection": {
+        "selected": false,
+        "rejection_reasons": [
+          "support_324_of_400"
+        ]
+      },
+      "whole_box": null,
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 324,
+        "area_m2": 0.07289999999999999,
+        "truth_volume_m3": 0.0014579999999999938,
+        "estimated_volume_m3": 0.001457802276672659,
+        "signed_error_m3": -1.9772332733486627e-07,
+        "absolute_volume_error_m3": 1.9772332733486627e-07,
+        "integrated_absolute_error_m3": 6.142096151686287e-06,
+        "signed_error_percent": -0.013561270736273464,
+        "absolute_error_percent": 0.013561270736273464,
+        "spatial_error_percent": 0.42126859750934936,
+        "mean_absolute_height_error_mm": 0.08425371950186952,
+        "cancellation_ratio": 31.064094634033594
+      },
+      "unsupported": {
+        "cell_count": 76,
+        "area_m2": 0.0171,
+        "truth_volume_m3": 0.000342
+      },
+      "elapsed_ms_single_run": 12.144799999077804,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.012162698137415301,
+            0.13031072768193888
+          ],
+          [
+            0.0122734642486938,
+            0.0122734642486938
+          ],
+          [
+            0.13031072768193888,
+            0.012162698137415301
+          ],
+          [
+            0.16968928423899007,
+            0.012162698137415301
+          ],
+          [
+            0.28772654767223516,
+            0.0122734642486938
+          ],
+          [
+            0.2878373137835136,
+            0.16968928423899007
+          ],
+          [
+            0.28772654767223516,
+            0.28772654767223516
+          ],
+          [
+            0.16968928423899007,
+            0.2878373137835136
+          ],
+          [
+            0.13031072768193888,
+            0.2878373137835136
+          ],
+          [
+            0.0122734642486938,
+            0.28772654767223516
+          ],
+          [
+            0.012162698137415301,
+            0.16968928423899007
+          ]
+        ],
+        "vertex_count": 11,
+        "area_m2": 0.07594196561568378,
+        "bounds_m": {
+          "x": [
+            0.012162698137415301,
+            0.2878373137835136
+          ],
+          "y": [
+            0.012162698137415301,
+            0.2878373137835136
+          ]
+        },
+        "grid_centers_inside_or_on": 324
+      },
+      "outside_hull_cell_count": 76,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 43,
+        "out_of_range": 0,
+        "beam": 0,
+        "wall_or_outside": 38,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 239,
+      "merged_point_count": 239,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 465,
+      "accepted_triangle_count": 456,
+      "long_or_degenerate_triangle_count": 9,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    },
+    {
+      "scene_id": "r007_layer_high_beam_dropout30",
+      "shape": 4,
+      "fill": 90,
+      "obstacle": 1,
+      "dropout": 30,
+      "support_cells": 320,
+      "total_selection": {
+        "selected": false,
+        "rejection_reasons": [
+          "support_320_of_400"
+        ]
+      },
+      "whole_box": null,
+      "primary_scene_pass": false,
+      "own": {
+        "cell_count": 320,
+        "area_m2": 0.072,
+        "truth_volume_m3": 0.006480000000000028,
+        "estimated_volume_m3": 0.006486655054502619,
+        "signed_error_m3": 6.655054502590561e-06,
+        "absolute_volume_error_m3": 6.655054502590561e-06,
+        "integrated_absolute_error_m3": 1.2638800263369606e-05,
+        "signed_error_percent": 0.10270145837331067,
+        "absolute_error_percent": 0.10270145837331067,
+        "spatial_error_percent": 0.19504321394088814,
+        "mean_absolute_height_error_mm": 0.1755388925468001,
+        "cancellation_ratio": 1.8991279873740776
+      },
+      "unsupported": {
+        "cell_count": 80,
+        "area_m2": 0.018,
+        "truth_volume_m3": 0.0016200000000000012
+      },
+      "elapsed_ms_single_run": 10.76669999747537,
+      "accepted_return_hull": {
+        "vertices_xy_m": [
+          [
+            0.010188121935775354,
+            0.19354311026993615
+          ],
+          [
+            0.010223706263194576,
+            0.07438013796230913
+          ],
+          [
+            0.010254483612063561,
+            0.010254483612063561
+          ],
+          [
+            0.13854311801853997,
+            0.010188121935775354
+          ],
+          [
+            0.1614568790012278,
+            0.010188121935775354
+          ],
+          [
+            0.22561985905745863,
+            0.010223706263194576
+          ],
+          [
+            0.25766954710357903,
+            0.010258490611660273
+          ],
+          [
+            0.2897455134077042,
+            0.06525447586345974
+          ],
+          [
+            0.2897762907565732,
+            0.07438013796230913
+          ],
+          [
+            0.2898118750839924,
+            0.13854311801853997
+          ],
+          [
+            0.2898118750839924,
+            0.19354311026993615
+          ],
+          [
+            0.2897762907565732,
+            0.22561985905745863
+          ],
+          [
+            0.2897455134077042,
+            0.23474552115630803
+          ],
+          [
+            0.25766954710357903,
+            0.2897415064081075
+          ],
+          [
+            0.13854311801853997,
+            0.2898118750839924
+          ],
+          [
+            0.010254483612063561,
+            0.2897455134077042
+          ]
+        ],
+        "vertex_count": 16,
+        "area_m2": 0.07638679439915755,
+        "bounds_m": {
+          "x": [
+            0.010188121935775354,
+            0.2898118750839924
+          ],
+          "y": [
+            0.010188121935775354,
+            0.2898118750839924
+          ]
+        },
+        "grid_centers_inside_or_on": 320
+      },
+      "outside_hull_cell_count": 80,
+      "inside_hull_unsupported_cell_count": 0,
+      "rejected_returns": {
+        "no_return": 96,
+        "out_of_range": 0,
+        "beam": 38,
+        "wall_or_outside": 0,
+        "below_reference": 0
+      },
+      "invalid_frame_count": 0,
+      "unavailable_view_count": 0,
+      "raw_point_count": 186,
+      "merged_point_count": 186,
+      "merge_conflict_count": 0,
+      "delaunay_simplex_count": 354,
+      "accepted_triangle_count": 350,
+      "long_or_degenerate_triangle_count": 4,
+      "qhull_error": null,
+      "coplanar_point_count": 0
+    }
+  ],
+  "interpretation_limits": [
+    "R007 is a reserved simulation holdout, not evidence of physical sensor accuracy, hardware reliability, or deployment readiness.",
+    "The simulator uses ideal center rays with deterministic dropout and simplified beam geometry; it omits finite-zone optics, noise, multipath, calibration drift, and many material effects.",
+    "D003 global Delaunay interpolation can bridge discontinuities or occluded gaps; low total error can coexist with large spatial error and cancellation.",
+    "The 12 simulator scenes are fixed parametric variants from five supported shape families, not independent physical replications or a complete operating envelope."
+  ]
+}

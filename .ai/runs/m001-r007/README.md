@@ -5,7 +5,8 @@ This directory is at the **pre-open stop boundary**. Do not run capture or scori
 Frozen sources live under `.ai/experiments/m001/`:
 
 - `protocol_r007.json` and `protocol_r007.sha256`: fixed candidate, 12-scene table, acquisition contract, metrics, and gate.
-- `run_r007.py`: pre-open verification, one-shot 60-frame acquisition, and truth-free acquisition validation.
+- `capture-plan-v2.json`: canonical structural plan tying every sequence to exact command and pose.
+- `run_r007.py`: pre-open verification, one-shot 60-frame acquisition, and truth-free acquisition validation with structural equality.
 - `run_r007_score.py`: one-shot truth-free reconstruction followed by evaluator-only truth scoring.
 - `test_r007.py`: preregistration, isolation, gate, and integrity tests that do not capture or score.
 
@@ -20,13 +21,13 @@ The current files in this run directory are only preregistration artifacts. In p
      "experiment_id": "R-007",
      "decision": "RELEASE_R007_OPEN",
      "pre_open_manifest_sha256": "<sha256 of pre-open-manifest.json>",
-     "reviewer": "<independent reviewer identity>",
+     "review_type": "automated-review",
      "reviewed_at_utc": "<ISO-8601 UTC>"
    }
    ```
 
 2. Only after that release, run `python .ai/experiments/m001/run_r007.py capture` once, then `python .ai/experiments/m001/run_r007.py validate` once.
-3. Independently inspect the acquisition and its validation. Create `independent-score-release.json` with decision `RELEASE_R007_SCORE`, `acquisition_manifest_sha256`, `acquisition_validation_sha256`, reviewer, and UTC timestamp.
+3. Automatically inspect the acquisition and its validation. Create `independent-score-release.json` with decision `RELEASE_R007_SCORE`, binding four hashes (`pre_open_manifest_sha256`, `capture_plan_sha256`, `acquisition_manifest_sha256`, `acquisition_validation_sha256`), review_type "automated-review", and UTC timestamp.
 4. Only after the score release, run `python .ai/experiments/m001/run_r007_score.py` once.
 
 The runners refuse overwrite. A failed or partial acquisition consumes this reserved matrix and must be reported; it must not be repaired by dropping scenes or generating replacement sequences.

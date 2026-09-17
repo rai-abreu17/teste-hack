@@ -1,0 +1,30 @@
+{
+  "experiment_id": "R-007",
+  "checked_at_utc": "2026-09-17T00:24:27.416557Z",
+  "phase": "AWAITING_INDEPENDENT_SCORE_RELEASE",
+  "passed": true,
+  "checks": {
+    "pre_open_hash_chain_verified": true,
+    "protocol_hash_matches": true,
+    "simulator_hash_matches": true,
+    "capture_plan_matches": true,
+    "exactly_60_new_frames": true,
+    "exactly_12_scenes": true,
+    "five_frames_each": true,
+    "only_sequences_701_705": true,
+    "headers_poses_crc_valid": true,
+    "frame_hashes_match": true,
+    "capture_command_count_60": true,
+    "capture_commands_hash_matches": true,
+    "no_development_frames_reused": true,
+    "no_truth_or_estimator_used": true,
+    "no_results_or_scores": true,
+    "scene_table_unchanged": true,
+    "frozen_files_unchanged": true
+  },
+  "protocol_sha256": "174d056b6e1e057167a55d8e8a09b6b4defdf13cb3e2939eddf703f005ceb232",
+  "pre_open_manifest_sha256": "b8ada6674c305434655fbcbc363e9f0eab36fab9ba19226af0f9107516d9e1da",
+  "capture_plan_sha256": "abfff1c2878d28956824c3995163146b3e2a485c45882370b279ca5539ccb6c3",
+  "acquisition_manifest_sha256": "c27c9deb60ac895c45d993464a36cf39117acf54452d73ef9b6a3940781c744d",
+  "capture_commands_sha256": "c241bf823478474f0b130e24e0513f486c411673d7e431c57f67674f27410cad"
+}

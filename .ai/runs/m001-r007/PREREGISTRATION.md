@@ -31,9 +31,9 @@ Shapes 0–4 are all present. The matrix includes low and high fill, shifted pyr
 
 ## Acquisition and truth boundary
 
-Acquisition is exactly 12 scenes × 5 new frames = 60 unique inputs. The acquisition runner has no estimator, geometry, or truth import. It verifies the pre-open hashes and an independent release bound to the pre-open manifest before it invokes the simulator.
+Acquisition is exactly 12 scenes × 5 new frames = 60 unique inputs. The acquisition runner has no estimator, geometry, or truth import. It verifies the pre-open hashes and an automated-review release bound to the pre-open manifest before it invokes the simulator.
 
-After acquisition, a truth-free validation must confirm the exact 60-file matrix, frame format, CRC, sequence, pose, simulator hash, command log, absence of reused frames, and absence of results. A second independent release bound to the acquisition manifest and validation is required before scoring.
+After acquisition, a truth-free validation must confirm the exact 60-file matrix, frame format, CRC, sequence, pose, simulator hash, command log, absence of reused frames, and absence of results. It will reconstruct the expected capture plan from the protocol and strictly verify equality with `capture-plan-v2.json`. A second automated-review release bound to the acquisition manifest, acquisition validation, capture plan and pre-open manifest is required before scoring.
 
 The scoring runner reconstructs all 12 scenes with the frozen D003 estimator before `experiments.truth` is imported inside the evaluator function. Truth is used only to calculate metrics after reconstruction.
 
@@ -49,6 +49,6 @@ Signed total error, integrated absolute cell-volume error, spatial error, cancel
 
 ## Frozen chain and interpretation
 
-`pre-open-manifest.json` records SHA-256 for the protocol and its detached checksum, estimator, acquisition runner, scoring/evaluator runner, tests, simulator source and binary, truth evaluator, runtime geometry, volume requirement, D004 evidence supporting promotion, this preregistration, the release request, and the README. The independent reviewer must recalculate these hashes and bind the manifest hash in the release.
+`pre-open-manifest.json` records SHA-256 for the protocol and its detached checksum, estimator, acquisition runner, scoring/evaluator runner, tests, simulator source and binary, truth evaluator, runtime geometry, volume requirement, D004 evidence supporting promotion, this preregistration, the release request, the README, and the `capture-plan-v2.json`. The automated reviewer must recalculate these hashes and bind the manifest hash in the release.
 
 The result, whether pass or fail, remains simulation evidence. It does not demonstrate accuracy on hardware, robustness to real optical effects, or deployment readiness.

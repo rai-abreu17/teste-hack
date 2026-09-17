@@ -1,0 +1,2522 @@
+[
+  {
+    "ordinal": 1,
+    "command_id": "cmd_r007_pyramid_low_left_701",
+    "scene_id": "r007_pyramid_low_left",
+    "scene_params": {
+      "fill": 25,
+      "shape": 0,
+      "cx": 0.11,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "0",
+      "0.11",
+      "0",
+      "0",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "222d7381ed799c4579ff0f143c52d577a23dc1cbf1955ce0ea351aa1201dbc09",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_low_left/candidate-701.bin"
+  },
+  {
+    "ordinal": 2,
+    "command_id": "cmd_r007_pyramid_low_left_702",
+    "scene_id": "r007_pyramid_low_left",
+    "scene_params": {
+      "fill": 25,
+      "shape": 0,
+      "cx": 0.11,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "0",
+      "0.11",
+      "0",
+      "0",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "525dacc7a0b1eebc67c8be4af682ec0ae16e193b29b920a0fed7bff4a1b0d605",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_low_left/candidate-702.bin"
+  },
+  {
+    "ordinal": 3,
+    "command_id": "cmd_r007_pyramid_low_left_703",
+    "scene_id": "r007_pyramid_low_left",
+    "scene_params": {
+      "fill": 25,
+      "shape": 0,
+      "cx": 0.11,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "0",
+      "0.11",
+      "0",
+      "0",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "c482718e6ac184a1fd27ad0cb393c9fac360f19d7374c60cda23fc7c0ac81a4e",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_low_left/candidate-703.bin"
+  },
+  {
+    "ordinal": 4,
+    "command_id": "cmd_r007_pyramid_low_left_704",
+    "scene_id": "r007_pyramid_low_left",
+    "scene_params": {
+      "fill": 25,
+      "shape": 0,
+      "cx": 0.11,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "0",
+      "0.11",
+      "0",
+      "0",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "918a550fecda63990496044c8d2be06e5745661af394ac8a098e538ceebe6e8d",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_low_left/candidate-704.bin"
+  },
+  {
+    "ordinal": 5,
+    "command_id": "cmd_r007_pyramid_low_left_705",
+    "scene_id": "r007_pyramid_low_left",
+    "scene_params": {
+      "fill": 25,
+      "shape": 0,
+      "cx": 0.11,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "0",
+      "0.11",
+      "0",
+      "0",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "605d28adb376f632a8714d6ea23de9ee928c2183a06bd36d034c51c7c7409c72",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_low_left/candidate-705.bin"
+  },
+  {
+    "ordinal": 6,
+    "command_id": "cmd_r007_pyramid_high_right_701",
+    "scene_id": "r007_pyramid_high_right",
+    "scene_params": {
+      "fill": 95,
+      "shape": 0,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "0",
+      "0.19",
+      "0",
+      "0",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "c1dd16a6c606b286b89753e2128d63d2dbc54322e61dd177d2840d607d6589e7",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_right/candidate-701.bin"
+  },
+  {
+    "ordinal": 7,
+    "command_id": "cmd_r007_pyramid_high_right_702",
+    "scene_id": "r007_pyramid_high_right",
+    "scene_params": {
+      "fill": 95,
+      "shape": 0,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "0",
+      "0.19",
+      "0",
+      "0",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "54cfe3ac1fbc5df583c88774e2a560f660e59129436f829445033df87de483d9",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_right/candidate-702.bin"
+  },
+  {
+    "ordinal": 8,
+    "command_id": "cmd_r007_pyramid_high_right_703",
+    "scene_id": "r007_pyramid_high_right",
+    "scene_params": {
+      "fill": 95,
+      "shape": 0,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "0",
+      "0.19",
+      "0",
+      "0",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "cda359d31bd4727fe2173987f02e92fca7a5a5999479418d445fb31c9fc60f52",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_right/candidate-703.bin"
+  },
+  {
+    "ordinal": 9,
+    "command_id": "cmd_r007_pyramid_high_right_704",
+    "scene_id": "r007_pyramid_high_right",
+    "scene_params": {
+      "fill": 95,
+      "shape": 0,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "0",
+      "0.19",
+      "0",
+      "0",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "7ae75a06028e3b85b224238987461803f19eb473894b4776369a7509a34d8b7f",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_right/candidate-704.bin"
+  },
+  {
+    "ordinal": 10,
+    "command_id": "cmd_r007_pyramid_high_right_705",
+    "scene_id": "r007_pyramid_high_right",
+    "scene_params": {
+      "fill": 95,
+      "shape": 0,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "0",
+      "0.19",
+      "0",
+      "0",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "f7f373d3be991a10f13662c030b43352c9d08f0396e1b0cb75dc6ecca8434bda",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_right/candidate-705.bin"
+  },
+  {
+    "ordinal": 11,
+    "command_id": "cmd_r007_pyramid_mid_right_beam_701",
+    "scene_id": "r007_pyramid_mid_right_beam",
+    "scene_params": {
+      "fill": 55,
+      "shape": 0,
+      "cx": 0.17,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "55",
+      "0",
+      "0.17",
+      "1",
+      "0",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "02422260a67e6f7efc0135fa70aff86b6ea70c3384ff4e4f2d5014ab60df9007",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_mid_right_beam/candidate-701.bin"
+  },
+  {
+    "ordinal": 12,
+    "command_id": "cmd_r007_pyramid_mid_right_beam_702",
+    "scene_id": "r007_pyramid_mid_right_beam",
+    "scene_params": {
+      "fill": 55,
+      "shape": 0,
+      "cx": 0.17,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "55",
+      "0",
+      "0.17",
+      "1",
+      "0",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "168a8489aefbb62a1116207f9cf210d13a80271efc79ce8145050239536dbdae",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_mid_right_beam/candidate-702.bin"
+  },
+  {
+    "ordinal": 13,
+    "command_id": "cmd_r007_pyramid_mid_right_beam_703",
+    "scene_id": "r007_pyramid_mid_right_beam",
+    "scene_params": {
+      "fill": 55,
+      "shape": 0,
+      "cx": 0.17,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "55",
+      "0",
+      "0.17",
+      "1",
+      "0",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "2b9e74387e7d336b07e0246b54b7736413413c7c6d5a5bc01cd91ddd3682091f",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_mid_right_beam/candidate-703.bin"
+  },
+  {
+    "ordinal": 14,
+    "command_id": "cmd_r007_pyramid_mid_right_beam_704",
+    "scene_id": "r007_pyramid_mid_right_beam",
+    "scene_params": {
+      "fill": 55,
+      "shape": 0,
+      "cx": 0.17,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "55",
+      "0",
+      "0.17",
+      "1",
+      "0",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "3e838aef64c1816c1144c55464a5d2993a0d42ea646af0803edc5710e984a728",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_mid_right_beam/candidate-704.bin"
+  },
+  {
+    "ordinal": 15,
+    "command_id": "cmd_r007_pyramid_mid_right_beam_705",
+    "scene_id": "r007_pyramid_mid_right_beam",
+    "scene_params": {
+      "fill": 55,
+      "shape": 0,
+      "cx": 0.17,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "55",
+      "0",
+      "0.17",
+      "1",
+      "0",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "a1987b41323a184ea833037dfbdc35f6702486a24bc45a696b2ff839c25acf46",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_mid_right_beam/candidate-705.bin"
+  },
+  {
+    "ordinal": 16,
+    "command_id": "cmd_r007_pyramid_high_left_dropout35_701",
+    "scene_id": "r007_pyramid_high_left_dropout35",
+    "scene_params": {
+      "fill": 85,
+      "shape": 0,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 35,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "85",
+      "0",
+      "0.12",
+      "0",
+      "35",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "c8203e2e33b1c2caf12b1aa975c19f8060084a080267bf38437b801e742ba425",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_left_dropout35/candidate-701.bin"
+  },
+  {
+    "ordinal": 17,
+    "command_id": "cmd_r007_pyramid_high_left_dropout35_702",
+    "scene_id": "r007_pyramid_high_left_dropout35",
+    "scene_params": {
+      "fill": 85,
+      "shape": 0,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 35,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "85",
+      "0",
+      "0.12",
+      "0",
+      "35",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "0afb310690463fe4425e63af98042b87f22a0b92cd8c2de1d8724c3564154bfc",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_left_dropout35/candidate-702.bin"
+  },
+  {
+    "ordinal": 18,
+    "command_id": "cmd_r007_pyramid_high_left_dropout35_703",
+    "scene_id": "r007_pyramid_high_left_dropout35",
+    "scene_params": {
+      "fill": 85,
+      "shape": 0,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 35,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "85",
+      "0",
+      "0.12",
+      "0",
+      "35",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "5729469497609dbdd98f7b2dfebae6387b45f96a050d6b5b577977b4c4baf6ff",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_left_dropout35/candidate-703.bin"
+  },
+  {
+    "ordinal": 19,
+    "command_id": "cmd_r007_pyramid_high_left_dropout35_704",
+    "scene_id": "r007_pyramid_high_left_dropout35",
+    "scene_params": {
+      "fill": 85,
+      "shape": 0,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 35,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "85",
+      "0",
+      "0.12",
+      "0",
+      "35",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "f3664349c59e1ac16bdfb4164d22c86581d9e380baa9983479e24e7a8c509731",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_left_dropout35/candidate-704.bin"
+  },
+  {
+    "ordinal": 20,
+    "command_id": "cmd_r007_pyramid_high_left_dropout35_705",
+    "scene_id": "r007_pyramid_high_left_dropout35",
+    "scene_params": {
+      "fill": 85,
+      "shape": 0,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 35,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "85",
+      "0",
+      "0.12",
+      "0",
+      "35",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "08eb1ad3d857ca18465eb8ab4de79bea9d9c4c0308844ae51625844d02965c47",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_pyramid_high_left_dropout35/candidate-705.bin"
+  },
+  {
+    "ordinal": 21,
+    "command_id": "cmd_r007_two_stacks_low_701",
+    "scene_id": "r007_two_stacks_low",
+    "scene_params": {
+      "fill": 30,
+      "shape": 1,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "30",
+      "1",
+      "0.14",
+      "0",
+      "0",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "9f2933e5c7de0e333789e02411e063415200c3c5894201f01ee654a741e3199c",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_low/candidate-701.bin"
+  },
+  {
+    "ordinal": 22,
+    "command_id": "cmd_r007_two_stacks_low_702",
+    "scene_id": "r007_two_stacks_low",
+    "scene_params": {
+      "fill": 30,
+      "shape": 1,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "30",
+      "1",
+      "0.14",
+      "0",
+      "0",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "997647bd25c62a9b6ed5e0a223e8e7e5fff36ac15123cf3d697fde11b62a4276",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_low/candidate-702.bin"
+  },
+  {
+    "ordinal": 23,
+    "command_id": "cmd_r007_two_stacks_low_703",
+    "scene_id": "r007_two_stacks_low",
+    "scene_params": {
+      "fill": 30,
+      "shape": 1,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "30",
+      "1",
+      "0.14",
+      "0",
+      "0",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "84be65afaf7e60f5171c78d8477ecff3fc801c06a474625a3bf29342f06b8279",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_low/candidate-703.bin"
+  },
+  {
+    "ordinal": 24,
+    "command_id": "cmd_r007_two_stacks_low_704",
+    "scene_id": "r007_two_stacks_low",
+    "scene_params": {
+      "fill": 30,
+      "shape": 1,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "30",
+      "1",
+      "0.14",
+      "0",
+      "0",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "8acc09974a4e87a21df04b3a5df6a2625faa2d4ba095285e6f1cdd3af129d3d3",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_low/candidate-704.bin"
+  },
+  {
+    "ordinal": 25,
+    "command_id": "cmd_r007_two_stacks_low_705",
+    "scene_id": "r007_two_stacks_low",
+    "scene_params": {
+      "fill": 30,
+      "shape": 1,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "30",
+      "1",
+      "0.14",
+      "0",
+      "0",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "47abdbb4813c14ab3ac01320effbc380a538d56468227d852b43f8b0faeeccab",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_low/candidate-705.bin"
+  },
+  {
+    "ordinal": 26,
+    "command_id": "cmd_r007_two_stacks_high_beam_701",
+    "scene_id": "r007_two_stacks_high_beam",
+    "scene_params": {
+      "fill": 90,
+      "shape": 1,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "1",
+      "0.16",
+      "1",
+      "0",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "1af699aaa571ab89fccc652b1749d9a139b6cc3bad1e60c988f10472519c36a4",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_high_beam/candidate-701.bin"
+  },
+  {
+    "ordinal": 27,
+    "command_id": "cmd_r007_two_stacks_high_beam_702",
+    "scene_id": "r007_two_stacks_high_beam",
+    "scene_params": {
+      "fill": 90,
+      "shape": 1,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "1",
+      "0.16",
+      "1",
+      "0",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "726942422bd2f03c437af1daeeb3cd866d74675c66c66fb9d7ce3776c44e7d3b",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_high_beam/candidate-702.bin"
+  },
+  {
+    "ordinal": 28,
+    "command_id": "cmd_r007_two_stacks_high_beam_703",
+    "scene_id": "r007_two_stacks_high_beam",
+    "scene_params": {
+      "fill": 90,
+      "shape": 1,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "1",
+      "0.16",
+      "1",
+      "0",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "4e0b16775773ee9901d6ece5554a62176a53adf2efec17fe0c35d32f890db440",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_high_beam/candidate-703.bin"
+  },
+  {
+    "ordinal": 29,
+    "command_id": "cmd_r007_two_stacks_high_beam_704",
+    "scene_id": "r007_two_stacks_high_beam",
+    "scene_params": {
+      "fill": 90,
+      "shape": 1,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "1",
+      "0.16",
+      "1",
+      "0",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "894a23391bcfcdcef1bee392089f5157ff92bd014f449a0bcf58195ab2225b78",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_high_beam/candidate-704.bin"
+  },
+  {
+    "ordinal": 30,
+    "command_id": "cmd_r007_two_stacks_high_beam_705",
+    "scene_id": "r007_two_stacks_high_beam",
+    "scene_params": {
+      "fill": 90,
+      "shape": 1,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "1",
+      "0.16",
+      "1",
+      "0",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "a7ca227148ad9e6278b8348134501608b7fd1c94b8c4b9fa7a9bf8156cfe5521",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_two_stacks_high_beam/candidate-705.bin"
+  },
+  {
+    "ordinal": 31,
+    "command_id": "cmd_r007_prism_low_left_701",
+    "scene_id": "r007_prism_low_left",
+    "scene_params": {
+      "fill": 35,
+      "shape": 2,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "35",
+      "2",
+      "0.12",
+      "0",
+      "0",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "0dd4eb5782c8de75c68ce4eac3672d5836a3340eeec58413293488f40d7efa85",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_low_left/candidate-701.bin"
+  },
+  {
+    "ordinal": 32,
+    "command_id": "cmd_r007_prism_low_left_702",
+    "scene_id": "r007_prism_low_left",
+    "scene_params": {
+      "fill": 35,
+      "shape": 2,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "35",
+      "2",
+      "0.12",
+      "0",
+      "0",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "1a824074de639341f61156e837243cbd6909493a110e6b9532a01cda64e4f2f1",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_low_left/candidate-702.bin"
+  },
+  {
+    "ordinal": 33,
+    "command_id": "cmd_r007_prism_low_left_703",
+    "scene_id": "r007_prism_low_left",
+    "scene_params": {
+      "fill": 35,
+      "shape": 2,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "35",
+      "2",
+      "0.12",
+      "0",
+      "0",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "e6b405b97095839777653a3cf368b4a1831199d76e6dc52fa2860f2bdfda2860",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_low_left/candidate-703.bin"
+  },
+  {
+    "ordinal": 34,
+    "command_id": "cmd_r007_prism_low_left_704",
+    "scene_id": "r007_prism_low_left",
+    "scene_params": {
+      "fill": 35,
+      "shape": 2,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "35",
+      "2",
+      "0.12",
+      "0",
+      "0",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "d7a6b71c3bea0c2e853e6907f77570e9544f89a805640f0caec30226c6517aae",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_low_left/candidate-704.bin"
+  },
+  {
+    "ordinal": 35,
+    "command_id": "cmd_r007_prism_low_left_705",
+    "scene_id": "r007_prism_low_left",
+    "scene_params": {
+      "fill": 35,
+      "shape": 2,
+      "cx": 0.12,
+      "obstacle": 0,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "35",
+      "2",
+      "0.12",
+      "0",
+      "0",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "c4e073ca2476712d8adf562e704ded89c2e18d1eb42995fd06bdcc40fb0705b8",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_low_left/candidate-705.bin"
+  },
+  {
+    "ordinal": 36,
+    "command_id": "cmd_r007_prism_high_right_beam_dropout10_701",
+    "scene_id": "r007_prism_high_right_beam_dropout10",
+    "scene_params": {
+      "fill": 90,
+      "shape": 2,
+      "cx": 0.18,
+      "obstacle": 1,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "2",
+      "0.18",
+      "1",
+      "10",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "c23a6bf9871eb5a64606606fef82272a65608e5000dbeec408f72cddce3bd85e",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_high_right_beam_dropout10/candidate-701.bin"
+  },
+  {
+    "ordinal": 37,
+    "command_id": "cmd_r007_prism_high_right_beam_dropout10_702",
+    "scene_id": "r007_prism_high_right_beam_dropout10",
+    "scene_params": {
+      "fill": 90,
+      "shape": 2,
+      "cx": 0.18,
+      "obstacle": 1,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "2",
+      "0.18",
+      "1",
+      "10",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "ab932c03767e44be82b829c8ea6f6b37ed02cc732d18366258c8d807de92e3c1",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_high_right_beam_dropout10/candidate-702.bin"
+  },
+  {
+    "ordinal": 38,
+    "command_id": "cmd_r007_prism_high_right_beam_dropout10_703",
+    "scene_id": "r007_prism_high_right_beam_dropout10",
+    "scene_params": {
+      "fill": 90,
+      "shape": 2,
+      "cx": 0.18,
+      "obstacle": 1,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "2",
+      "0.18",
+      "1",
+      "10",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "42e2046d3037ce4f92d1eb82ce5e0f2eb48336773e450261892e6dd95ec2c313",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_high_right_beam_dropout10/candidate-703.bin"
+  },
+  {
+    "ordinal": 39,
+    "command_id": "cmd_r007_prism_high_right_beam_dropout10_704",
+    "scene_id": "r007_prism_high_right_beam_dropout10",
+    "scene_params": {
+      "fill": 90,
+      "shape": 2,
+      "cx": 0.18,
+      "obstacle": 1,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "2",
+      "0.18",
+      "1",
+      "10",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "575d306a670688c3f8b8d5143099f59d162732ff708baf9f4418ea79a7871e1a",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_high_right_beam_dropout10/candidate-704.bin"
+  },
+  {
+    "ordinal": 40,
+    "command_id": "cmd_r007_prism_high_right_beam_dropout10_705",
+    "scene_id": "r007_prism_high_right_beam_dropout10",
+    "scene_params": {
+      "fill": 90,
+      "shape": 2,
+      "cx": 0.18,
+      "obstacle": 1,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "2",
+      "0.18",
+      "1",
+      "10",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "87cf9ce1983d7bdf1a93f4d43016efae9e8ca96d395386948419b1dda6ffed3c",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_prism_high_right_beam_dropout10/candidate-705.bin"
+  },
+  {
+    "ordinal": 41,
+    "command_id": "cmd_r007_ramp_low_left_beam_701",
+    "scene_id": "r007_ramp_low_left_beam",
+    "scene_params": {
+      "fill": 25,
+      "shape": 3,
+      "cx": 0.11,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "3",
+      "0.11",
+      "1",
+      "0",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "863a38d4a7a40e2c756ae5d82846f3810ffaa4be6c16e795b31e5095ccb5b680",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_low_left_beam/candidate-701.bin"
+  },
+  {
+    "ordinal": 42,
+    "command_id": "cmd_r007_ramp_low_left_beam_702",
+    "scene_id": "r007_ramp_low_left_beam",
+    "scene_params": {
+      "fill": 25,
+      "shape": 3,
+      "cx": 0.11,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "3",
+      "0.11",
+      "1",
+      "0",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "ef34cab71b1738b26c04767ddb9104a68c61d65acdaae8e737d412a251031d86",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_low_left_beam/candidate-702.bin"
+  },
+  {
+    "ordinal": 43,
+    "command_id": "cmd_r007_ramp_low_left_beam_703",
+    "scene_id": "r007_ramp_low_left_beam",
+    "scene_params": {
+      "fill": 25,
+      "shape": 3,
+      "cx": 0.11,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "3",
+      "0.11",
+      "1",
+      "0",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "524b21a92d32b5529a253365606dea7cb30eb16dd3fa9a2366d70eb55db749f8",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_low_left_beam/candidate-703.bin"
+  },
+  {
+    "ordinal": 44,
+    "command_id": "cmd_r007_ramp_low_left_beam_704",
+    "scene_id": "r007_ramp_low_left_beam",
+    "scene_params": {
+      "fill": 25,
+      "shape": 3,
+      "cx": 0.11,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "3",
+      "0.11",
+      "1",
+      "0",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "2061cac209ba1bb70eec45619d260c36b19085eb9f2a9a5958cbe5f4883a6934",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_low_left_beam/candidate-704.bin"
+  },
+  {
+    "ordinal": 45,
+    "command_id": "cmd_r007_ramp_low_left_beam_705",
+    "scene_id": "r007_ramp_low_left_beam",
+    "scene_params": {
+      "fill": 25,
+      "shape": 3,
+      "cx": 0.11,
+      "obstacle": 1,
+      "dropout": 0,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "25",
+      "3",
+      "0.11",
+      "1",
+      "0",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "5d053a23c4ed7d3329067130b3d08576f7d91e66786932edcc2915c2a9cb17ce",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_low_left_beam/candidate-705.bin"
+  },
+  {
+    "ordinal": 46,
+    "command_id": "cmd_r007_ramp_high_right_dropout25_701",
+    "scene_id": "r007_ramp_high_right_dropout25",
+    "scene_params": {
+      "fill": 95,
+      "shape": 3,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 25,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "3",
+      "0.19",
+      "0",
+      "25",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "7e1dea39ed246d3ce04a0f14b9513b2c39f814c65ed3106337a1dad48610f9b8",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_high_right_dropout25/candidate-701.bin"
+  },
+  {
+    "ordinal": 47,
+    "command_id": "cmd_r007_ramp_high_right_dropout25_702",
+    "scene_id": "r007_ramp_high_right_dropout25",
+    "scene_params": {
+      "fill": 95,
+      "shape": 3,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 25,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "3",
+      "0.19",
+      "0",
+      "25",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "699e4815bbeff6ad424361f191ebfa669b31db5ac44e6f10d2dd745e20bd2aca",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_high_right_dropout25/candidate-702.bin"
+  },
+  {
+    "ordinal": 48,
+    "command_id": "cmd_r007_ramp_high_right_dropout25_703",
+    "scene_id": "r007_ramp_high_right_dropout25",
+    "scene_params": {
+      "fill": 95,
+      "shape": 3,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 25,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "3",
+      "0.19",
+      "0",
+      "25",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "0dc2ac4a76ce18fb3dd8a5361c6f4586551c0a4e3bb46670f960c159193ce38e",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_high_right_dropout25/candidate-703.bin"
+  },
+  {
+    "ordinal": 49,
+    "command_id": "cmd_r007_ramp_high_right_dropout25_704",
+    "scene_id": "r007_ramp_high_right_dropout25",
+    "scene_params": {
+      "fill": 95,
+      "shape": 3,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 25,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "3",
+      "0.19",
+      "0",
+      "25",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "315b156c1a6bb09efd8f886e0f5b5186e8e1aab73dd5beb34aec37a61a5de841",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_high_right_dropout25/candidate-704.bin"
+  },
+  {
+    "ordinal": 50,
+    "command_id": "cmd_r007_ramp_high_right_dropout25_705",
+    "scene_id": "r007_ramp_high_right_dropout25",
+    "scene_params": {
+      "fill": 95,
+      "shape": 3,
+      "cx": 0.19,
+      "obstacle": 0,
+      "dropout": 25,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "95",
+      "3",
+      "0.19",
+      "0",
+      "25",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "c2b5fbd83e20048be01c2fbf53e1f6bac13c427b94afc74bf3508612cd476665",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_ramp_high_right_dropout25/candidate-705.bin"
+  },
+  {
+    "ordinal": 51,
+    "command_id": "cmd_r007_layer_low_dropout10_701",
+    "scene_id": "r007_layer_low_dropout10",
+    "scene_params": {
+      "fill": 20,
+      "shape": 4,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "20",
+      "4",
+      "0.14",
+      "0",
+      "10",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "145d220ba7ea9df2858ceec96497c2df1cd0cec0c49a8c3696e32b0ccc368a07",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_low_dropout10/candidate-701.bin"
+  },
+  {
+    "ordinal": 52,
+    "command_id": "cmd_r007_layer_low_dropout10_702",
+    "scene_id": "r007_layer_low_dropout10",
+    "scene_params": {
+      "fill": 20,
+      "shape": 4,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "20",
+      "4",
+      "0.14",
+      "0",
+      "10",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "07acc1ccd0cb46f9999924960bc99edb1ba06584e309fe1317e05d8c70aef359",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_low_dropout10/candidate-702.bin"
+  },
+  {
+    "ordinal": 53,
+    "command_id": "cmd_r007_layer_low_dropout10_703",
+    "scene_id": "r007_layer_low_dropout10",
+    "scene_params": {
+      "fill": 20,
+      "shape": 4,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "20",
+      "4",
+      "0.14",
+      "0",
+      "10",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "d6c3a7e67e96ff382d8cfdee7ea5951dd340cafc1c7d80aacb4c5066fb7f37c4",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_low_dropout10/candidate-703.bin"
+  },
+  {
+    "ordinal": 54,
+    "command_id": "cmd_r007_layer_low_dropout10_704",
+    "scene_id": "r007_layer_low_dropout10",
+    "scene_params": {
+      "fill": 20,
+      "shape": 4,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "20",
+      "4",
+      "0.14",
+      "0",
+      "10",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "61a4f19ea59689bb622fbca6f005fb1efdc69758f903d620f199133132cbc6ad",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_low_dropout10/candidate-704.bin"
+  },
+  {
+    "ordinal": 55,
+    "command_id": "cmd_r007_layer_low_dropout10_705",
+    "scene_id": "r007_layer_low_dropout10",
+    "scene_params": {
+      "fill": 20,
+      "shape": 4,
+      "cx": 0.14,
+      "obstacle": 0,
+      "dropout": 10,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "20",
+      "4",
+      "0.14",
+      "0",
+      "10",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "07a4b7b7726ef66be146c144db97f8f054ded7d1e9edb78c8fa6381dcd5c9fc9",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_low_dropout10/candidate-705.bin"
+  },
+  {
+    "ordinal": 56,
+    "command_id": "cmd_r007_layer_high_beam_dropout30_701",
+    "scene_id": "r007_layer_high_beam_dropout30",
+    "scene_params": {
+      "fill": 90,
+      "shape": 4,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 30,
+      "range_m": 4.0
+    },
+    "sequence": 701,
+    "view_id": "inset_northwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "4",
+      "0.16",
+      "1",
+      "30",
+      "4.0",
+      "701",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1225"
+    ],
+    "command_digest": "b5285ebf4a5b52d3eff6c6a9cb4653965c420b79f04c8560604d9bad1ac7507d",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_high_beam_dropout30/candidate-701.bin"
+  },
+  {
+    "ordinal": 57,
+    "command_id": "cmd_r007_layer_high_beam_dropout30_702",
+    "scene_id": "r007_layer_high_beam_dropout30",
+    "scene_params": {
+      "fill": 90,
+      "shape": 4,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 30,
+      "range_m": 4.0
+    },
+    "sequence": 702,
+    "view_id": "inset_northeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1225,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "4",
+      "0.16",
+      "1",
+      "30",
+      "4.0",
+      "702",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1225"
+    ],
+    "command_digest": "46588447d340a99409b0f93380cf412f6e6c1fa8ae4759aa3a3a77547c9abd01",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_high_beam_dropout30/candidate-702.bin"
+  },
+  {
+    "ordinal": 58,
+    "command_id": "cmd_r007_layer_high_beam_dropout30_703",
+    "scene_id": "r007_layer_high_beam_dropout30",
+    "scene_params": {
+      "fill": 90,
+      "shape": 4,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 30,
+      "range_m": 4.0
+    },
+    "sequence": 703,
+    "view_id": "inset_southwest",
+    "pose": {
+      "origin": [
+        0.1225,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "4",
+      "0.16",
+      "1",
+      "30",
+      "4.0",
+      "703",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1225",
+      "0.1775"
+    ],
+    "command_digest": "ef362d5703dc191cb79ca198d897aff61f9d3acd43344860789fcdf193625f95",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_high_beam_dropout30/candidate-703.bin"
+  },
+  {
+    "ordinal": 59,
+    "command_id": "cmd_r007_layer_high_beam_dropout30_704",
+    "scene_id": "r007_layer_high_beam_dropout30",
+    "scene_params": {
+      "fill": 90,
+      "shape": 4,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 30,
+      "range_m": 4.0
+    },
+    "sequence": 704,
+    "view_id": "inset_southeast",
+    "pose": {
+      "origin": [
+        0.1775,
+        0.1775,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "4",
+      "0.16",
+      "1",
+      "30",
+      "4.0",
+      "704",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.1775",
+      "0.1775"
+    ],
+    "command_digest": "fa04087247d3c0a0b87ab93657677f25242ee783ac4da0fd28c76f088bc5b17c",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_high_beam_dropout30/candidate-704.bin"
+  },
+  {
+    "ordinal": 60,
+    "command_id": "cmd_r007_layer_high_beam_dropout30_705",
+    "scene_id": "r007_layer_high_beam_dropout30",
+    "scene_params": {
+      "fill": 90,
+      "shape": 4,
+      "cx": 0.16,
+      "obstacle": 1,
+      "dropout": 30,
+      "range_m": 4.0
+    },
+    "sequence": 705,
+    "view_id": "center",
+    "pose": {
+      "origin": [
+        0.15,
+        0.15,
+        0.4
+      ],
+      "yaw_deg": 0.0,
+      "tilt_deg": 0.0,
+      "roll_deg": 0.0
+    },
+    "argv": [
+      "C:\\Users\\Raí\\Downloads\\BoxFlow_30x30 (1)\\boxflow-wokwi\\.ai\\runs\\m001-implementation\\bin\\scene_dump_m001.exe",
+      "90",
+      "4",
+      "0.16",
+      "1",
+      "30",
+      "4.0",
+      "705",
+      "0.0",
+      "0.0",
+      "0.4",
+      "0.15",
+      "0.15"
+    ],
+    "command_digest": "d4089fa6b171492eb76eb2743d235008db5b279217bbf1215ba64b549feae5fa",
+    "stdout_path": ".ai/runs/m001-r007/frames/r007_layer_high_beam_dropout30/candidate-705.bin"
+  }
+]

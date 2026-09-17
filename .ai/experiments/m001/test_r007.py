@@ -122,7 +122,7 @@ class R007PreregistrationTests(unittest.TestCase):
                 "experiment_id": "R-007",
                 "decision": "RELEASE_R007_OPEN",
                 "pre_open_manifest_sha256": "a" * 64,
-                "reviewer": "independent-reviewer",
+                "review_type": "automated-review",
                 "reviewed_at_utc": "2026-09-16T00:00:00Z",
             }), encoding="utf-8")
             release = run_r007.verify_release(
@@ -145,5 +145,254 @@ class R007PreregistrationTests(unittest.TestCase):
         self.assertFalse(run_r007.ACQUISITION_VALIDATION.exists())
 
 
-if __name__ == "__main__":
+
+from unittest.mock import patch, MagicMock
+
+class R007ValidationTamperingTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.protocol = json.loads((HERE / "protocol_r007.json").read_text(encoding="utf-8"))
+        cls.plan = run_r007.derive_canonical_plan(cls.protocol)
+        
+    def setUp(self):
+        # Create a valid baseline
+        self.commands = []
+        self.recorded = {}
+        for entry in self.plan:
+            self.commands.append({
+                "kind": "r007_reserved_capture",
+                "command_id": entry["command_id"],
+                "scene_id": entry["scene_id"],
+                "sequence": entry["sequence"],
+                "command": entry["argv"],
+                "exit_code": 0,
+                "stderr": "",
+                "stdout_bytes": 704,
+                "stdout_sha256": "hash_file",
+                "stdout_path": entry["stdout_path"],
+            })
+            self.recorded[entry["stdout_path"]] = {
+                "sha256": "hash_file",
+                "scene_id": entry["scene_id"],
+                "header": {
+                    "sequence": entry["sequence"],
+                    "sensor_pose": {
+                        "translation_m": entry["pose"]["origin"],
+                        "yaw_deg": entry["pose"]["yaw_deg"],
+                        "tilt_deg": entry["pose"]["tilt_deg"],
+                        "roll_deg": entry["pose"]["roll_deg"]
+                    },
+                    "bytes": 704,
+                    "crc32": "fakecrc"
+                }
+            }
+        
+        self.acquisition = {
+            "experiment_id": "R-007",
+            "pre_open_manifest_sha256": "hash_preopen",
+            "protocol_sha256": run_r007.sha256(HERE / "protocol_r007.json"),
+            "simulator_sha256": "hash_sim",
+            "candidate_frames": self.recorded,
+            "capture_commands_sha256": "hash_file",
+            "counts": {"development_frames_reused": 0},
+            "truth_imported": False,
+            "estimator_imported": False,
+            "volume_results_present": False,
+        }
+        
+        self.patcher_preopen = patch("run_r007.verify_preopen")
+        self.mock_preopen = self.patcher_preopen.start()
+        self.mock_preopen.return_value = (self.protocol, {"frozen_files": {}})
+        
+        self.patcher_acq = patch("run_r007.ACQUISITION")
+        self.mock_acq = self.patcher_acq.start()
+        self.mock_acq.read_text.side_effect = lambda **k: json.dumps(self.acquisition)
+        
+        self.patcher_cmd = patch("run_r007.COMMANDS")
+        self.mock_cmd = self.patcher_cmd.start()
+        self.mock_cmd.read_text.side_effect = lambda **k: json.dumps(self.commands)
+        
+        self.patcher_plan = patch("run_r007.CAPTURE_PLAN")
+        self.mock_plan = self.patcher_plan.start()
+        self.mock_plan.read_text.side_effect = lambda **k: json.dumps(self.plan)
+        
+        self.patcher_frames = patch("run_r007.FRAMES", new_callable=MagicMock)
+        self.mock_frames = self.patcher_frames.start()
+        self.mock_frames.exists.return_value = True
+        
+        # Mock paths
+        self.patcher_rglob = patch("pathlib.Path.rglob")
+        self.mock_rglob = self.patcher_rglob.start()
+        self.mock_rglob.return_value = [] # results.rglob
+        
+        self.patcher_iterdir = patch("pathlib.Path.iterdir")
+        self.mock_iterdir = self.patcher_iterdir.start()
+        
+        self.patcher_glob = patch('pathlib.Path.glob')
+        self.mock_glob = self.patcher_glob.start()
+        self.patcher_read_bytes = patch('pathlib.Path.read_bytes')
+        self.mock_read_bytes = self.patcher_read_bytes.start()
+        self.mock_read_bytes.return_value = b'fake'
+        
+        self.patcher_sha256 = patch("run_r007.sha256")
+        self.mock_sha256 = self.patcher_sha256.start()
+        self.mock_sha256.side_effect = self.fake_sha256
+        
+        self.patcher_validate_header = patch("run_r007.validate_frame_header")
+        self.mock_validate_header = self.patcher_validate_header.start()
+        self.mock_validate_header.side_effect = self.fake_validate_header
+        
+        self.patcher_results = patch("run_r007.RESULTS", new_callable=MagicMock)
+        self.mock_results = self.patcher_results.start()
+        self.mock_results.exists.return_value = False
+        self.mock_results.rglob.return_value = []
+        
+        self.patcher_acq_val = patch("run_r007.ACQUISITION_VALIDATION", new_callable=MagicMock)
+        self.mock_acq_val = self.patcher_acq_val.start()
+
+    def tearDown(self):
+        patch.stopall()
+        
+    def fake_sha256(self, path):
+        if str(path).endswith("protocol_r007.json"):
+            return "174d056b6e1e057167a55d8e8a09b6b4defdf13cb3e2939eddf703f005ceb232"
+        if str(path).endswith("pre-open-manifest.json"):
+            return "hash_preopen"
+        if str(path).endswith("scene_dump_m001.exe"):
+            return "hash_sim"
+        key = run_r007.relative(path)
+        if key in self.recorded:
+            return self.recorded[key]["sha256"]
+        return "hash_file"
+
+    def fake_validate_header(self, raw, expected_capture):
+        # Find which key this would correspond to
+        seq = expected_capture['sequence']
+        origin = expected_capture['origin']
+        for key, item in self.recorded.items():
+            if item['header']['sequence'] == seq and item['header']['sensor_pose']['translation_m'] == origin:
+                return item['header']
+        raise RuntimeError('header mismatch')
+
+    def _setup_mock_filesystem(self):
+        # mock FRAMES.rglob to return 60 files
+        mock_paths = []
+        for key in self.recorded:
+            mock_path = MagicMock()
+            mock_path.name = Path(key).name
+            mock_path.read_bytes.return_value = b"fake"
+            # allow relative() to work by pretending it's relative to root
+            mock_path.relative_to.return_value = Path(key)
+            mock_paths.append(mock_path)
+            
+        self.mock_frames.rglob.return_value = mock_paths
+        
+        # mock FRAMES.iterdir for scene dirs
+        scene_dirs = []
+        for s in set(item["scene_id"] for item in self.plan):
+            mock_dir = MagicMock()
+            mock_dir.name = s
+            mock_dir.is_dir.return_value = True
+            scene_dirs.append(mock_dir)
+        self.mock_frames.iterdir.return_value = scene_dirs
+        
+        # mock FRAMES / scene_id glob
+        def side_glob(pattern):
+            return [1,2,3,4,5]
+        self.mock_frames.__truediv__.return_value.glob.side_effect = side_glob
+        
+        # We also have to mock pathlib.Path reading in validate_acquisition for frame paths.
+        # It does `path = ROOT / plan_entry["stdout_path"]`, then `key = relative(path)`.
+        # `key in recorded` works because we use strings.
+        # `header = validate_frame_header(path.read_bytes(), capture_spec)` needs `path.read_bytes`.
+        # Instead of mocking Path everywhere, we mock `path.read_bytes` inside `validate_acquisition`? No, we already mocked `validate_frame_header` so we don't need real bytes.
+        pass
+
+    def run_validation(self):
+        self._setup_mock_filesystem()
+        try:
+            return run_r007.validate_acquisition()
+        except RuntimeError:
+            # We intercept the exception and read what was written to validation
+            written = json.loads(self.mock_acq_val.write_text.call_args[0][0])
+            return written
+
+    def test_baseline_passes(self):
+        val = self.run_validation()
+        
+        self.assertTrue(val["passed"])
+        
+    def test_tampering_swap_scene_id(self):
+        self.commands[0]["scene_id"] = "different_scene"
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_change_argv(self):
+        self.commands[0]["command"][0] = "malicious.exe"
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_change_sequence(self):
+        self.commands[0]["sequence"] = 999
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_reorder_commands(self):
+        self.commands[0], self.commands[1] = self.commands[1], self.commands[0]
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_extra_frame(self):
+        self.commands.append(self.commands[0].copy())
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+        
+    def test_tampering_missing_frame(self):
+        self.commands.pop()
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_duplicate_stdout_path(self):
+        self.commands[1]["stdout_path"] = self.commands[0]["stdout_path"]
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_duplicate_command_id(self):
+        self.commands[1]["command_id"] = self.commands[0]["command_id"]
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_replace_hash(self):
+        key = self.plan[0]["stdout_path"]
+        self.recorded[key]["sha256"] = "altered"
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_replace_stdout_sha256(self):
+        self.commands[0]["stdout_sha256"] = "altered"
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+    def test_tampering_repoint_valid_frame(self):
+        # Scene 1 claims it has the file of Scene 2
+        key1 = self.plan[0]["stdout_path"]
+        key2 = self.plan[1]["stdout_path"]
+        self.recorded[key1] = self.recorded[key2].copy()
+        # Even if we change scene_id to match, it should fail hash checks or plan checks
+        val = self.run_validation()
+        self.assertFalse(val["passed"])
+        self.assertFalse(val["checks"]["capture_plan_matches"])
+
+
+if __name__ == '__main__':
     unittest.main()

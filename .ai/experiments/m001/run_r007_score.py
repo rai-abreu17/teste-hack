@@ -62,13 +62,22 @@ def verify_released_inputs():
         raise RuntimeError("acquisition manifest changed after validation")
     if validation.get("capture_commands_sha256") != sha256(COMMANDS):
         raise RuntimeError("capture commands changed after validation")
+    if validation.get("capture_plan_sha256") != sha256(acquisition_runner.CAPTURE_PLAN):
+        raise RuntimeError("acquisition validation does not bind capture plan")
+
     acquisition_runner.verify_release(
         SCORE_RELEASE, "RELEASE_R007_SCORE", "acquisition_validation_sha256",
         sha256(ACQUISITION_VALIDATION),
     )
     release = json.loads(SCORE_RELEASE.read_text(encoding="utf-8"))
+    
+    if release.get("pre_open_manifest_sha256") != sha256(PRE_OPEN):
+        raise RuntimeError("score release does not bind pre-open manifest")
+    if release.get("capture_plan_sha256") != sha256(acquisition_runner.CAPTURE_PLAN):
+        raise RuntimeError("score release does not bind capture plan")
     if release.get("acquisition_manifest_sha256") != sha256(ACQUISITION):
         raise RuntimeError("score release does not bind acquisition manifest")
+    
     if len(acquisition.get("candidate_frames", {})) != 60 or len(commands) != 60:
         raise RuntimeError("R007 acquisition is incomplete")
     expected = set()

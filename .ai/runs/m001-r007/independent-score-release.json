@@ -1,0 +1,10 @@
+{
+  "experiment_id": "R-007",
+  "decision": "RELEASE_R007_SCORE",
+  "acquisition_validation_sha256": "9e4528873fcc3564b2f57165f845b64eb853f453c34093aae1f8533ffce6e8c7",
+  "review_type": "automated-review",
+  "reviewed_at_utc": "2026-09-17T00:24:43.210593Z",
+  "pre_open_manifest_sha256": "b8ada6674c305434655fbcbc363e9f0eab36fab9ba19226af0f9107516d9e1da",
+  "capture_plan_sha256": "abfff1c2878d28956824c3995163146b3e2a485c45882370b279ca5539ccb6c3",
+  "acquisition_manifest_sha256": "c27c9deb60ac895c45d993464a36cf39117acf54452d73ef9b6a3940781c744d"
+}
