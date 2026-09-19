@@ -28,6 +28,43 @@ No Windows, pode usar `py -3`; em Linux/macOS, `python3`. Servidor e dashboard u
 
 O banco padrão é `server/boxflow-vl53-30cm-v3.sqlite3`. Use um banco novo para esta referência: os resultados antigos têm outra geometria. O histórico é persistido, e o painel exibe até 80 entradas. Ctrl+C encerra os processos.
 
+## Frontend oficial (boxflow-dashboard) — BOX-03 ao vivo
+
+O dashboard estático em `server/static/` (acima) é só uma referência de depuração dos dados brutos. **O frontend oficial é o projeto Angular irmão `boxflow-dashboard`**, que consome este backend em tempo quase real para o box instrumentado da demonstração, **BOX-03**. Os outros 9 boxes continuam com dados cadastrais/ilustrativos (mock) — só o BOX-03 reflete leituras reais deste backend.
+
+### Como funciona
+
+- O receptor aceita qualquer `X-Box-ID` bem formado (não é mais fixo em `BOX-DEMO-01`); `wokwi/config.h` e `tools/replay_demo.py` já usam `BOX-03` por padrão.
+- `/api/latest` aceita um parâmetro opcional `?box_id=BOX-03` para filtrar a última leitura e o histórico daquele box especificamente.
+- Cada leitura agora inclui `occupancy_fraction` (0 a 1): o volume observado na maquete normalizado pela capacidade de referência da bancada (`REFERENCE_CAPACITY_M3`, calibrada pela pirâmide central usada nas amostras `entrada-25/50/75/100`). Isso é o que permite ligar a medição em escala de bancada (frações de litro) a uma representação em escala industrial (milhares de m³) no Angular: o `TelemetryService` do dashboard multiplica `occupancy_fraction` pela capacidade cadastrada do box real, então o volume exibido é sempre "volume equivalente da simulação", nunca o volume físico bruto do sensor.
+- Também inclui `measurement_profile` (hoje sempre `"bench"`), reservado para, no futuro, distinguir a leitura de bancada de um eventual simulador de cena industrial.
+
+### Testando a medição de volume você mesmo
+
+1. Rode o receptor aqui (se ainda não estiver rodando):
+   ```bash
+   python server/app.py
+   ```
+2. Em outro terminal, na pasta `boxflow-dashboard` (repo irmão), instale as dependências (só na primeira vez) e suba o Angular — o `proxy.conf.json` já encaminha `/api/**` para `http://127.0.0.1:8000`:
+   ```bash
+   npm install
+   ng serve
+   ```
+3. Abra `http://localhost:4200/boxes/b3` (detalhe do BOX-03) ou `http://localhost:4200/dashboard` — os dois já mostram dados reais assim que existirem.
+4. Gere leituras. Duas formas:
+   - **Progressão limpa de enchimento** (recomendado para ver o efeito visual, evita as cenas de teste como oclusão/redistribuição que fazem o volume "pular"):
+     ```bash
+     python tools/replay_demo.py --only vazio,entrada-25,entrada-50,entrada-75,entrada-100 --interval 4
+     ```
+   - **Sequência completa de validação** (17 cenas, inclui casos de borda como oclusão e fora de alcance):
+     ```bash
+     python tools/replay_demo.py
+     ```
+   - **Simulação real no Wokwi**: siga "Montar no Wokwi" abaixo; o firmware já envia para `BOX-03` a cada 3 segundos.
+5. Observe o card do BOX-03 (Dashboard e lista de Boxes) e a página de detalhe: volume, % de ocupação, cobertura e a pilha na visualização 3D atualizam sozinhos a cada ~2 segundos, sem precisar recarregar a página. Os outros boxes continuam estáticos (mock) — é esperado.
+
+Como o volume de referência (`REFERENCE_CAPACITY_M3`) é calibrado pela forma piramidal usada nas amostras `entrada-*`, a sequência acima produz uma ocupação crescente e suave (aproximadamente 0% → 28% → 58% → 88% → 100%, com alguma variação por causa do erro de reconstrução do TIN, ver [TESTES.md](docs/TESTES.md)). Amostras de outras formas (`prisma`, `rampa`, `camada`) podem saturar em 100% — é o comportamento esperado, não um erro.
+
 ## Montar no Wokwi
 
 1. Abra o [modelo ESP32](https://wokwi.com/projects/new/esp32).

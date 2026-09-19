@@ -10,6 +10,7 @@ import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from urllib.parse import urlsplit, parse_qs
 
 from geometry import decode_frame, estimate, REFERENCE_ID
 
@@ -57,13 +58,16 @@ class Store:
                             (meta["device"],meta["boot"],time.time() if now is None else now,"unavailable",reason))
             self.db.commit()
 
-    def latest(self, now=None):
+    def latest(self, now=None, box_id=None):
         now = time.time() if now is None else now
         with self.lock:
-            row = self.db.execute("SELECT * FROM scans ORDER BY id DESC LIMIT 1").fetchone()
+            if box_id:
+                row = self.db.execute("SELECT * FROM scans WHERE box=? ORDER BY id DESC LIMIT 1",(box_id,)).fetchone()
+            else:
+                row = self.db.execute("SELECT * FROM scans ORDER BY id DESC LIMIT 1").fetchone()
             failure = self.db.execute("SELECT * FROM attempts ORDER BY id DESC LIMIT 1").fetchone()
             if row is None:
-                return {"source":"simulation","measurement_state":"unavailable", "box_id":"BOX-DEMO-01",
+                return {"source":"simulation","measurement_state":"unavailable", "box_id":box_id or "BOX-DEMO-01",
                         "reason":failure["reason"] if failure else "Aguardando a primeira varredura.","history":[]}
             result = json.loads(row["result"])
             age = max(0,now-row["received"])+row["age_ms"]/1000
@@ -80,12 +84,16 @@ class Store:
                 result["measurement_state"] = "stale"
                 result["is_previous_measurement"] = True
                 result["reason"] = "Atualização interrompida. Os valores pertencem à última varredura recebida."
-            records = self.db.execute("SELECT seq,received,age_ms,result,boot FROM scans ORDER BY id DESC LIMIT 80").fetchall()
+            if box_id:
+                records = self.db.execute("SELECT seq,received,age_ms,result,boot FROM scans WHERE box=? ORDER BY id DESC LIMIT 80",(box_id,)).fetchall()
+            else:
+                records = self.db.execute("SELECT seq,received,age_ms,result,boot FROM scans ORDER BY id DESC LIMIT 80").fetchall()
             result["history"] = []
             for r in reversed(records):
                 m=json.loads(r["result"])
                 result["history"].append({"sequence":r["seq"],"boot_id":r["boot"],"received_at":dt.datetime.fromtimestamp(r["received"],dt.timezone.utc).isoformat(),
-                                          "observed_volume_m3":m["observed_volume_m3"],"coverage_fraction":m["coverage_fraction"],"state":m["measurement_state"]})
+                                          "observed_volume_m3":m["observed_volume_m3"],"coverage_fraction":m["coverage_fraction"],"state":m["measurement_state"],
+                                          "occupancy_fraction":m.get("occupancy_fraction")})
             return result
 
     def raw_latest(self):
@@ -116,8 +124,11 @@ def make_server(host, port, store, token=""):
             self.send_header("X-Content-Type-Options","nosniff");self.end_headers();self.wfile.write(body)
 
         def do_GET(self):
-            path=self.path.split("?",1)[0]
-            if path=="/api/latest":return self.respond(200,store.latest())
+            split=urlsplit(self.path)
+            path=split.path
+            if path=="/api/latest":
+                box_id=parse_qs(split.query).get("box_id",[None])[0]
+                return self.respond(200,store.latest(box_id=box_id))
             if path=="/api/raw/latest":
                 raw=store.raw_latest();return self.respond(200 if raw else 404,raw or {"error":"Sem dados"})
             if path=="/favicon.ico":return self.respond(204,b"", "image/x-icon")
@@ -130,8 +141,9 @@ def make_server(host, port, store, token=""):
         def metadata(self):
             meta={k:self.headers.get(h,"") for k,h in (("device","X-Device-ID"),("box","X-Box-ID"),("boot","X-Boot-ID"))}
             if not all(ID_PATTERN.fullmatch(v) for v in meta.values()):raise ValueError("Identificação inválida")
-            # One explicitly instrumented demo device/box; no silent mixing of sources.
-            if meta["box"]!="BOX-DEMO-01" or meta["device"]!="boxflow-esp32-demo":raise ValueError("Dispositivo ou box não cadastrado")
+            # One explicitly instrumented demo device; box just needs a well-formed id
+            # (checked above via ID_PATTERN), so any instrumented box can be targeted.
+            if meta["device"]!="boxflow-esp32-demo":raise ValueError("Dispositivo não cadastrado")
             if self.headers.get("X-Source")!="simulation" or self.headers.get("X-Geometry-ID")!=REFERENCE_ID:
                 raise ValueError("Origem ou referência incompatível")
             if self.headers.get("X-Acquisition-Clock")!="simulation_monotonic":raise ValueError("Relógio não suportado")

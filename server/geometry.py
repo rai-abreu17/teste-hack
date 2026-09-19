@@ -13,6 +13,12 @@ WIDTH, DEPTH, HEIGHT, CELL = 0.30, 0.30, 0.15, 0.015
 NX, NY = 20, 20
 MAX_EDGE_M = 0.10
 BELOW_REFERENCE_TOLERANCE_M = 0.003  # Development threshold, not sensor accuracy.
+# Reference capacity for occupancy_fraction: ceiling of the central pyramid pile at
+# fill=100% (0.15^2 * 0.10 / 3), the shape used by the demo replay sequence
+# (entrada-25/50/75/100). This is a demo-calibration choice, not a physical constant
+# of the bench itself -- other pile shapes (prism, ramp, layer) exceed this volume and
+# will saturate occupancy_fraction at 1.0.
+REFERENCE_CAPACITY_M3 = 0.15**2 * 0.10 / 3
 
 
 def base(x, y):
@@ -149,9 +155,14 @@ def estimate(data, reference_offset_m=0.0):
         state = "unavailable"
         reason = "Pontos abaixo da referência; verificar pose e calibração."
     total = observed if state == "valid" else None
+    volume_for_occupancy = total if total is not None else observed
+    occupancy_fraction = (None if state == "unavailable" or volume_for_occupancy is None
+                          else max(0.0, min(1.0, volume_for_occupancy/REFERENCE_CAPACITY_M3)))
     public = {k:v for k,v in decoded.items() if k not in ("points_by_ray","readings")}
     public.update({"algorithm_id": ALGORITHM_ID, "precision_status":"not_validated", "measurement_state": state, "reason": reason,
+                   "measurement_profile": "bench",
                    "observed_volume_m3": observed, "total_volume_m3": total,
+                   "reference_capacity_m3": REFERENCE_CAPACITY_M3, "occupancy_fraction": occupancy_fraction,
                    "coverage_fraction": coverage, "observed_area_m2": covered*CELL*CELL,
                    "unobserved_area_m2": (NX*NY-covered)*CELL*CELL,
                    "unobserved_possible_volume_m3": missing_max,
